@@ -1,0 +1,41 @@
+chebi_id	chebi_name	modulation	type	db	db_id	db_name
+CHEBI:38496	electron-transport chain inhibitor	inhibitor	pathway	go	GO:0022900	electron transport chain
+CHEBI:26087	photosynthetic electron-transport chain inhibitor	inhibitor	pathway	go	GO:0009767	photosynthetic electron transport chain
+CHEBI:25355	mitochondrial respiratory-chain inhibitor	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:140921	Hedgehog signaling pathway inhibitor	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:26088	photosystem-I inhibitor	inhibitor	pathway	go	GO:0009522	photosystem I
+CHEBI:68543	pyrimidine synthesis inhibitor	inhibitor	pathway	go	GO:0006221	pyrimidine nucleotide biosynthetic process
+CHEBI:138208	carotenoid biosynthesis inhibitor	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:26089	photosystem-II inhibitor	inhibitor	pathway	go	GO:0009523	photosystem II
+CHEBI:59517	DNA synthesis inhibitor	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:63958	cellulose synthesis inhibitor	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:50185	fatty acid synthesis inhibitor	inhibitor	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:23529	cytochrome-b6f complex inhibitor	inhibitor	complex	go	GO:0009512	cytochrome b6f complex
+CHEBI:38502	cytochrome-bc1 complex inhibitor	inhibitor	complex	fplx	ETC_complex_III	ETC_complex_III
+CHEBI:38497	respiratory-chain inhibitor	inhibitor	complex	go	GO:0098803	respiratory chain complex
+CHEBI:20854	ATP synthase inhibitor	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:131509	lysine-specific histone demethylase 1A inhibitor	inhibitor	protein	hgnc	29079	KDM1A
+CHEBI:131789	RUNX1 inhibitor	inhibitor	protein	hgnc	10471	RUNX1
+CHEBI:138977	quorum sensing inhibitor	inhibitor	pathway	go	GO:0009372	quorum sensing
+CHEBI:88230	autophagy inhibitor	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:87183	STAT3 inhibitor	inhibitor	protein	hgnc	11364	STAT3
+CHEBI:138381	RhoC inhibitor	inhibitor	protein	hgnc	669	RHOC
+CHEBI:140922	glioma-associated oncogene inhibitor	inhibitor	protein	hgnc	4317	GLI1
+CHEBI:91025	erythropoietin inhibitor	inhibitor	protein	hgnc	3415	EPO
+CHEBI:138380	RhoA inhibitor	inhibitor	protein	hgnc	667	RHOA
+CHEBI:136651	S100 calcium-binding protein B inhibitor	inhibitor	protein	hgnc	10500	S100B
+CHEBI:87588	Smad3 inhibitor	inhibitor	protein	hgnc	6769	SMAD3
+CHEBI:73240	NF-kappaB inhibitor	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:49205	CETP inhibitor	inhibitor	protein	hgnc	1869	CETP
+CHEBI:91214	macrophage migration inhibitory factor inhibitor	inhibitor	protein	hgnc	7097	MIF
+CHEBI:63173	T-cell proliferation inhibitor	inhibitor	pathway	go	GO:0042098	T cell proliferation
+CHEBI:68494	apoptosis inhibitor	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:133190	fatty acid oxidation inhibitor	inhibitor	pathway	go	GO:0019395	fatty acid oxidation
+CHEBI:73267	oxidative phosphorylation inhibitor	inhibitor	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:78009	Wiskott-Aldrich syndrome protein inhibitor	inhibitor	protein	hgnc	12731	WAS
+CHEBI:137114	bromodomain-containing protein 4 inhibitor	inhibitor	protein	hgnc	13575	BRD4
+CHEBI:140701	secreted frizzled-related protein 1 inhibitor	inhibitor	protein	hgnc	10776	SFRP1
+CHEBI:83799	nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:85185	hepatitis C virus nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:72771	breast cancer resistance protein inhibitor	inhibitor	protein	hgnc	74	ABCG2
+CHEBI:68553	guanylate cyclase 2C agonist	agonist	protein	hgnc	4688	GUCY2C

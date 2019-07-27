@@ -1,0 +1,721 @@
+chebi_id	chebi_name	modulation	entity_type	db	db_id	db_name
+CHEBI:68551	linaclotide	agonist	protein	hgnc	4688	GUCY2C
+CHEBI:131326	JSH-23	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:132639	aconine	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:136555	1-O-caffeoylquinic acid	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:138650	CBL0137	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:141063	rubimaillin	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:19371	dibromothymoquinone	inhibitor	complex	go	GO:0009512	cytochrome b6f complex
+CHEBI:28821	piperine	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:3170	brazilin	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:33276	delta-tocotrienol	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:43572	kojic acid	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:4659	disulfiram	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:469	1'-acetoxychavicol acetate	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:5373	(S)-glaucine	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:65646	cochinchinone A	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66186	talosin A	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66325	tubocapsanolide A	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66824	orbiculin A	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66825	orbiculin D	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66826	orbiculin E	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66827	orbiculin F	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66828	orbiculin G	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66829	orbiculin H	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66830	orbiculin I	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67555	15-O-desmethyl-(5Z)-7-oxozeaenol	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67556	zeaenol	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67557	7-epi-zeaenol	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67558	5E-7-oxozeaenol	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67559	5Z-7-oxozeaenol	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:68340	beta-(4-hydroxyphenyl)ethyl-4-O-E-caffeoyl-O-[beta-D-apiofuranosyl-(1->2)]-beta-D-glucopyranoside	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69245	5-(3-hydroxypropyl)-2-(2-methoxy-4-hydroxyphenyl)benzofuran	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69246	(-)-larreatricin	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69247	meso-3,3'-didemethoxynectandrin B	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69248	(2S,3S)-2,3-dihydro-3-hydroxymethyl-2-(4-hydroxyphenyl)-5-(E)-propenylbenzofuran	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69249	2-(2-hydroxy-4-methoxyphenyl)-5-(3-hydroxypropyl)benzofuran	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69250	2-(2,4-dihydroxyphenyl)-5-(E)-propenylbenzofuran	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69251	(+)-conocarpan	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69252	2-(4-hydroxyphenyl)-5-(E)-propenylbenzofuran	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69253	rataniaphenol III	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69254	rataniaphenol I	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69255	rataniaphenol II	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69340	ergolide	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:7747	oleuropein	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:78782	pyrrolidine dithiocarbamate	inhibitor	complex	fplx	NFkappaB	NFkappaB
+CHEBI:101086	EC 5.4.99.7 (lanosterol synthase) inhibitor	inhibitor	enzyme	ec-code	5.4.99.7	5.4.99.7
+CHEBI:101090	EC 5.4.99.* (intramolecular transferase transferring other groups) inhibitor	inhibitor	enzyme	ec-code	5.4.99	5.4.99
+CHEBI:102248	EC 1.14.11.29 (hypoxia-inducible factor-proline dioxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.11.29	1.14.11.29
+CHEBI:102368	EC 2.6.1.40 [(R)-3-amino-2-methylpropionate--pyruvate transaminase] inhibitor	inhibitor	enzyme	ec-code	2.6.1.40	2.6.1.40
+CHEBI:110725	EC 2.1.1.8 (histamine N-methyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.1.1.8	2.1.1.8
+CHEBI:131699	EC 2.7.7.7 (DNA-directed DNA polymerase) inhibitor	inhibitor	enzyme	ec-code	2.7.7.7	2.7.7.7
+CHEBI:131734	EC 2.7.11.20 (elongation factor 2 kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.20	2.7.11.20
+CHEBI:131770	EC 3.6.3.49 (channel-conductance-controlling ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.3.49	3.6.3.49
+CHEBI:131794	EC 2.7.11.17 (Ca(2+)/calmodulin-dependent protein kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.17	2.7.11.17
+CHEBI:131844	EC 1.14.11.1 (gamma-butyrobetaine dioxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.11.1	1.14.11.1
+CHEBI:131961	EC 1.13.11.11 (tryptophan 2,3-dioxygenase) inhibitor	inhibitor	enzyme	ec-code	1.13.11.11	1.13.11.11
+CHEBI:132365	EC 1.14.11.2 (procollagen-proline dioxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.11.2	1.14.11.2
+CHEBI:132518	EC 3.2.1.23 (beta-galactosidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.23	3.2.1.23
+CHEBI:132771	EC 3.6.5.* (hydrolases acting on GTP; involved in cellular and subcellular movement) inhibitor	inhibitor	enzyme	ec-code	3.6.5	3.6.5
+CHEBI:132772	EC 3.6.5.5 (dynamin GTPase) inhibitor	inhibitor	enzyme	ec-code	3.6.5.5	3.6.5.5
+CHEBI:133811	EC 2.4.1.17 (glucuronosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.1.17	2.4.1.17
+CHEBI:133895	EC 2.5.1.46 (deoxyhypusine synthase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.46	2.5.1.46
+CHEBI:134084	EC 1.15.1.1 (superoxide dismutase) inhibitor	inhibitor	enzyme	ec-code	1.15.1.1	1.15.1.1
+CHEBI:134109	EC 3.5.1.108 (UDP-3-O-acyl-N-acetylglucosamine deacetylase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.108	3.5.1.108
+CHEBI:134545	EC 1.8.1.4 (dihydrolipoyl dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.8.1.4	1.8.1.4
+CHEBI:136537	EC 2.4.2.8 (hypoxanthine phosphoribosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.2.8	2.4.2.8
+CHEBI:136558	EC 1.11.1.7 (peroxidase) inhibitor	inhibitor	enzyme	ec-code	1.11.1.7	1.11.1.7
+CHEBI:136984	EC 4.4.1.14 (1-aminocyclopropane-1-carboxylate synthase) inhibitor	inhibitor	enzyme	ec-code	4.4.1.14	4.4.1.14
+CHEBI:137123	EC 2.7.11.30 (receptor protein serine/threonine kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.30	2.7.11.30
+CHEBI:137566	EC 2.5.1.48 (cystathionine gamma-synthase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.48	2.5.1.48
+CHEBI:137626	EC 1.1.1.146 (11beta-hydroxysteroid dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.146	1.1.1.146
+CHEBI:138014	EC 3.4.22.56 (caspase-3) inhibitor	inhibitor	enzyme	ec-code	3.4.22.56	3.4.22.56
+CHEBI:138390	EC 1.1.1.159 (7alpha-hydroxysteroid dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.159	1.1.1.159
+CHEBI:138920	EC 6.3.5.* (carbon-nitrogen ligases with glutamine as amido-N-donor) inhibitor	inhibitor	enzyme	ec-code	6.3.5	6.3.5
+CHEBI:138921	EC 6.3.5.5 [carbamoyl-phosphate synthase (glutamine-hydrolysing)] inhibitor	inhibitor	enzyme	ec-code	6.3.5.5	6.3.5.5
+CHEBI:138924	EC 6.3.4.* (other carbon--nitrogen ligases) inhibitor	inhibitor	enzyme	ec-code	6.3.4	6.3.4
+CHEBI:138925	EC 6.3.4.2 [CTP synthase (glutamine hydrolyzing)] inhibitor	inhibitor	enzyme	ec-code	6.3.4.2	6.3.4.2
+CHEBI:138927	EC 6.3.5.3 (phosphoribosylformylglycinamidine synthase) inhibitor	inhibitor	enzyme	ec-code	6.3.5.3	6.3.5.3
+CHEBI:138928	EC 6.3.5.2 [GMP synthase (glutamine-hydrolysing)] inhibitor	inhibitor	enzyme	ec-code	6.3.5.2	6.3.5.2
+CHEBI:138938	EC 4.1.1.39 (ribulose-bisphosphate carboxylase) inhibitor	inhibitor	enzyme	ec-code	4.1.1.39	4.1.1.39
+CHEBI:138952	EC 2.4.2.14 (amidophosphoribosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.2.14	2.4.2.14
+CHEBI:138953	EC 6.3.5.1 [NAD(+) synthase (glutamine-hydrolysing)] inhibitor	inhibitor	enzyme	ec-code	6.3.5.1	6.3.5.1
+CHEBI:138956	EC 6.3.5.4 [asparagine synthase (glutamine-hydrolysing)] inhibitor	inhibitor	enzyme	ec-code	6.3.5.4	6.3.5.4
+CHEBI:139153	EC 2.4.1.255 (protein O-GlcNAc transferase) inhibitor	inhibitor	enzyme	ec-code	2.4.1.255	2.4.1.255
+CHEBI:139338	EC 1.14.17.* (oxidoreductase acting on paired donors, with incorporation or reduction of molecular oxygen and with reduced ascorbate as one donor, and incorporation of one atom of oxygen) inhibitor	inhibitor	enzyme	ec-code	1.14.17	1.14.17
+CHEBI:139339	EC 1.14.17.1 (dopamine beta-monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.17.1	1.14.17.1
+CHEBI:139512	EC 1.3.1.9 [enoyl-[acyl-carrier-protein] reductase (NADH)] inhibitor	inhibitor	enzyme	ec-code	1.3.1.9	1.3.1.9
+CHEBI:139556	EC 4.1.1.17 (ornithine decarboxylase) inhibitor	inhibitor	enzyme	ec-code	4.1.1.17	4.1.1.17
+CHEBI:140378	EC 1.1.1.37 (malate dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.37	1.1.1.37
+CHEBI:142480	EC 1.14.14.94 (leukotriene-B4 20-monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.14.94	1.14.14.94
+CHEBI:142481	EC 1.14.15.3 (alkane 1-monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.15.3	1.14.15.3
+CHEBI:142581	EC 4.1.1.15 (glutamate decarboxylase) inhibitor	inhibitor	enzyme	ec-code	4.1.1.15	4.1.1.15
+CHEBI:142781	EC 2.5.1.117 (homogentisate solanesyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.117	2.5.1.117
+CHEBI:142790	EC 3.3.2.10 (soluble epoxide hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.3.2.10	3.3.2.10
+CHEBI:143002	EC 2.1.3.* (carboxy- and carbamoyltransferases) inhibitor	inhibitor	enzyme	ec-code	2.1.3	2.1.3
+CHEBI:143003	EC 2.1.3.3 (ornithine carbamoyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.1.3.3	2.1.3.3
+CHEBI:143828	EC 1.14.14.154 (sterol 14alpha-demethylase) inhibitor	inhibitor	enzyme	ec-code	1.14.14.154	1.14.14.154
+CHEBI:143909	EC 2.7.1.40 (pyruvate kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.1.40	2.7.1.40
+CHEBI:20569	EC 2.5.1.19 (3-phosphoshikimate 1-carboxyvinyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.19	2.5.1.19
+CHEBI:22180	EC 2.2.1.6 (acetolactate synthase) inhibitor	inhibitor	enzyme	ec-code	2.2.1.6	2.2.1.6
+CHEBI:23018	EC 4.2.1.1 (carbonic anhydrase) inhibitor	inhibitor	enzyme	ec-code	4.2.1.1	4.2.1.1
+CHEBI:24319	EC 6.3.1.2 (glutamate--ammonia ligase) inhibitor	inhibitor	enzyme	ec-code	6.3.1.2	6.3.1.2
+CHEBI:35457	EC 3.4.15.1 (peptidyl-dipeptidase A) inhibitor	inhibitor	enzyme	ec-code	3.4.15.1	3.4.15.1
+CHEBI:35487	EC 1.2.1.3 [aldehyde dehydrogenase (NAD(+))] inhibitor	inhibitor	enzyme	ec-code	1.2.1.3	1.2.1.3
+CHEBI:35544	EC 1.14.99.1 (prostaglandin-endoperoxide synthase) inhibitor	inhibitor	enzyme	ec-code	1.14.99.1	1.14.99.1
+CHEBI:35608	EC 3.1.3.48 (protein-tyrosine-phosphatase) inhibitor	inhibitor	enzyme	ec-code	3.1.3.48	3.1.3.48
+CHEBI:35625	EC 3.5.2.6 (beta-lactamase) inhibitor	inhibitor	enzyme	ec-code	3.5.2.6	3.5.2.6
+CHEBI:35634	EC 1.17.3.2 (xanthine oxidase) inhibitor	inhibitor	enzyme	ec-code	1.17.3.2	1.17.3.2
+CHEBI:35664	EC 1.1.1.34/EC 1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.34/EC	1.1.1.34/EC
+CHEBI:37153	EC 3.1.3.16 (phosphoprotein phosphatase) inhibitor	inhibitor	enzyme	ec-code	3.1.3.16	3.1.3.16
+CHEBI:37416	EC 2.7.7.6 (RNA polymerase) inhibitor	inhibitor	enzyme	ec-code	2.7.7.6	2.7.7.6
+CHEBI:37700	EC 2.7.11.13 (protein kinase C) inhibitor	inhibitor	enzyme	ec-code	2.7.11.13	2.7.11.13
+CHEBI:37733	EC 3.1.1.8 (cholinesterase) inhibitor	inhibitor	enzyme	ec-code	3.1.1.8	3.1.1.8
+CHEBI:38317	EC 1.13.11.27 (4-hydroxyphenylpyruvate dioxygenase) inhibitor	inhibitor	enzyme	ec-code	1.13.11.27	1.13.11.27
+CHEBI:38462	EC 3.1.1.7 (acetylcholinesterase) inhibitor	inhibitor	enzyme	ec-code	3.1.1.7	3.1.1.7
+CHEBI:38500	EC 1.9.3.1 (cytochrome c oxidase) inhibitor	inhibitor	enzyme	ec-code	1.9.3.1	1.9.3.1
+CHEBI:38503	EC 1.6.5.3 [NADH:ubiquinone reductase (H(+)-translocating)] inhibitor	inhibitor	enzyme	ec-code	1.6.5.3	1.6.5.3
+CHEBI:38623	EC 1.4.3.4 (monoamine oxidase) inhibitor	inhibitor	enzyme	ec-code	1.4.3.4	1.4.3.4
+CHEBI:48406	EC 2.1.1.6 (catechol O-methyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.1.1.6	2.1.1.6
+CHEBI:48550	EC 1.1.1.21 (aldehyde reductase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.21	1.1.1.21
+CHEBI:49200	EC 3.6.3.10 (H(+)/K(+)-exchanging ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.3.10	3.6.3.10
+CHEBI:50218	EC 3.1.4.* (phosphoric diester hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.1.4	3.1.4
+CHEBI:50269	EC 1.1.1.1 (alcohol dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.1	1.1.1.1
+CHEBI:50276	EC 5.99.1.2 (DNA topoisomerase) inhibitor	inhibitor	enzyme	ec-code	5.99.1.2	5.99.1.2
+CHEBI:50382	EC 2.4.1.80 (ceramide glucosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.1.80	2.4.1.80
+CHEBI:50390	EC 1.6.5.2 [NAD(P)H dehydrogenase (quinone)] inhibitor	inhibitor	enzyme	ec-code	1.6.5.2	1.6.5.2
+CHEBI:50423	EC 1.6.3.1. [NAD(P)H oxidase (H2O2-forming)] inhibitor	inhibitor	enzyme	ec-code	1.6.3.1.	1.6.3.1.
+CHEBI:50445	EC 3.5.4.4 (adenosine deaminase) inhibitor	inhibitor	enzyme	ec-code	3.5.4.4	3.5.4.4
+CHEBI:50469	EC 3.1.1.4 (phospholipase A2) inhibitor	inhibitor	enzyme	ec-code	3.1.1.4	3.1.1.4
+CHEBI:50502	EC 2.5.1.15 (dihydropteroate synthase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.15	2.5.1.15
+CHEBI:50568	EC 3.1.4.17 (3',5'-cyclic-nucleotide phosphodiesterase) inhibitor	inhibitor	enzyme	ec-code	3.1.4.17	3.1.4.17
+CHEBI:50627	EC 3.2.1.1 (alpha-amylase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.1	3.2.1.1
+CHEBI:50635	EC 3.5.1.5 (urease) inhibitor	inhibitor	enzyme	ec-code	3.5.1.5	3.5.1.5
+CHEBI:50643	EC 2.5.1.1 (dimethylallyltranstransferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.1	2.5.1.1
+CHEBI:50683	EC 1.5.1.3 (dihydrofolate reductase) inhibitor	inhibitor	enzyme	ec-code	1.5.1.3	1.5.1.3
+CHEBI:50696	EC 2.4.1.129 (peptidoglycan glycosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.1.129	2.4.1.129
+CHEBI:50750	EC 5.99.1.3 [DNA topoisomerase (ATP-hydrolysing)] inhibitor	inhibitor	enzyme	ec-code	5.99.1.3	5.99.1.3
+CHEBI:50781	EC 1.3.1.22 [3-oxo-5alpha-steroid 4-dehydrogenase (NADP(+))] inhibitor	inhibitor	enzyme	ec-code	1.3.1.22	1.3.1.22
+CHEBI:50788	EC 1.1.1.210 [3beta(or 20alpha)-hydroxysteroid dehydrogenase] inhibitor	inhibitor	enzyme	ec-code	1.1.1.210	1.1.1.210
+CHEBI:50790	EC 1.14.14.14 (aromatase) inhibitor	inhibitor	enzyme	ec-code	1.14.14.14	1.14.14.14
+CHEBI:50914	EC 2.7.1.137 (phosphatidylinositol 3-kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.1.137	2.7.1.137
+CHEBI:50925	EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.1	2.7.11.1
+CHEBI:52424	EC 3.2.1.* (glycosidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1	3.2.1
+CHEBI:52425	EC 3.2.1.18 (exo-alpha-sialidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.18	3.2.1.18
+CHEBI:52629	EC 3.1.26.13 (retroviral ribonuclease H) inhibitor	inhibitor	enzyme	ec-code	3.1.26.13	3.1.26.13
+CHEBI:53659	EC 1.4.3.22 (diamine oxidase) inhibitor	inhibitor	enzyme	ec-code	1.4.3.22	1.4.3.22
+CHEBI:53746	EC 1.1.1.205 (IMP dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.205	1.1.1.205
+CHEBI:59105	EC 6.3.2.* (acid--D-amino-acid ligase) inhibitor	inhibitor	enzyme	ec-code	6.3.2	6.3.2
+CHEBI:59107	EC 3.4.24.* (metalloendopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.24	3.4.24
+CHEBI:5924	EC 3.4.21.* (serine endopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.21	3.4.21
+CHEBI:59285	EC 1.14.13.132 (squalene monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.132	1.14.13.132
+CHEBI:59321	EC 4.1.1.28 (aromatic-L-amino-acid decarboxylase) inhibitor	inhibitor	enzyme	ec-code	4.1.1.28	4.1.1.28
+CHEBI:59499	EC 3.4.13.* (dipeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.13	3.4.13
+CHEBI:59647	EC 2.3.1.50 (serine C-palmitoyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.50	2.3.1.50
+CHEBI:59672	EC 2.4.1.16 (chitin synthase) inhibitor	inhibitor	enzyme	ec-code	2.4.1.16	2.4.1.16
+CHEBI:59897	EC 2.7.7.49 (RNA-directed DNA polymerase) inhibitor	inhibitor	enzyme	ec-code	2.7.7.49	2.7.7.49
+CHEBI:59997	EC 1.14.18.1 (tyrosinase) inhibitor	inhibitor	enzyme	ec-code	1.14.18.1	1.14.18.1
+CHEBI:60186	EC 3.6.3.8 (Ca(2+)-transporting ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.3.8	3.6.3.8
+CHEBI:60258	EC 3.4.* (hydrolases acting on peptide bond) inhibitor	inhibitor	enzyme	ec-code	3.4	3.4
+CHEBI:60280	EC 3.5.1.2 (glutaminase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.2	3.5.1.2
+CHEBI:60688	EC 4.2.1.20 (tryptophan synthase) inhibitor	inhibitor	enzyme	ec-code	4.2.1.20	4.2.1.20
+CHEBI:60901	EC 2.5.1.9 (riboflavin synthase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.9	2.5.1.9
+CHEBI:61115	EC 3.5.1.98 (histone deacetylase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.98	3.5.1.98
+CHEBI:61908	EC 1.14.13.39 (nitric oxide synthase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.39	1.14.13.39
+CHEBI:62089	EC 1.4.7.1 [glutamate synthase (ferredoxin)] inhibitor	inhibitor	enzyme	ec-code	1.4.7.1	1.4.7.1
+CHEBI:62434	EC 2.7.10.1 (receptor protein-tyrosine kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.10.1	2.7.10.1
+CHEBI:62530	EC 2.3.1.24 (sphingosine N-acyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.24	2.3.1.24
+CHEBI:62608	EC 4.2.1.3 (aconitate hydratase) inhibitor	inhibitor	enzyme	ec-code	4.2.1.3	4.2.1.3
+CHEBI:62609	EC 3.11.1.3 (phosphonopyruvate hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.11.1.3	3.11.1.3
+CHEBI:62871	EC 4.3.1.24 (phenylalanine ammonia-lyase) inhibitor	inhibitor	enzyme	ec-code	4.3.1.24	4.3.1.24
+CHEBI:62872	EC 1.2.3.1 (aldehyde oxidase) inhibitor	inhibitor	enzyme	ec-code	1.2.3.1	1.2.3.1
+CHEBI:62913	EC 2.4.2.30 (NAD(+) ADP-ribosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.2.30	2.4.2.30
+CHEBI:63090	EC 2.4.2.1 (purine-nucleoside phosphorylase) inhibitor	inhibitor	enzyme	ec-code	2.4.2.1	2.4.2.1
+CHEBI:63156	EC 1.1.3.13 (alcohol oxidase) inhibitor	inhibitor	enzyme	ec-code	1.1.3.13	1.1.3.13
+CHEBI:63157	EC 4.2.1.22 (cystathionine beta-synthase) inhibitor	inhibitor	enzyme	ec-code	4.2.1.22	4.2.1.22
+CHEBI:63158	EC 2.3.1.21 (carnitine O-palmitoyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.21	2.3.1.21
+CHEBI:63332	EC 3.1.3.1 (alkaline phosphatase) inhibitor	inhibitor	enzyme	ec-code	3.1.3.1	3.1.3.1
+CHEBI:63510	EC 3.6.3.9 (Na(+)/K(+)-transporting ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.3.9	3.6.3.9
+CHEBI:63674	EC 2.6.1.19 (4-aminobutyrate--2-oxoglutarate transaminase) inhibitor	inhibitor	enzyme	ec-code	2.6.1.19	2.6.1.19
+CHEBI:63720	EC 2.1.1.45 (thymidylate synthase) inhibitor	inhibitor	enzyme	ec-code	2.1.1.45	2.1.1.45
+CHEBI:63721	EC 2.1.2.2 (phosphoribosylglycinamide formyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.1.2.2	2.1.2.2
+CHEBI:63932	EC 1.14.16.2 (tyrosine 3-monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.16.2	1.14.16.2
+CHEBI:64033	EC 3.5.1.99 (fatty acid amide hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.99	3.5.1.99
+CHEBI:64133	EC 2.5.1.58 (protein farnesyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.58	2.5.1.58
+CHEBI:64237	EC 2.7.8.15 (UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosaminephosphotransferase) inhibitor	inhibitor	enzyme	ec-code	2.7.8.15	2.7.8.15
+CHEBI:64406	EC 3.4.22.38 (cathepsin K) inhibitor	inhibitor	enzyme	ec-code	3.4.22.38	3.4.22.38
+CHEBI:64411	EC 2.5.1.29 (geranylgeranyl diphosphate synthase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.29	2.5.1.29
+CHEBI:64416	EC 1.3.1.43 (arogenate dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.3.1.43	1.3.1.43
+CHEBI:64570	EC 2.1.2.1 (glycine hydroxymethyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.1.2.1	2.1.2.1
+CHEBI:64670	EC 1.8.1.9 (thioredoxin reductase) inhibitor	inhibitor	enzyme	ec-code	1.8.1.9	1.8.1.9
+CHEBI:64696	EC 2.3.1.26 (sterol O-acyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.26	2.3.1.26
+CHEBI:64763	EC 3.1.4.11 (phosphoinositide phospholipase C) inhibitor	inhibitor	enzyme	ec-code	3.1.4.11	3.1.4.11
+CHEBI:64919	EC 2.3.1.20 (diacylglycerol O-acyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.20	2.3.1.20
+CHEBI:64920	EC 6.5.1.1 [DNA ligase (ATP)] inhibitor	inhibitor	enzyme	ec-code	6.5.1.1	6.5.1.1
+CHEBI:64922	EC 3.4.21.37 (leukocyte elastase) inhibitor	inhibitor	enzyme	ec-code	3.4.21.37	3.4.21.37
+CHEBI:64943	EC 3.4.21.1 (chymotrypsin) inhibitor	inhibitor	enzyme	ec-code	3.4.21.1	3.4.21.1
+CHEBI:64955	EC 3.2.1.166 (heparanase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.166	3.2.1.166
+CHEBI:64957	EC 3.4.21.39 (chymase) inhibitor	inhibitor	enzyme	ec-code	3.4.21.39	3.4.21.39
+CHEBI:64964	EC 1.13.11.34 (arachidonate 5-lipoxygenase) inhibitor	inhibitor	enzyme	ec-code	1.13.11.34	1.13.11.34
+CHEBI:64995	EC 1.13.11.31 (arachidonate 12-lipoxygenase) inhibitor	inhibitor	enzyme	ec-code	1.13.11.31	1.13.11.31
+CHEBI:64996	EC 1.13.11.33 (arachidonate 15-lipoxygenase) inhibitor	inhibitor	enzyme	ec-code	1.13.11.33	1.13.11.33
+CHEBI:65001	EC 3.1.1.3 (triacylglycerol lipase) inhibitor	inhibitor	enzyme	ec-code	3.1.1.3	3.1.1.3
+CHEBI:65053	EC 4.1.1.19 (arginine decarboxylase) inhibitor	inhibitor	enzyme	ec-code	4.1.1.19	4.1.1.19
+CHEBI:65056	EC 3.1.3.11 (fructose-bisphosphatase) inhibitor	inhibitor	enzyme	ec-code	3.1.3.11	3.1.3.11
+CHEBI:65064	EC 2.1.1.79 (cyclopropane-fatty-acyl-phospholipid synthase) inhibitor	inhibitor	enzyme	ec-code	2.1.1.79	2.1.1.79
+CHEBI:65065	EC 2.1.1.72 [site-specific DNA-methyltransferase (adenine-specific)] inhibitor	inhibitor	enzyme	ec-code	2.1.1.72	2.1.1.72
+CHEBI:65232	EC 3.4.21.5 (thrombin) inhibitor	inhibitor	enzyme	ec-code	3.4.21.5	3.4.21.5
+CHEBI:65239	EC 3.2.1.114 (mannosyl-oligosaccharide 1,3-1,6-alpha-mannosidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.114	3.2.1.114
+CHEBI:67189	EC 3.4.24.3 (microbial collagenase) inhibitor	inhibitor	enzyme	ec-code	3.4.24.3	3.4.24.3
+CHEBI:67230	EC 3.2.1.45 (glucosylceramidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.45	3.2.1.45
+CHEBI:67231	EC 3.2.1.48 (sucrose alpha-glucosidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.48	3.2.1.48
+CHEBI:67232	EC 3.2.1.10 (oligo-1,6-glucosidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.10	3.2.1.10
+CHEBI:67239	EC 3.2.1.20 (alpha-glucosidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.20	3.2.1.20
+CHEBI:67267	EC 2.5.1.59 (protein geranylgeranyltransferase type I) inhibitor	inhibitor	enzyme	ec-code	2.5.1.59	2.5.1.59
+CHEBI:68542	EC 1.3.98.1 [dihydroorotate oxidase (fumarate)] inhibitor	inhibitor	enzyme	ec-code	1.3.98.1	1.3.98.1
+CHEBI:68581	EC 3.4.21.6 (coagulation factor Xa) inhibitor	inhibitor	enzyme	ec-code	3.4.21.6	3.4.21.6
+CHEBI:68612	EC 3.4.14.5 (dipeptidyl-peptidase IV) inhibitor	inhibitor	enzyme	ec-code	3.4.14.5	3.4.14.5
+CHEBI:68640	EC 1.14.99.9 (steroid 17alpha-monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.99.9	1.14.99.9
+CHEBI:70722	EC 6.4.1.2 (acetyl-CoA carboxylase) inhibitor	inhibitor	enzyme	ec-code	6.4.1.2	6.4.1.2
+CHEBI:70817	EC 1.2.1.12 [glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)] inhibitor	inhibitor	enzyme	ec-code	1.2.1.12	1.2.1.12
+CHEBI:70822	EC 3.4.22.2 (papain) inhibitor	inhibitor	enzyme	ec-code	3.4.22.2	3.4.22.2
+CHEBI:71178	EC 2.1.1.4 (acetylserotonin O-methyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.1.1.4	2.1.1.4
+CHEBI:71300	EC 2.* (transferase) inhibitor	inhibitor	enzyme	ec-code	2	2
+CHEBI:71476	EC 2.3.1.85 (fatty acid synthase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.85	2.3.1.85
+CHEBI:71551	EC 3.5.1.23 (ceramidase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.23	3.5.1.23
+CHEBI:71942	EC 3.1.4.35 (3',5'-cyclic-GMP phosphodiesterase) inhibitor	inhibitor	enzyme	ec-code	3.1.4.35	3.1.4.35
+CHEBI:71951	EC 3.5.1.88 (peptide deformylase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.88	3.5.1.88
+CHEBI:72716	EC 2.3.2.13 (protein-glutamine gamma-glutamyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.2.13	2.3.2.13
+CHEBI:72774	EC 1.3.99.29 [phytoene desaturase (zeta-carotene-forming)] inhibitor	inhibitor	enzyme	ec-code	1.3.99.29	1.3.99.29
+CHEBI:72854	EC 1.13.11.52 (indoleamine 2,3-dioxygenase) inhibitor	inhibitor	enzyme	ec-code	1.13.11.52	1.13.11.52
+CHEBI:73136	EC 1.1.1.184 [carbonyl reductase (NADPH)] inhibitor	inhibitor	enzyme	ec-code	1.1.1.184	1.1.1.184
+CHEBI:73192	EC 1.3.3.4 (protoporphyrinogen oxidase) inhibitor	inhibitor	enzyme	ec-code	1.3.3.4	1.3.3.4
+CHEBI:73196	EC 4.4.1.11 (methionine gamma-lyase) inhibitor	inhibitor	enzyme	ec-code	4.4.1.11	4.4.1.11
+CHEBI:73214	EC 3.6.3.14 (H(+)-transporting two-sector ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.3.14	3.6.3.14
+CHEBI:73216	EC 3.6.* (hydrolases acting on acid anhydrides) inhibitor	inhibitor	enzyme	ec-code	3.6	3.6
+CHEBI:73354	EC 2.7.3.2 (creatine kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.3.2	2.7.3.2
+CHEBI:73360	EC 3.4.11.18 (methionyl aminopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.11.18	3.4.11.18
+CHEBI:74213	EC 1.17.4.1 (ribonucleoside-diphosphate reductase) inhibitor	inhibitor	enzyme	ec-code	1.17.4.1	1.17.4.1
+CHEBI:74234	EC 1.1.1.153 [sepiapterin reductase (L-erythro-7,8-dihydrobiopterin forming)] inhibitor	inhibitor	enzyme	ec-code	1.1.1.153	1.1.1.153
+CHEBI:74520	EC 1.1.1.44 (NADP(+)-dependent decarboxylating phosphogluconate dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.44	1.1.1.44
+CHEBI:74570	EC 2.3.2.2 (gamma-glutamyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.2.2	2.3.2.2
+CHEBI:74925	EC 3.4.23.46 (memapsin 2) inhibitor	inhibitor	enzyme	ec-code	3.4.23.46	3.4.23.46
+CHEBI:74949	EC 3.1.27.3 (ribonuclease T1) inhibitor	inhibitor	enzyme	ec-code	3.1.27.3	3.1.27.3
+CHEBI:75174	EC 2.5.1.21 (squalene synthase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.21	2.5.1.21
+CHEBI:75190	EC 5.4.3.2 (lysine 2,3-aminomutase) inhibitor	inhibitor	enzyme	ec-code	5.4.3.2	5.4.3.2
+CHEBI:75380	EC 1.11.1.6 (catalase) inhibitor	inhibitor	enzyme	ec-code	1.11.1.6	1.11.1.6
+CHEBI:75381	EC 1.11.1.* (peroxidases) inhibitor	inhibitor	enzyme	ec-code	1.11.1	1.11.1
+CHEBI:75416	EC 6.1.1.* (ligases forming aminoacyl tRNA and related compounds) inhibitor	inhibitor	enzyme	ec-code	6.1.1	6.1.1
+CHEBI:75429	EC 1.4.4.2 [glycine dehydrogenase (aminomethyl-transferring)] inhibitor	inhibitor	enzyme	ec-code	1.4.4.2	1.4.4.2
+CHEBI:75495	EC 6.1.1.11 (serine--tRNA ligase) inhibitor	inhibitor	enzyme	ec-code	6.1.1.11	6.1.1.11
+CHEBI:75595	EC 5.1.1.1 (alanine racemase) inhibitor	inhibitor	enzyme	ec-code	5.1.1.1	5.1.1.1
+CHEBI:75596	EC 5.* (isomerase) inhibitor	inhibitor	enzyme	ec-code	5	5
+CHEBI:75598	EC 6.3.2.4 (D-alanine--D-alanine ligase) inhibitor	inhibitor	enzyme	ec-code	6.3.2.4	6.3.2.4
+CHEBI:75599	EC 6.3.2.2 (glutamate--cysteine ligase) inhibitor	inhibitor	enzyme	ec-code	6.3.2.2	6.3.2.2
+CHEBI:75600	EC 6.3.* (C-N bond-forming ligase) inhibitor	inhibitor	enzyme	ec-code	6.3	6.3
+CHEBI:75603	EC 6.* (ligase) inhibitor	inhibitor	enzyme	ec-code	6	6
+CHEBI:75604	EC 6.4.* (C-C bond-forming ligase) inhibitor	inhibitor	enzyme	ec-code	6.4	6.4
+CHEBI:75605	EC 6.5.* (phosphoric ester bond-forming ligase) inhibitor	inhibitor	enzyme	ec-code	6.5	6.5
+CHEBI:75968	EC 6.3.2.19 (ubiquitin--protein ligase) inhibitor	inhibitor	enzyme	ec-code	6.3.2.19	6.3.2.19
+CHEBI:76395	EC 2.3.1.48 (histone acetyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.48	2.3.1.48
+CHEBI:76617	EC 2.7.10.2 (non-specific protein-tyrosine kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.10.2	2.7.10.2
+CHEBI:76655	EC 2.1.* (C1-transferase) inhibitor	inhibitor	enzyme	ec-code	2.1	2.1
+CHEBI:76660	EC 2.2.* (aldehyde or ketone transferase) inhibitor	inhibitor	enzyme	ec-code	2.2	2.2
+CHEBI:76661	EC 2.3.* (acyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3	2.3
+CHEBI:76662	EC 2.4.* (glycosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4	2.4
+CHEBI:76663	EC 2.5.1.* (non-methyl-alkyl or aryl transferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1	2.5.1
+CHEBI:76665	EC 2.6.* (nitrogenous group transferase) inhibitor	inhibitor	enzyme	ec-code	2.6	2.6
+CHEBI:76668	EC 2.7.* (P-containing group transferase) inhibitor	inhibitor	enzyme	ec-code	2.7	2.7
+CHEBI:76676	EC 2.8.* (S-containing group transferase) inhibitor	inhibitor	enzyme	ec-code	2.8	2.8
+CHEBI:76677	EC 2.9.* (Se-containing group transferase) inhibitor	inhibitor	enzyme	ec-code	2.9	2.9
+CHEBI:76681	EC 2.10.* (Mo- or W-containing group transferase) inhibitor	inhibitor	enzyme	ec-code	2.10	2.10
+CHEBI:76692	EC 5.1.* (racemase/epimerase) inhibitor	inhibitor	enzyme	ec-code	5.1	5.1
+CHEBI:76693	EC 5.2.* (cis-trans-isomerase) inhibitor	inhibitor	enzyme	ec-code	5.2	5.2
+CHEBI:76694	EC 5.3.* (intramolecular oxidoreductase) inhibitor	inhibitor	enzyme	ec-code	5.3	5.3
+CHEBI:76695	EC 5.4.* (intramolecular transferase) inhibitor	inhibitor	enzyme	ec-code	5.4	5.4
+CHEBI:76696	EC 5.5.* (intramolecular lyase) inhibitor	inhibitor	enzyme	ec-code	5.5	5.5
+CHEBI:76697	EC 5.99.* (other isomerases) inhibitor	inhibitor	enzyme	ec-code	5.99	5.99
+CHEBI:76706	EC 6.1.* (C-O bond-forming ligase) inhibitor	inhibitor	enzyme	ec-code	6.1	6.1
+CHEBI:76707	EC 6.2.* (C-S bond-forming ligase) inhibitor	inhibitor	enzyme	ec-code	6.2	6.2
+CHEBI:76708	EC 6.6.* (N-metal bond-forming ligase) inhibitor	inhibitor	enzyme	ec-code	6.6	6.6
+CHEBI:76710	EC 4.* (lyase) inhibitor	inhibitor	enzyme	ec-code	4	4
+CHEBI:76711	EC 4.1.* (C-C lyase) inhibitor	inhibitor	enzyme	ec-code	4.1	4.1
+CHEBI:76712	EC 4.2.* (C-O lyase) inhibitor	inhibitor	enzyme	ec-code	4.2	4.2
+CHEBI:76713	EC 4.3.* (C-N lyase) inhibitor	inhibitor	enzyme	ec-code	4.3	4.3
+CHEBI:76714	EC 4.4.* (C-S lyase) inhibitor	inhibitor	enzyme	ec-code	4.4	4.4
+CHEBI:76715	EC 4.5.* (C-halide lyase) inhibitor	inhibitor	enzyme	ec-code	4.5	4.5
+CHEBI:76716	EC 4.6.* (P-O lyase) inhibitor	inhibitor	enzyme	ec-code	4.6	4.6
+CHEBI:76717	EC 4.7.* (C-P lyase) inhibitor	inhibitor	enzyme	ec-code	4.7	4.7
+CHEBI:76718	EC 4.99.* (miscellaneous lyase) inhibitor	inhibitor	enzyme	ec-code	4.99	4.99
+CHEBI:76725	EC 1.* (oxidoreductase) inhibitor	inhibitor	enzyme	ec-code	1	1
+CHEBI:76726	EC 1.1.* (oxidoreductase acting on donor CH-OH group) inhibitor	inhibitor	enzyme	ec-code	1.1	1.1
+CHEBI:76727	EC 1.2.* (oxidoreductase acting on donor aldehyde/oxo group) inhibitor	inhibitor	enzyme	ec-code	1.2	1.2
+CHEBI:76729	EC 1.3.* (oxidoreductase acting on donor CH-CH group) inhibitor	inhibitor	enzyme	ec-code	1.3	1.3
+CHEBI:76730	EC 1.4.* (oxidoreductase acting on donor CH-NH2 group) inhibitor	inhibitor	enzyme	ec-code	1.4	1.4
+CHEBI:76731	EC 1.5.* (oxidoreductase acting on donor CH-NH group) inhibitor	inhibitor	enzyme	ec-code	1.5	1.5
+CHEBI:76733	EC 1.6.* (oxidoreductase acting on NADH or NADPH) inhibitor	inhibitor	enzyme	ec-code	1.6	1.6
+CHEBI:76734	EC 1.7.* (oxidoreductase acting on other nitrogenous compounds as donors) inhibitor	inhibitor	enzyme	ec-code	1.7	1.7
+CHEBI:76735	EC 1.8.* (oxidoreductase acting on sulfur group of donors) inhibitor	inhibitor	enzyme	ec-code	1.8	1.8
+CHEBI:76736	EC 1.9.* (oxidoreductase acting on donor heme group) inhibitor	inhibitor	enzyme	ec-code	1.9	1.9
+CHEBI:76737	EC 1.10.* (oxidoreductase acting on diphenols and related substances as donors) inhibitor	inhibitor	enzyme	ec-code	1.10	1.10
+CHEBI:76738	EC 1.11.* (oxidoreductase acting on peroxide as donors) inhibitor	inhibitor	enzyme	ec-code	1.11	1.11
+CHEBI:76739	EC 1.12.* (oxidoreductase acting on hydrogen as donors) inhibitor	inhibitor	enzyme	ec-code	1.12	1.12
+CHEBI:76740	EC 1.13.* [oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases)] inhibitor	inhibitor	enzyme	ec-code	1.13	1.13
+CHEBI:76741	EC 1.14.* (oxidoreductase acting on paired donors, with incorporation or reduction of molecular oxygen) inhibitor	inhibitor	enzyme	ec-code	1.14	1.14
+CHEBI:76742	EC 1.15.* (oxidoreductase acting on superoxide as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.15	1.15
+CHEBI:76743	EC 1.16.* (oxidoreductase oxidising metal ions) inhibitor	inhibitor	enzyme	ec-code	1.16	1.16
+CHEBI:76744	EC 1.17.* (oxidoreductase acting on CH or CH2) inhibitor	inhibitor	enzyme	ec-code	1.17	1.17
+CHEBI:76745	EC 1.18.* (oxidoreductase acting on Fe-S proteins as donors) inhibitor	inhibitor	enzyme	ec-code	1.18	1.18
+CHEBI:76746	EC 1.19.* (oxidoreductase acting on reduced flavodoxin as donor) inhibitor	inhibitor	enzyme	ec-code	1.19	1.19
+CHEBI:76747	EC 1.20.* (oxidoreductase acting on P or As in donors) inhibitor	inhibitor	enzyme	ec-code	1.20	1.20
+CHEBI:76748	EC 1.21.* (oxidoreductase acting on X-H and Y-H to form an X-Y bond) inhibitor	inhibitor	enzyme	ec-code	1.21	1.21
+CHEBI:76750	EC 1.22* (oxidoreductase acting on halogen in donors) inhibitor	inhibitor	enzyme	ec-code	1.22*	1.22*
+CHEBI:76752	EC 1.23.* (oxidoreductase acting on C-O-C group as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.23	1.23
+CHEBI:76753	EC 1.97.* (other oxidoreductase) inhibitor	inhibitor	enzyme	ec-code	1.97	1.97
+CHEBI:76755	EC 1.98.* (enzymes using H2 as reductant) inhibitor	inhibitor	enzyme	ec-code	1.98	1.98
+CHEBI:76757	EC 1.99.* (other oxidoreductases using O2 as oxidant) inhibitor	inhibitor	enzyme	ec-code	1.99	1.99
+CHEBI:76759	EC 3.* (hydrolase) inhibitor	inhibitor	enzyme	ec-code	3	3
+CHEBI:76760	EC 3.1.* (ester hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.1	3.1
+CHEBI:76761	EC 3.2.* (glycosylase) inhibitor	inhibitor	enzyme	ec-code	3.2	3.2
+CHEBI:76762	EC 3.3.* (ether hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.3	3.3
+CHEBI:76764	EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitor	inhibitor	enzyme	ec-code	3.5	3.5
+CHEBI:76766	EC 3.7.* (hydrolases acting on C-C bonds) inhibitor	inhibitor	enzyme	ec-code	3.7	3.7
+CHEBI:76767	EC 3.8.* (hydrolases acting on halide bonds) inhibitor	inhibitor	enzyme	ec-code	3.8	3.8
+CHEBI:76768	EC 3.9.* (hydrolases acting on P-N bonds) inhibitor	inhibitor	enzyme	ec-code	3.9	3.9
+CHEBI:76769	EC 3.10.* (hydrolases acting on S-N bonds) inhibitor	inhibitor	enzyme	ec-code	3.10	3.10
+CHEBI:76770	EC 3.11.* (hydrolases acting on C-P bonds) inhibitor	inhibitor	enzyme	ec-code	3.11	3.11
+CHEBI:76771	EC 3.12.* (hydrolases acting on S-S bonds) inhibitor	inhibitor	enzyme	ec-code	3.12	3.12
+CHEBI:76772	EC 3.13.* (hydrolases acting on C-S bonds) inhibitor	inhibitor	enzyme	ec-code	3.13	3.13
+CHEBI:76773	EC 3.1.1.* (carboxylic ester hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.1.1	3.1.1
+CHEBI:76775	EC 3.1.3.* (phosphoric monoester hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.1.3	3.1.3
+CHEBI:76779	EC 3.4.21.26 (prolyl oligopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.21.26	3.4.21.26
+CHEBI:76782	EC 3.4.15.* (peptidyl-dipeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.15	3.4.15
+CHEBI:76785	EC 3.1.26.* (endoribonucleases producing 5'-phosphomonoesters) inhibitor	inhibitor	enzyme	ec-code	3.1.26	3.1.26
+CHEBI:76787	EC 3.4.11.* (aminopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.11	3.4.11
+CHEBI:76788	EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor	inhibitor	enzyme	ec-code	3.4.14	3.4.14
+CHEBI:76789	EC 2.4.1.* (hexosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.1	2.4.1
+CHEBI:76790	EC 2.4.2.* (pentosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.4.2	2.4.2
+CHEBI:76791	EC 3.1.27.* (endoribonucleases producing other than 5'-phosphomonoesters) inhibitor	inhibitor	enzyme	ec-code	3.1.27	3.1.27
+CHEBI:76795	EC 3.4.22.36 (caspase-1) inhibitor	inhibitor	enzyme	ec-code	3.4.22.36	3.4.22.36
+CHEBI:76796	EC 3.4.22.* (cysteine endopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.22	3.4.22
+CHEBI:76797	EC 2.5.1.18 (glutathione transferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.18	2.5.1.18
+CHEBI:76798	EC 1.14.15.4 (steroid 11beta-monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.15.4	1.14.15.4
+CHEBI:76807	EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.5.1	3.5.1
+CHEBI:76808	EC 3.5.2.* (non-peptide cyclic amide C-N hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.5.2	3.5.2
+CHEBI:76809	EC 3.5.4.* (non-peptide cyclic amidine C-N hydrolase) inhibitor	inhibitor	enzyme	ec-code	3.5.4	3.5.4
+CHEBI:76811	EC 3.1.4.12 (sphingomyelin phosphodiesterase) inhibitor	inhibitor	enzyme	ec-code	3.1.4.12	3.1.4.12
+CHEBI:76812	EC 2.7.11.* (protein-serine/threonine kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11	2.7.11
+CHEBI:76815	EC 2.7.7.* (nucleotidyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.7.7	2.7.7
+CHEBI:76816	EC 2.7.8.* (transferases for other substituted phosphate groups) inhibitor	inhibitor	enzyme	ec-code	2.7.8	2.7.8
+CHEBI:76817	EC 2.7.10.* (protein-tyrosine kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.10	2.7.10
+CHEBI:76818	EC 2.7.3.* (phosphotransferases with a nitrogenous group as acceptor) inhibitor	inhibitor	enzyme	ec-code	2.7.3	2.7.3
+CHEBI:76822	EC 3.2.1.31 (beta-glucuronidase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.31	3.2.1.31
+CHEBI:76823	EC 6.3.1.* (acid-ammonia/amine ligase) inhibitor	inhibitor	enzyme	ec-code	6.3.1	6.3.1
+CHEBI:76824	EC 6.4.1.* (carboxylase) inhibitor	inhibitor	enzyme	ec-code	6.4.1	6.4.1
+CHEBI:76827	EC 6.5.1.* (DNA/RNA repair enzymes) inhibitor	inhibitor	enzyme	ec-code	6.5.1	6.5.1
+CHEBI:76828	EC 5.1.1.* (racemases acting on amino acids and derivatives) inhibitor	inhibitor	enzyme	ec-code	5.1.1	5.1.1
+CHEBI:76829	EC 5.4.3.* (intramolecular transferase transferring amino groups) inhibitor	inhibitor	enzyme	ec-code	5.4.3	5.4.3
+CHEBI:76830	EC 5.99.1.* (miscellaneous isomerase) inhibitor	inhibitor	enzyme	ec-code	5.99.1	5.99.1
+CHEBI:76831	EC 4.4.1.* (C-S lyase) inhibitor	inhibitor	enzyme	ec-code	4.4.1	4.4.1
+CHEBI:76832	EC 4.3.1.* (ammonia-lyase) inhibitor	inhibitor	enzyme	ec-code	4.3.1	4.3.1
+CHEBI:76834	EC 2.5.* (non-methyl-alkyl or aryl transferase) inhibitor	inhibitor	enzyme	ec-code	2.5	2.5
+CHEBI:76835	EC 1.1.1.* (oxidoreductase acting on donor CH-OH group, NAD(+) or NADP(+) acceptor) inhibitor	inhibitor	enzyme	ec-code	1.1.1	1.1.1
+CHEBI:76836	EC 1.1.3.* (oxidoreductase acting on donor CH-OH group, oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.1.3	1.1.3
+CHEBI:76837	EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 O atoms) inhibitor	inhibitor	enzyme	ec-code	1.13.11	1.13.11
+CHEBI:76838	EC 1.14.14.* (oxidoreductase acting on paired donors, incorporating of 1 atom of oxygen, with reduced flavin or flavoprotein as one donor) inhibitor	inhibitor	enzyme	ec-code	1.14.14	1.14.14
+CHEBI:76840	EC 1.14.99.* (miscellaneous oxidoreductase acting on paired donors, with incorporation or reduction of molecular oxygen) inhibitor	inhibitor	enzyme	ec-code	1.14.99	1.14.99
+CHEBI:76841	EC 1.14.13.* (oxidoreductase acting on paired donors, incorporating 1 atom of oxygen, with NADH or NADPH as one donor) inhibitor	inhibitor	enzyme	ec-code	1.14.13	1.14.13
+CHEBI:76843	EC 1.14.15.* (oxidoreductase acting on paired donors, with reduced Fe-S protein as one donor, incorporating 1 O atom) inhibitor	inhibitor	enzyme	ec-code	1.14.15	1.14.15
+CHEBI:76845	EC 1.14.18.* (oxidoreductase acting on paired donors, miscellaneous compound as one donor, incorporating 1 atom of oxygen) inhibitor	inhibitor	enzyme	ec-code	1.14.18	1.14.18
+CHEBI:76847	EC 1.14.16.* (oxidoreductase acting on paired donors, reduced pteridine as one donor, incorporating 1 atom of oxygen) inhibitor	inhibitor	enzyme	ec-code	1.14.16	1.14.16
+CHEBI:76848	EC 1.17.4.* (oxidoreductase acting on CH or CH2 with a disulfide as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.17.4	1.17.4
+CHEBI:76850	EC 1.17.3.* (oxidoreductase acting on CH or CH2 with oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.17.3	1.17.3
+CHEBI:76852	EC 1.2.1.* (oxidoreductase acting on donor aldehyde/oxo group with NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.2.1	1.2.1
+CHEBI:76853	EC 1.2.3.* (oxidoreductase acting on donor aldehyde/oxo group with oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.2.3	1.2.3
+CHEBI:76857	EC 1.3.1.* (oxidoreductase acting on donor CH-CH group, NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.3.1	1.3.1
+CHEBI:76858	EC 1.3.98.* (oxidoreductase acting on donor CH-CH group, with other, known, acceptors) inhibitor	inhibitor	enzyme	ec-code	1.3.98	1.3.98
+CHEBI:76859	EC 1.3.99.* (oxidoreductase acting on donor CH-CH group, with other acceptors) inhibitor	inhibitor	enzyme	ec-code	1.3.99	1.3.99
+CHEBI:76860	EC 1.3.3.* (oxidoreductase acting on donor CH-CH group, oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.3.3	1.3.3
+CHEBI:76861	EC 1.4.3.* (oxidoreductase acting on donor CH-NH2 group, oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.4.3	1.4.3
+CHEBI:76862	EC 1.4.4.* (oxidoreductase acting on donor CH-NH2 group, a disulfide as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.4.4	1.4.4
+CHEBI:76863	EC 1.5.1.* (oxidoreductase acting on donor CH-NH group, NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.5.1	1.5.1
+CHEBI:76866	EC 1.6.5.* (oxidoreductase acting on NADH or NADPH with a quinone or similar as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.6.5	1.6.5
+CHEBI:76867	EC 1.6.3.* (oxidoreductase acting on NADH or NADPH with oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.6.3	1.6.3
+CHEBI:76869	EC 1.8.1.* (oxidoreductase acting on sulfur group of donors, NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.8.1	1.8.1
+CHEBI:76870	EC 1.9.3.* (oxidoreductase acting on donor heme group, oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.9.3	1.9.3
+CHEBI:76871	EC 2.1.1.* (methyltransferases) inhibitor	inhibitor	enzyme	ec-code	2.1.1	2.1.1
+CHEBI:76874	EC 2.1.2.* (hydroxymethyl-, formyl- and related transferases) inhibitor	inhibitor	enzyme	ec-code	2.1.2	2.1.2
+CHEBI:76876	EC 2.2.1.* (transketolase/transaldolase) inhibitor	inhibitor	enzyme	ec-code	2.2.1	2.2.1
+CHEBI:76877	EC 2.3.2.* (aminoacyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.2	2.3.2
+CHEBI:76878	EC 2.3.1.* (acyltransferase transferring other than amino-acyl group) inhibitor	inhibitor	enzyme	ec-code	2.3.1	2.3.1
+CHEBI:76879	EC 2.6.1.* (transaminase) inhibitor	inhibitor	enzyme	ec-code	2.6.1	2.6.1
+CHEBI:76881	EC 2.7.1.* (phosphotransferases with an alcohol group as acceptor) inhibitor	inhibitor	enzyme	ec-code	2.7.1	2.7.1
+CHEBI:76882	EC 2.4.99.* (glycosyltransferases transferring other glycosyl groups) inhibitor	inhibitor	enzyme	ec-code	2.4.99	2.4.99
+CHEBI:76883	EC 3.11.1.* (hydrolases acting on C-P bonds of phosphono-acetaldehyde, -acetate, or -pyruvate) inhibitor	inhibitor	enzyme	ec-code	3.11.1	3.11.1
+CHEBI:76885	EC 3.4.23.* (aspartic endopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.23	3.4.23
+CHEBI:76891	EC 3.4.11.14 (cytosol alanyl aminopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.11.14	3.4.11.14
+CHEBI:76893	EC 3.4.14.2 (dipeptidyl-peptidase II) inhibitor	inhibitor	enzyme	ec-code	3.4.14.2	3.4.14.2
+CHEBI:76895	EC 3.6.3.* (acid anhydride hydrolase catalysing transmembrane movement of substances) inhibitor	inhibitor	enzyme	ec-code	3.6.3	3.6.3
+CHEBI:76898	EC 1.14.14.1 (unspecific monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.14.1	1.14.14.1
+CHEBI:76902	EC 1.14.11.* (oxidoreductase acting on paired donors, 2-oxoglutarate as one donor, incorporating 1 atom each of oxygen into both donors) inhibitor	inhibitor	enzyme	ec-code	1.14.11	1.14.11
+CHEBI:76906	EC 4.1.1.* (carboxy-lyase) inhibitor	inhibitor	enzyme	ec-code	4.1.1	4.1.1
+CHEBI:76907	EC 4.2.1.* (hydro-lyases) inhibitor	inhibitor	enzyme	ec-code	4.2.1	4.2.1
+CHEBI:76920	EC 1.1.3.9 (galactose oxidase) inhibitor	inhibitor	enzyme	ec-code	1.1.3.9	1.1.3.9
+CHEBI:76926	EC 3.4.13.19 (membrane dipeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.13.19	3.4.13.19
+CHEBI:76938	EC 3.6.4.* (hydrolases acting on ATP; involved in cellular and subcellular movement) inhibitor	inhibitor	enzyme	ec-code	3.6.4	3.6.4
+CHEBI:76939	EC 3.6.4.10 (non-chaperonin molecular chaperone ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.4.10	3.6.4.10
+CHEBI:76940	EC 3.4.21.4 (trypsin) inhibitor	inhibitor	enzyme	ec-code	3.4.21.4	3.4.21.4
+CHEBI:77019	EC 1.10.99.* (oxidoreductases acting on diphenols and related substances as donors, other acceptors) inhibitor	inhibitor	enzyme	ec-code	1.10.99	1.10.99
+CHEBI:77020	EC 1.10.99.2 [ribosyldihydronicotinamide dehydrogenase (quinone)] inhibitor	inhibitor	enzyme	ec-code	1.10.99.2	1.10.99.2
+CHEBI:77022	EC 2.3.3.* (acyltransferase converting acyl to alkyl group on transfer) inhibitor	inhibitor	enzyme	ec-code	2.3.3	2.3.3
+CHEBI:77023	EC 2.3.3.1 [citrate (Si)-synthase] inhibitor	inhibitor	enzyme	ec-code	2.3.3.1	2.3.3.1
+CHEBI:77024	EC 3.1.3.41 (4-nitrophenylphosphatase) inhibitor	inhibitor	enzyme	ec-code	3.1.3.41	3.1.3.41
+CHEBI:77088	EC 1.4.7.* (oxidoreductase acting on donor CH-NH2 group, Fe-S protein as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.4.7	1.4.7
+CHEBI:77089	EC 2.5.1.49 (O-acetylhomoserine aminocarboxypropyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.49	2.5.1.49
+CHEBI:77090	EC 4.3.1.10 (serine-sulfate ammonia-lyase) inhibitor	inhibitor	enzyme	ec-code	4.3.1.10	4.3.1.10
+CHEBI:77102	EC 1.3.5.* (oxidoreductase acting on CH-CH of donor with a quinone or related compound as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.3.5	1.3.5
+CHEBI:77103	EC 1.3.5.2 [dihydroorotate dehydrogenase (quinone)] inhibitor	inhibitor	enzyme	ec-code	1.3.5.2	1.3.5.2
+CHEBI:77105	EC 1.10.2.* (oxidoreductase acting on diphenols and related substances as donors with a cytochrome as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.10.2	1.10.2
+CHEBI:77106	EC 1.10.2.2 (quinol--cytochrome-c reductase) inhibitor	inhibitor	enzyme	ec-code	1.10.2.2	1.10.2.2
+CHEBI:77108	EC 1.1.1.141 [15-hydroxyprostaglandin dehydrogenase (NAD(+))] inhibitor	inhibitor	enzyme	ec-code	1.1.1.141	1.1.1.141
+CHEBI:77109	EC 1.21.3.* (oxidoreductase acting on X-H and Y-H to form an X-Y bond, with oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.21.3	1.21.3
+CHEBI:77110	EC 1.21.3.3 (reticuline oxidase) inhibitor	inhibitor	enzyme	ec-code	1.21.3.3	1.21.3.3
+CHEBI:77111	EC 2.1.1.116 [3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-methyltransferase] inhibitor	inhibitor	enzyme	ec-code	2.1.1.116	2.1.1.116
+CHEBI:77113	EC 2.7.11.10 (IkappaB kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.10	2.7.11.10
+CHEBI:77115	EC 2.1.1.122 [(S)-tetrahydroprotoberberine N-methyltransferase] inhibitor	inhibitor	enzyme	ec-code	2.1.1.122	2.1.1.122
+CHEBI:77117	EC 3.5.5.* (hydrolase acting on C-N bonds in nitriles) inhibitor	inhibitor	enzyme	ec-code	3.5.5	3.5.5
+CHEBI:77119	EC 1.1.1.189 (prostaglandin-E2 9-reductase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.189	1.1.1.189
+CHEBI:77194	EC 2.7.1.33 (pantothenate kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.1.33	2.7.1.33
+CHEBI:77255	EC 3.4.24.83 (anthrax lethal factor endopeptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.24.83	3.4.24.83
+CHEBI:77402	EC 1.8.1.12 (trypanothione-disulfide reductase) inhibitor	inhibitor	enzyme	ec-code	1.8.1.12	1.8.1.12
+CHEBI:77425	EC 1.1.1.188 (prostaglandin-F synthase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.188	1.1.1.188
+CHEBI:77484	EC 1.1.1.25 (shikimate dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.25	1.1.1.25
+CHEBI:77654	EC 1.1.1.267 (1-deoxy-D-xylulose-5-phosphate reductoisomerase) inhibitor	inhibitor	enzyme	ec-code	1.1.1.267	1.1.1.267
+CHEBI:77703	EC 4.3.1.3 (histidine ammonia-lyase) inhibitor	inhibitor	enzyme	ec-code	4.3.1.3	4.3.1.3
+CHEBI:77705	EC 3.4.19.* (omega-peptidase) inhibitor	inhibitor	enzyme	ec-code	3.4.19	3.4.19
+CHEBI:77706	EC 3.4.19.3 (pyroglutamyl-peptidase I) inhibitor	inhibitor	enzyme	ec-code	3.4.19.3	3.4.19.3
+CHEBI:77745	EC 3.4.24.18 (meprin A) inhibitor	inhibitor	enzyme	ec-code	3.4.24.18	3.4.24.18
+CHEBI:77747	EC 3.6.3.1 (phospholipid-translocating ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.3.1	3.6.3.1
+CHEBI:77748	EC 3.6.3.44 (xenobiotic-transporting ATPase) inhibitor	inhibitor	enzyme	ec-code	3.6.3.44	3.6.3.44
+CHEBI:77758	EC 3.1.4.53 (3',5'-cyclic-AMP phosphodiesterase) inhibitor	inhibitor	enzyme	ec-code	3.1.4.53	3.1.4.53
+CHEBI:77763	EC 1.2.1.88 (L-glutamate gamma-semialdehyde dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.2.1.88	1.2.1.88
+CHEBI:77781	EC 1.14.13.181 (13-deoxydaunorubicin hydroxylase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.181	1.14.13.181
+CHEBI:77783	EC 1.14.13.67 (quinine 3-monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.67	1.14.13.67
+CHEBI:77881	EC 4.3.1.15 (diaminopropionate ammonia-lyase) inhibitor	inhibitor	enzyme	ec-code	4.3.1.15	4.3.1.15
+CHEBI:77884	EC 1.14.13.70 (sterol 14alpha-demethylase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.70	1.14.13.70
+CHEBI:77941	EC 3.5.1.4 (amidase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.4	3.5.1.4
+CHEBI:77953	EC 6.1.1.4 (leucine--tRNA ligase) inhibitor	inhibitor	enzyme	ec-code	6.1.1.4	6.1.1.4
+CHEBI:78024	EC 4.1.1.50 (adenosylmethionine decarboxylase) inhibitor	inhibitor	enzyme	ec-code	4.1.1.50	4.1.1.50
+CHEBI:78366	EC 2.7.1.1 (hexokinase) inhibitor	inhibitor	enzyme	ec-code	2.7.1.1	2.7.1.1
+CHEBI:78372	EC 3.1.1.5 (lysophospholipase) inhibitor	inhibitor	enzyme	ec-code	3.1.1.5	3.1.1.5
+CHEBI:78377	EC 1.3.1.8 [acyl-CoA dehydrogenase (NADP(+))] inhibitor	inhibitor	enzyme	ec-code	1.3.1.8	1.3.1.8
+CHEBI:78379	EC 2.5.1.7 (UDP-N-acetylglucosamine 1-carboxyvinyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.7	2.5.1.7
+CHEBI:78380	EC 3.5.4.1 (cytosine deaminase) inhibitor	inhibitor	enzyme	ec-code	3.5.4.1	3.5.4.1
+CHEBI:78381	EC 5.1.2.* (racemases acting on hydroxy acids and derivatives) inhibitor	inhibitor	enzyme	ec-code	5.1.2	5.1.2
+CHEBI:78382	EC 5.1.3.* (racemases acting on carbohydrates and derivatives) inhibitor	inhibitor	enzyme	ec-code	5.1.3	5.1.3
+CHEBI:78383	EC 5.1.99.* (racemases acting on other compounds) inhibitor	inhibitor	enzyme	ec-code	5.1.99	5.1.99
+CHEBI:78384	EC 5.1.3.2 (UDP-glucose 4-epimerase) inhibitor	inhibitor	enzyme	ec-code	5.1.3.2	5.1.3.2
+CHEBI:78444	EC 3.1.1.1 (carboxylesterase) inhibitor	inhibitor	enzyme	ec-code	3.1.1.1	3.1.1.1
+CHEBI:78622	EC 2.7.11.31 \{[hydroxymethylglutaryl-CoA reductase (NADPH)] kinase\} inhibitor	inhibitor	enzyme	ec-code	2.7.11.31	2.7.11.31
+CHEBI:78678	EC 4.6.1.2 (guanylate cyclase) inhibitor	inhibitor	enzyme	ec-code	4.6.1.2	4.6.1.2
+CHEBI:78691	EC 2.3.1.97 (glycylpeptide N-tetradecanoyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.97	2.3.1.97
+CHEBI:78728	EC 1.3.1.72 (Delta(24)-sterol reductase) inhibitor	inhibitor	enzyme	ec-code	1.3.1.72	1.3.1.72
+CHEBI:78756	EC 2.5.1.6 (methionine adenosyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.5.1.6	2.5.1.6
+CHEBI:78760	EC 2.7.1.91 (sphingosine kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.1.91	2.7.1.91
+CHEBI:78763	EC 2.7.11.18 (myosin-light-chain kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.18	2.7.11.18
+CHEBI:78927	EC 3.6.1.* (hydrolases acting on acid anhydrides in P-containing anhydrides) inhibitor	inhibitor	enzyme	ec-code	3.6.1	3.6.1
+CHEBI:78928	EC 3.6.1.3 (adenosinetriphosphatase) inhibitor	inhibitor	enzyme	ec-code	3.6.1.3	3.6.1.3
+CHEBI:79050	EC 3.4.22.52 (calpain-1) inhibitor	inhibitor	enzyme	ec-code	3.4.22.52	3.4.22.52
+CHEBI:79088	EC 3.4.24.35 (gelatinase B) inhibitor	inhibitor	enzyme	ec-code	3.4.24.35	3.4.24.35
+CHEBI:79091	EC 2.7.11.24 (mitogen-activated protein kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.24	2.7.11.24
+CHEBI:79092	EC 1.11.2.* (oxidoreductase with H2O2 as acceptor, incorporating 1 O atom into product) inhibitor	inhibitor	enzyme	ec-code	1.11.2	1.11.2
+CHEBI:79093	EC 1.11.2.2 (myeloperoxidase) inhibitor	inhibitor	enzyme	ec-code	1.11.2.2	1.11.2.2
+CHEBI:79392	EC 6.1.1.2 (tryptophan--tRNA ligase) inhibitor	inhibitor	enzyme	ec-code	6.1.1.2	6.1.1.2
+CHEBI:82665	EC 2.7.11.22 (cyclin-dependent kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.22	2.7.11.22
+CHEBI:82756	EC 6.1.1.12 (aspartate--tRNA ligase) inhibitor	inhibitor	enzyme	ec-code	6.1.1.12	6.1.1.12
+CHEBI:82821	EC 3.4.22.53 (calpain-2) inhibitor	inhibitor	enzyme	ec-code	3.4.22.53	3.4.22.53
+CHEBI:82823	EC 3.4.22.54 (calpain-3) inhibitor	inhibitor	enzyme	ec-code	3.4.22.54	3.4.22.54
+CHEBI:82973	EC 3.4.24.11 (neprilysin) inhibitor	inhibitor	enzyme	ec-code	3.4.24.11	3.4.24.11
+CHEBI:82974	EC 3.4.24.71 (endothelin-converting enzyme 1) inhibitor	inhibitor	enzyme	ec-code	3.4.24.71	3.4.24.71
+CHEBI:83034	EC 4.1.2.27 (sphinganine-1-phosphate aldolase) inhibitor	inhibitor	enzyme	ec-code	4.1.2.27	4.1.2.27
+CHEBI:83035	EC 4.1.2.* (aldehyde-lyase) inhibitor	inhibitor	enzyme	ec-code	4.1.2	4.1.2
+CHEBI:83072	EC 1.3.5.1 [succinate dehydrogenase (quinone)] inhibitor	inhibitor	enzyme	ec-code	1.3.5.1	1.3.5.1
+CHEBI:83156	EC 6.2.1.* (acid-thiol ligase) inhibitor	inhibitor	enzyme	ec-code	6.2.1	6.2.1
+CHEBI:83157	EC 6.2.1.3 (long-chain-fatty-acid--CoA ligase) inhibitor	inhibitor	enzyme	ec-code	6.2.1.3	6.2.1.3
+CHEBI:83316	EC 1.14.13.72 (methylsterol monooxygenase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.72	1.14.13.72
+CHEBI:83319	EC 1.3.1.70 (Delta(14)-sterol reductase) inhibitor	inhibitor	enzyme	ec-code	1.3.1.70	1.3.1.70
+CHEBI:83757	EC 2.4.1.231 [alpha,alpha-trehalose phosphorylase (configuration-retaining)] inhibitor	inhibitor	enzyme	ec-code	2.4.1.231	2.4.1.231
+CHEBI:83760	EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor	inhibitor	enzyme	ec-code	2.4.1.64	2.4.1.64
+CHEBI:83762	EC 3.2.1.28 (alpha,alpha-trehalase) inhibitor	inhibitor	enzyme	ec-code	3.2.1.28	3.2.1.28
+CHEBI:84012	EC 4.2.1.94 (scytalone dehydratase) inhibitor	inhibitor	enzyme	ec-code	4.2.1.94	4.2.1.94
+CHEBI:84036	EC 3.4.24.24 (gelatinase A) inhibitor	inhibitor	enzyme	ec-code	3.4.24.24	3.4.24.24
+CHEBI:84264	EC 3.5.1.19 (nicotinamidase) inhibitor	inhibitor	enzyme	ec-code	3.5.1.19	3.5.1.19
+CHEBI:84297	EC 3.4.21.64 (peptidase K) inhibitor	inhibitor	enzyme	ec-code	3.4.21.64	3.4.21.64
+CHEBI:84799	EC 2.3.1.5 (arylamine N-acetyltransferase) inhibitor	inhibitor	enzyme	ec-code	2.3.1.5	2.3.1.5
+CHEBI:84800	EC 2.4.1.1 (glycogen phosphorylase) inhibitor	inhibitor	enzyme	ec-code	2.4.1.1	2.4.1.1
+CHEBI:84801	EC 2.7.1.127 (inositol-trisphosphate 3-kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.1.127	2.7.1.127
+CHEBI:84802	EC 2.7.1.151 (inositol-polyphosphate multikinase) inhibitor	inhibitor	enzyme	ec-code	2.7.1.151	2.7.1.151
+CHEBI:84803	EC 2.7.4.* (phosphotransferases with a phosphate group as acceptor) inhibitor	inhibitor	enzyme	ec-code	2.7.4	2.7.4
+CHEBI:84804	EC 2.7.4.6 (nucleoside-diphosphate kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.4.6	2.7.4.6
+CHEBI:85011	EC 2.6.1.19 (glutamine--fructose-6-phosphate transaminase (isomerizing)) inhibitor	inhibitor	enzyme	ec-code	2.6.1.19	2.6.1.19
+CHEBI:85048	EC 1.10.3.* (oxidoreductase acting on diphenols and related substances as donors with oxygen as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.10.3	1.10.3
+CHEBI:85049	EC 1.10.3.1 (catechol oxidase) inhibitor	inhibitor	enzyme	ec-code	1.10.3.1	1.10.3.1
+CHEBI:85050	EC 1.10.3.2 (laccase) inhibitor	inhibitor	enzyme	ec-code	1.10.3.2	1.10.3.2
+CHEBI:85051	EC 1.13.11.24 (quercetin 2,3-dioxygenase) inhibitor	inhibitor	enzyme	ec-code	1.13.11.24	1.13.11.24
+CHEBI:85052	EC 1.4.3.3 (D-amino-acid oxidase) inhibitor	inhibitor	enzyme	ec-code	1.4.3.3	1.4.3.3
+CHEBI:85094	EC 2.7.11.11 (cAMP-dependent protein kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.11	2.7.11.11
+CHEBI:85113	EC 2.7.11.12 (cGMP-dependent protein kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.12	2.7.11.12
+CHEBI:85618	EC 2.5.1.31 \{ditrans,polycis-undecaprenyl-diphosphate synthase [(2E,6E)-farnesyl-diphosphate specific]\} inhibitor	inhibitor	enzyme	ec-code	2.5.1.31	2.5.1.31
+CHEBI:86009	EC 1.4.1.* (oxidoreductase acting on donor CH-NH2 group; NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.4.1	1.4.1
+CHEBI:86010	EC 1.4.1.3 \{glutamate dehydrogenase [NAD(P)(+)]\} inhibitor	inhibitor	enzyme	ec-code	1.4.1.3	1.4.1.3
+CHEBI:86383	EC 5.3.3.* (intramolecular oxidase transposing C=C bonds) inhibitor	inhibitor	enzyme	ec-code	5.3.3	5.3.3
+CHEBI:86385	EC 5.3.3.5 (cholestenol Delta-isomerase) inhibitor	inhibitor	enzyme	ec-code	5.3.3.5	5.3.3.5
+CHEBI:86430	EC 1.14.13.78 (ent-kaurene oxidase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.78	1.14.13.78
+CHEBI:86501	EC 1.14.13.97 (taurochenodeoxycholate 6alpha-hydroxylase) inhibitor	inhibitor	enzyme	ec-code	1.14.13.97	1.14.13.97
+CHEBI:86966	EC 3.4.21.92 (endopeptidase Clp) inhibitor	inhibitor	enzyme	ec-code	3.4.21.92	3.4.21.92
+CHEBI:88285	EC 2.7.12.* [dual-specificity kinases (those acting on Ser/Thr and Tyr residues)] inhibitor	inhibitor	enzyme	ec-code	2.7.12	2.7.12
+CHEBI:88286	EC 2.7.12.2 (mitogen-activated protein kinase kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.12.2	2.7.12.2
+CHEBI:90113	EC 1.1.1.170 [3beta-hydroxysteroid-4alpha-carboxylate 3-dehydrogenase (decarboxylating)] inhibitor	inhibitor	enzyme	ec-code	1.1.1.170	1.1.1.170
+CHEBI:90190	EC 2.1.1.37 [DNA (cytosine-5-)-methyltransferase] inhibitor	inhibitor	enzyme	ec-code	2.1.1.37	2.1.1.37
+CHEBI:90285	EC 4.1.1.23 (orotidine-5'-phosphate decarboxylase) inhibitor	inhibitor	enzyme	ec-code	4.1.1.23	4.1.1.23
+CHEBI:90318	EC 6.4.1.1 (pyruvate carboxylase) inhibitor	inhibitor	enzyme	ec-code	6.4.1.1	6.4.1.1
+CHEBI:90365	EC 4.6.1.1 (adenylate cyclase) inhibitor	inhibitor	enzyme	ec-code	4.6.1.1	4.6.1.1
+CHEBI:90689	EC 5.3.1.* (intramolecular oxidoreductase interconverting aldoses and ketoses) inhibitor	inhibitor	enzyme	ec-code	5.3.1	5.3.1
+CHEBI:90691	EC 5.3.1.1 (triose-phosphate isomerase) inhibitor	inhibitor	enzyme	ec-code	5.3.1.1	5.3.1.1
+CHEBI:90878	EC 2.4.2.4 (thymidine phosphorylase) inhibitor	inhibitor	enzyme	ec-code	2.4.2.4	2.4.2.4
+CHEBI:90920	EC 1.8.5.* (oxidoreductase acting on sulfur group donors, quinone or similar as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.8.5	1.8.5
+CHEBI:90921	EC 1.8.5.4 (sulfide:quinone reductase) inhibitor	inhibitor	enzyme	ec-code	1.8.5.4	1.8.5.4
+CHEBI:91092	EC 2.7.11.26 (tau-protein kinase) inhibitor	inhibitor	enzyme	ec-code	2.7.11.26	2.7.11.26
+CHEBI:91141	EC 1.1.5.3 (glycerol-3-phosphate dehydrogenase) inhibitor	inhibitor	enzyme	ec-code	1.1.5.3	1.1.5.3
+CHEBI:91142	EC 1.1.5.* (oxidoreductase acting on donor CH-OH group, quinone or similar compound as acceptor) inhibitor	inhibitor	enzyme	ec-code	1.1.5	1.1.5
+CHEBI:25675	oligomycin	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:53090	1,3-dicyclohexylcarbodiimide	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:72292	bedaquiline	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:72295	bedaquiline fumarate	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:75458	carbonyl cyanide p-trifluoromethoxyphenylhydrazone	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:84314	oligomycin mixture	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:100147	nalidixic acid	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:100241	ciprofloxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:100246	norfloxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:111517	dimethylmalonic acid	inhibitor	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:114954	sodium ferulate	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:116509	diuron	inhibitor	pathway	go	GO:0009523	photosystem II
+CHEBI:130910	(Z)-3-(4-iodophenyl)-2-mercaptoacrylic acid	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:131999	topramezone	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:132273	tembotrione	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:132471	(+)-schisandrin B	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:133152	2-bromohexadecanoic acid	inhibitor	pathway	go	GO:0019395	fatty acid oxidation
+CHEBI:133237	indaziflam	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:133238	N-[(1R,2S)-2,6-dimethyindan-1-yl]-6-[(1R)-1-fluoroethyl]-1,3,5-triazine-2,4-diamine	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:133239	N-[(1R,2S)-2,6-dimethyindan-1-yl]-6-[(1S)-1-fluoroethyl]-1,3,5-triazine-2,4-diamine	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:133246	tetramethylpyrazine	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:134301	salvianolic acid B	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:136271	bicyclopyrone	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:137045	Z-Val-Ala-Asp(OMe)-CH2F	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:137081	CORM 3	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:137354	(4Z,7Z,10Z,12E,14S,16Z,19Z,21R)-dihydroxydocosahexaenoic acid	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:137374	aclonifen	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138013	Z-DEVD-FMK	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:138186	p-Glu-Arg-Pro-Arg-Leu-Ser-His-Lys-Gly-Pro-Met-Pro-Phe	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:138192	beflubutamid	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138435	bis(7)-tacrine	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:138511	piericidin A	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:138655	protectin D1	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:138736	picolinafen	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138737	flurtamone	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138971	drimendiol	inhibitor	pathway	go	GO:0009372	quorum sensing
+CHEBI:139224	GRI977143	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:140318	tefuryltrione	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:140850	(E)-2,3,5,4'-tetrahydroxystilbene-2-O-beta-D-glucoside	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:140908	GANT61	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:140908	GANT61	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:141200	diafenthiuron-S-oxide	inhibitor	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:141389	benzobicyclon hydrolysate	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:141469	2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:141491	N-tert-butyl-N'-(2,6-diisopropyl-4-phenoxyphenyl)methanediimine	inhibitor	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:141518	pyrasulfotole	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:142060	equisetin(1-)	inhibitor	pathway	go	GO:0009372	quorum sensing
+CHEBI:142135	equisetin	inhibitor	pathway	go	GO:0009372	quorum sensing
+CHEBI:143894	triaziflam	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:143894	triaziflam	inhibitor	pathway	go	GO:0009767	photosynthetic electron transport chain
+CHEBI:143894	triaziflam	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:143894	triaziflam	inhibitor	pathway	go	GO:0009767	photosynthetic electron transport chain
+CHEBI:147675	5-iodo-2'-deoxyuridine	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:157175	enoxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:15792	malonate(2-)	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:16353	sinapine	inhibitor	pathway	go	GO:0009767	photosynthetic electron transport chain
+CHEBI:16482	naphthalene	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:171741	cerulenin	inhibitor	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:17245	carbon monoxide	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:175901	gemcitabine	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:17620	ferulic acid	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:17747	bis(2-ethylhexyl) phthalate	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:19924	3-(3,4-dichlorophenyl)-1,1-dimethylurea	inhibitor	pathway	go	GO:0009523	photosystem II
+CHEBI:22584	antimycin A	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:22689	bafilomycin A1	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:2367	abyssinone I	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:2469	adefovir	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:25461	myxothiazol	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:2766	aphidicolin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:28077	rifampicin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:2877	aspartame	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:28786	paraquat dichloride	inhibitor	pathway	go	GO:0009522	photosystem I
+CHEBI:2948	azathioprine	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:29608	isoformononetin	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:3000	beauvericin	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:31175	adefovir pivoxil	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:32019	piromidic acid	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:32248	tosufloxacin tosylate hydrate	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:32269	tropisetron	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:32293	verteporfin	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:338412	(-)-anisomycin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:3638	chloroquine	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:3751	clomazone	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:37550	sphingosine 1-phosphate	inhibitor	pathway	go	GO:0042098	T cell proliferation
+CHEBI:38321	mesotrione	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:38635	3-methyladenine	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:3907	coumermycin A1	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:39299	diafenthiuron	inhibitor	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:40036	amitrole	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:4033	cycloxydim	inhibitor	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:40910	azide anion	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:42017	2,4-dinitrophenol	inhibitor	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:4302	destosyl pyrazolate	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:44185	methotrexate	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:44423	hydroxyurea	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:45713	trans-resveratrol	inhibitor	pathway	go	GO:0009372	quorum sensing
+CHEBI:4885	ethionamide	inhibitor	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:4911	etoposide	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:50199	pefloxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:50842	norflurazon	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:5131	flurochloridone	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:5169	fraxetin	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:5181	fucoidan	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:5186	fucoxanthin	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:529996	cytochalasin D	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:6076	itraconazole	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:63598	levofloxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:63599	fludarabine phosphate	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:63612	nelarabine	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:63956	isoxaben	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:6402	leflunomide	inhibitor	pathway	go	GO:0006221	pyrimidine nucleotide biosynthetic process
+CHEBI:64624	microcin B17	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:65329	LY294002	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:66903	vismodegib	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:67989	ginsenoside Rb1	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:73141	9-beta-D-arabinofuranosylguanine	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:73171	ancymidol	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:73295	WIN 55212-2	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:75250	pipemidic acid	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:75425	guanazole	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:76277	tepoxalin	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:77150	ginsenoside F1	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:7731	ofloxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77568	trovafloxacin mesylate	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77570	tropisetron hydrochloride	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:77573	tosufloxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77605	tosufloxacin tosylate	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77742	bongkrekic acid	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:77772	ilicicolin H	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:77879	elaiophylin	inhibitor	pathway	go	GO:0006914	autophagy
+CHEBI:78539	zofenopril	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:80774	tauroursodeoxycholic acid	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:81798	cyflumetofen	inhibitor	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:81812	benzobicyclon	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:81824	diflufenican	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:81829	Benzofenap	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:81830	pyrazoxyfen	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:82016	Fluridone	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:82600	zofenopril calcium	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:82602	zofenoprilat	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:82603	zofenoprilat arginine	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:82818	Z-Val-Phe-H	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:83465	sulcotrione	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:84035	pyridoxatin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:8657	pyrazolynate	inhibitor	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:87805	ethionamide S-oxide	inhibitor	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:89494	iberin	inhibitor	pathway	go	GO:0009372	quorum sensing
+CHEBI:90701	potassium 2-(4-carboxylatophenyl)-4,4,5,5-tetramethylimidazoline-1-oxyl-3-oxide	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:90702	carboxy-PTIO	inhibitor	pathway	go	GO:0006915	apoptotic process
+CHEBI:90863	sonidegib	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:90864	sonidegib phosphate	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:9288	streptozocin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:943	2,6-dichlorobenzonitrile	inhibitor	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:9763	trovafloxacin	inhibitor	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:131513	tranylcypromine hydrochloride	inhibitor	protein	hgnc	29079	KDM1A
+CHEBI:131785	Ro 5-3335	inhibitor	protein	hgnc	10471	RUNX1
+CHEBI:131968	tyrphostin B42	inhibitor	protein	hgnc	11364	STAT3
+CHEBI:132967	elbasvir	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:133009	velpatasvir	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:137113	JQ1	inhibitor	protein	hgnc	13575	BRD4
+CHEBI:137693	rhosin	inhibitor	protein	hgnc	667	RHOA
+CHEBI:137693	rhosin	inhibitor	protein	hgnc	669	RHOC
+CHEBI:137693	rhosin	inhibitor	protein	hgnc	667	RHOA
+CHEBI:137693	rhosin	inhibitor	protein	hgnc	669	RHOC
+CHEBI:140700	WAY-316606	inhibitor	protein	hgnc	10776	SFRP1
+CHEBI:140908	GANT61	inhibitor	protein	hgnc	4317	GLI1
+CHEBI:140908	GANT61	inhibitor	protein	hgnc	4317	GLI1
+CHEBI:27810	resorcinol	inhibitor	protein	hgnc	3415	EPO
+CHEBI:27881	resveratrol	inhibitor	protein	hgnc	4317	GLI1
+CHEBI:38545	rosuvastatin	inhibitor	protein	hgnc	1869	CETP
+CHEBI:4021	Cyclopamine	inhibitor	protein	hgnc	4317	GLI1
+CHEBI:45081	pentamidine	inhibitor	protein	hgnc	10500	S100B
+CHEBI:49203	torcetrapib	inhibitor	protein	hgnc	1869	CETP
+CHEBI:63892	zerumbone	inhibitor	protein	hgnc	4317	GLI1
+CHEBI:70018	(2S)-5,7,3'-trihydroxy-4'-methoxy-8-(3''-methylbut-2''-enyl)-flavonone	inhibitor	protein	hgnc	74	ABCG2
+CHEBI:70020	(2S)-5,7,3',5'-tetrahydroxy-8-[3'',8''-dimethylocta-2''(E),7''-dienyl]flavonone	inhibitor	protein	hgnc	74	ABCG2
+CHEBI:70025	5,7,3'-trihydroxy-3,5'-dimethoxy-2'-(3'-methylbut-2-enyl)flavone	inhibitor	protein	hgnc	74	ABCG2
+CHEBI:72761	tryprostatin A	inhibitor	protein	hgnc	74	ABCG2
+CHEBI:72763	fumitremorgin C	inhibitor	protein	hgnc	74	ABCG2
+CHEBI:77249	rosuvastatin calcium	inhibitor	protein	hgnc	1869	CETP
+CHEBI:78008	wiskostatin	inhibitor	protein	hgnc	12731	WAS
+CHEBI:82977	daclatasvir	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:83800	daclatasvir hydrochloride	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:85183	ombitasvir	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:86989	stattic	inhibitor	protein	hgnc	11364	STAT3
+CHEBI:87461	SIS3	inhibitor	protein	hgnc	6769	SMAD3
+CHEBI:87589	SIS3 free base	inhibitor	protein	hgnc	6769	SMAD3
+CHEBI:90286	STAT3 inhibitor peptide	inhibitor	protein	hgnc	11364	STAT3
+CHEBI:91213	4-iodo-6-phenylpyrimidine	inhibitor	protein	hgnc	7097	MIF
+CHEBI:91224	S3I-201	inhibitor	protein	hgnc	11364	STAT3
+CHEBI:9652	tranylcypromine	inhibitor	protein	hgnc	29079	KDM1A
