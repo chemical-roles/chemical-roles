@@ -1,0 +1,40 @@
+type	chebi_id	chebi_name	db	db_id	db_name
+pathway	CHEBI:38496	electron-transport chain inhibitor	go	GO:0022900	electron transport chain
+pathway	CHEBI:26087	photosynthetic electron-transport chain inhibitor	go	GO:0009767	photosynthetic electron transport chain
+pathway	CHEBI:25355	mitochondrial respiratory-chain inhibitor	go	GO:0005746	mitochondrial respiratory chain
+pathway	CHEBI:140921	Hedgehog signaling pathway inhibitor	go	GO:0007224	smoothened signaling pathway
+pathway	CHEBI:26088	photosystem-I inhibitor	go	GO:0009522	photosystem I
+pathway	CHEBI:68543	pyrimidine synthesis inhibitor	go	GO:0006221	pyrimidine nucleotide biosynthetic process
+pathway	CHEBI:138208	carotenoid biosynthesis inhibitor	go	GO:0016117	carotenoid biosynthetic process
+pathway	CHEBI:26089	photosystem-II inhibitor	go	GO:0009523	photosystem II
+pathway	CHEBI:59517	DNA synthesis inhibitor	go	GO:0071897	DNA biosynthetic process
+pathway	CHEBI:63958	cellulose synthesis inhibitor	go	GO:0030244	cellulose biosynthetic process
+pathway	CHEBI:50185	fatty acid synthesis inhibitor	go	GO:0006633	fatty acid biosynthetic process
+complex	CHEBI:23529	cytochrome-b6f complex inhibitor	go	GO:0009512	cytochrome b6f complex
+complex	CHEBI:38502	cytochrome-bc1 complex inhibitor	fplx	ETC_complex_III	ETC_complex_III
+complex	CHEBI:38497	respiratory-chain inhibitor	go	GO:0098803	respiratory chain complex
+family	CHEBI:20854	ATP synthase inhibitor	fplx	ATP_synthase	ATP_synthase
+protein	CHEBI:131509	lysine-specific histone demethylase 1A inhibitor	hgnc	29079	KDM1A
+protein	CHEBI:131789	RUNX1 inhibitor	hgnc	10471	RUNX1
+pathway	CHEBI:138977	quorum sensing inhibitor	GO	GO:0009372	quorum sensing
+pathway	CHEBI:88230	autophagy inhibitor	GO	GO:0006914	autophagy
+protein	CHEBI:87183	STAT3 inhibitor	hgnc	11364	STAT3
+protein	CHEBI:138381	RhoC inhibitor	hgnc	669	RHOC
+protein	CHEBI:140922	glioma-associated oncogene inhibitor	hgnc	4317	GLI1
+protein	CHEBI:91025	erythropoietin inhibitor	hgnc	3415	EPO
+protein	CHEBI:138380	RhoA inhibitor	hgnc	667	RHOA
+protein	CHEBI:136651	S100 calcium-binding protein B inhibitor	hgnc	10500	S100B
+protein	CHEBI:87588	Smad3 inhibitor	hgnc	6769	SMAD3
+complex	CHEBI:73240	NF-kappaB inhibitor	fplx	NFkappaB	NFkappaB
+protein	CHEBI:49205	CETP inhibitor	hgnc	1869	CETP
+protein	CHEBI:91214	macrophage migration inhibitory factor inhibitor	hgnc	7097	MIF
+pathway	CHEBI:63173	T-cell proliferation inhibitor	GO	GO:0042098	T cell proliferation
+pathway	CHEBI:68494	apoptosis inhibitor	GO	GO:0006915	apoptotic process
+pathway	CHEBI:133190	fatty acid oxidation inhibitor	go	GO:0019395	fatty acid oxidation
+pathway	CHEBI:73267	oxidative phosphorylation inhibitor	go	GO:0006119	oxidative phosphorylation
+protein	CHEBI:78009	Wiskott-Aldrich syndrome protein inhibitor	hgnc	12731	WAS
+protein	CHEBI:137114	bromodomain-containing protein 4 inhibitor	hgnc	13575	BRD4
+protein	CHEBI:140701	secreted frizzled-related protein 1 inhibitor	hgnc	10776	SFRP1
+protein	CHEBI:83799	nonstructural protein 5A inhibitor	uniprot	Q5L478	Nonstructural protein 5A
+protein	CHEBI:85185	hepatitis C virus nonstructural protein 5A inhibitor	uniprot	Q5L478	Nonstructural protein 5A
+protein	CHEBI:72771	breast cancer resistance protein inhibitor	hgnc	74	ABCG2

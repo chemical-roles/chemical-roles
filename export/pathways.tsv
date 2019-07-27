@@ -1,0 +1,235 @@
+chebi_id	chebi_name	mode	db	db_id	db_name
+CHEBI:131326	JSH-23	complex	fplx	NFkappaB	NFkappaB
+CHEBI:132639	aconine	complex	fplx	NFkappaB	NFkappaB
+CHEBI:136555	1-O-caffeoylquinic acid	complex	fplx	NFkappaB	NFkappaB
+CHEBI:138650	CBL0137	complex	fplx	NFkappaB	NFkappaB
+CHEBI:141063	rubimaillin	complex	fplx	NFkappaB	NFkappaB
+CHEBI:19371	dibromothymoquinone	complex	go	GO:0009512	cytochrome b6f complex
+CHEBI:28821	piperine	complex	fplx	NFkappaB	NFkappaB
+CHEBI:3170	brazilin	complex	fplx	NFkappaB	NFkappaB
+CHEBI:33276	delta-tocotrienol	complex	fplx	NFkappaB	NFkappaB
+CHEBI:43572	kojic acid	complex	fplx	NFkappaB	NFkappaB
+CHEBI:4659	disulfiram	complex	fplx	NFkappaB	NFkappaB
+CHEBI:469	1'-acetoxychavicol acetate	complex	fplx	NFkappaB	NFkappaB
+CHEBI:5373	(S)-glaucine	complex	fplx	NFkappaB	NFkappaB
+CHEBI:65646	cochinchinone A	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66186	talosin A	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66325	tubocapsanolide A	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66824	orbiculin A	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66825	orbiculin D	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66826	orbiculin E	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66827	orbiculin F	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66828	orbiculin G	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66829	orbiculin H	complex	fplx	NFkappaB	NFkappaB
+CHEBI:66830	orbiculin I	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67555	15-O-desmethyl-(5Z)-7-oxozeaenol	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67556	zeaenol	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67557	7-epi-zeaenol	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67558	5E-7-oxozeaenol	complex	fplx	NFkappaB	NFkappaB
+CHEBI:67559	5Z-7-oxozeaenol	complex	fplx	NFkappaB	NFkappaB
+CHEBI:68340	beta-(4-hydroxyphenyl)ethyl-4-O-E-caffeoyl-O-[beta-D-apiofuranosyl-(1->2)]-beta-D-glucopyranoside	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69245	5-(3-hydroxypropyl)-2-(2-methoxy-4-hydroxyphenyl)benzofuran	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69246	(-)-larreatricin	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69247	meso-3,3'-didemethoxynectandrin B	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69248	(2S,3S)-2,3-dihydro-3-hydroxymethyl-2-(4-hydroxyphenyl)-5-(E)-propenylbenzofuran	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69249	2-(2-hydroxy-4-methoxyphenyl)-5-(3-hydroxypropyl)benzofuran	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69250	2-(2,4-dihydroxyphenyl)-5-(E)-propenylbenzofuran	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69251	(+)-conocarpan	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69252	2-(4-hydroxyphenyl)-5-(E)-propenylbenzofuran	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69253	rataniaphenol III	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69254	rataniaphenol I	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69255	rataniaphenol II	complex	fplx	NFkappaB	NFkappaB
+CHEBI:69340	ergolide	complex	fplx	NFkappaB	NFkappaB
+CHEBI:7747	oleuropein	complex	fplx	NFkappaB	NFkappaB
+CHEBI:78782	pyrrolidine dithiocarbamate	complex	fplx	NFkappaB	NFkappaB
+CHEBI:25675	oligomycin	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:53090	1,3-dicyclohexylcarbodiimide	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:72292	bedaquiline	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:72295	bedaquiline fumarate	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:75458	carbonyl cyanide p-trifluoromethoxyphenylhydrazone	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:84314	oligomycin mixture	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:100147	nalidixic acid	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:100241	ciprofloxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:100246	norfloxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:111517	dimethylmalonic acid	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:114954	sodium ferulate	pathway	GO	GO:0006915	apoptotic process
+CHEBI:116509	diuron	pathway	go	GO:0009523	photosystem II
+CHEBI:130910	(Z)-3-(4-iodophenyl)-2-mercaptoacrylic acid	pathway	GO	GO:0006915	apoptotic process
+CHEBI:131999	topramezone	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:132273	tembotrione	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:132471	(+)-schisandrin B	pathway	GO	GO:0006915	apoptotic process
+CHEBI:133152	2-bromohexadecanoic acid	pathway	go	GO:0019395	fatty acid oxidation
+CHEBI:133237	indaziflam	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:133238	N-[(1R,2S)-2,6-dimethyindan-1-yl]-6-[(1R)-1-fluoroethyl]-1,3,5-triazine-2,4-diamine	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:133239	N-[(1R,2S)-2,6-dimethyindan-1-yl]-6-[(1S)-1-fluoroethyl]-1,3,5-triazine-2,4-diamine	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:133246	tetramethylpyrazine	pathway	GO	GO:0006915	apoptotic process
+CHEBI:134301	salvianolic acid B	pathway	GO	GO:0006914	autophagy
+CHEBI:136271	bicyclopyrone	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:137045	Z-Val-Ala-Asp(OMe)-CH2F	pathway	GO	GO:0006915	apoptotic process
+CHEBI:137081	CORM 3	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:137354	(4Z,7Z,10Z,12E,14S,16Z,19Z,21R)-dihydroxydocosahexaenoic acid	pathway	GO	GO:0006915	apoptotic process
+CHEBI:137374	aclonifen	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138013	Z-DEVD-FMK	pathway	GO	GO:0006915	apoptotic process
+CHEBI:138186	p-Glu-Arg-Pro-Arg-Leu-Ser-His-Lys-Gly-Pro-Met-Pro-Phe	pathway	GO	GO:0006915	apoptotic process
+CHEBI:138192	beflubutamid	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138435	bis(7)-tacrine	pathway	GO	GO:0006915	apoptotic process
+CHEBI:138511	piericidin A	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:138655	protectin D1	pathway	GO	GO:0006915	apoptotic process
+CHEBI:138736	picolinafen	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138737	flurtamone	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:138971	drimendiol	pathway	GO	GO:0009372	quorum sensing
+CHEBI:139224	GRI977143	pathway	GO	GO:0006915	apoptotic process
+CHEBI:140318	tefuryltrione	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:140850	(E)-2,3,5,4'-tetrahydroxystilbene-2-O-beta-D-glucoside	pathway	GO	GO:0006915	apoptotic process
+CHEBI:140908	GANT61	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:140908	GANT61	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:141200	diafenthiuron-S-oxide	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:141389	benzobicyclon hydrolysate	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:141469	2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:141491	N-tert-butyl-N'-(2,6-diisopropyl-4-phenoxyphenyl)methanediimine	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:141518	pyrasulfotole	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:142060	equisetin(1-)	pathway	GO	GO:0009372	quorum sensing
+CHEBI:142135	equisetin	pathway	GO	GO:0009372	quorum sensing
+CHEBI:143894	triaziflam	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:143894	triaziflam	pathway	go	GO:0009767	photosynthetic electron transport chain
+CHEBI:143894	triaziflam	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:143894	triaziflam	pathway	go	GO:0009767	photosynthetic electron transport chain
+CHEBI:147675	5-iodo-2'-deoxyuridine	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:157175	enoxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:15792	malonate(2-)	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:16353	sinapine	pathway	go	GO:0009767	photosynthetic electron transport chain
+CHEBI:16482	naphthalene	pathway	GO	GO:0006915	apoptotic process
+CHEBI:171741	cerulenin	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:17245	carbon monoxide	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:175901	gemcitabine	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:17620	ferulic acid	pathway	GO	GO:0006915	apoptotic process
+CHEBI:17747	bis(2-ethylhexyl) phthalate	pathway	GO	GO:0006915	apoptotic process
+CHEBI:19924	3-(3,4-dichlorophenyl)-1,1-dimethylurea	pathway	go	GO:0009523	photosystem II
+CHEBI:22584	antimycin A	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:22689	bafilomycin A1	pathway	GO	GO:0006914	autophagy
+CHEBI:2367	abyssinone I	pathway	GO	GO:0006915	apoptotic process
+CHEBI:2469	adefovir	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:25461	myxothiazol	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:2766	aphidicolin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:28077	rifampicin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:2877	aspartame	pathway	GO	GO:0006915	apoptotic process
+CHEBI:28786	paraquat dichloride	pathway	go	GO:0009522	photosystem I
+CHEBI:2948	azathioprine	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:29608	isoformononetin	pathway	GO	GO:0006915	apoptotic process
+CHEBI:3000	beauvericin	pathway	GO	GO:0006915	apoptotic process
+CHEBI:31175	adefovir pivoxil	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:32019	piromidic acid	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:32248	tosufloxacin tosylate hydrate	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:32269	tropisetron	pathway	GO	GO:0006915	apoptotic process
+CHEBI:32293	verteporfin	pathway	GO	GO:0006914	autophagy
+CHEBI:338412	(-)-anisomycin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:3638	chloroquine	pathway	GO	GO:0006914	autophagy
+CHEBI:3751	clomazone	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:37550	sphingosine 1-phosphate	pathway	GO	GO:0042098	T cell proliferation
+CHEBI:38321	mesotrione	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:38635	3-methyladenine	pathway	GO	GO:0006914	autophagy
+CHEBI:3907	coumermycin A1	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:39299	diafenthiuron	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:40036	amitrole	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:4033	cycloxydim	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:40910	azide anion	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:42017	2,4-dinitrophenol	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:4302	destosyl pyrazolate	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:44185	methotrexate	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:44423	hydroxyurea	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:45713	trans-resveratrol	pathway	GO	GO:0009372	quorum sensing
+CHEBI:4885	ethionamide	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:4911	etoposide	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:50199	pefloxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:50842	norflurazon	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:5131	flurochloridone	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:5169	fraxetin	pathway	GO	GO:0006915	apoptotic process
+CHEBI:5181	fucoidan	pathway	GO	GO:0006915	apoptotic process
+CHEBI:5186	fucoxanthin	pathway	GO	GO:0006915	apoptotic process
+CHEBI:529996	cytochalasin D	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:6076	itraconazole	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:63598	levofloxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:63599	fludarabine phosphate	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:63612	nelarabine	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:63956	isoxaben	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:6402	leflunomide	pathway	go	GO:0006221	pyrimidine nucleotide biosynthetic process
+CHEBI:64624	microcin B17	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:65329	LY294002	pathway	GO	GO:0006914	autophagy
+CHEBI:66903	vismodegib	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:67989	ginsenoside Rb1	pathway	GO	GO:0006915	apoptotic process
+CHEBI:73141	9-beta-D-arabinofuranosylguanine	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:73171	ancymidol	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:73295	WIN 55212-2	pathway	GO	GO:0006915	apoptotic process
+CHEBI:75250	pipemidic acid	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:75425	guanazole	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:76277	tepoxalin	pathway	GO	GO:0006915	apoptotic process
+CHEBI:77150	ginsenoside F1	pathway	GO	GO:0006915	apoptotic process
+CHEBI:7731	ofloxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77568	trovafloxacin mesylate	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77570	tropisetron hydrochloride	pathway	GO	GO:0006915	apoptotic process
+CHEBI:77573	tosufloxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77605	tosufloxacin tosylate	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:77742	bongkrekic acid	pathway	GO	GO:0006915	apoptotic process
+CHEBI:77772	ilicicolin H	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:77879	elaiophylin	pathway	GO	GO:0006914	autophagy
+CHEBI:78539	zofenopril	pathway	GO	GO:0006915	apoptotic process
+CHEBI:80774	tauroursodeoxycholic acid	pathway	GO	GO:0006915	apoptotic process
+CHEBI:81798	cyflumetofen	pathway	go	GO:0005746	mitochondrial respiratory chain
+CHEBI:81812	benzobicyclon	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:81824	diflufenican	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:81829	Benzofenap	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:81830	pyrazoxyfen	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:82016	Fluridone	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:82600	zofenopril calcium	pathway	GO	GO:0006915	apoptotic process
+CHEBI:82602	zofenoprilat	pathway	GO	GO:0006915	apoptotic process
+CHEBI:82603	zofenoprilat arginine	pathway	GO	GO:0006915	apoptotic process
+CHEBI:82818	Z-Val-Phe-H	pathway	GO	GO:0006915	apoptotic process
+CHEBI:83465	sulcotrione	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:84035	pyridoxatin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:8657	pyrazolynate	pathway	go	GO:0016117	carotenoid biosynthetic process
+CHEBI:87805	ethionamide S-oxide	pathway	go	GO:0006633	fatty acid biosynthetic process
+CHEBI:89494	iberin	pathway	GO	GO:0009372	quorum sensing
+CHEBI:90701	potassium 2-(4-carboxylatophenyl)-4,4,5,5-tetramethylimidazoline-1-oxyl-3-oxide	pathway	GO	GO:0006915	apoptotic process
+CHEBI:90702	carboxy-PTIO	pathway	GO	GO:0006915	apoptotic process
+CHEBI:90863	sonidegib	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:90864	sonidegib phosphate	pathway	go	GO:0007224	smoothened signaling pathway
+CHEBI:9288	streptozocin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:943	2,6-dichlorobenzonitrile	pathway	go	GO:0030244	cellulose biosynthetic process
+CHEBI:9763	trovafloxacin	pathway	go	GO:0071897	DNA biosynthetic process
+CHEBI:131513	tranylcypromine hydrochloride	protein	hgnc	29079	KDM1A
+CHEBI:131785	Ro 5-3335	protein	hgnc	10471	RUNX1
+CHEBI:131968	tyrphostin B42	protein	hgnc	11364	STAT3
+CHEBI:132967	elbasvir	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:133009	velpatasvir	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:137113	JQ1	protein	hgnc	13575	BRD4
+CHEBI:137693	rhosin	protein	hgnc	667	RHOA
+CHEBI:137693	rhosin	protein	hgnc	669	RHOC
+CHEBI:137693	rhosin	protein	hgnc	667	RHOA
+CHEBI:137693	rhosin	protein	hgnc	669	RHOC
+CHEBI:140700	WAY-316606	protein	hgnc	10776	SFRP1
+CHEBI:140908	GANT61	protein	hgnc	4317	GLI1
+CHEBI:140908	GANT61	protein	hgnc	4317	GLI1
+CHEBI:27810	resorcinol	protein	hgnc	3415	EPO
+CHEBI:27881	resveratrol	protein	hgnc	4317	GLI1
+CHEBI:38545	rosuvastatin	protein	hgnc	1869	CETP
+CHEBI:4021	Cyclopamine	protein	hgnc	4317	GLI1
+CHEBI:45081	pentamidine	protein	hgnc	10500	S100B
+CHEBI:49203	torcetrapib	protein	hgnc	1869	CETP
+CHEBI:63892	zerumbone	protein	hgnc	4317	GLI1
+CHEBI:70018	(2S)-5,7,3'-trihydroxy-4'-methoxy-8-(3''-methylbut-2''-enyl)-flavonone	protein	hgnc	74	ABCG2
+CHEBI:70020	(2S)-5,7,3',5'-tetrahydroxy-8-[3'',8''-dimethylocta-2''(E),7''-dienyl]flavonone	protein	hgnc	74	ABCG2
+CHEBI:70025	5,7,3'-trihydroxy-3,5'-dimethoxy-2'-(3'-methylbut-2-enyl)flavone	protein	hgnc	74	ABCG2
+CHEBI:72761	tryprostatin A	protein	hgnc	74	ABCG2
+CHEBI:72763	fumitremorgin C	protein	hgnc	74	ABCG2
+CHEBI:77249	rosuvastatin calcium	protein	hgnc	1869	CETP
+CHEBI:78008	wiskostatin	protein	hgnc	12731	WAS
+CHEBI:82977	daclatasvir	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:83800	daclatasvir hydrochloride	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:85183	ombitasvir	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:86989	stattic	protein	hgnc	11364	STAT3
+CHEBI:87461	SIS3	protein	hgnc	6769	SMAD3
+CHEBI:87589	SIS3 free base	protein	hgnc	6769	SMAD3
+CHEBI:90286	STAT3 inhibitor peptide	protein	hgnc	11364	STAT3
+CHEBI:91213	4-iodo-6-phenylpyrimidine	protein	hgnc	7097	MIF
+CHEBI:91224	S3I-201	protein	hgnc	11364	STAT3
+CHEBI:9652	tranylcypromine	protein	hgnc	29079	KDM1A
