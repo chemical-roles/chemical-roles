@@ -29,7 +29,9 @@ RECLASSIFICATION_PATH = os.path.join(RESOURCES_DIRECTORY, 'reclassification.tsv'
 PATHWAY_INHIBITOR_CHEBI_ID = 'CHEBI:76932'
 ENZYME_INHIBITOR_CHEBI_ID = 'CHEBI:23924'
 AGONIST_CHEBI_ID = 'CHEBI:48705'
+INVERSE_AGONIST_CHEBI_ID = 'CHEBI:90847'
 INHIBITOR_CHEBI_ID = 'CHEBI:35222'
+ANTAGONIST_CHEBI_ID = 'CHEBI:48706'
 BLACKLIST = [
     'CHEBI:48001',  # protein synthesis inhibitor
 ]
@@ -106,9 +108,21 @@ def suggest_inhibitor_curation(graph: MultiDiGraph) -> None:
 
 
 def suggest_agonist_curation(graph: MultiDiGraph) -> None:
-    it = set(ancestors(graph, AGONIST_CHEBI_ID))
-    for t in _suggest_xrefs_curation(graph, AGONIST_CHEBI_ID, it, 'agonist'):
-        print(*t, sep='\t')
+    _single_suggest(graph, AGONIST_CHEBI_ID, 'agonist')
+
+
+def suggest_antagonist_curation(graph: MultiDiGraph) -> None:
+    _single_suggest(graph, ANTAGONIST_CHEBI_ID, 'antagonist')
+
+
+def suggest_inverse_agonist_curation(graph: MultiDiGraph) -> None:
+    _single_suggest(graph, INVERSE_AGONIST_CHEBI_ID, 'inverse agonist')
+
+
+def _single_suggest(graph, chebi_id, modulation, file=None) -> None:
+    it = set(ancestors(graph, chebi_id))
+    for t in _suggest_xrefs_curation(graph, chebi_id, it, modulation):
+        print(*t, sep='\t', file=file)
 
 
 def _suggest_xrefs_curation(
@@ -179,6 +193,8 @@ def main() -> None:
     suggest_pathway_inhibitor_curation(graph)
     suggest_inhibitor_curation(graph)
     suggest_agonist_curation(graph)
+    suggest_antagonist_curation(graph)
+    suggest_inverse_agonist_curation(graph)
 
     relations_df = get_relations_df(graph)
     enzyme_inhibitor_df = get_enzyme_inhibitor_df(graph)
