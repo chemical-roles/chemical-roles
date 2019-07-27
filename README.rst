@@ -14,3 +14,8 @@ Repository Structure
   with the manually curated resources in ``resources/``
 - ``curate_chebi_relations.py``: The python script that suggests new curation
   and generates the derived resources in ``export/``
+
+License
+-------
+- Code in this repository is under the MIT License.
+- Data in this repository is under CC BY 4.0.
