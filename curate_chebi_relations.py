@@ -130,6 +130,7 @@ def _suggest_xrefs_curation(
         top_chebi_id: str,
         it: Collection[str],
         suffix: str,
+        show_missing: bool = False
 ) -> Iterable[Tuple[str, str, str, str, str, str]]:
     """
 
@@ -149,12 +150,12 @@ def _suggest_xrefs_curation(
         if not name.endswith(suffix):
             continue
         results = post_gilda(name[:-len(suffix)].rstrip()).json()
-        if not results:
-            yield node, name, suffix, '?', '?', '?', '?'
-        else:
+        if results:
             for result in results:
                 term = result["term"]
                 yield node, name, suffix, term['db'].lower(), term['id'], term['entry_name']
+        elif show_missing:
+            yield node, name, suffix, '?', '?', '?', '?'
 
 
 def get_relations_df(graph: MultiDiGraph) -> pd.DataFrame:
@@ -187,14 +188,16 @@ def _iterate_roles(graph, chebi_ids):
                 yield child_chebi_id, child_name, role_chebi_id
 
 
-def main() -> None:
+def main(suggest: bool = False) -> None:
+    _get_curated_xrefs_df().sort_values(['chebi_name', 'modulation']).to_csv(XREFS_PATH, index=False, sep='\t')
     graph = get_graph()
 
-    suggest_pathway_inhibitor_curation(graph)
-    suggest_inhibitor_curation(graph)
-    suggest_agonist_curation(graph)
-    suggest_antagonist_curation(graph)
-    suggest_inverse_agonist_curation(graph)
+    if suggest:
+        suggest_pathway_inhibitor_curation(graph)
+        suggest_inhibitor_curation(graph)
+        suggest_agonist_curation(graph)
+        suggest_antagonist_curation(graph)
+        suggest_inverse_agonist_curation(graph)
 
     relations_df = get_relations_df(graph)
     enzyme_inhibitor_df = get_enzyme_inhibitor_df(graph)
@@ -202,7 +205,9 @@ def main() -> None:
         relations_df,
         enzyme_inhibitor_df,
     ]).sort_values(['modulation', 'entity_type', 'chebi_id'])
-    df.to_csv(RELATIONS_OUTPUT_PATH, sep='\t', index=False)
+
+    columns = 'modulation entity_type chebi_id	chebi_name	db	db_id	db_name'.split()
+    df[columns].to_csv(RELATIONS_OUTPUT_PATH, sep='\t', index=False)
 
 
 if __name__ == '__main__':
