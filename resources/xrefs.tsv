@@ -13,7 +13,7 @@ CHEBI:50185	fatty acid synthesis inhibitor	inhibitor	pathway	go	GO:0006633	fatty
 CHEBI:23529	cytochrome-b6f complex inhibitor	inhibitor	complex	go	GO:0009512	cytochrome b6f complex
 CHEBI:38502	cytochrome-bc1 complex inhibitor	inhibitor	complex	fplx	ETC_complex_III	ETC_complex_III
 CHEBI:38497	respiratory-chain inhibitor	inhibitor	complex	go	GO:0098803	respiratory chain complex
-CHEBI:20854	ATP synthase inhibitor	inhibitor	family	fplx	ATP_synthase	ATP_synthase
+CHEBI:20854	ATP synthase inhibitor	inhibitor	protein family	fplx	ATP_synthase	ATP_synthase
 CHEBI:131509	lysine-specific histone demethylase 1A inhibitor	inhibitor	protein	hgnc	29079	KDM1A
 CHEBI:131789	RUNX1 inhibitor	inhibitor	protein	hgnc	10471	RUNX1
 CHEBI:138977	quorum sensing inhibitor	inhibitor	pathway	go	GO:0009372	quorum sensing
@@ -39,3 +39,53 @@ CHEBI:83799	nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	
 CHEBI:85185	hepatitis C virus nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
 CHEBI:72771	breast cancer resistance protein inhibitor	inhibitor	protein	hgnc	74	ABCG2
 CHEBI:68553	guanylate cyclase 2C agonist	agonist	protein	hgnc	4688	GUCY2C
+CHEBI:139503	vitamin D receptor agonist	agonist	protein	hgnc	12679	VDR
+CHEBI:65057	adenosine A1 receptor agonist	agonist	protein	hgnc	262	ADORA1
+CHEBI:77496	bradykinin receptor B2 agonist	agonist	protein	hgnc	1030	BDKRB2
+CHEBI:139584	lysophosphatidic acid receptor 3 agonist	agonist	protein	hgnc	14298	LPAR3
+CHEBI:85012	thrombopoietin receptor agonist	agonist	protein	hgnc	7217	MPL
+CHEBI:71196	glucagon-like peptide-1 receptor agonist	agonist	protein	hgnc	4324	GLP1R
+CHEBI:70709	progesterone receptor agonist	agonist	protein	hgnc	8910	PGR
+CHEBI:140535	TRPV1 agonist	agonist	protein	hgnc	12716	TRPV1
+CHEBI:65254	LRH-1 agonist	agonist	protein	hgnc	7984	NR5A2
+CHEBI:90742	retinoic acid receptor beta agonist	agonist	protein	hgnc	9865	RARB
+CHEBI:63951	estrogen receptor agonist	agonist	protein	hgnc	3467	ESR1
+CHEBI:70725	adenosine A3 receptor antagonist	antagonist	protein	hgnc	268	ADORA3
+CHEBI:70782	PPARalpha agonist	agonist	protein	hgnc	9232	PPARA
+CHEBI:71554	PPARgamma agonist	agonist	protein	hgnc	9236	PPARG
+CHEBI:140061	TRPV4 agonist	agonist	protein	hgnc	18083	TRPV4
+CHEBI:55322	mu-opioid receptor agonist	agonist	protein	hgnc	8156	OPRM1
+CHEBI:73319	adenosine A3 receptor agonist	agonist	protein	hgnc	268	ADORA3
+CHEBI:73310	adenosine A2A receptor agonist	agonist	protein	hgnc	263	ADORA2A
+CHEBI:72311	glucagon-like peptide-2 receptor agonist	agonist	protein	hgnc	4325	GLP2R
+CHEBI:72768	aryl hydrocarbon receptor agonist	agonist	protein	hgnc	348	AHR
+CHEBI:75414	platelet-activating factor receptor agonist	agonist	protein	hgnc	9582	PTAFR
+CHEBI:90845	prostacyclin receptor agonist	agonist	protein	hgnc	9602	PTGIR
+CHEBI:88336	retinoic acid receptor gamma agonist	agonist	protein	hgnc	9866	RARG
+CHEBI:77318	pregnane X receptor agonist	agonist	protein	hgnc	7968	NR1I2
+CHEBI:77161	Toll-like receptor 2 agonist	agonist	protein	hgnc	11848	TLR2
+CHEBI:131359	adenosine A2B receptor agonist	agonist	protein	hgnc	264	ADORA2B
+CHEBI:63562	glucocorticoid receptor agonist	agonist	protein	hgnc	7978	NR3C1
+CHEBI:139044	thromboxane A2 agonist	agonist	protein	hgnc	11608	TBXA2R
+CHEBI:85540	thromboxane A2 antagonist	antagonist	protein	hgnc	11608	TBXA2R
+CHEBI:137401	capsaicin receptor agonist	agonist	protein	hgnc	12716	TRPV1
+CHEBI:90713	retinoic acid receptor alpha antagonist	antagonist	protein	hgnc	9864	RARA
+CHEBI:70774	capsaicin receptor antagonist	antagonist	protein	hgnc	12716	TRPV1
+CHEBI:74440	epidermal growth factor receptor antagonist	antagonist	protein	hgnc	3236	EGFR
+CHEBI:134182	platelet-activating factor receptor antagonist	antagonist	protein	hgnc	9582	PTAFR
+CHEBI:91202	TGFbeta receptor antagonist	antagonist	protein family	fplx	TGFBR	TGFBR
+CHEBI:63936	alpha1B-adrenoceptor antagonist	antagonist	protein	hgnc	278	ADRA1B
+CHEBI:90744	retinoic acid receptor gamma antagonist	antagonist	protein	hgnc	9866	RARG
+CHEBI:131787	dopamine receptor D2 antagonist	antagonist	protein	hgnc	3023	DRD2
+CHEBI:136580	LRH-1 antagonist	antagonist	protein	hgnc	7984	NR5A2
+CHEBI:73296	cholecystokinin antagonist	antagonist	protein family	hgnc.genefamily	224	Cholecystokinin receptors
+CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1570	CCKAR
+CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1571	CCKBR
+CHEBI:65259	GABA antagonist	antagonist	protein family	hgnc.genefamily	562	Gamma-aminobutyric acid (GABA) receptors
+CHEBI:63957	adenosine A1 receptor antagonist	antagonist	protein	hgnc	262	ADORA1
+CHEBI:53121	adenosine A2A receptor antagonist	antagonist	protein	hgnc	263	ADORA2A
+CHEBI:50137	mu-opioid receptor antagonist	antagonist	protein	hgnc	8156	OPRM1
+CHEBI:76998	aryl hydrocarbon receptor antagonist	antagonist	protein	hgnc	348	AHR
+CHEBI:82891	glucocorticoid receptor antagonist	antagonist	protein	hgnc	7978	NR3C1
+CHEBI:60649	glucagon receptor antagonist	antagonist	protein	hgnc	4192	GCGR
+CHEBI:59229	GnRH antagonist	antagonist	protein	hgnc	4419	GNRH1
