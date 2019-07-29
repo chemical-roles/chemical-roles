@@ -22,7 +22,7 @@ Repository Structure
   - `export/relations.tsv <https://github.com/cthoyt/chebi-relations/blob/master/export/relations.tsv>`_:
     A combination of the manually curated resources and reasoning (TODO) over FamPlex, InterPro, GO, HGNC
     Gene Familes, and ExPASy to generate new relationships between instances of the roles curated here.
-- ``curate_chebi_relations.py``: The python script that suggests new curation
+- ``curate_chebi_relations.py``: The python script that suggests new curation using `Gilda <https://github.com/indralab/gilda>`_ 
   and generates the derived resources in ``export/``
 
 License
