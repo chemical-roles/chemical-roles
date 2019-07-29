@@ -10,6 +10,7 @@ See also: https://github.com/ebi-chebi/ChEBI/issues/3429
 Repository Structure
 --------------------
 - ``resources/``: Manually curated resources
+  
   - `resources/xrefs.tsv <https://github.com/cthoyt/chebi-relations/blob/master/resources/xrefs.tsv>`_:
     Structured annotations of ChEBI entries describing the relationship to an external vocabulary. For example,
     the term CETP inhibitor (CHEBI:49205) describes the ``inhibition`` relationship to CETP (hgnc:1869).
@@ -17,6 +18,10 @@ Repository Structure
     Suggestions on which entities inherit from the wrong type of ChEBI inhibitor role.
 - ``export/``: Final results exported by combining the ChEBI OBO information
   with the manually curated resources in ``resources/``
+  
+  - `export/relations.tsv <https://github.com/cthoyt/chebi-relations/blob/master/export/relations.tsv>`_:
+    A combination of the manually curated resources and reasoning (TODO) over FamPlex, InterPro, GO, HGNC
+    Gene Familes, and ExPASy to generate new relationships between instances of the roles curated here.
 - ``curate_chebi_relations.py``: The python script that suggests new curation
   and generates the derived resources in ``export/``
 
