@@ -99,3 +99,10 @@ CHEBI:85012	thrombopoietin receptor agonist	agonist	protein	hgnc	7217	MPL
 CHEBI:139044	thromboxane A2 agonist	agonist	protein	hgnc	11608	TBXA2R
 CHEBI:85540	thromboxane A2 antagonist	antagonist	protein	hgnc	11608	TBXA2R
 CHEBI:139503	vitamin D receptor agonist	agonist	protein	hgnc	12679	VDR
+CHEBI:83313	protease-activated receptor-1 antagonist	antagonist	hgnc	3537	F2R
+CHEBI:131186	IP3 receptor antagonist	antagonist	hgnc	6180	ITPR1
+CHEBI:139109	IP3 receptor agonist	agonist	hgnc	6180	ITPR1
+CHEBI:63794	retinoid X receptor agonist	agonist	fplx	RXR	RXR
+CHEBI:67198	retinoic acid receptor agonist	agonist	fplx	RAR	RAR
+CHEBI:142184	5-hydroxytryptamine 2B receptor agonist	agonist	HGNC	5294	HTR2B
+
