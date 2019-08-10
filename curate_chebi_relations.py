@@ -5,6 +5,7 @@ from collections import defaultdict
 from typing import Collection, Iterable, Tuple
 from urllib.request import urlretrieve
 
+import click
 import obonet
 import pandas as pd
 import requests
@@ -188,7 +189,9 @@ def _iterate_roles(graph, chebi_ids):
                 yield child_chebi_id, child_name, role_chebi_id
 
 
-def main(suggest: bool = False) -> None:
+@click.command()
+@click.option('-s', '--suggest', is_flag=True)
+def main(suggest: bool) -> None:
     _get_curated_xrefs_df().sort_values(['chebi_name', 'modulation']).to_csv(XREFS_PATH, index=False, sep='\t')
     graph = get_graph()
 
