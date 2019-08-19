@@ -9,6 +9,7 @@ import click
 import obonet
 import pandas as pd
 import requests
+from bio2bel_expasy.parser import get_expasy_closed_tree
 from networkx import MultiDiGraph, ancestors
 
 HERE = os.path.abspath(os.path.dirname(__file__))
@@ -67,6 +68,8 @@ def get_graph(
 
 
 def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
+    expasy = get_expasy_closed_tree()
+
     rv = []
     for chebi_id, data in graph.nodes(data=True):
         chebi_name = data['name']
@@ -78,6 +81,19 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
                 ec_code += '.-'
 
             rv.append((chebi_id, chebi_name, 'inhibitor', 'enzyme', 'ec-code', ec_code, ec_code))
+
+            expasy_children = expasy.get(ec_code)
+            if expasy_children is not None:
+                for c_db, c_identifier, c_name in expasy_children:
+                    if c_db == 'ec-code':
+                        entity_type = 'enzyme'
+                    else:
+                        entity_type = 'protein'
+
+                    rv.append((chebi_id, chebi_name, 'inhibitor', entity_type,
+                               c_db, c_identifier, c_name or c_identifier))
+            else:
+                print(f'could not find {ec_code} for chebi:{chebi_id}')
 
     return pd.DataFrame(rv, columns=XREFS_COLUMNS)
 
