@@ -71,9 +71,12 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
     for chebi_id, data in graph.nodes(data=True):
         chebi_name = data['name']
         if chebi_name.startswith('EC ') and chebi_name.endswith('inhibitor'):
-            ec_code = chebi_name[len('EC '):].split()[0]
-            if ec_code.endswith('.*'):
-                ec_code = ec_code[:-len('.*')]
+            ec_code = chebi_name[len('EC '):].split()[0].replace('*', '-')
+
+            # Add any remaining dashes
+            for _ in range(3 - ec_code.count('.')):
+                ec_code += '.-'
+
             rv.append((chebi_id, chebi_name, 'inhibitor', 'enzyme', 'ec-code', ec_code, ec_code))
 
     return pd.DataFrame(rv, columns=XREFS_COLUMNS)
