@@ -1,5 +1,5 @@
 chebi_id	chebi_name	modulation	type	db	db_id	db_name
-CHEBI:142184	5-hydroxytryptamine 2B receptor agonist	agonist	HGNC	5294	HTR2B	
+CHEBI:142184	5-hydroxytryptamine 2B receptor agonist	agonist	protein	hgnc	5294	HTR2B	
 CHEBI:64102	AMPA receptor agonist	agonist	protein family	fplx	GRIA	GRIA
 CHEBI:71014	AMPA receptor antagonist	antagonist	protein family	fplx	GRIA	GRIA
 CHEBI:67199	AP-1 antagonist	antagonist	protein family	fplx	AP1	AP1
@@ -9,8 +9,8 @@ CHEBI:59517	DNA synthesis inhibitor	inhibitor	pathway	go	GO:0071897	DNA biosynth
 CHEBI:65259	GABA antagonist	antagonist	protein family	hgnc.genefamily	562	Gamma-aminobutyric acid (GABA) receptors
 CHEBI:59229	GnRH antagonist	antagonist	protein	hgnc	4419	GNRH1
 CHEBI:140921	Hedgehog signaling pathway inhibitor	inhibitor	pathway	go	GO:0007224	smoothened signaling pathway
-CHEBI:139109	IP3 receptor agonist	agonist	hgnc	6180	ITPR1	
-CHEBI:131186	IP3 receptor antagonist	antagonist	hgnc	6180	ITPR1	
+CHEBI:139109	IP3 receptor agonist	agonist	protein	hgnc	6180	ITPR1	
+CHEBI:131186	IP3 receptor antagonist	antagonist	protein	hgnc	6180	ITPR1	
 CHEBI:65254	LRH-1 agonist	agonist	protein	hgnc	7984	NR5A2
 CHEBI:136580	LRH-1 antagonist	antagonist	protein	hgnc	7984	NR5A2
 CHEBI:73240	NF-kappaB inhibitor	inhibitor	complex	fplx	NFkappaB	NFkappaB
