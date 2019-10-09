@@ -1,0 +1,14 @@
+modulation	entity_type	db	0
+agonist	protein	hgnc	138
+agonist	protein family	fplx	29
+antagonist	protein	hgnc	101
+antagonist	protein family	fplx	19
+antagonist	protein family	hgnc.genefamily	8
+inhibitor	complex	fplx	42
+inhibitor	complex	go	1
+inhibitor	enzyme	ec-code	22410
+inhibitor	pathway	go	150
+inhibitor	protein	hgnc	33
+inhibitor	protein	prosite	1790
+inhibitor	protein	uniprot	694597
+inhibitor	protein family	fplx	6

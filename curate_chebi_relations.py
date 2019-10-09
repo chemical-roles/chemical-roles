@@ -23,6 +23,9 @@ CHEBI_OBO_PATH = os.path.join(RESOURCES_DIRECTORY, 'chebi.obo')
 CHEBI_OBO_PICKLE_PATH = os.path.join(RESOURCES_DIRECTORY, 'chebi.obo.pickle')
 
 RELATIONS_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations.tsv')
+RELATIONS_SLIM_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations_slim.tsv')
+SUMMARY_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations_summary.tsv')
+
 XREFS_COLUMNS = ['chebi_id', 'chebi_name', 'modulation', 'entity_type', 'db', 'db_id', 'db_name']
 
 XREFS_PATH = os.path.join(RESOURCES_DIRECTORY, 'xrefs.tsv')
@@ -73,27 +76,43 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
     rv = []
     for chebi_id, data in graph.nodes(data=True):
         chebi_name = data['name']
-        if chebi_name.startswith('EC ') and chebi_name.endswith('inhibitor'):
-            ec_code = chebi_name[len('EC '):].split()[0].replace('*', '-')
+        
+        # Do this as a loop since there is at least one entry that corresponds to several EC codes
+        ec_codes = []
+        if chebi_name == 'EC 1.22* (oxidoreductase acting on halogen in donors) inhibitor':
+            ec_codes.append('1.22.-.-')
+
+        elif chebi_name == 'EC 1.1.1.34/EC 1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitor':
+            ec_codes.append('1.1.1.34')
+            ec_codes.append('1.1.1.88')
+
+        elif chebi_name.startswith('EC ') and chebi_name.endswith('inhibitor'):
+            ec_code = chebi_name[len('EC '):].split()[0].replace('*', '-').rstrip('.')
 
             # Add any remaining dashes
             for _ in range(3 - ec_code.count('.')):
                 ec_code += '.-'
 
+            ec_codes.append(ec_code)
+
+        else:
+            continue
+
+        for ec_code in ec_codes:
             rv.append((chebi_id, chebi_name, 'inhibitor', 'enzyme', 'ec-code', ec_code, ec_code))
 
             expasy_children = expasy.get(ec_code)
-            if expasy_children is not None:
-                for c_db, c_identifier, c_name in expasy_children:
-                    if c_db == 'ec-code':
-                        entity_type = 'enzyme'
-                    else:
-                        entity_type = 'protein'
+            if expasy_children is None:
+                print(f'could not find {ec_code} (for chebi:{chebi_id} ! {chebi_name})')
+                continue
 
-                    rv.append((chebi_id, chebi_name, 'inhibitor', entity_type,
-                               c_db, c_identifier, c_name or c_identifier))
-            else:
-                print(f'could not find {ec_code} for chebi:{chebi_id}')
+            for c_db, c_identifier, c_name in expasy_children:
+                if c_db == 'ec-code':
+                    entity_type = 'enzyme'
+                else:
+                    entity_type = 'protein'
+
+                rv.append((chebi_id, chebi_name, 'inhibitor', entity_type, c_db, c_identifier, c_name or c_identifier))
 
     return pd.DataFrame(rv, columns=XREFS_COLUMNS)
 
@@ -119,9 +138,9 @@ def suggest_pathway_inhibitor_curation(graph: MultiDiGraph) -> None:
 
 def suggest_inhibitor_curation(graph: MultiDiGraph) -> None:
     it = (
-            set(ancestors(graph, INHIBITOR_CHEBI_ID))
-            - set(ancestors(graph, PATHWAY_INHIBITOR_CHEBI_ID))
-            - set(ancestors(graph, ENZYME_INHIBITOR_CHEBI_ID))
+        set(ancestors(graph, INHIBITOR_CHEBI_ID))
+        - set(ancestors(graph, PATHWAY_INHIBITOR_CHEBI_ID))
+        - set(ancestors(graph, ENZYME_INHIBITOR_CHEBI_ID))
     )
     for t in _suggest_xrefs_curation(graph, INHIBITOR_CHEBI_ID, it, 'inhibitor'):
         print(*t, sep='\t')
@@ -226,10 +245,16 @@ def main(suggest: bool) -> None:
     df = pd.concat([
         relations_df,
         enzyme_inhibitor_df,
-    ]).sort_values(['modulation', 'entity_type', 'chebi_id'])
+    ])
 
-    columns = 'modulation entity_type chebi_id	chebi_name	db	db_id	db_name'.split()
-    df[columns].to_csv(RELATIONS_OUTPUT_PATH, sep='\t', index=False)
+    columns = ['modulation', 'entity_type', 'chebi_id', 'chebi_name', 'db', 'db_id', 'db_name']
+    df[columns].sort_values(columns).to_csv(RELATIONS_OUTPUT_PATH, sep='\t', index=False)
+
+    slim_columns = ['chebi_id', 'modulation', 'entity_type', 'db', 'db_id']
+    df[slim_columns].sort_values(slim_columns).to_csv(RELATIONS_SLIM_OUTPUT_PATH, sep='\t', index=False)
+
+    summary_df = df.groupby(['modulation', 'entity_type', 'db']).size().reset_index()
+    summary_df.to_csv(SUMMARY_OUTPUT_PATH, sep='\t', index=False)
 
 
 if __name__ == '__main__':
