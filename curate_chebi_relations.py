@@ -256,6 +256,13 @@ def main(suggest: bool) -> None:
     summary_df = df.groupby(['modulation', 'entity_type', 'db']).size().reset_index()
     summary_df.to_csv(SUMMARY_OUTPUT_PATH, sep='\t', index=False)
 
+    try:
+        import tabulate
+    except:
+        pass
+    else:
+        print(tabulate.tabulate(summary_df.values, ['relation', 'type', 'db', 'count'], tablefmt='github'))
+
 
 if __name__ == '__main__':
     main()
