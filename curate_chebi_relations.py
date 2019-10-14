@@ -114,8 +114,12 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
 
         # All other normal cases
         elif chebi_name.startswith('EC '):
-            if not chebi_name.endswith('inhibitor'):
-                logger.warning(f'Not handled: {chebi_id} ! {chebi_name}')
+            if chebi_name.endswith('inhibitor'):
+                modulation = 'inhibitor'
+            elif chebi_name.endswith('activator'):
+                modulation = 'activator'
+            else:
+                logger.warning(f'Unhandled suffix: {chebi_id} ! {chebi_name}')
                 continue
 
             ec_code = chebi_name[len('EC '):].split()[0].replace('*', '-').rstrip('.')
@@ -130,7 +134,7 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
             continue
 
         for ec_code in ec_codes:
-            rv.append((chebi_id, chebi_name, 'inhibitor', 'enzyme', 'ec-code', ec_code, ec_code))
+            rv.append((chebi_id, chebi_name, modulation, 'enzyme', 'ec-code', ec_code, ec_code))
 
             expasy_children = expasy.get(ec_code)
             if expasy_children is None:
@@ -143,7 +147,7 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
                 else:
                     entity_type = 'protein'
 
-                rv.append((chebi_id, chebi_name, 'inhibitor', entity_type, c_db, c_identifier, c_name or c_identifier))
+                rv.append((chebi_id, chebi_name, modulation, entity_type, c_db, c_identifier, c_name or c_identifier))
 
     return pd.DataFrame(rv, columns=XREFS_COLUMNS)
 

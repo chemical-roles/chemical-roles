@@ -1,4 +1,6 @@
 modulation	entity_type	db	0
+activator	enzyme	ec-code	1
+activator	protein	uniprot	10
 agonist	protein	hgnc	325
 agonist	protein family	fplx	30
 antagonist	protein	hgnc	175
