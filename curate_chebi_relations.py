@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 import pickle
 from collections import defaultdict
@@ -12,15 +13,22 @@ import requests
 from bio2bel_expasy.parser import get_expasy_closed_tree
 from networkx import MultiDiGraph, ancestors
 
+logger = logging.getLogger(__name__)
+
 HERE = os.path.abspath(os.path.dirname(__file__))
 RESOURCES_DIRECTORY = os.path.join(HERE, 'resources')
 EXPORT_DIRECTORY = os.path.join(HERE, 'export')
 
 GILDA_URL = 'http://34.201.164.108:8001'
 
-CHEBI_OBO_URL = 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo'
-CHEBI_OBO_PATH = os.path.join(RESOURCES_DIRECTORY, 'chebi.obo')
+CHEBI_RELEASE = '179'
+CHEBI_OBO_URL = f'ftp://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel{CHEBI_RELEASE}/ontology/chebi.obo.gz'
+CHEBI_OBO_PATH = os.path.join(RESOURCES_DIRECTORY, 'chebi.obo.gz')
 CHEBI_OBO_PICKLE_PATH = os.path.join(RESOURCES_DIRECTORY, 'chebi.obo.pickle')
+
+FAMPLEX_RELATIONS_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv'
+FAMPLEX_EQUIVALENCES_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/equivalences.csv'
+FAMPLEX_HGNC_SYMBOL_MAP_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/export/hgnc_symbol_map.csv'
 
 RELATIONS_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations.tsv')
 RELATIONS_SLIM_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations_slim.tsv')
@@ -56,17 +64,24 @@ def post_gilda(text: str, url: str = GILDA_URL) -> requests.Response:
 
 
 def get_graph(
-        path: str = CHEBI_OBO_PATH,
-        pickle_path: str = CHEBI_OBO_PICKLE_PATH,
+    path: str = CHEBI_OBO_PATH,
+    pickle_path: str = CHEBI_OBO_PICKLE_PATH,
 ) -> MultiDiGraph:
     if os.path.exists(pickle_path):
+        logger.info('Opening cached pre-parsed OBO')
         with open(pickle_path, 'rb') as file:
             return pickle.load(file)
     if not os.path.exists(path):
+        logger.info(f'Downloading from {CHEBI_OBO_URL}')
         urlretrieve(CHEBI_OBO_URL, path)
+
+    logger.info('Parsing OBO')
     graph = obonet.read_obo(path)
+
     with open(pickle_path, 'wb') as file:
+        logger.info('Caching pre-parsed OBO')
         pickle.dump(graph, file)
+
     return graph
 
 
@@ -76,17 +91,33 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
     rv = []
     for chebi_id, data in graph.nodes(data=True):
         chebi_name = data['name']
-        
+
         # Do this as a loop since there is at least one entry that corresponds to several EC codes
         ec_codes = []
+
+        # Requested fix in https://github.com/ebi-chebi/ChEBI/issues/3651
         if chebi_name == 'EC 1.22* (oxidoreductase acting on halogen in donors) inhibitor':
             ec_codes.append('1.22.-.-')
 
+        # Not sure why this has two
         elif chebi_name == 'EC 1.1.1.34/EC 1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitor':
             ec_codes.append('1.1.1.34')
             ec_codes.append('1.1.1.88')
 
-        elif chebi_name.startswith('EC ') and chebi_name.endswith('inhibitor'):
+        # Requested rename in https://github.com/ebi-chebi/ChEBI/issues/3653
+        elif chebi_name == 'EC 1.11.1.11 (L-ascorbate peroxidase) inhibitors':
+            ec_codes.append('1.11.1.11')
+
+        # Requested typo fix in https://github.com/ebi-chebi/ChEBI/issues/3652
+        elif chebi_name == 'EC 3.5.5.1 (nitrilase) inhhibitor':
+            ec_codes.append('3.5.5.1')
+
+        # All other normal cases
+        elif chebi_name.startswith('EC '):
+            if not chebi_name.endswith('inhibitor'):
+                logger.warning(f'Not handled: {chebi_id} ! {chebi_name}')
+                continue
+
             ec_code = chebi_name[len('EC '):].split()[0].replace('*', '-').rstrip('.')
 
             # Add any remaining dashes
@@ -165,11 +196,11 @@ def _single_suggest(graph, chebi_id, modulation, file=None) -> None:
 
 
 def _suggest_xrefs_curation(
-        graph: MultiDiGraph,
-        top_chebi_id: str,
-        it: Collection[str],
-        suffix: str,
-        show_missing: bool = False
+    graph: MultiDiGraph,
+    top_chebi_id: str,
+    it: Collection[str],
+    suffix: str,
+    show_missing: bool = False
 ) -> Iterable[Tuple[str, str, str, str, str, str]]:
     """
 
@@ -199,17 +230,34 @@ def _suggest_xrefs_curation(
 
 def get_relations_df(graph: MultiDiGraph) -> pd.DataFrame:
     xrefs_df = _get_curated_xrefs_df()
-    xrefs = {
-        chebi_id: (modulation, entity_type, db, db_id, db_name)
-        for chebi_id, _, modulation, entity_type, db, db_id, db_name in xrefs_df.values
-    }
+
+    famplex_map_df = pd.read_csv(FAMPLEX_HGNC_SYMBOL_MAP_URL)
+    hgnc_symbol_to_id = dict(famplex_map_df.values)
+
+    famplex_id_to_members = defaultdict(list)
+    famplex_relations_df = pd.read_csv(FAMPLEX_RELATIONS_URL)
+    for source_db, source_name, rel, target_db, target_name in famplex_relations_df.values:
+        if source_db == 'HGNC' and rel == 'isa' and target_db == 'FPLX':
+            try:
+                hgnc_symbol = hgnc_symbol_to_id[source_name]
+            except KeyError:
+                logger.warning(f'Could not find {source_name} for fplx:{target_name}')
+                continue
+
+            famplex_id_to_members[target_name].append((hgnc_symbol, source_name))
+
+    xrefs = defaultdict(list)
+    for chebi_id, _, modulation, entity_type, db, db_id, db_name in xrefs_df.values:
+        xrefs[chebi_id].append((modulation, entity_type, db, db_id, db_name))
+        if db == 'fplx':
+            for hgnc_id, hgnc_symbol in famplex_id_to_members.get(db_id, []):
+                xrefs[chebi_id].append((modulation, 'protein', 'hgnc', hgnc_id, hgnc_symbol))
 
     rv = [
-        (child_chebi_id, child_name, *xrefs[role_chebi_id])
+        (child_chebi_id, child_name, *xref)
         for child_chebi_id, child_name, role_chebi_id in _iterate_roles(graph, xrefs_df.chebi_id)
-        if role_chebi_id in xrefs
+        for xref in xrefs.get(role_chebi_id, [])
     ]
-
     return pd.DataFrame(rv, columns=XREFS_COLUMNS)
 
 
@@ -229,7 +277,12 @@ def _iterate_roles(graph, chebi_ids):
 
 @click.command()
 @click.option('-s', '--suggest', is_flag=True)
-def main(suggest: bool) -> None:
+@click.option('-b', '--debug', is_flag=True)
+def main(suggest: bool, debug: bool) -> None:
+    level = logging.DEBUG if debug else logging.INFO
+    logger.setLevel(level)
+    logging.basicConfig(level=level)
+
     _get_curated_xrefs_df().sort_values(['chebi_name', 'modulation']).to_csv(XREFS_PATH, index=False, sep='\t')
     graph = get_graph()
 
@@ -257,11 +310,11 @@ def main(suggest: bool) -> None:
     summary_df.to_csv(SUMMARY_OUTPUT_PATH, sep='\t', index=False)
 
     try:
-        import tabulate
-    except:
+        from tabulate import tabulate
+    except ImportError:
         pass
     else:
-        print(tabulate.tabulate(summary_df.values, ['relation', 'type', 'db', 'count'], tablefmt='github'))
+        print(tabulate(summary_df.values, ['relation', 'type', 'db', 'count'], tablefmt='github'))
 
 
 if __name__ == '__main__':
