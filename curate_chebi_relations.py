@@ -1,3 +1,5 @@
+"""A script to help curate ChEBI relations and infer new ones."""
+
 import json
 import logging
 import os
@@ -50,11 +52,11 @@ BLACKLIST = [
 ]
 
 
-def _get_curated_xrefs_df():
+def _get_curated_xrefs_df() -> pd.DataFrame:
     return pd.read_csv(XREFS_PATH, sep='\t', comment='#')
 
 
-def _get_inhibitors_reclassification():
+def _get_inhibitors_reclassification() -> pd.DataFrame:
     return pd.read_csv(RECLASSIFICATION_PATH, sep='\t', comment='#')
 
 
@@ -287,7 +289,10 @@ def main(suggest: bool, debug: bool) -> None:
     logger.setLevel(level)
     logging.basicConfig(level=level)
 
+    # Sort the curated xrefs file
     _get_curated_xrefs_df().sort_values(['chebi_name', 'modulation']).to_csv(XREFS_PATH, index=False, sep='\t')
+
+    # Get the graph
     graph = get_graph()
 
     if suggest:
