@@ -313,7 +313,7 @@ def main(suggest: bool, debug: bool) -> None:
     df = pd.concat([
         relations_df,
         enzyme_inhibitor_df,
-    ])
+    ]).drop_duplicates()
 
     columns = ['modulation', 'entity_type', 'chebi_id', 'chebi_name', 'db', 'db_id', 'db_name']
     df[columns].sort_values(columns).to_csv(RELATIONS_OUTPUT_PATH, sep='\t', index=False)
