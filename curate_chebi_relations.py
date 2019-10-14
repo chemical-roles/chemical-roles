@@ -137,7 +137,7 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
             continue
 
         for ec_code in ec_codes:
-            rv.append((chebi_id, chebi_name, modulation, 'enzyme', 'ec-code', ec_code, ec_code))
+            rv.append((chebi_id, chebi_name, modulation, 'protein family', 'ec-code', ec_code, ec_code))
 
             expasy_children = expasy.get(ec_code)
             if expasy_children is None:
@@ -146,7 +146,7 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
 
             for c_db, c_identifier, c_name in expasy_children:
                 if c_db == 'ec-code':
-                    entity_type = 'enzyme'
+                    entity_type = 'protein family'
                 else:
                     entity_type = 'protein'
 
