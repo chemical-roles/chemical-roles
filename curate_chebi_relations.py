@@ -19,7 +19,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 RESOURCES_DIRECTORY = os.path.join(HERE, 'resources')
 EXPORT_DIRECTORY = os.path.join(HERE, 'export')
 
-GILDA_URL = 'http://34.201.164.108:8001'
+GILDA_URL = 'http://grounding.indra.bio'
 
 CHEBI_RELEASE = '179'
 CHEBI_OBO_URL = f'ftp://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel{CHEBI_RELEASE}/ontology/chebi.obo.gz'
