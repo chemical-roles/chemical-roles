@@ -1,18 +1,22 @@
 modulation	entity_type	db	0
 activator	enzyme	ec-code	1
+activator	protein	hgnc	19
 activator	protein	uniprot	10
-agonist	protein	hgnc	325
+activator	protein family	fplx	4
+agonist	protein	hgnc	328
 agonist	protein family	fplx	30
-antagonist	protein	hgnc	175
+antagonist	protein	hgnc	182
 antagonist	protein family	fplx	19
-antagonist	protein family	hgnc.genefamily	30
-inhibitor	complex	fplx	42
+antagonist	protein family	hgnc.genefamily	34
+inhibitor	complex	fplx	43
 inhibitor	complex	go	1
 inhibitor	enzyme	ec-code	22417
 inhibitor	protein	hgnc	34
 inhibitor	protein	prosite	1796
 inhibitor	protein	uniprot	694934
 inhibitor	protein family	fplx	6
+inverse agonist	protein	hgnc	2
+inverse agonist	protein family	fplx	1
 negatively_regulates	pathway	go	152
 positively_regulates	pathway	efo	6
 positively_regulates	pathway	go	10

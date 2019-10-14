@@ -27,6 +27,7 @@ CHEBI:91202	TGFbeta receptor antagonist	antagonist	protein family	fplx	TGFBR	TGF
 CHEBI:140535	TRPV1 agonist	agonist	protein	hgnc	12716	TRPV1
 CHEBI:140061	TRPV4 agonist	agonist	protein	hgnc	18083	TRPV4
 CHEBI:77161	Toll-like receptor 2 agonist	agonist	protein	hgnc	11848	TLR2
+CHEBI:91189	VEGF activator	activator	protein family	fplx	VEGF	VEGF
 CHEBI:78009	Wiskott-Aldrich syndrome protein inhibitor	inhibitor	protein	hgnc	12731	WAS
 CHEBI:65057	adenosine A1 receptor agonist	agonist	protein	hgnc	262	ADORA1
 CHEBI:63957	adenosine A1 receptor antagonist	antagonist	protein	hgnc	262	ADORA1
@@ -35,6 +36,7 @@ CHEBI:53121	adenosine A2A receptor antagonist	antagonist	protein	hgnc	263	ADORA2
 CHEBI:131359	adenosine A2B receptor agonist	agonist	protein	hgnc	264	ADORA2B
 CHEBI:73319	adenosine A3 receptor agonist	agonist	protein	hgnc	268	ADORA3
 CHEBI:70725	adenosine A3 receptor antagonist	antagonist	protein	hgnc	268	ADORA3
+CHEBI:71232	adenosine receptor antagonist	antagonist	protein family	hgnc.genefamily	211	Adenosine receptors (ADORA)
 CHEBI:78548	adenylate cyclase agonist	agonist	protein family	fplx	ADCY	ADCY
 CHEBI:63936	alpha1B-adrenoceptor antagonist	antagonist	protein	hgnc	278	ADRA1B
 CHEBI:68494	apoptosis inhibitor	negatively_regulates	pathway	go	GO:0006915	apoptotic process
@@ -55,6 +57,7 @@ CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1570	CCKAR
 CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1571	CCKBR
 CHEBI:23529	cytochrome-b6f complex inhibitor	inhibitor	complex	go	GO:0009512	cytochrome b6f complex
 CHEBI:38502	cytochrome-bc1 complex inhibitor	inhibitor	complex	fplx	ETC_complex_III	ETC_complex_III
+CHEBI:59283	delta-opioid receptor antagonist	antagonist	protein	hgnc	8153	OPRD1
 CHEBI:131787	dopamine receptor D2 antagonist	antagonist	protein	hgnc	3023	DRD2
 CHEBI:38496	electron-transport chain inhibitor	negatively_regulates	pathway	go	GO:0022900	electron transport chain
 CHEBI:74440	epidermal growth factor receptor antagonist	antagonist	protein	hgnc	3236	EGFR
@@ -71,6 +74,7 @@ CHEBI:63562	glucocorticoid receptor agonist	agonist	protein	hgnc	7978	NR3C1
 CHEBI:82891	glucocorticoid receptor antagonist	antagonist	protein	hgnc	7978	NR3C1
 CHEBI:68553	guanylate cyclase 2C agonist	agonist	protein	hgnc	4688	GUCY2C
 CHEBI:85185	hepatitis C virus nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:90846	liver X receptor inverse agonist	inverse agonist	protein family	fplx	LXR	LXR
 CHEBI:131509	lysine-specific histone demethylase 1A inhibitor	inhibitor	protein	hgnc	29079	KDM1A
 CHEBI:139584	lysophosphatidic acid receptor 3 agonist	agonist	protein	hgnc	14298	LPAR3
 CHEBI:91214	macrophage migration inhibitory factor inhibitor	inhibitor	protein	hgnc	7097	MIF
@@ -80,8 +84,10 @@ CHEBI:25355	mitochondrial respiratory-chain inhibitor	negatively_regulates	pathw
 CHEBI:52290	mitogen	positively_regulates	pathway	go	GO:0051301	cell division
 CHEBI:55322	mu-opioid receptor agonist	agonist	protein	hgnc	8156	OPRM1
 CHEBI:50137	mu-opioid receptor antagonist	antagonist	protein	hgnc	8156	OPRM1
+CHEBI:73966	nitric oxide synthase activator	activator	protein family	fplx	NOS	NOS
 CHEBI:83799	nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
 CHEBI:73267	oxidative phosphorylation inhibitor	negatively_regulates	pathway	go	GO:0006119	oxidative phosphorylation
+CHEBI:77731	p53 activator	activator	protein	hgnc	11998	TP53
 CHEBI:26087	photosynthetic electron-transport chain inhibitor	negatively_regulates	pathway	go	GO:0009767	photosynthetic electron transport chain
 CHEBI:26088	photosystem-I inhibitor	negatively_regulates	pathway	go	GO:0009522	photosystem I
 CHEBI:26089	photosystem-II inhibitor	negatively_regulates	pathway	go	GO:0009523	photosystem II

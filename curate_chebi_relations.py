@@ -41,6 +41,7 @@ XREFS_COLUMNS = ['chebi_id', 'chebi_name', 'modulation', 'entity_type', 'db', 'd
 XREFS_PATH = os.path.join(RESOURCES_DIRECTORY, 'xrefs.tsv')
 RECLASSIFICATION_PATH = os.path.join(RESOURCES_DIRECTORY, 'reclassification.tsv')
 
+BIOCHEMICAL_ROLE_CHEBI_ID = 'CHEBI:52206'
 PATHWAY_INHIBITOR_CHEBI_ID = 'CHEBI:76932'
 ENZYME_INHIBITOR_CHEBI_ID = 'CHEBI:23924'
 AGONIST_CHEBI_ID = 'CHEBI:48705'
@@ -195,6 +196,10 @@ def suggest_inverse_agonist_curation(graph: MultiDiGraph) -> None:
     _single_suggest(graph, INVERSE_AGONIST_CHEBI_ID, 'inverse agonist')
 
 
+def suggest_activator_curation(graph: MultiDiGraph) -> None:
+    _single_suggest(graph, BIOCHEMICAL_ROLE_CHEBI_ID, 'activator')
+
+
 def _single_suggest(graph, chebi_id, modulation, file=None) -> None:
     it = set(ancestors(graph, chebi_id))
     for t in _suggest_xrefs_curation(graph, chebi_id, it, modulation):
@@ -296,6 +301,7 @@ def main(suggest: bool, debug: bool) -> None:
     graph = get_graph()
 
     if suggest:
+        suggest_activator_curation(graph)
         suggest_pathway_inhibitor_curation(graph)
         suggest_inhibitor_curation(graph)
         suggest_agonist_curation(graph)
