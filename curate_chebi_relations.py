@@ -38,7 +38,11 @@ RELATIONS_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations.tsv')
 RELATIONS_SLIM_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations_slim.tsv')
 SUMMARY_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations_summary.tsv')
 
-XREFS_COLUMNS = ['chebi_id', 'chebi_name', 'modulation', 'entity_type', 'db', 'db_id', 'db_name']
+XREFS_COLUMNS = [
+    'source_db', 'source_id', 'source_name',
+    'modulation',
+    'target_type', 'target_db', 'target_id', 'target_name',
+]
 
 XREFS_PATH = os.path.join(RESOURCES_DIRECTORY, 'xrefs.tsv')
 RECLASSIFICATION_PATH = os.path.join(RESOURCES_DIRECTORY, 'reclassification.tsv')
@@ -144,7 +148,7 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
             continue
 
         for ec_code in ec_codes:
-            rv.append((chebi_id, chebi_name, modulation, 'protein family', 'ec-code', ec_code, ec_code))
+            rv.append(('chebi', chebi_id, chebi_name, modulation, 'protein family', 'ec-code', ec_code, ec_code))
 
             expasy_children = expasy.get(ec_code)
             if expasy_children is None:
@@ -153,11 +157,12 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
 
             for c_db, c_identifier, c_name in expasy_children:
                 if c_db == 'ec-code':
-                    entity_type = 'protein family'
+                    target_type = 'protein family'
                 else:
-                    entity_type = 'protein'
+                    target_type = 'protein'
 
-                rv.append((chebi_id, chebi_name, modulation, entity_type, c_db, c_identifier, c_name or c_identifier))
+                rv.append(('chebi', chebi_id, chebi_name, modulation, target_type, c_db, c_identifier,
+                           c_name or c_identifier))
 
     return pd.DataFrame(rv, columns=XREFS_COLUMNS)
 
@@ -265,6 +270,7 @@ def get_relations_df(graph: MultiDiGraph) -> pd.DataFrame:
             famplex_id_to_members[target_name].append((hgnc_symbol, source_name))
 
     hgnc_id_to_up = get_hgnc_to_up_mapping()
+
     def _get_uniprot_id_names(hgnc_id):
         try:
             r = hgnc_id_to_up[str(hgnc_id)]
@@ -277,22 +283,22 @@ def get_relations_df(graph: MultiDiGraph) -> pd.DataFrame:
             yield uniprot_id, uniprot_client.get_mnemonic(uniprot_id)
 
     xrefs = defaultdict(list)
-    for chebi_id, _, modulation, entity_type, db, db_id, db_name in xrefs_df.values:
-        if db == 'hgnc':
-            for uniprot_id, uniprot_name in _get_uniprot_id_names(db_id):
+    for chebi_id, _, modulation, target_type, target_db, target_id, target_name in xrefs_df.values:
+        if target_db == 'hgnc':
+            for uniprot_id, uniprot_name in _get_uniprot_id_names(target_id):
                 xrefs[chebi_id].append((modulation, 'protein', 'uniprot', uniprot_id, uniprot_name))
-        elif db == 'fplx':
-            xrefs[chebi_id].append((modulation, entity_type, db, db_id, db_name))
+        elif target_db == 'fplx':
+            xrefs[chebi_id].append((modulation, target_type, target_db, target_id, target_name))
 
-            for hgnc_id, hgnc_symbol in famplex_id_to_members.get(db_id, []):
+            for hgnc_id, hgnc_symbol in famplex_id_to_members.get(target_id, []):
                 # xrefs[chebi_id].append((modulation, 'protein', 'hgnc', hgnc_id, hgnc_symbol))
                 for uniprot_id, uniprot_name in _get_uniprot_id_names(hgnc_id):
                     xrefs[chebi_id].append((modulation, 'protein', 'uniprot', uniprot_id, uniprot_name))
         else:
-            xrefs[chebi_id].append((modulation, entity_type, db, db_id, db_name))
+            xrefs[chebi_id].append((modulation, target_type, target_db, target_id, target_name))
 
     rv = [
-        (child_chebi_id, child_name, *xref)
+        ('chebi', child_chebi_id, child_name, *xref)
         for child_chebi_id, child_name, role_chebi_id in _iterate_roles(graph, xrefs_df.chebi_id)
         for xref in xrefs.get(role_chebi_id, [])
     ]
@@ -342,13 +348,14 @@ def main(suggest: bool, debug: bool) -> None:
         enzyme_inhibitor_df,
     ]).drop_duplicates()
 
-    columns = ['modulation', 'entity_type', 'chebi_id', 'chebi_name', 'db', 'db_id', 'db_name']
+    columns = ['modulation', 'target_type', 'source_db', 'source_id', 'source_name', 'target_db', 'target_id',
+               'target_name']
     df[columns].sort_values(columns).to_csv(RELATIONS_OUTPUT_PATH, sep='\t', index=False)
 
-    slim_columns = ['chebi_id', 'modulation', 'entity_type', 'db', 'db_id']
+    slim_columns = ['source_db', 'source_id', 'modulation', 'target_type', 'target_db', 'target_id']
     df[slim_columns].sort_values(slim_columns).to_csv(RELATIONS_SLIM_OUTPUT_PATH, sep='\t', index=False)
 
-    summary_df = df.groupby(['modulation', 'entity_type', 'db']).size().reset_index()
+    summary_df = df.groupby(['source_db', 'modulation', 'target_type', 'target_db']).size().reset_index()
     summary_df.to_csv(SUMMARY_OUTPUT_PATH, sep='\t', index=False)
 
     try:
@@ -356,7 +363,11 @@ def main(suggest: bool, debug: bool) -> None:
     except ImportError:
         pass
     else:
-        print(tabulate(summary_df.values, ['relation', 'type', 'db', 'count'], tablefmt='github'))
+        print(tabulate(
+            summary_df.values,
+            ['source_db', 'relation', 'target_type', 'target_db', 'count'],
+            tablefmt='github',
+        ))
 
 
 if __name__ == '__main__':

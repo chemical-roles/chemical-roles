@@ -1,21 +1,21 @@
-modulation	entity_type	db	0
-activator	protein	uniprot	28
-activator	protein family	ec-code	1
-activator	protein family	fplx	4
-agonist	protein	uniprot	281
-agonist	protein family	fplx	24
-antagonist	protein	uniprot	134
-antagonist	protein family	fplx	16
-antagonist	protein family	hgnc.genefamily	18
-inhibitor	complex	fplx	42
-inhibitor	complex	go	1
-inhibitor	protein	prosite	1795
-inhibitor	protein	uniprot	694964
-inhibitor	protein family	ec-code	22417
-inhibitor	protein family	fplx	6
-inverse agonist	protein	uniprot	2
-inverse agonist	protein family	fplx	1
-negatively_regulates	pathway	go	146
-positively_regulates	pathway	efo	6
-positively_regulates	pathway	go	9
-positively_regulates	pathway	ncit	37
+source_db	modulation	entity_type	target_db	0
+chebi	activator	protein	uniprot	28
+chebi	activator	protein family	ec-code	1
+chebi	activator	protein family	fplx	4
+chebi	agonist	protein	uniprot	281
+chebi	agonist	protein family	fplx	24
+chebi	antagonist	protein	uniprot	134
+chebi	antagonist	protein family	fplx	16
+chebi	antagonist	protein family	hgnc.genefamily	18
+chebi	inhibitor	complex	fplx	42
+chebi	inhibitor	complex	go	1
+chebi	inhibitor	protein	prosite	1795
+chebi	inhibitor	protein	uniprot	694964
+chebi	inhibitor	protein family	ec-code	22417
+chebi	inhibitor	protein family	fplx	6
+chebi	inverse agonist	protein	uniprot	2
+chebi	inverse agonist	protein family	fplx	1
+chebi	negatively_regulates	pathway	go	146
+chebi	positively_regulates	pathway	efo	6
+chebi	positively_regulates	pathway	go	9
+chebi	positively_regulates	pathway	ncit	37
