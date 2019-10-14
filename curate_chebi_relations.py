@@ -14,6 +14,8 @@ import pandas as pd
 import requests
 from bio2bel_expasy.parser import get_expasy_closed_tree
 from networkx import MultiDiGraph, ancestors
+from protmapper import uniprot_client
+from protmapper.uniprot_client import _build_hgnc_mappings
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +56,7 @@ BLACKLIST = [
 
 
 def _get_curated_xrefs_df() -> pd.DataFrame:
-    return pd.read_csv(XREFS_PATH, sep='\t', comment='#')
+    return pd.read_csv(XREFS_PATH, sep='\t', comment='#', dtype={'db_id': str})
 
 
 def _get_inhibitors_reclassification() -> pd.DataFrame:
@@ -64,6 +66,11 @@ def _get_inhibitors_reclassification() -> pd.DataFrame:
 def post_gilda(text: str, url: str = GILDA_URL) -> requests.Response:
     """Send text to GILDA."""
     return requests.post(f'{url}/ground', json={'text': text})
+
+
+def get_hgnc_to_up_mapping():
+    _, hgnc_id_to_up, _ = _build_hgnc_mappings()
+    return hgnc_id_to_up
 
 
 def get_graph(
@@ -220,8 +227,8 @@ def _suggest_xrefs_curation(
     :param it:
     :param suffix: The modulation type (e.g., inhibitor, agonist)
     """
-    xrefs = _get_curated_xrefs_df()
-    curated_chebi_ids = set(xrefs.chebi_id)
+    xrefs_df = _get_curated_xrefs_df()
+    curated_chebi_ids = set(xrefs_df.chebi_id)
 
     print(f'Children of {top_chebi_id} ({graph.nodes[top_chebi_id]["name"]})')
     for node in it:
@@ -257,12 +264,32 @@ def get_relations_df(graph: MultiDiGraph) -> pd.DataFrame:
 
             famplex_id_to_members[target_name].append((hgnc_symbol, source_name))
 
+    hgnc_id_to_up = get_hgnc_to_up_mapping()
+    def _get_uniprot_id_names(hgnc_id):
+        try:
+            r = hgnc_id_to_up[str(hgnc_id)]
+        except KeyError:
+            _k, _v = list(hgnc_id_to_up.items())[0]
+            print(f'could not find {hgnc_id} ({type(hgnc_id)} in dict. Example: {_k} ({type(_k)}), {_v} ({type(_v)})')
+            raise
+
+        for uniprot_id in r.split(', '):
+            yield uniprot_id, uniprot_client.get_mnemonic(uniprot_id)
+
     xrefs = defaultdict(list)
     for chebi_id, _, modulation, entity_type, db, db_id, db_name in xrefs_df.values:
-        xrefs[chebi_id].append((modulation, entity_type, db, db_id, db_name))
-        if db == 'fplx':
+        if db == 'hgnc':
+            for uniprot_id, uniprot_name in _get_uniprot_id_names(db_id):
+                xrefs[chebi_id].append((modulation, 'protein', 'uniprot', uniprot_id, uniprot_name))
+        elif db == 'fplx':
+            xrefs[chebi_id].append((modulation, entity_type, db, db_id, db_name))
+
             for hgnc_id, hgnc_symbol in famplex_id_to_members.get(db_id, []):
-                xrefs[chebi_id].append((modulation, 'protein', 'hgnc', hgnc_id, hgnc_symbol))
+                # xrefs[chebi_id].append((modulation, 'protein', 'hgnc', hgnc_id, hgnc_symbol))
+                for uniprot_id, uniprot_name in _get_uniprot_id_names(hgnc_id):
+                    xrefs[chebi_id].append((modulation, 'protein', 'uniprot', uniprot_id, uniprot_name))
+        else:
+            xrefs[chebi_id].append((modulation, entity_type, db, db_id, db_name))
 
     rv = [
         (child_chebi_id, child_name, *xref)
