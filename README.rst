@@ -1,5 +1,5 @@
-ChEBI Relations
-===============
+Chemical Relations
+==================
 This repository is meant to house links between ChEBI terms describing various
 types of inhibitors and their targets in other vocabularies. For example,
 there are several enzyme inhibitors that refer to ExPASy enzyme class codes,
@@ -28,4 +28,20 @@ Repository Structure
 License
 -------
 - Code in this repository is under the MIT License.
-- Data in this repository is under CC BY 4.0.
+- Data in this repository is under CC0.
+
+Data Sources
+------------
+Automatically Retreived Data Sources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ChEBI (https://www.ebi.ac.uk/chebi)
+- HUGO Gene Nomenclature Committee at the European Bioinformatics Institute. See https://www.genenames.org/ for more information
+- UniProt (https://www.uniprot.org)
+- FamPlex (https://github.com/sorgerlab/famplex)
+- ExPASy (https://www.expasy.org/)
+
+Manually Referenced Data Sources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Gene Ontology (http://geneontology.org)
+- EFO (https://www.ebi.ac.uk/efo)
+- NCIT (https://ncit.nci.nih.gov)
