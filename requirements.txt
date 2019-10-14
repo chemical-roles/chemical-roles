@@ -3,3 +3,4 @@ requests
 networkx
 obonet
 bio2bel_expasy
+click
