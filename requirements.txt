@@ -5,3 +5,4 @@ obonet
 bio2bel_expasy
 click
 protmapper
+tabulate

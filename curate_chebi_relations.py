@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import pickle
+import sys
 from collections import defaultdict
 from typing import Collection, Iterable, Tuple
 from urllib.request import urlretrieve
@@ -16,6 +17,7 @@ from bio2bel_expasy.parser import get_expasy_closed_tree
 from networkx import MultiDiGraph, ancestors
 from protmapper import uniprot_client
 from protmapper.uniprot_client import _build_hgnc_mappings
+from tabulate import tabulate
 
 logger = logging.getLogger(__name__)
 
@@ -111,19 +113,23 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
 
         # Requested fix in https://github.com/ebi-chebi/ChEBI/issues/3651
         if chebi_name == 'EC 1.22* (oxidoreductase acting on halogen in donors) inhibitor':
+            modulation = 'inhibitor'
             ec_codes.append('1.22.-.-')
 
         # Not sure why this has two
         elif chebi_name == 'EC 1.1.1.34/EC 1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitor':
+            modulation = 'inhibitor'
             ec_codes.append('1.1.1.34')
             ec_codes.append('1.1.1.88')
 
         # Requested rename in https://github.com/ebi-chebi/ChEBI/issues/3653
         elif chebi_name == 'EC 1.11.1.11 (L-ascorbate peroxidase) inhibitors':
+            modulation = 'inhibitor'
             ec_codes.append('1.11.1.11')
 
         # Requested typo fix in https://github.com/ebi-chebi/ChEBI/issues/3652
         elif chebi_name == 'EC 3.5.5.1 (nitrilase) inhhibitor':
+            modulation = 'inhibitor'
             ec_codes.append('3.5.5.1')
 
         # All other normal cases
@@ -161,8 +167,10 @@ def get_enzyme_inhibitor_df(graph: MultiDiGraph) -> pd.DataFrame:
                 else:
                     target_type = 'protein'
 
-                rv.append(('chebi', chebi_id, chebi_name, modulation, target_type, c_db, c_identifier,
-                           c_name or c_identifier))
+                rv.append((
+                    'chebi', chebi_id, chebi_name, modulation, target_type, c_db, c_identifier,
+                    c_name or c_identifier,
+                ))
 
     return pd.DataFrame(rv, columns=XREFS_COLUMNS)
 
@@ -235,7 +243,8 @@ def _suggest_xrefs_curation(
     xrefs_df = _get_curated_xrefs_df()
     curated_chebi_ids = set(xrefs_df.chebi_id)
 
-    print(f'Children of {top_chebi_id} ({graph.nodes[top_chebi_id]["name"]})')
+    if it:
+        print(f'\nChildren of {top_chebi_id} ({graph.nodes[top_chebi_id]["name"]})\n')
     for node in it:
         if node in curated_chebi_ids:
             continue
@@ -340,6 +349,7 @@ def main(suggest: bool, debug: bool) -> None:
         suggest_agonist_curation(graph)
         suggest_antagonist_curation(graph)
         suggest_inverse_agonist_curation(graph)
+        return sys.exit(0)
 
     relations_df = get_relations_df(graph)
     enzyme_inhibitor_df = get_enzyme_inhibitor_df(graph)
@@ -358,16 +368,11 @@ def main(suggest: bool, debug: bool) -> None:
     summary_df = df.groupby(['source_db', 'modulation', 'target_type', 'target_db']).size().reset_index()
     summary_df.to_csv(SUMMARY_OUTPUT_PATH, sep='\t', index=False)
 
-    try:
-        from tabulate import tabulate
-    except ImportError:
-        pass
-    else:
-        print(tabulate(
-            summary_df.values,
-            ['source_db', 'relation', 'target_type', 'target_db', 'count'],
-            tablefmt='github',
-        ))
+    print(tabulate(
+        summary_df.values,
+        ['source_db', 'relation', 'target_type', 'target_db', 'count'],
+        tablefmt='github',
+    ))
 
 
 if __name__ == '__main__':

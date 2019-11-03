@@ -1,16 +1,18 @@
-source_db	modulation	entity_type	target_db	0
-chebi	activator	protein	uniprot	28
-chebi	activator	protein family	ec-code	1
-chebi	activator	protein family	fplx	4
-chebi	agonist	protein	uniprot	281
-chebi	agonist	protein family	fplx	24
-chebi	antagonist	protein	uniprot	134
-chebi	antagonist	protein family	fplx	16
+source_db	modulation	target_type	target_db	0
+chebi	activator	complex	fplx	6
+chebi	activator	protein	uniprot	50
+chebi	activator	protein family	ec-code	2
+chebi	activator	protein family	fplx	5
+chebi	agonist	protein	uniprot	286
+chebi	agonist	protein family	fplx	25
+chebi	antagonist	protein	uniprot	254
+chebi	antagonist	protein family	fplx	48
 chebi	antagonist	protein family	hgnc.genefamily	18
+chebi	antagonist	protein family	interpro	1
 chebi	inhibitor	complex	fplx	42
 chebi	inhibitor	complex	go	1
 chebi	inhibitor	protein	prosite	1795
-chebi	inhibitor	protein	uniprot	694964
+chebi	inhibitor	protein	uniprot	694966
 chebi	inhibitor	protein family	ec-code	22417
 chebi	inhibitor	protein family	fplx	6
 chebi	inverse agonist	protein	uniprot	2
