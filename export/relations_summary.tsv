@@ -3,9 +3,12 @@ chebi	activator	complex	fplx	6
 chebi	activator	protein	uniprot	50
 chebi	activator	protein family	ec-code	2
 chebi	activator	protein family	fplx	5
-chebi	agonist	protein	uniprot	286
-chebi	agonist	protein family	fplx	25
-chebi	antagonist	protein	uniprot	254
+chebi	agonist	chemical	chebi	3
+chebi	agonist	protein	uniprot	292
+chebi	agonist	protein family	fplx	27
+chebi	antagonist	chemical	chebi	57
+chebi	antagonist	protein	uniprot	271
+chebi	antagonist	protein family	FPLX	2
 chebi	antagonist	protein family	fplx	48
 chebi	antagonist	protein family	hgnc.genefamily	18
 chebi	antagonist	protein family	interpro	1
