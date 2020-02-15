@@ -27,10 +27,10 @@ EXPORT_DIRECTORY = os.path.join(HERE, 'export')
 
 GILDA_URL = 'http://grounding.indra.bio'
 
-CHEBI_RELEASE = '179'
+CHEBI_RELEASE = '184'
 CHEBI_OBO_URL = f'ftp://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel{CHEBI_RELEASE}/ontology/chebi.obo.gz'
-CHEBI_OBO_PATH = os.path.join(RESOURCES_DIRECTORY, 'chebi.obo.gz')
-CHEBI_OBO_PICKLE_PATH = os.path.join(RESOURCES_DIRECTORY, 'chebi.obo.pickle')
+CHEBI_OBO_PATH = os.path.join(RESOURCES_DIRECTORY, f'chebi_{CHEBI_RELEASE}.obo.gz')
+CHEBI_OBO_PICKLE_PATH = os.path.join(RESOURCES_DIRECTORY, f'chebi_{CHEBI_RELEASE}.obo.pickle')
 
 FAMPLEX_RELATIONS_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv'
 FAMPLEX_EQUIVALENCES_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/equivalences.csv'

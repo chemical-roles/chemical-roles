@@ -102,6 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-resources/chebi.obo
-resources/chebi.obo.pickle
+
+resources/chebi*
 .idea
