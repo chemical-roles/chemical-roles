@@ -54,6 +54,7 @@ CHEBI:77495	bradykinin receptor agonist	agonist	protein family	fplx	BDKR	BDKR
 CHEBI:72771	breast cancer resistance protein inhibitor	inhibitor	protein	hgnc	74	ABCG2
 CHEBI:137114	bromodomain-containing protein 4 inhibitor	inhibitor	protein	hgnc	13575	BRD4
 CHEBI:130181	calmodulin antagonist	antagonist	protein family	fplx	CALM	CALM
+CHEBI:67072	cannabinoid receptor agonist	agonist	protein family	mesh	D043882	Receptors, Cannabinoid
 CHEBI:137401	capsaicin receptor agonist	agonist	protein	hgnc	12716	TRPV1
 CHEBI:70774	capsaicin receptor antagonist	antagonist	protein	hgnc	12716	TRPV1
 CHEBI:50912	cardiotoxic agent	positively_regulates	pathway	efo	EFO:1001482	cardiotoxicity
@@ -64,9 +65,13 @@ CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1570	CCKAR
 CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1571	CCKBR
 CHEBI:23529	cytochrome-b6f complex inhibitor	inhibitor	complex	go	GO:0009512	cytochrome b6f complex
 CHEBI:38502	cytochrome-bc1 complex inhibitor	inhibitor	complex	fplx	ETC_complex_III	ETC_complex_III
+CHEBI:64054	delta-opioid receptor agonist	agonist	protein family	mesh	D017465	Receptors, Opioid, delta
 CHEBI:59283	delta-opioid receptor antagonist	antagonist	protein	hgnc	8153	OPRD1
 CHEBI:131787	dopamine receptor D2 antagonist	antagonist	protein	hgnc	3023	DRD2
 CHEBI:38496	electron-transport chain inhibitor	negatively_regulates	pathway	go	GO:0022900	electron transport chain
+CHEBI:51452	endothelin A receptor antagonist	antagonist	protein	hgnc	3179	EDNRA
+CHEBI:51452	endothelin A receptor antagonist	antagonist	protein	mesh	D044022	Receptor, Endothelin A
+CHEBI:51451	endothelin receptor antagonist	antagonist	protein family	mesh	D017466	Receptors, Endothelin
 CHEBI:74440	epidermal growth factor receptor antagonist	antagonist	protein	hgnc	3236	EGFR
 CHEBI:91025	erythropoietin inhibitor	inhibitor	protein	hgnc	3415	EPO
 CHEBI:50837	estrogen antagonist	antagonist	chemical	chebi	CHEBI:50114	estrogen
@@ -75,6 +80,7 @@ CHEBI:50792	estrogen receptor antagonist	antagonist	protein	hgnc	3467	ESR1
 CHEBI:133190	fatty acid oxidation inhibitor	negatively_regulates	pathway	go	GO:0019395	fatty acid oxidation
 CHEBI:50185	fatty acid synthesis inhibitor	negatively_regulates	pathway	go	GO:0006633	fatty acid biosynthetic process
 CHEBI:63457	fibroblast growth factor receptor antagonist	antagonist	protein family	fplx	FGFR	FGFR
+CHEBI:131495	formyl peptide receptor agonist	agonist	protein family	mesh	D044042	Receptors, Formyl Peptide
 CHEBI:50902	genotoxin	positively_regulates	pathway	ncit	C16507	DNA Damage
 CHEBI:140922	glioma-associated oncogene inhibitor	inhibitor	protein	hgnc	4317	GLI1
 CHEBI:60649	glucagon receptor antagonist	antagonist	protein	hgnc	4192	GCGR
@@ -82,6 +88,7 @@ CHEBI:71196	glucagon-like peptide-1 receptor agonist	agonist	protein	hgnc	4324	G
 CHEBI:72311	glucagon-like peptide-2 receptor agonist	agonist	protein	hgnc	4325	GLP2R
 CHEBI:63562	glucocorticoid receptor agonist	agonist	protein	hgnc	7978	NR3C1
 CHEBI:82891	glucocorticoid receptor antagonist	antagonist	protein	hgnc	7978	NR3C1
+CHEBI:64589	glycine receptor agonist	agonist	protein family	mesh	D018009	Receptors, Glycine
 CHEBI:63533	gonadotropin releasing hormone agonist	agonist	protein	hgnc	4419	GNRH1
 CHEBI:68553	guanylate cyclase 2C agonist	agonist	protein	hgnc	4688	GUCY2C
 CHEBI:85185	hepatitis C virus nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
@@ -89,11 +96,15 @@ CHEBI:37956	histamine antagonist	antagonist	chemical	chebi	CHEBI:18295	histamine
 CHEBI:90374	histone acetyltransferase activator	activator	protein family	ec-code	2.3.1.48	2.3.1.48
 CHEBI:51060	hormone agonist	agonist	chemical	chebi	CHEBI:24621	hormone
 CHEBI:49020	hormone antagonist	antagonist	chemical	chebi	CHEBI:24621	hormone
+CHEBI:59282	kappa-opioid receptor agonist	agonist	protein family	mesh	D017473	Receptors, Opioid, kappa
 CHEBI:86029	liver X receptor agonist	agonist	protein family	fplx	LXR	LXR
 CHEBI:90846	liver X receptor inverse agonist	inverse agonist	protein family	fplx	LXR	LXR
 CHEBI:131509	lysine-specific histone demethylase 1A inhibitor	inhibitor	protein	hgnc	29079	KDM1A
 CHEBI:139584	lysophosphatidic acid receptor 3 agonist	agonist	protein	hgnc	14298	LPAR3
+CHEBI:91193	lysophosphatidic acid receptor antagonist	antagonist	protein family	mesh	D049368	Receptors, Lysophosphatidic Acid
 CHEBI:91214	macrophage migration inhibitory factor inhibitor	inhibitor	protein	hgnc	7097	MIF
+CHEBI:79046	melatonin receptor agonist	agonist	protein family	mesh	D044094	Receptors, Melatonin
+CHEBI:131790	melatonin receptor antagonist	antagonist	protein family	mesh	D044094	Receptors, Melatonin
 CHEBI:61966	metabotropic glutamate receptor agonist	agonist	protein family	fplx	GRM	GRM
 CHEBI:63963	metabotropic glutamate receptor antagonist	antagonist	protein family	fplx	GRM	GRM
 CHEBI:25355	mitochondrial respiratory-chain inhibitor	negatively_regulates	pathway	go	GO:0005746	mitochondrial respiratory chain
@@ -105,7 +116,10 @@ CHEBI:140482	neurokinin-3 receptor antagonist	antagonist	protein	hgnc	11528	TACR
 CHEBI:133878	neuropeptide Y receptor antagonist	antagonist	protein family	FPLX	NPYR	NPYR
 CHEBI:73966	nitric oxide synthase activator	activator	protein family	fplx	NOS	NOS
 CHEBI:83799	nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
+CHEBI:62873	odorant receptor agonist	agonist	protein family	mesh	D018035	Receptors, Odorant
 CHEBI:76531	odorant receptor antagonist	antagonist	protein family	interpro	IPR000725	Olfactory receptor
+CHEBI:60606	opioid receptor agonist	agonist	protein family	mesh	D011957	Receptors, Opioid
+CHEBI:60605	opioid receptor antagonist	antagonist	protein family	mesh	D011957	Receptors, Opioid
 CHEBI:73267	oxidative phosphorylation inhibitor	negatively_regulates	pathway	go	GO:0006119	oxidative phosphorylation
 CHEBI:77731	p53 activator	activator	protein	hgnc	11998	TP53
 CHEBI:26087	photosynthetic electron-transport chain inhibitor	negatively_regulates	pathway	go	GO:0009767	photosynthetic electron transport chain
@@ -116,6 +130,8 @@ CHEBI:134182	platelet-activating factor receptor antagonist	antagonist	protein	h
 CHEBI:77318	pregnane X receptor agonist	agonist	protein	hgnc	7968	NR1I2
 CHEBI:70709	progesterone receptor agonist	agonist	protein	hgnc	8910	PGR
 CHEBI:90845	prostacyclin receptor agonist	agonist	protein	hgnc	9602	PTGIR
+CHEBI:66900	prostaglandin receptor agonist	agonist	protein family	mesh	D011982	Receptors, Prostaglandin
+CHEBI:138887	prostaglandin receptor antagonist	antagonist	protein family	mesh	D011982	Receptors, Prostaglandin
 CHEBI:83313	protease-activated receptor-1 antagonist	antagonist	protein	hgnc	3537	F2R
 CHEBI:78547	protein kinase A agonist	agonist	protein family	fplx	PKA	PKA
 CHEBI:64018	protein kinase C agonist	agonist	protein family	fplx	PKC	PKC
@@ -125,6 +141,7 @@ CHEBI:138977	quorum sensing inhibitor	negatively_regulates	pathway	go	GO:0009372
 CHEBI:38497	respiratory-chain inhibitor	inhibitor	complex	go	GO:0098803	respiratory chain complex
 CHEBI:67198	retinoic acid receptor agonist	agonist	protein family	fplx	RAR	RAR
 CHEBI:90713	retinoic acid receptor alpha antagonist	antagonist	protein	hgnc	9864	RARA
+CHEBI:90714	retinoic acid receptor antagonist	antagonist	protein family	mesh	D018168	Receptors, Retinoic Acid
 CHEBI:90742	retinoic acid receptor beta agonist	agonist	protein	hgnc	9865	RARB
 CHEBI:88336	retinoic acid receptor gamma agonist	agonist	protein	hgnc	9866	RARG
 CHEBI:90744	retinoic acid receptor gamma antagonist	antagonist	protein	hgnc	9866	RARG
@@ -136,6 +153,8 @@ CHEBI:139044	thromboxane A2 agonist	agonist	protein	hgnc	11608	TBXA2R
 CHEBI:85540	thromboxane A2 antagonist	antagonist	protein	hgnc	11608	TBXA2R
 CHEBI:73334	thyroid hormone agonist	agonist	chemical	chebi	CHEBI:60311	thyroid hormone
 CHEBI:65207	vascular endothelial growth factor receptor antagonist	antagonist	protein family	fplx	VEGFR	VEGFR
+CHEBI:59727	vasopressin receptor agonist	agonist	protein family	mesh	D017483	Receptors, Vasopressin
+CHEBI:59680	vasopressin receptor antagonist	antagonist	protein family	mesh	D017483	Receptors, Vasopressin
 CHEBI:78248	vitamin B1 antagonist	antagonist	chemical	chebi	CHEBI:18385	thiamine(1+)
 CHEBI:139503	vitamin D receptor agonist	agonist	protein	hgnc	12679	VDR
 CHEBI:55347	vitamin K antagonist	antagonist	chemical	chebi	CHEBI:28384	vitamin K
