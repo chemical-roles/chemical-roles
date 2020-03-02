@@ -113,7 +113,7 @@ chebi	CHEBI:55322	mu-opioid receptor agonist	agonist	protein	hgnc	8156	OPRM1
 chebi	CHEBI:50137	mu-opioid receptor antagonist	antagonist	protein	hgnc	8156	OPRM1
 chebi	CHEBI:55350	neurokinin-1 receptor antagonist	antagonist	protein	hgnc	11526	TACR1
 chebi	CHEBI:140482	neurokinin-3 receptor antagonist	antagonist	protein	hgnc	11528	TACR3
-chebi	CHEBI:133878	neuropeptide Y receptor antagonist	antagonist	protein family	FPLX	NPYR	NPYR
+chebi	CHEBI:133878	neuropeptide Y receptor antagonist	antagonist	protein family	fplx	NPYR	NPYR
 chebi	CHEBI:73966	nitric oxide synthase activator	activator	protein family	fplx	NOS	NOS
 chebi	CHEBI:83799	nonstructural protein 5A inhibitor	inhibitor	protein	uniprot	Q5L478	Nonstructural protein 5A
 chebi	CHEBI:62873	odorant receptor agonist	agonist	protein family	mesh	D018035	Receptors, Odorant
