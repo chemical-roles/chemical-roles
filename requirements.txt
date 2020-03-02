@@ -6,3 +6,4 @@ bio2bel_expasy
 click
 protmapper
 tabulate
+pyobo

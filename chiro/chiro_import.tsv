@@ -1,0 +1,194 @@
+source_db	source_id	source_name	modulation	type	target_db	target_id	target_name
+chebi	CHEBI:22180	EC 2.2.1.6 (acetolactate synthase) inhibitor	inhibitor	go	GO:0003984	acetolactate synthase activity
+chebi	CHEBI:22587	antiviral agent	inhibitor	ncbitaxon	NCBITaxon:10239	Viruses
+chebi	CHEBI:23018	EC 4.2.1.1 (carbonic anhydrase) inhibitor	inhibitor	go	GO:0004089	carbonate dehydratase activity
+chebi	CHEBI:23100	chitin synthesis inhibitor	inhibitor	go	GO:0006031	chitin biosynthetic process
+chebi	CHEBI:23529	cytochrome-b6f complex inhibitor	inhibitor	go	GO:0009512	cytochrome b6f complex
+chebi	CHEBI:23924	enzyme inhibitor	inhibitor	go	GO:0003824	catalytic activity
+chebi	CHEBI:24319	EC 6.3.1.2 (glutamate--ammonia ligase) inhibitor	inhibitor	go	GO:0004356	glutamate-ammonia ligase activity
+chebi	CHEBI:24621	hormone	activator	go	GO:0005179	hormone activity
+chebi	CHEBI:25355	mitochondrial respiratory-chain inhibitor	inhibitor	go	GO:0005746	mitochondrial respirasome
+chebi	CHEBI:26013	pheromone	activator	go	GO:0005186	pheromone activity
+chebi	CHEBI:26087	photosynthetic electron-transport chain inhibitor	inhibitor	go	GO:0009767	photosynthetic electron transport chain
+chebi	CHEBI:26088	photosystem-I inhibitor	inhibitor	go	GO:0009522	photosystem I
+chebi	CHEBI:26089	photosystem-II inhibitor	inhibitor	go	GO:0009523	photosystem II
+chebi	CHEBI:33282	antibacterial agent	inhibitor	ncbitaxon	NCBITaxon:2	Bacteria
+chebi	CHEBI:35472	anti-inflammatory drug	inhibitor	go	GO:0006954	inflammatory response
+chebi	CHEBI:35493	antipyretic	inhibitor	go	GO:0001660	fever generation
+chebi	CHEBI:35608	EC 3.1.3.48 (protein-tyrosine-phosphatase) inhibitor	inhibitor	go	GO:0004725	protein tyrosine phosphatase activity
+chebi	CHEBI:35634	EC 1.17.3.2 (xanthine oxidase) inhibitor	inhibitor	go	GO:0004855	xanthine oxidase activity
+chebi	CHEBI:35842	antirheumatic drug	inhibitor	mp	MP:0003561	rheumatoid arthritis
+chebi	CHEBI:35856	lipoxygenase inhibitor	inhibitor	go	GO:0016165	linoleate 13S-lipoxygenase activity
+chebi	CHEBI:36044	antiviral drug	inhibitor	ncbitaxon	NCBITaxon:10239	Viruses
+chebi	CHEBI:36047	antibacterial drug	inhibitor	ncbitaxon	NCBITaxon:2	Bacteria
+chebi	CHEBI:37153	EC 3.1.3.16 (phosphoprotein phosphatase) inhibitor	inhibitor	go	GO:0016791	phosphatase activity
+chebi	CHEBI:37416	EC 2.7.7.6 (RNA polymerase) inhibitor	inhibitor	go	GO:0034062	5'-3' RNA polymerase activity
+chebi	CHEBI:37670	protease inhibitor	inhibitor	go	GO:0004175	endopeptidase activity
+chebi	CHEBI:37699	protein kinase inhibitor	inhibitor	go	GO:0004672	protein kinase activity
+chebi	CHEBI:37700	EC 2.7.11.13 (protein kinase C) inhibitor	inhibitor	go	GO:0004697	protein kinase C activity
+chebi	CHEBI:37733	EC 3.1.1.8 (cholinesterase) inhibitor	inhibitor	go	GO:0004104	cholinesterase activity
+chebi	CHEBI:37845	growth hormone	activator	go	GO:0048589	developmental growth
+chebi	CHEBI:37955	H1-receptor antagonist	antagonist	pr	PR:000001422	histamine H1 receptor
+chebi	CHEBI:37961	H2-receptor antagonist	antagonist	pr	PR:000001423	histamine H2 receptor
+chebi	CHEBI:38234	DNA polymerase inhibitor	inhibitor	go	GO:0034061	DNA polymerase activity
+chebi	CHEBI:38462	EC 3.1.1.7 (acetylcholinesterase) inhibitor	inhibitor	go	GO:0003990	acetylcholinesterase activity
+chebi	CHEBI:38496	electron-transport chain inhibitor	inhibitor	go	GO:0022900	electron transport chain
+chebi	CHEBI:38497	respiratory-chain inhibitor	inhibitor	go	GO:0070469	respirasome
+chebi	CHEBI:38499	mitochondrial cytochrome-bc1 complex inhibitor	inhibitor	go	GO:0005750	mitochondrial respiratory chain complex III
+chebi	CHEBI:38502	cytochrome-bc1 complex inhibitor	inhibitor	go	GO:0045275	respiratory chain complex III
+chebi	CHEBI:38503	EC 1.6.5.3 [NADH:ubiquinone reductase (H(+)-translocating)] inhibitor	inhibitor	go	GO:0008137	NADH dehydrogenase (ubiquinone) activity
+chebi	CHEBI:38632	membrane transport modulator	modulator	go	GO:0055085	transmembrane transport
+chebi	CHEBI:38637	tyrosine kinase inhibitor	inhibitor	go	GO:0004713	protein tyrosine kinase activity
+chebi	CHEBI:38807	calcium channel agonist	agonist	go	GO:0005262	calcium channel activity
+chebi	CHEBI:38808	calcium channel modulator	modulator	go	GO:0005262	calcium channel activity
+chebi	CHEBI:38809	ryanodine receptor modulator	modulator	go	GO:0005219	ryanodine-sensitive calcium-release channel activity
+chebi	CHEBI:38999	GABA-gated chloride channel antagonist	antagonist	go	GO:0022851	GABA-gated chloride ion channel activity
+chebi	CHEBI:39000	sodium channel modulator	modulator	go	GO:0005272	sodium channel activity
+chebi	CHEBI:39456	antiglaucoma drug	inhibitor	hp	HP:0000501	Glaucoma
+chebi	CHEBI:48001	protein synthesis inhibitor	inhibitor	go	GO:0006412	translation
+chebi	CHEBI:48406	EC 2.1.1.6 (catechol O-methyltransferase) inhibitor	inhibitor	go	GO:0016206	catechol O-methyltransferase activity
+chebi	CHEBI:48422	angiogenesis inhibitor	inhibitor	go	GO:0001525	angiogenesis
+chebi	CHEBI:48550	EC 1.1.1.21 (aldehyde reductase) inhibitor	inhibitor	go	GO:0004032	alditol:NADP+ 1-oxidoreductase activity
+chebi	CHEBI:49020	hormone antagonist	antagonist	go	GO:0005179	hormone activity
+chebi	CHEBI:49200	EC 3.6.3.10 (H(+)/K(+)-exchanging ATPase) inhibitor	inhibitor	go	GO:0022804	active transmembrane transporter activity
+chebi	CHEBI:49205	CETP inhibitor	inhibitor	pr	PR:000005373	cholesteryl ester transfer protein
+chebi	CHEBI:50112	sex hormone	activator	go	GO:0022414	reproductive process
+chebi	CHEBI:50184	ion transport inhibitor	inhibitor	go	GO:0006811	ion transport
+chebi	CHEBI:50185	fatty acid synthesis inhibitor	inhibitor	go	GO:0006633	fatty acid biosynthetic process
+chebi	CHEBI:50382	EC 2.4.1.80 (ceramide glucosyltransferase) inhibitor	inhibitor	go	GO:0008120	ceramide glucosyltransferase activity
+chebi	CHEBI:50390	EC 1.6.5.2 [NAD(P)H dehydrogenase (quinone)] inhibitor	inhibitor	go	GO:0003955	NAD(P)H dehydrogenase (quinone) activity
+chebi	CHEBI:50427	platelet aggregation inhibitor	inhibitor	go	GO:0070527	platelet aggregation
+chebi	CHEBI:50445	EC 3.5.4.4 (adenosine deaminase) inhibitor	inhibitor	go	GO:0004000	adenosine deaminase activity
+chebi	CHEBI:50469	EC 3.1.1.4 (phospholipase A2) inhibitor	inhibitor	go	GO:0004623	phospholipase A2 activity
+chebi	CHEBI:50502	EC 2.5.1.15 (dihydropteroate synthase) inhibitor	inhibitor	go	GO:0004156	dihydropteroate synthase activity
+chebi	CHEBI:50510	potassium channel modulator	modulator	go	GO:0005267	potassium channel activity
+chebi	CHEBI:50627	EC 3.2.1.1 (alpha-amylase) inhibitor	inhibitor	go	GO:0004556	alpha-amylase activity
+chebi	CHEBI:50635	EC 3.5.1.5 (urease) inhibitor	inhibitor	go	GO:0009039	urease activity
+chebi	CHEBI:50643	EC 2.5.1.1 (dimethylallyltranstransferase) inhibitor	inhibitor	go	GO:0004337	geranyltranstransferase activity
+chebi	CHEBI:50664	matrix metalloproteinase inhibitor	inhibitor	go	GO:0008237	metallopeptidase activity
+chebi	CHEBI:50683	EC 1.5.1.3 (dihydrofolate reductase) inhibitor	inhibitor	go	GO:0004146	dihydrofolate reductase activity
+chebi	CHEBI:50739	estrogen receptor modulator	modulator	go	GO:0030284	estrogen receptor activity
+chebi	CHEBI:50741	retinoic acid receptor alpha/beta agonist	agonist	pr	PR:000013736	retinoic acid receptor alpha
+chebi	CHEBI:50750	EC 5.99.1.3 [DNA topoisomerase (ATP-hydrolysing)] inhibitor	inhibitor	go	GO:0003918	DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) activity
+chebi	CHEBI:50790	EC 1.14.14.14 (aromatase) inhibitor	inhibitor	go	GO:0070330	aromatase activity
+chebi	CHEBI:50792	estrogen receptor antagonist	antagonist	go	GO:0030284	estrogen receptor activity
+chebi	CHEBI:50914	EC 2.7.1.137 (phosphatidylinositol 3-kinase) inhibitor	inhibitor	go	GO:0035004	phosphatidylinositol 3-kinase activity
+chebi	CHEBI:50916	lipid kinase inhibitor	inhibitor	go	GO:0001727	lipid kinase activity
+chebi	CHEBI:50925	EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor	inhibitor	go	GO:0004674	protein serine/threonine kinase activity
+chebi	CHEBI:50926	angiogenesis modulating agent	modulator	go	GO:0001525	angiogenesis
+chebi	CHEBI:50927	angiogenesis inducing agent	inducer	go	GO:0001525	angiogenesis
+chebi	CHEBI:50949	serotonin uptake inhibitor	inhibitor	go	GO:0051610	serotonin uptake
+chebi	CHEBI:51039	dopamine uptake inhibitor	inhibitor	go	GO:0051583	dopamine uptake involved in synaptic transmission
+chebi	CHEBI:51060	hormone agonist	agonist	go	GO:0005179	hormone activity
+chebi	CHEBI:51451	endothelin receptor antagonist	antagonist	go	GO:0004962	endothelin receptor activity
+chebi	CHEBI:51452	endothelin A receptor antagonist	antagonist	pr	PR:000001221	endothelin-1 receptor
+chebi	CHEBI:52303	sterol methyltransferase inhibitor	inhibitor	go	GO:0003838	sterol 24-C-methyltransferase activity
+chebi	CHEBI:52425	EC 3.2.1.18 (exo-alpha-sialidase) inhibitor	inhibitor	go	GO:0004308	exo-alpha-sialidase activity
+chebi	CHEBI:52629	EC 3.1.26.13 (retroviral ribonuclease H) inhibitor	inhibitor	go	GO:0004523	RNA-DNA hybrid ribonuclease activity
+chebi	CHEBI:52726	proteasome inhibitor	inhibitor	go	GO:0000502	proteasome complex
+chebi	CHEBI:53659	EC 1.4.3.22 (diamine oxidase) inhibitor	inhibitor	go	GO:0052597	diamine oxidase activity
+chebi	CHEBI:53746	EC 1.1.1.205 (IMP dehydrogenase) inhibitor	inhibitor	go	GO:0003938	IMP dehydrogenase activity
+chebi	CHEBI:53756	HIV-1 reverse transcriptase inhibitor	inhibitor	go	GO:0003964	RNA-directed DNA polymerase activity
+chebi	CHEBI:55351	substance P receptor antagonist	antagonist	pr	PR:000001247	substance-P receptor
+chebi	CHEBI:59105	EC 6.3.2.* (acid--D-amino-acid ligase) inhibitor	inhibitor	go	GO:0016881	acid-amino acid ligase activity
+chebi	CHEBI:59107	EC 3.4.24.* (metalloendopeptidase) inhibitor	inhibitor	go	GO:0004222	metalloendopeptidase activity
+chebi	CHEBI:59229	GnRH antagonist	antagonist	go	GO:0005183	gonadotropin hormone-releasing hormone activity
+chebi	CHEBI:5924	EC 3.4.21.* (serine endopeptidase) inhibitor	inhibitor	go	GO:0004252	serine-type endopeptidase activity
+chebi	CHEBI:59282	kappa-opioid receptor agonist	agonist	go	GO:0004985	opioid receptor activity
+chebi	CHEBI:59283	delta-opioid receptor antagonist	antagonist	go	GO:0004985	opioid receptor activity
+chebi	CHEBI:59285	EC 1.14.13.132 (squalene monooxygenase) inhibitor	inhibitor	go	GO:0004506	squalene monooxygenase activity
+chebi	CHEBI:59321	EC 4.1.1.28 (aromatic-L-amino-acid decarboxylase) inhibitor	inhibitor	go	GO:0004058	aromatic-L-amino-acid decarboxylase activity
+chebi	CHEBI:59499	EC 3.4.13.* (dipeptidase) inhibitor	inhibitor	go	GO:0016805	dipeptidase activity
+chebi	CHEBI:59517	DNA synthesis inhibitor	inhibitor	go	GO:0071897	DNA biosynthetic process
+chebi	CHEBI:59647	EC 2.3.1.50 (serine C-palmitoyltransferase) inhibitor	inhibitor	go	GO:0004758	serine C-palmitoyltransferase activity
+chebi	CHEBI:59672	EC 2.4.1.16 (chitin synthase) inhibitor	inhibitor	go	GO:0004100	chitin synthase activity
+chebi	CHEBI:59680	vasopressin receptor antagonist	antagonist	go	GO:0005000	vasopressin receptor activity
+chebi	CHEBI:59727	vasopressin receptor agonist	agonist	go	GO:0005000	vasopressin receptor activity
+chebi	CHEBI:59897	EC 2.7.7.49 (RNA-directed DNA polymerase) inhibitor	inhibitor	go	GO:0003964	RNA-directed DNA polymerase activity
+chebi	CHEBI:59997	EC 1.14.18.1 (tyrosinase) inhibitor	inhibitor	go	GO:0004503	monophenol monooxygenase activity
+chebi	CHEBI:60186	EC 3.6.3.8 (Ca(2+)-transporting ATPase) inhibitor	inhibitor	go	GO:0005388	calcium transmembrane transporter activity, phosphorylative mechanism
+chebi	CHEBI:60258	EC 3.4.* (hydrolases acting on peptide bond) inhibitor	inhibitor	go	GO:0008233	peptidase activity
+chebi	CHEBI:60280	EC 3.5.1.2 (glutaminase) inhibitor	inhibitor	go	GO:0004359	glutaminase activity
+chebi	CHEBI:60605	opioid receptor antagonist	antagonist	go	GO:0004985	opioid receptor activity
+chebi	CHEBI:60606	opioid receptor agonist	agonist	go	GO:0004985	opioid receptor activity
+chebi	CHEBI:60649	glucagon receptor antagonist	antagonist	go	GO:0004967	glucagon receptor activity
+chebi	CHEBI:60688	EC 4.2.1.20 (tryptophan synthase) inhibitor	inhibitor	go	GO:0004834	tryptophan synthase activity
+chebi	CHEBI:60901	EC 2.5.1.9 (riboflavin synthase) inhibitor	inhibitor	go	GO:0004746	riboflavin synthase activity
+chebi	CHEBI:61016	angiotensin receptor antagonist	antagonist	go	GO:0001595	angiotensin receptor activity
+chebi	CHEBI:61115	EC 3.5.1.98 (histone deacetylase) inhibitor	inhibitor	go	GO:0004407	histone deacetylase activity
+chebi	CHEBI:61908	EC 1.14.13.39 (nitric oxide synthase) inhibitor	inhibitor	go	GO:0004517	nitric-oxide synthase activity
+chebi	CHEBI:61950	microtubule-stabilising agent	stabilizier	go	GO:0005874	microtubule
+chebi	CHEBI:61951	microtubule-destabilising agent	destabilizer	go	GO:0005874	microtubule
+chebi	CHEBI:61966	metabotropic glutamate receptor agonist	agonist	go	GO:0008066	glutamate receptor activity
+chebi	CHEBI:62089	EC 1.4.7.1 [glutamate synthase (ferredoxin)] inhibitor	inhibitor	go	GO:0015930	glutamate synthase activity
+chebi	CHEBI:62434	EC 2.7.10.1 (receptor protein-tyrosine kinase) inhibitor	inhibitor	go	GO:0004714	transmembrane receptor protein tyrosine kinase activity
+chebi	CHEBI:62530	EC 2.3.1.24 (sphingosine N-acyltransferase) inhibitor	inhibitor	go	GO:0050291	sphingosine N-acyltransferase activity
+chebi	CHEBI:62608	EC 4.2.1.3 (aconitate hydratase) inhibitor	inhibitor	go	GO:0003994	aconitate hydratase activity
+chebi	CHEBI:62609	EC 3.11.1.3 (phosphonopyruvate hydrolase) inhibitor	inhibitor	go	GO:0033978	phosphonopyruvate hydrolase activity
+chebi	CHEBI:62871	EC 4.3.1.24 (phenylalanine ammonia-lyase) inhibitor	inhibitor	go	GO:0045548	phenylalanine ammonia-lyase activity
+chebi	CHEBI:62873	odorant receptor agonist	agonist	go	GO:0004984	olfactory receptor activity
+chebi	CHEBI:62915	sialyltransferase inhibitor	inhibitor	go	GO:0008373	sialyltransferase activity
+chebi	CHEBI:63090	EC 2.4.2.1 (purine-nucleoside phosphorylase) inhibitor	inhibitor	go	GO:0004731	purine-nucleoside phosphorylase activity
+chebi	CHEBI:63114	sphingosine-1-phosphate receptor agonist	agonist	go	GO:0038036	sphingosine-1-phosphate receptor activity
+chebi	CHEBI:63146	insulin release inhibitor	inhibitor	go	GO:0030073	insulin secretion
+chebi	CHEBI:63156	EC 1.1.3.13 (alcohol oxidase) inhibitor	inhibitor	go	GO:0047639	alcohol oxidase activity
+chebi	CHEBI:63173	T-cell proliferation inhibitor	inhibitor	go	GO:0042098	T cell proliferation
+chebi	CHEBI:63330	sodium-dependent Pi-transporter inhibitor	inhibitor	go	GO:0044341	sodium-dependent phosphate transport
+chebi	CHEBI:63332	EC 3.1.3.1 (alkaline phosphatase) inhibitor	inhibitor	go	GO:0004035	alkaline phosphatase activity
+chebi	CHEBI:63457	fibroblast growth factor receptor antagonist	antagonist	go	GO:0005007	fibroblast growth factor-activated receptor activity
+chebi	CHEBI:63510	EC 3.6.3.9 (Na(+)/K(+)-transporting ATPase) inhibitor	inhibitor	go	GO:0005391	sodium:potassium-exchanging ATPase activity
+chebi	CHEBI:63533	gonadotropin releasing hormone agonist	agonist	go	GO:0004968	gonadotropin-releasing hormone receptor activity
+chebi	CHEBI:63562	glucocorticoid receptor agonist	agonist	go	GO:0004883	glucocorticoid receptor activity
+chebi	CHEBI:63673	chemokine receptor 5 antagonist	antagonist	pr	PR:000001128	chemokine receptor
+chebi	CHEBI:63674	EC 2.6.1.19 (4-aminobutyrate--2-oxoglutarate transaminase) inhibitor	inhibitor	go	GO:0003867	4-aminobutyrate transaminase activity
+chebi	CHEBI:63720	EC 2.1.1.45 (thymidylate synthase) inhibitor	inhibitor	go	GO:0004799	thymidylate synthase activity
+chebi	CHEBI:63794	retinoid X receptor agonist	agonist	go	GO:0046965	retinoid X receptor binding
+chebi	CHEBI:63932	EC 1.14.16.2 (tyrosine 3-monooxygenase) inhibitor	inhibitor	go	GO:0004511	tyrosine 3-monooxygenase activity
+chebi	CHEBI:63936	alpha1B-adrenoceptor antagonist	antagonist	go	GO:0031692	alpha-1B adrenergic receptor binding
+chebi	CHEBI:63951	estrogen receptor agonist	agonist	go	GO:0030284	estrogen receptor activity
+chebi	CHEBI:63958	cellulose synthesis inhibitor	inhibitor	go	GO:0030244	cellulose biosynthetic process
+chebi	CHEBI:63962	Hsp90 inhibitor	inhibitor	pr	PR:000025350	HSPC protein
+chebi	CHEBI:63963	metabotropic glutamate receptor antagonist	antagonist	go	GO:0008066	glutamate receptor activity
+chebi	CHEBI:64018	protein kinase C agonist	agonist	go	GO:0004697	protein kinase C activity
+chebi	CHEBI:64054	delta-opioid receptor agonist	agonist	go	GO:0004985	opioid receptor activity
+chebi	CHEBI:64102	AMPA receptor agonist	agonist	go	GO:0004971	AMPA glutamate receptor activity
+chebi	CHEBI:64106	protein kinase agonist	agonist	go	GO:0004672	protein kinase activity
+chebi	CHEBI:64133	EC 2.5.1.58 (protein farnesyltransferase) inhibitor	inhibitor	go	GO:0004660	protein farnesyltransferase activity
+chebi	CHEBI:64152	cysteine protease inhibitor	inhibitor	go	GO:0008234	cysteine-type peptidase activity
+chebi	CHEBI:64154	H3-receptor agonist	agonist	pr	PR:000001564	histamine H3 receptor
+chebi	CHEBI:64155	H4-receptor agonist	agonist	pr	PR:000001565	H4 histamine receptor
+chebi	CHEBI:64176	H3-receptor antagonist	antagonist	pr	PR:000001564	histamine H3 receptor
+chebi	CHEBI:64338	K-ATP channel agonist	agonist	go	GO:0008282	inward rectifying potassium channel
+chebi	CHEBI:64371	neurotransmitter transporter modulator	modulator	go	GO:0005326	neurotransmitter transmembrane transporter activity
+chebi	CHEBI:64411	EC 2.5.1.29 (geranylgeranyl diphosphate synthase) inhibitor	inhibitor	pr	PR:000007961	geranylgeranyl pyrophosphate synthase
+chebi	CHEBI:64416	EC 1.3.1.43 (arogenate dehydrogenase) inhibitor	inhibitor	go	GO:0047794	cyclohexadienyl dehydrogenase activity
+chebi	CHEBI:64570	EC 2.1.2.1 (glycine hydroxymethyltransferase) inhibitor	inhibitor	go	GO:0004372	glycine hydroxymethyltransferase activity
+chebi	CHEBI:64571	NMDA receptor agonist	agonist	go	GO:0004972	NMDA glutamate receptor activity
+chebi	CHEBI:64670	EC 1.8.1.9 (thioredoxin reductase) inhibitor	inhibitor	pr	PR:000024130	thioredoxin reductase
+chebi	CHEBI:64697	acyl-CoA:cholesterol acyltransferase 2 inhibitor	inhibitor	pr	PR:000015390	sterol O-acyltransferase 2
+chebi	CHEBI:64763	EC 3.1.4.11 (phosphoinositide phospholipase C) inhibitor	inhibitor	go	GO:0004435	phosphatidylinositol phospholipase C activity
+chebi	CHEBI:64919	EC 2.3.1.20 (diacylglycerol O-acyltransferase) inhibitor	inhibitor	go	GO:0004144	diacylglycerol O-acyltransferase activity
+chebi	CHEBI:64920	EC 6.5.1.1 [DNA ligase (ATP)] inhibitor	inhibitor	pr	PR:000023089	DNA ligase
+chebi	CHEBI:64924	hepatitis C protease inhibitor	inhibitor	go	GO:0008233	peptidase activity
+chebi	CHEBI:64933	melanin synthesis inhibitor	inhibitor	go	GO:0042438	melanin biosynthetic process
+chebi	CHEBI:64947	anti-HIV-1 agent	inhibitor	ncbitaxon	NCBITaxon:11676	Human immunodeficiency virus 1
+chebi	CHEBI:64955	EC 3.2.1.166 (heparanase) inhibitor	inhibitor	go	GO:0030305	heparanase activity
+chebi	CHEBI:64964	EC 1.13.11.34 (arachidonate 5-lipoxygenase) inhibitor	inhibitor	go	GO:0004051	arachidonate 5-lipoxygenase activity
+chebi	CHEBI:64995	EC 1.13.11.31 (arachidonate 12-lipoxygenase) inhibitor	inhibitor	go	GO:0004052	arachidonate 12(S)-lipoxygenase activity
+chebi	CHEBI:64996	EC 1.13.11.33 (arachidonate 15-lipoxygenase) inhibitor	inhibitor	go	GO:0050473	arachidonate 15-lipoxygenase activity
+chebi	CHEBI:65001	EC 3.1.1.3 (triacylglycerol lipase) inhibitor	inhibitor	go	GO:0004806	triglyceride lipase activity
+chebi	CHEBI:65053	EC 4.1.1.19 (arginine decarboxylase) inhibitor	inhibitor	go	GO:0008792	arginine decarboxylase activity
+chebi	CHEBI:65057	adenosine A1 receptor agonist	agonist	pr	PR:000001575	adenosine receptor A1
+chebi	CHEBI:65064	EC 2.1.1.79 (cyclopropane-fatty-acyl-phospholipid synthase) inhibitor	inhibitor	go	GO:0008825	cyclopropane-fatty-acyl-phospholipid synthase activity
+chebi	CHEBI:65065	EC 2.1.1.72 [site-specific DNA-methyltransferase (adenine-specific)] inhibitor	inhibitor	go	GO:0009008	DNA-methyltransferase activity
+chebi	CHEBI:65207	vascular endothelial growth factor receptor antagonist	antagonist	go	GO:0005021	vascular endothelial growth factor-activated receptor activity
+chebi	CHEBI:66894	erythropeotin receptor agonist	agonist	go	GO:0004900	erythropoietin receptor activity
+chebi	CHEBI:66900	prostaglandin receptor agonist	agonist	go	GO:0004955	prostaglandin receptor activity
+chebi	CHEBI:67072	cannabinoid receptor agonist	agonist	go	GO:0004949	cannabinoid receptor activity
+chebi	CHEBI:67079	anti-inflammatory agent	inhibitor	go	GO:0006954	inflammatory response
+chebi	CHEBI:67114	ryanodine receptor agonist	activator	go	GO:0030546	signaling receptor activator activity
+chebi	CHEBI:67195	gap junctional intercellular communication inhibitor	inhibitor	go	GO:0005243	gap junction channel activity
+chebi	CHEBI:67268	HIV-1 integrase inhibitor	inhibitor	go	GO:0008907	integrase activity
+chebi	CHEBI:68494	apoptosis inhibitor	inhibitor	go	GO:0006915	apoptotic process
+chebi	CHEBI:68495	apoptosis inducer	inducer	go	GO:0006915	apoptotic process
+chebi	CHEBI:72571	pro-angiogenic agent	activator	go	GO:0045766	positive regulation of angiogenesis
