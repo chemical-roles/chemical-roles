@@ -98,7 +98,7 @@ chebi	CHEBI:51060	hormone agonist	agonist	chemical	chebi	CHEBI:24621	hormone
 chebi	CHEBI:49020	hormone antagonist	antagonist	chemical	chebi	CHEBI:24621	hormone
 chebi	CHEBI:59282	kappa-opioid receptor agonist	agonist	protein family	mesh	D017473	Receptors, Opioid, kappa
 chebi	CHEBI:86029	liver X receptor agonist	agonist	protein family	fplx	LXR	LXR
-chebi	CHEBI:90846	liver X receptor inverse agonist	inverse agonist	protein family	fplx	LXR	LXR
+chebi	CHEBI:90846	liver X receptor inverse agonist	inverse_agonist	protein family	fplx	LXR	LXR
 chebi	CHEBI:131509	lysine-specific histone demethylase 1A inhibitor	inhibitor	protein	hgnc	29079	KDM1A
 chebi	CHEBI:139584	lysophosphatidic acid receptor 3 agonist	agonist	protein	hgnc	14298	LPAR3
 chebi	CHEBI:91193	lysophosphatidic acid receptor antagonist	antagonist	protein family	mesh	D049368	Receptors, Lysophosphatidic Acid
