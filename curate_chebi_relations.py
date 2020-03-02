@@ -5,6 +5,7 @@
 import json
 import logging
 import os
+import sys
 from collections import defaultdict
 from typing import Collection, Iterable, Tuple
 
@@ -12,7 +13,6 @@ import click
 import networkx as nx
 import pandas as pd
 import requests
-import sys
 from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up
 from tabulate import tabulate
@@ -331,7 +331,12 @@ def main(suggest: bool, debug: bool) -> None:
     logging.basicConfig(level=level)
 
     # Sort the curated xrefs file
-    _get_curated_xrefs_df().sort_values(['source_name', 'modulation']).to_csv(XREFS_PATH, index=False, sep='\t')
+    (
+        _get_curated_xrefs_df()
+            .sort_values(['source_db', 'source_name', 'modulation'])
+            .drop_duplicates()
+            .to_csv(XREFS_PATH, index=False, sep='\t')
+    )
 
     # Get the graph
     graph = get_obo_graph('chebi')

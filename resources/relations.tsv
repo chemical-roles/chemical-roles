@@ -1,8 +1,9 @@
 relation_label	role_db	role_id	role_name
-activator
+activator			activator
 agonist	chebi	CHEBI:48705	agonist
 antagonist	chebi	CHEBI:48706	antagonist
 inhibitor	chebi	CHEBI:35222	inhibitor
 inverse_agonist	chebi	CHEBI:90847	inverse agonist
+regulates			regulates
 negatively_regulates	ro	RO:0002212	negatively regulates
 positively_regulates	ro	RO:0002213	positively regulates
