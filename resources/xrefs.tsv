@@ -9,6 +9,7 @@ chebi	CHEBI:73417	CB2 receptor antagonist	antagonist	protein	hgnc	2160	CNR2
 chebi	CHEBI:49205	CETP inhibitor	inhibitor	protein	hgnc	1869	CETP
 chebi	CHEBI:38234	DNA polymerase inhibitor	inhibitor	activity	go	GO:0034061	DNA polymerase activity
 chebi	CHEBI:59517	DNA synthesis inhibitor	negatively_regulates	pathway	go	GO:0071897	DNA biosynthetic process
+chebi	CHEBI:50635	EC 3.5.1.5 (urease) inhibitor	inhibitor	activity	go	GO:0009039	urease activity
 chebi	CHEBI:65259	GABA antagonist	antagonist	protein family	hgnc.genefamily	562	Gamma-aminobutyric acid (GABA) receptors
 chebi	CHEBI:59229	GnRH antagonist	antagonist	protein	hgnc	4419	GNRH1
 chebi	CHEBI:37955	H1-receptor antagonist	antagonist	protein	pr	PR:000001422	histamine H1 receptor
@@ -82,6 +83,7 @@ chebi	CHEBI:38496	electron-transport chain inhibitor	negatively_regulates	pathwa
 chebi	CHEBI:51452	endothelin A receptor antagonist	antagonist	protein	hgnc	3179	EDNRA
 chebi	CHEBI:51452	endothelin A receptor antagonist	antagonist	protein	mesh	D044022	Receptor, Endothelin A
 chebi	CHEBI:51451	endothelin receptor antagonist	antagonist	protein family	mesh	D017466	Receptors, Endothelin
+chebi	CHEBI:51451	endothelin receptor antagonist	antagonist	activity	go	GO:0004962	endothelin receptor activity
 chebi	CHEBI:74440	epidermal growth factor receptor antagonist	antagonist	protein	hgnc	3236	EGFR
 chebi	CHEBI:91025	erythropoietin inhibitor	inhibitor	protein	hgnc	3415	EPO
 chebi	CHEBI:50837	estrogen antagonist	antagonist	chemical	chebi	CHEBI:50114	estrogen
@@ -171,3 +173,5 @@ chebi	CHEBI:59680	vasopressin receptor antagonist	antagonist	protein family	mesh
 chebi	CHEBI:78248	vitamin B1 antagonist	antagonist	chemical	chebi	CHEBI:18385	thiamine(1+)
 chebi	CHEBI:139503	vitamin D receptor agonist	agonist	protein	hgnc	12679	VDR
 chebi	CHEBI:55347	vitamin K antagonist	antagonist	chemical	chebi	CHEBI:28384	vitamin K
+mesh	D061965	Matrix Metalloproteinase Inhibitors	inhibitor	protein family	fplx	MMP	MMP
+mesh	D061965	Matrix Metalloproteinase Inhibitors	inhibitor	protein family	hgnc.genefamily	891	M10 matrix metallopeptidases

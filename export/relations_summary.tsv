@@ -9,6 +9,7 @@ chebi	agonist	protein	hgnc	169
 chebi	agonist	protein	uniprot	298
 chebi	agonist	protein family	fplx	28
 chebi	agonist	protein family	mesh	42
+chebi	antagonist	activity	go	5
 chebi	antagonist	chemical	chebi	58
 chebi	antagonist	protein	hgnc	190
 chebi	antagonist	protein	pr	84
@@ -17,7 +18,7 @@ chebi	antagonist	protein family	fplx	51
 chebi	antagonist	protein family	hgnc.genefamily	19
 chebi	antagonist	protein family	interpro	1
 chebi	antagonist	protein family	mesh	11
-chebi	inhibitor	activity	go	10
+chebi	inhibitor	activity	go	14
 chebi	inhibitor	complex	fplx	42
 chebi	inhibitor	complex	go	1
 chebi	inhibitor	pathway	go	58

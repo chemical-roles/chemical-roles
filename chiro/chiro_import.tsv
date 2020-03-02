@@ -55,7 +55,6 @@ chebi	CHEBI:50445	EC 3.5.4.4 (adenosine deaminase) inhibitor	inhibitor	go	GO:000
 chebi	CHEBI:50469	EC 3.1.1.4 (phospholipase A2) inhibitor	inhibitor	go	GO:0004623	phospholipase A2 activity
 chebi	CHEBI:50502	EC 2.5.1.15 (dihydropteroate synthase) inhibitor	inhibitor	go	GO:0004156	dihydropteroate synthase activity
 chebi	CHEBI:50627	EC 3.2.1.1 (alpha-amylase) inhibitor	inhibitor	go	GO:0004556	alpha-amylase activity
-chebi	CHEBI:50635	EC 3.5.1.5 (urease) inhibitor	inhibitor	go	GO:0009039	urease activity
 chebi	CHEBI:50643	EC 2.5.1.1 (dimethylallyltranstransferase) inhibitor	inhibitor	go	GO:0004337	geranyltranstransferase activity
 chebi	CHEBI:50683	EC 1.5.1.3 (dihydrofolate reductase) inhibitor	inhibitor	go	GO:0004146	dihydrofolate reductase activity
 chebi	CHEBI:50739	estrogen receptor modulator	modulator	go	GO:0030284	estrogen receptor activity
@@ -68,7 +67,6 @@ chebi	CHEBI:50916	lipid kinase inhibitor	inhibitor	go	GO:0001727	lipid kinase ac
 chebi	CHEBI:50925	EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor	inhibitor	go	GO:0004674	protein serine/threonine kinase activity
 chebi	CHEBI:51039	dopamine uptake inhibitor	inhibitor	go	GO:0051583	dopamine uptake involved in synaptic transmission
 chebi	CHEBI:51060	hormone agonist	agonist	go	GO:0005179	hormone activity
-chebi	CHEBI:51451	endothelin receptor antagonist	antagonist	go	GO:0004962	endothelin receptor activity
 chebi	CHEBI:51452	endothelin A receptor antagonist	antagonist	pr	PR:000001221	endothelin-1 receptor
 chebi	CHEBI:52303	sterol methyltransferase inhibitor	inhibitor	go	GO:0003838	sterol 24-C-methyltransferase activity
 chebi	CHEBI:52425	EC 3.2.1.18 (exo-alpha-sialidase) inhibitor	inhibitor	go	GO:0004308	exo-alpha-sialidase activity
