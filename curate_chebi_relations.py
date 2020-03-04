@@ -12,21 +12,18 @@ from typing import Collection, Iterable, Tuple
 import click
 import networkx as nx
 import pandas as pd
-import requests
 from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up
-from tabulate import tabulate
-
 from pyobo.sources.expasy import get_obo as get_expasy_obo
 from pyobo.utils import get_obo_graph
+from tabulate import tabulate
+
+from utils import (
+    EXPORT_DIRECTORY, RESOURCES_DIRECTORY, XREFS_COLUMNS, get_xrefs_df, post_gilda,
+    sort_xrefs_df,
+)
 
 logger = logging.getLogger(__name__)
-
-HERE = os.path.abspath(os.path.dirname(__file__))
-RESOURCES_DIRECTORY = os.path.join(HERE, 'resources')
-EXPORT_DIRECTORY = os.path.join(HERE, 'export')
-
-GILDA_URL = 'http://grounding.indra.bio'
 
 FAMPLEX_RELATIONS_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv'
 FAMPLEX_EQUIVALENCES_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/equivalences.csv'
@@ -36,13 +33,6 @@ RELATIONS_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations.tsv')
 RELATIONS_SLIM_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations_slim.tsv')
 SUMMARY_OUTPUT_PATH = os.path.join(EXPORT_DIRECTORY, 'relations_summary.tsv')
 
-XREFS_COLUMNS = [
-    'source_db', 'source_id', 'source_name',
-    'modulation',
-    'target_type', 'target_db', 'target_id', 'target_name',
-]
-
-XREFS_PATH = os.path.join(RESOURCES_DIRECTORY, 'xrefs.tsv')
 RECLASSIFICATION_PATH = os.path.join(RESOURCES_DIRECTORY, 'reclassification.tsv')
 
 BIOCHEMICAL_ROLE_CHEBI_ID = 'CHEBI:52206'
@@ -57,17 +47,8 @@ BLACKLIST = [
 ]
 
 
-def _get_curated_xrefs_df() -> pd.DataFrame:
-    return pd.read_csv(XREFS_PATH, sep='\t', comment='#', dtype={'db_id': str})
-
-
 def _get_inhibitors_reclassification() -> pd.DataFrame:
     return pd.read_csv(RECLASSIFICATION_PATH, sep='\t', comment='#')
-
-
-def post_gilda(text: str, url: str = GILDA_URL) -> requests.Response:
-    """Send text to GILDA."""
-    return requests.post(f'{url}/ground', json={'text': text})
 
 
 def get_expasy_closure():
@@ -77,14 +58,14 @@ def get_expasy_closure():
     for term in expasy_obo.terms:
         for parent_term in term.parents:
             _graph.add_edge(
-                (term.reference.prefix, term.reference.identifier, term.name),
-                (parent_term.prefix, parent_term.identifier, parent_term.name),
+                (term.reference.prefix, term.reference.identifier, term.reference.identifier),
+                (parent_term.prefix, parent_term.identifier, parent_term.identifier),
             )
         for xref in term.xrefs:
             if xref.prefix in {'uniprot', 'prosite'}:
                 _graph.add_edge(
                     (xref.prefix, xref.identifier, xref.name),
-                    (term.reference.prefix, term.reference.identifier, term.name),
+                    (term.reference.prefix, term.reference.identifier, term.reference.identifier),
                 )
 
     rv = {
@@ -96,6 +77,7 @@ def get_expasy_closure():
 
 
 def get_enzyme_inhibitor_df(chebi_graph: nx.MultiDiGraph) -> pd.DataFrame:
+    """Suggest enzyme inhibitors for curation."""
     expasy_graph, ec_code_to_children = get_expasy_closure()
     rv = []
 
@@ -171,7 +153,8 @@ DB_TO_TYPE = {'ec-code': 'protein family', 'uniprot': 'protein', 'prosite': 'pro
 
 
 def suggest_pathway_inhibitor_curation(graph: nx.MultiDiGraph) -> None:
-    inhibitors = _get_curated_xrefs_df()
+    """Suggest pathway inhibitors for curation."""
+    inhibitors = get_xrefs_df()
     curated_chebi_ids = set(inhibitors.chebi_id)
 
     reclassify_df = _get_inhibitors_reclassification()
@@ -190,6 +173,7 @@ def suggest_pathway_inhibitor_curation(graph: nx.MultiDiGraph) -> None:
 
 
 def suggest_inhibitor_curation(graph: nx.MultiDiGraph) -> None:
+    """Suggest inhibitors for curation."""
     it = (
         set(nx.ancestors(graph, INHIBITOR_CHEBI_ID))
         - set(nx.ancestors(graph, PATHWAY_INHIBITOR_CHEBI_ID))
@@ -200,18 +184,22 @@ def suggest_inhibitor_curation(graph: nx.MultiDiGraph) -> None:
 
 
 def suggest_agonist_curation(graph: nx.MultiDiGraph) -> None:
+    """Suggest agonists for curation."""
     _single_suggest(graph, AGONIST_CHEBI_ID, 'agonist')
 
 
 def suggest_antagonist_curation(graph: nx.MultiDiGraph) -> None:
+    """Suggest antagonists for curation."""
     _single_suggest(graph, ANTAGONIST_CHEBI_ID, 'antagonist')
 
 
 def suggest_inverse_agonist_curation(graph: nx.MultiDiGraph) -> None:
+    """Suggest inverse agonists for curation."""
     _single_suggest(graph, INVERSE_AGONIST_CHEBI_ID, 'inverse agonist')
 
 
 def suggest_activator_curation(graph: nx.MultiDiGraph) -> None:
+    """Suggest activators for curation."""
     _single_suggest(graph, BIOCHEMICAL_ROLE_CHEBI_ID, 'activator')
 
 
@@ -228,14 +216,14 @@ def _suggest_xrefs_curation(
     suffix: str,
     show_missing: bool = False
 ) -> Iterable[Tuple[str, str, str, str, str, str]]:
-    """
+    """Suggest curation.
 
     :param graph:
     :param top_chebi_id:
     :param it:
     :param suffix: The modulation type (e.g., inhibitor, agonist)
     """
-    xrefs_df = _get_curated_xrefs_df()
+    xrefs_df = get_xrefs_df()
     curated_chebi_ids = set(xrefs_df.chebi_id)
 
     if it:
@@ -256,7 +244,8 @@ def _suggest_xrefs_curation(
 
 
 def get_relations_df(graph: nx.MultiDiGraph) -> pd.DataFrame:
-    xrefs_df = _get_curated_xrefs_df()
+    """Assemble the relations dataframe."""
+    xrefs_df = get_xrefs_df()
 
     famplex_map_df = pd.read_csv(FAMPLEX_HGNC_SYMBOL_MAP_URL)
     hgnc_symbol_to_id = dict(famplex_map_df.values)
@@ -273,21 +262,10 @@ def get_relations_df(graph: nx.MultiDiGraph) -> pd.DataFrame:
 
             famplex_id_to_members[target_name].append((hgnc_symbol, source_name))
 
-    def _get_uniprot_id_names(hgnc_id: str) -> Iterable[Tuple[str, str]]:
-        try:
-            r = hgnc_id_to_up[str(hgnc_id)]
-        except KeyError:
-            _k, _v = list(hgnc_id_to_up.items())[0]
-            print(f'could not find {hgnc_id} ({type(hgnc_id)} in dict. Example: {_k} ({type(_k)}), {_v} ({type(_v)})')
-            raise
-
-        for _uniprot_id in r.split(', '):
-            yield _uniprot_id, uniprot_client.get_mnemonic(_uniprot_id)
-
     xrefs = defaultdict(list)
     for source_db, source_id, _, modulation, target_type, target_db, target_id, target_name in xrefs_df.values:
         if target_db == 'hgnc':
-            for uniprot_id, uniprot_name in _get_uniprot_id_names(target_id):
+            for uniprot_id, uniprot_name in get_uniprot_id_names(target_id):
                 xrefs[source_id].append((modulation, 'protein', 'uniprot', uniprot_id, uniprot_name))
 
         elif target_db == 'fplx':
@@ -295,7 +273,7 @@ def get_relations_df(graph: nx.MultiDiGraph) -> pd.DataFrame:
 
             for hgnc_id, hgnc_symbol in famplex_id_to_members.get(target_id, []):
                 xrefs[source_id].append((modulation, 'protein', 'hgnc', hgnc_id, hgnc_symbol))
-                for uniprot_id, uniprot_name in _get_uniprot_id_names(hgnc_id):
+                for uniprot_id, uniprot_name in get_uniprot_id_names(hgnc_id):
                     xrefs[source_id].append((modulation, 'protein', 'uniprot', uniprot_id, uniprot_name))
         else:
             xrefs[source_id].append((modulation, target_type, target_db, target_id, target_name))
@@ -322,21 +300,30 @@ def _iterate_roles(graph: nx.MultiDiGraph, chebi_ids):
                 yield child_chebi_id, child_name, role_chebi_id
 
 
+def get_uniprot_id_names(hgnc_id: str) -> Iterable[Tuple[str, str]]:
+    """Get all of the UniProt identifiers for a given gene."""
+    try:
+        r = hgnc_id_to_up[str(hgnc_id)]
+    except KeyError:
+        _k, _v = list(hgnc_id_to_up.items())[0]
+        print(f'could not find {hgnc_id} ({type(hgnc_id)} in dict. Example: {_k} ({type(_k)}), {_v} ({type(_v)})')
+        raise
+
+    for _uniprot_id in r.split(', '):
+        yield _uniprot_id, uniprot_client.get_mnemonic(_uniprot_id)
+
+
 @click.command()
 @click.option('-s', '--suggest', is_flag=True)
 @click.option('-b', '--debug', is_flag=True)
 def main(suggest: bool, debug: bool) -> None:
+    """Run the ChEBI curation pipeline."""
     level = logging.DEBUG if debug else logging.INFO
     logger.setLevel(level)
     logging.basicConfig(level=level)
 
     # Sort the curated xrefs file
-    (
-        _get_curated_xrefs_df()
-            .sort_values(['source_db', 'source_name', 'modulation'])
-            .drop_duplicates()
-            .to_csv(XREFS_PATH, index=False, sep='\t')
-    )
+    sort_xrefs_df()
 
     # Get the graph
     graph = get_obo_graph('chebi')
