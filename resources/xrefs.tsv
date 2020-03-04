@@ -173,5 +173,23 @@ chebi	CHEBI:59680	vasopressin receptor antagonist	antagonist	protein family	mesh
 chebi	CHEBI:78248	vitamin B1 antagonist	antagonist	chemical	chebi	CHEBI:18385	thiamine(1+)
 chebi	CHEBI:139503	vitamin D receptor agonist	agonist	protein	hgnc	12679	VDR
 chebi	CHEBI:55347	vitamin K antagonist	antagonist	chemical	chebi	CHEBI:28384	vitamin K
+mesh	D000067956	Adenylyl Cyclase Inhibitors	inhibitor	protein family	fplx	ADCY	ADCY
+mesh	D000067956	Adenylyl Cyclase Inhibitors	inhibitor	protein family	hgnc.genefamily	53	Adenylate cyclases
+mesh	D000322	Adrenergic Agonists	agonists	protein family	hgnc.genefamily	169	Adrenoceptors
+mesh	D000316	Adrenergic alpha-Agonists	agonist	protein family	fplx	ADRA	ADRA
+mesh	D000317	Adrenergic alpha-Antagonists	antagonist	protein family	fplx	ADRA	ADRA
+mesh	D000318	Adrenergic beta-Agonists	agonist	protein family	fplx	ADRB	ADRB
+mesh	D000319	Adrenergic beta-Antagonists	antagonist	protein family	fplx	ADRB	ADRB
+mesh	D065609	Cytochrome P-450 CYP1A2 Inhibitors	inhibitor	protein	hgnc	2596	CYP1A2
+mesh	D065686	Cytochrome P-450 CYP2B6 Inhibitors	inhibitor	protein	hgnc	2615	CYP2B6
+mesh	D065689	Cytochrome P-450 CYP2C19 Inhibitors	inhibitor	protein	hgnc	2621	CYP2C19
+mesh	D065687	Cytochrome P-450 CYP2C8 Inhibitors	inhibitor	protein	hgnc	2622	CYP2C8
+mesh	D065688	Cytochrome P-450 CYP2C9 Inhibitors	inhibitor	protein	hgnc	2623	CYP2C9
+mesh	D065690	Cytochrome P-450 CYP2D6 Inhibitors	inhibitor	protein hgnc	2625	CYP2D6	
+mesh	D065691	Cytochrome P-450 CYP2E1 Inhibitors	inhibitor	protein hgnc	2631	CYP2E1	
+mesh	D065692	Cytochrome P-450 CYP3A Inhibitors	inhibitor	protein hgnc	2635	CYP3A	
+mesh	D065607	Cytochrome P-450 Enzyme Inhibitors	inhibitor	protein family	hgnc.genefamily	862	Cytochrome P450s
+mesh	D000075242	Janus Kinase Inhibitors	inhibitor	protein family	hgnc.genefamily	1459	Jak family tyrosine kinases
 mesh	D061965	Matrix Metalloproteinase Inhibitors	inhibitor	protein family	fplx	MMP	MMP
 mesh	D061965	Matrix Metalloproteinase Inhibitors	inhibitor	protein family	hgnc.genefamily	891	M10 matrix metallopeptidases
+mesh	D000068796	Orexin Receptor Antagonists	antagonist	protein family	hgnc.genefamily	228	Hypocretin receptors
