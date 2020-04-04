@@ -25,6 +25,53 @@ Repository Structure
 - ``curate_chebi_relations.py``: The python script that suggests new curation using `Gilda <https://github.com/indralab/gilda>`_ 
   and generates the derived resources in ``export/``
 
+Axioms
+------
+One of the main goals of this repository is to provide a framework for reasoning over roles (or families)
+in ChEBI that don't have enough metadata.
+
+This repo annotates relationships between chemical role ``X`` and protein ``Z`` such that:
+
+- X isA chebi:agonist
+- Y hasRole X
+- Y agonistOf Z
+
+It can also be reasoned over the hierarchy of children of chemical ``Y`` such that:
+
+- X isA chebi:agonist
+- Y hasRole X
+- Y agonistOf Z
+- y isA* Y
+- y agonistOf Z
+
+This repo annotates relationships between chemical role ``X`` and protein family ``Z`` such that:
+
+- X isA chebi:agonist
+- Y hasRole X
+- Y agonistOf Z
+- z isA* Z
+- Y agonistOf z
+
+And a combination of both the hierarchy of children of chemical ``Y`` and the children of protein family ``Z`` such
+that:
+
+- X isA chebi:agonist
+- Y hasRole X
+- Y agonistOf Z
+- y isA* Y
+- z isA* Z
+- y agonistOf z
+
+In general, this repository maps many ChEBI roles ``R`` to relationships ``r`` such that:
+
+- X isA R
+- Y hasRole X
+- R roleHasRelation r
+- Y r Z
+- y isA* Y
+- z isA* Z
+- y r z
+
 License
 -------
 - Code in this repository is under the MIT License.
@@ -32,7 +79,7 @@ License
 
 Data Sources
 ------------
-Automatically Retreived Data Sources
+Automatically Retrieved Data Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - ChEBI (https://www.ebi.ac.uk/chebi)
 - HUGO Gene Nomenclature Committee at the European Bioinformatics Institute. See https://www.genenames.org/ for more information
