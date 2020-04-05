@@ -30,6 +30,8 @@ Axioms
 One of the main goals of this repository is to provide a framework for reasoning over roles (or families)
 in ChEBI that don't have enough metadata.
 
+Chemical-Physical Entity and Chemical-Process
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This repo annotates relationships between chemical role ``X`` and protein ``Z`` such that:
 
 - X isA chebi:agonist
@@ -71,6 +73,18 @@ In general, this repository maps many ChEBI roles ``R`` to relationships ``r`` s
 - y isA* Y
 - z isA* Z
 - y r z
+
+Chemical and Activity
+~~~~~~~~~~~~~~~~~~~~~
+This repo annotates relationships between chemical role ``X`` and activity ``A`` such
+
+- X hasRole R
+- R roleHasActivityRelation ar
+- R roleHasEntityRelation er
+- X ar A
+- P isA protein
+- P hasActivity A
+- X er P
 
 License
 -------
