@@ -7,16 +7,33 @@ chebi	CHEBI:20854	ATP synthase inhibitor	inhibitor	protein family	fplx	ATP_synth
 chebi	CHEBI:73416	CB1 receptor antagonist	antagonist	protein	hgnc	2159	CNR1
 chebi	CHEBI:73417	CB2 receptor antagonist	antagonist	protein	hgnc	2160	CNR2
 chebi	CHEBI:49205	CETP inhibitor	inhibitor	protein	hgnc	1869	CETP
+chebi	CHEBI:49205	CETP inhibitor	inhibitor	protein	pr	PR:000005373	cholesteryl ester transfer protein
 chebi	CHEBI:38234	DNA polymerase inhibitor	inhibitor	activity	go	GO:0034061	DNA polymerase activity
 chebi	CHEBI:59517	DNA synthesis inhibitor	negatively_regulates	pathway	go	GO:0071897	DNA biosynthetic process
+chebi	CHEBI:64670	EC 1.8.1.9 (thioredoxin reductase) inhibitor	inhibitor	protein family	pr	PR:000024130	thioredoxin reductase
+chebi	CHEBI:64670	EC 1.8.1.9 (thioredoxin reductase) inhibitor	inhibitor	protein family	ec	1.8.1.9	 thioredoxin-disulfide reductase
+chebi	CHEBI:64411	EC 2.5.1.29 (geranylgeranyl diphosphate synthase) inhibitor	inhibitor	protein family	pr	PR:000007961	geranylgeranyl pyrophosphate synthase
 chebi	CHEBI:50635	EC 3.5.1.5 (urease) inhibitor	inhibitor	activity	go	GO:0009039	urease activity
+chebi	CHEBI:64920	EC 6.5.1.1 [DNA ligase (ATP)] inhibitor	inhibitor	protein family	pr	PR:000023089	DNA ligase
 chebi	CHEBI:65259	GABA antagonist	antagonist	protein family	hgnc.genefamily	562	Gamma-aminobutyric acid (GABA) receptors
 chebi	CHEBI:59229	GnRH antagonist	antagonist	protein	hgnc	4419	GNRH1
 chebi	CHEBI:37955	H1-receptor antagonist	antagonist	protein	pr	PR:000001422	histamine H1 receptor
+chebi	CHEBI:37955	H1-receptor antagonist	antagonist	protein	hgnc	5182	HRH1
 chebi	CHEBI:37961	H2-receptor antagonist	antagonist	protein	pr	PR:000001423	histamine H2 receptor
+chebi	CHEBI:37961	H2-receptor antagonist	antagonist	protein	hgnc	5183	HRH2
+chebi	CHEBI:64154	H3-receptor agonist	agonist	protein	pr	PR:000001564	histamine H3 receptor
+chebi	CHEBI:64154	H3-receptor agonist	agonist	protein	hgnc	5184	HRH2
+chebi	CHEBI:64176	H3-receptor antagonist	antagonist	protein	pr	PR:000001564	histamine H3 receptor
+chebi	CHEBI:64176	H3-receptor antagonist	antagonist	protein	hgnc	5184	HRH2
+chebi	CHEBI:64155	H4-receptor agonist	agonist	protein	pr	PR:000001565	H4 histamine receptor
+chebi	CHEBI:64155	H4-receptor agonist	agonist	protein	hgnc	17383	HRH4
+chebi	CHEBI:67268	HIV-1 integrase inhibitor	negatively_regulates	activity	go	GO:0008907	integrase activity
 chebi	CHEBI:140921	Hedgehog signaling pathway inhibitor	negatively_regulates	pathway	go	GO:0007224	smoothened signaling pathway
+chebi	CHEBI:63962	Hsp90 inhibitor	inhibitor	protein family	pr	PR:000025350	HSPC protein
+chebi	CHEBI:63962	Hsp90 inhibitor	inhibitor	protein family	fplx	HSP90	HSP90
 chebi	CHEBI:139109	IP3 receptor agonist	agonist	protein	hgnc	6180	ITPR1
 chebi	CHEBI:131186	IP3 receptor antagonist	antagonist	protein	hgnc	6180	ITPR1
+chebi	CHEBI:64338	K-ATP channel agonist	agonist	protein complex	go	GO:0008282	inward rectifying potassium channel
 chebi	CHEBI:65254	LRH-1 agonist	agonist	protein	hgnc	7984	NR5A2
 chebi	CHEBI:136580	LRH-1 antagonist	antagonist	protein	hgnc	7984	NR5A2
 chebi	CHEBI:72298	MTP inhibitor	inhibitor	protein	hgnc	7467	MTTP
@@ -38,7 +55,10 @@ chebi	CHEBI:77161	Toll-like receptor 2 agonist	agonist	protein	hgnc	11848	TLR2
 chebi	CHEBI:77324	UDP-glucuronosyltransferase activator	activator	protein family	fplx	UGT	UGT
 chebi	CHEBI:91189	VEGF activator	activator	protein family	fplx	VEGF	VEGF
 chebi	CHEBI:78009	Wiskott-Aldrich syndrome protein inhibitor	inhibitor	protein	hgnc	12731	WAS
+chebi	CHEBI:64697	acyl-CoA:cholesterol acyltransferase 2 inhibitor	inhibitor	protein	pr	PR:000015390	sterol O-acyltransferase 2
+chebi	CHEBI:64697	acyl-CoA:cholesterol acyltransferase 2 inhibitor	inhibitor	protein	hgnc	11178	SOAT2
 chebi	CHEBI:65057	adenosine A1 receptor agonist	agonist	protein	hgnc	262	ADORA1
+chebi	CHEBI:65057	adenosine A1 receptor agonist	agonist	protein	pr	PR:000001575	adenosine receptor A1
 chebi	CHEBI:63957	adenosine A1 receptor antagonist	antagonist	protein	hgnc	262	ADORA1
 chebi	CHEBI:73310	adenosine A2A receptor agonist	agonist	protein	hgnc	263	ADORA2A
 chebi	CHEBI:53121	adenosine A2A receptor antagonist	antagonist	protein	hgnc	263	ADORA2A
@@ -49,11 +69,16 @@ chebi	CHEBI:71232	adenosine receptor antagonist	antagonist	protein family	hgnc.g
 chebi	CHEBI:78548	adenylate cyclase agonist	agonist	protein family	fplx	ADCY	ADCY
 chebi	CHEBI:50844	aldosterone antagonist	antagonist	chemical	chebi	CHEBI:27584	aldosterone
 chebi	CHEBI:63936	alpha1B-adrenoceptor antagonist	antagonist	protein	hgnc	278	ADRA1B
+chebi	CHEBI:63936	alpha1B-adrenoceptor antagonist	antagonist	activity	go	GO:0031692	alpha-1B adrenergic receptor binding
 chebi	CHEBI:50927	angiogenesis inducing agent	positively_regulates	pathway	go	GO:0001525	angiogenesis
 chebi	CHEBI:50926	angiogenesis modulating agent	regulates	pathway	go	GO:0001525	angiogenesis
+chebi	CHEBI:64947	anti-HIV-1 agent	inhibitor	taxon	ncbitaxon	11676	Human immunodeficiency virus 1
+chebi	CHEBI:67079	anti-inflammatory agent	inhibitor	pathway	go	GO:0006954	inflammatory response
 chebi	CHEBI:35472	anti-inflammatory drug	inhibitor	pathway	go	GO:0006954	inflammatory response
 chebi	CHEBI:33282	antibacterial agent	inhibitor	population	ncbitaxon	2	Bacteria
 chebi	CHEBI:36047	antibacterial drug	inhibitor	population	ncbitaxon	2	Bacteria
+chebi	CHEBI:35842	antirheumatic drug	inhibitor	phenotype	mp	MP:0003561	rheumatoid arthritis
+chebi	CHEBI:22587	antiviral agent	inhibitor	taxon	ncbitaxon	10239	Viruses
 chebi	CHEBI:36044	antiviral drug	inhibitor	population	ncbitaxon	10239	Viruses
 chebi	CHEBI:68495	apoptosis inducer	positively_regulates	pathway	go	GO:0006915	apoptotic process
 chebi	CHEBI:68494	apoptosis inhibitor	negatively_regulates	pathway	go	GO:0006915	apoptotic process
@@ -71,6 +96,7 @@ chebi	CHEBI:70774	capsaicin receptor antagonist	antagonist	protein	hgnc	12716	TR
 chebi	CHEBI:50912	cardiotoxic agent	positively_regulates	pathway	efo	EFO:1001482	cardiotoxicity
 chebi	CHEBI:138208	carotenoid biosynthesis inhibitor	negatively_regulates	pathway	go	GO:0016117	carotenoid biosynthetic process
 chebi	CHEBI:63958	cellulose synthesis inhibitor	negatively_regulates	pathway	go	GO:0030244	cellulose biosynthetic process
+chebi	CHEBI:63673	chemokine receptor 5 antagonist	antagonist	protein	hgnc	1606	CCR5
 chebi	CHEBI:73296	cholecystokinin antagonist	antagonist	protein family	hgnc.genefamily	224	Cholecystokinin receptors
 chebi	CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1570	CCKAR
 chebi	CHEBI:73296	cholecystokinin antagonist	antagonist	protein	hgnc	1571	CCKBR
@@ -142,6 +168,7 @@ chebi	CHEBI:75414	platelet-activating factor receptor agonist	agonist	protein	hg
 chebi	CHEBI:134182	platelet-activating factor receptor antagonist	antagonist	protein	hgnc	9582	PTAFR
 chebi	CHEBI:50510	potassium channel modulator	regulates	activity	go	GO:0005267	potassium channel activity
 chebi	CHEBI:77318	pregnane X receptor agonist	agonist	protein	hgnc	7968	NR1I2
+chebi	CHEBI:72571	pro-angiogenic agent	activator	pathway	go	GO:0001525	angiogenesis
 chebi	CHEBI:70709	progesterone receptor agonist	agonist	protein	hgnc	8910	PGR
 chebi	CHEBI:90845	prostacyclin receptor agonist	agonist	protein	hgnc	9602	PTGIR
 chebi	CHEBI:66900	prostaglandin receptor agonist	agonist	protein family	mesh	D011982	Receptors, Prostaglandin
@@ -155,14 +182,21 @@ chebi	CHEBI:138977	quorum sensing inhibitor	negatively_regulates	pathway	go	GO:0
 chebi	CHEBI:38497	respiratory-chain inhibitor	inhibitor	complex	go	GO:0098803	respiratory chain complex
 chebi	CHEBI:67198	retinoic acid receptor agonist	agonist	protein family	fplx	RAR	RAR
 chebi	CHEBI:90713	retinoic acid receptor alpha antagonist	antagonist	protein	hgnc	9864	RARA
+chebi	CHEBI:50741	retinoic acid receptor alpha/beta agonist	agonist	protein	pr	PR:000013736	retinoic acid receptor alpha
+chebi	CHEBI:50741	retinoic acid receptor alpha/beta agonist	agonist	protein	hgnc	9864	RARA
+chebi	CHEBI:50741	retinoic acid receptor alpha/beta agonist	agonist	protein	pr	PR:000013737	retinoic acid receptor beta
+chebi	CHEBI:50741	retinoic acid receptor alpha/beta agonist	agonist	protein	hgnc	9865	RARB
 chebi	CHEBI:90714	retinoic acid receptor antagonist	antagonist	protein family	mesh	D018168	Receptors, Retinoic Acid
 chebi	CHEBI:90742	retinoic acid receptor beta agonist	agonist	protein	hgnc	9865	RARB
 chebi	CHEBI:88336	retinoic acid receptor gamma agonist	agonist	protein	hgnc	9866	RARG
 chebi	CHEBI:90744	retinoic acid receptor gamma antagonist	antagonist	protein	hgnc	9866	RARG
 chebi	CHEBI:63794	retinoid X receptor agonist	agonist	protein family	fplx	RXR	RXR
+chebi	CHEBI:63794	retinoid X receptor agonist	agonist	activity	go	GO:0046965	retinoid X receptor binding
 chebi	CHEBI:140701	secreted frizzled-related protein 1 inhibitor	inhibitor	protein	hgnc	10776	SFRP1
 chebi	CHEBI:50949	serotonin uptake inhibitor	negatively_regulates	pathway	go	GO:0051610	serotonin uptake
 chebi	CHEBI:76022	soluble guanylate cyclase activator	activator	complex	fplx	SGC	SGC
+chebi	CHEBI:55351	substance P receptor antagonist	antagonist	protein	pr	PR:000001247	substance-P receptor
+chebi	CHEBI:55351	substance P receptor antagonist	antagonist	protein	hgnc	11517	TAC1
 chebi	CHEBI:85012	thrombopoietin receptor agonist	agonist	protein	hgnc	7217	MPL
 chebi	CHEBI:139044	thromboxane A2 agonist	agonist	protein	hgnc	11608	TBXA2R
 chebi	CHEBI:85540	thromboxane A2 antagonist	antagonist	protein	hgnc	11608	TBXA2R
@@ -180,14 +214,17 @@ mesh	D000316	Adrenergic alpha-Agonists	agonist	protein family	fplx	ADRA	ADRA
 mesh	D000317	Adrenergic alpha-Antagonists	antagonist	protein family	fplx	ADRA	ADRA
 mesh	D000318	Adrenergic beta-Agonists	agonist	protein family	fplx	ADRB	ADRB
 mesh	D000319	Adrenergic beta-Antagonists	antagonist	protein family	fplx	ADRB	ADRB
+mesh	D065169	Bradykinin B1 Receptor Antagonists	antagonist	protein	hgnc	1029	BDKRB1
+mesh	D065094	Bradykinin B2 Receptor Antagonists	antagonist	protein	hgnc	1030	BDKRB2
+mesh	D065168	Bradykinin Receptor Antagonists	antagonist	protein family	fplx	BDKR	BDKR
 mesh	D065609	Cytochrome P-450 CYP1A2 Inhibitors	inhibitor	protein	hgnc	2596	CYP1A2
 mesh	D065686	Cytochrome P-450 CYP2B6 Inhibitors	inhibitor	protein	hgnc	2615	CYP2B6
 mesh	D065689	Cytochrome P-450 CYP2C19 Inhibitors	inhibitor	protein	hgnc	2621	CYP2C19
 mesh	D065687	Cytochrome P-450 CYP2C8 Inhibitors	inhibitor	protein	hgnc	2622	CYP2C8
 mesh	D065688	Cytochrome P-450 CYP2C9 Inhibitors	inhibitor	protein	hgnc	2623	CYP2C9
-mesh	D065690	Cytochrome P-450 CYP2D6 Inhibitors	inhibitor	protein hgnc	2625	CYP2D6	
-mesh	D065691	Cytochrome P-450 CYP2E1 Inhibitors	inhibitor	protein hgnc	2631	CYP2E1	
-mesh	D065692	Cytochrome P-450 CYP3A Inhibitors	inhibitor	protein hgnc	2635	CYP3A	
+mesh	D065690	Cytochrome P-450 CYP2D6 Inhibitors	inhibitor	protein	hgnc	2625	CYP2D6
+mesh	D065691	Cytochrome P-450 CYP2E1 Inhibitors	inhibitor	protein	hgnc	2631	CYP2E1
+mesh	D065692	Cytochrome P-450 CYP3A Inhibitors	inhibitor	protein	hgnc	2635	CYP3A
 mesh	D065607	Cytochrome P-450 Enzyme Inhibitors	inhibitor	protein family	hgnc.genefamily	862	Cytochrome P450s
 mesh	D000075242	Janus Kinase Inhibitors	inhibitor	protein family	hgnc.genefamily	1459	Jak family tyrosine kinases
 mesh	D061965	Matrix Metalloproteinase Inhibitors	inhibitor	protein family	fplx	MMP	MMP
