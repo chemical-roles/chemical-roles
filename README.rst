@@ -80,8 +80,12 @@ This repo annotates relationships between chemical role ``X`` and activity ``A``
 
 - X hasRole R
 - R roleHasActivityRelation ar
-- R roleHasEntityRelation er
 - X ar A
+
+When this is true, we can further infer the action of chemical role ``X`` on protein ``P``
+that has activity ``A``:
+
+- R roleHasEntityRelation er
 - P isA protein
 - P hasActivity A
 - X er P
