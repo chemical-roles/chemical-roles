@@ -4,7 +4,8 @@
 
 import logging
 import os
-from typing import Set
+from collections import defaultdict
+from typing import Mapping, Set
 
 import pandas as pd
 import requests
@@ -47,15 +48,12 @@ def post_gilda(text: str, url: str = GILDA_URL) -> requests.Response:
     return requests.post(f'{url}/ground', json={'text': text})
 
 
-def get_single_mappings(df: pd.DataFrame, idx) -> Set:
+def get_single_mappings(df: pd.DataFrame, idx) -> Mapping[str, Set[str]]:
     """Get ChEBI identifiers that are only mapped to one thing based on slicing the dataframe on the given index."""
-    errors = set()
+    errors = defaultdict(set)
     chebi_ids = sorted(df.loc[idx, 'source_id'].unique())
     for chebi_id, sdf in df[df['source_id'].isin(chebi_ids)].groupby(['source_id']):
-        if 1 != len(sdf.index):
-            pass  # print(chebi_id, 'multiple!')
-        else:
-            target_id, target_name = list(sdf[['target_id', 'target_name']].values)[0]
-            print(chebi_id, 'only mapped to', target_id, target_name)
-            errors.add((chebi_id, target_id, target_name))
-    return errors
+        if 1 == len(sdf.index):
+            target_db, target_id, target_name = list(sdf[['target_db', 'target_id', 'target_name']].values)[0]
+            errors[target_db, target_id, target_name].add(chebi_id)
+    return dict(errors)
