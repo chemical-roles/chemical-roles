@@ -36,16 +36,35 @@ def mappings():
     df = get_xrefs_df()
 
     idx = (df['target_db'] == 'pr') & (df['type'] == 'protein')
-    errors = get_single_mappings(df, idx)
-    if errors:
+    protein_pr_errors = get_single_mappings(df, idx)
+    if protein_pr_errors:
         click.secho('Some entries only mapped to Protein Ontology', fg='red', bold=True)
-        sys.exit(1)
+        _p(protein_pr_errors)
 
     idx = (df['target_db'] == 'go') & (df['type'] == 'protein complex')
-    errors = get_single_mappings(df, idx)
-    if errors:
+    go_complex_errors = get_single_mappings(df, idx)
+    if go_complex_errors:
         click.secho('Some complexes only mapped to Gene Ontology', fg='red', bold=True)
+        _p(go_complex_errors)
+
+    idx = (df['target_db'] == 'mesh')
+    mesh_errors = get_single_mappings(df, idx)
+    if mesh_errors:
+        click.secho('Some terms only mapped to MeSH', fg='red', bold=True)
+        _p(mesh_errors)
+
+    if any([
+        protein_pr_errors,
+        go_complex_errors,
+        mesh_errors
+    ]):
         sys.exit(1)
+
+
+def _p(errors):
+    m = max(len(k) for _, _, k in errors)
+    for (k_db, k_id, k), vs in errors.items():
+        click.echo(f'{k_db}:{k_id} ! {k:{m}} mapped to {", ".join(vs)}')
 
 
 @main.command()
