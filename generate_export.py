@@ -19,7 +19,7 @@ from pyobo.sources.expasy import get_obo as get_expasy_obo
 from pyobo.struct.typedef import has_member
 from tabulate import tabulate
 
-from utils import EXPORT_DIRECTORY, XREFS_COLUMNS, get_xrefs_df
+from utils import EXPORT_DIRECTORY, HERE, XREFS_COLUMNS, get_xrefs_df
 
 logger = logging.getLogger(__name__)
 
@@ -167,14 +167,30 @@ def get_uniprot_id_names(hgnc_id: str) -> Iterable[Tuple[str, str]]:
 
 
 def rewrite_repo_readme():
-    _df = get_xrefs_df()
+    df = get_xrefs_df()
 
-    text = f'There are {len(_df.index)} curated roles as of export on {time.asctime()}\n\n'
-    text += tabulate(_df.groupby('modulation').size().reset_index().values, ['Modulation', 'Count'], tablefmt='rst')
+    summary_df = df.groupby(['source_db', 'modulation', 'type', 'target_db']).size().reset_index()
+    summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'curated_summary.tsv'), sep='\t', index=False)
+
+    modulation_summary_df = df.groupby('modulation').size().reset_index()
+    modulation_summary_df.to_csv(
+        os.path.join(EXPORT_DIRECTORY, 'curated_summary_by_modulation.tsv'), sep='\t', index=False,
+    )
+    type_summary_df = df.groupby('type').size().reset_index()
+    type_summary_df.to_csv(
+        os.path.join(EXPORT_DIRECTORY, 'curated_summary_by_type.tsv'), sep='\t', index=False,
+    )
+    namespace_summary_df = df.groupby('target_db').size().reset_index()
+    namespace_summary_df.to_csv(
+        os.path.join(EXPORT_DIRECTORY, 'curated_summary_by_namespace.tsv'), sep='\t', index=False,
+    )
+
+    text = f'There are {len(df.index)} curated roles as of export on {time.asctime()}\n\n'
+    text += tabulate(modulation_summary_df.values, ['Modulation', 'Count'], tablefmt='rst')
     text += '\n\n'
-    text += tabulate(_df.groupby('type').size().reset_index().values, ['Target Entity Type', 'Count'], tablefmt='rst')
+    text += tabulate(type_summary_df.values, ['Target Entity Type', 'Count'], tablefmt='rst')
     text += '\n\n'
-    text += tabulate(_df.groupby('target_db').size().reset_index().values, ['Target Database', 'Count'], tablefmt='rst')
+    text += tabulate(namespace_summary_df.values, ['Target Database', 'Count'], tablefmt='rst')
     text += '\n'
 
     path = os.path.join(HERE, 'README.rst')
@@ -220,20 +236,37 @@ def write_export():
     df[slim_columns].sort_values(slim_columns).to_csv(RELATIONS_SLIM_OUTPUT_PATH, sep='\t', index=False)
 
     summary_df = df.groupby(['source_db', 'modulation', 'target_type', 'target_db']).size().reset_index()
+    summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'inferred_summary.tsv'), sep='\t', index=False)
     summary_df_str = tabulate(
         summary_df.values,
         ['source_db', 'relation', 'target_type', 'target_db', 'count'],
         tablefmt='github',
     )
 
+    modulation_summary_df = df.groupby(['modulation']).size().reset_index()
+    modulation_summary_df.to_csv(
+        os.path.join(EXPORT_DIRECTORY, 'inferred_summary_by_modulation.tsv'), sep='\t', index=False,
+    )
+    modulation_str = tabulate(
+        modulation_summary_df.values,
+        ['modulation', 'count'],
+        tablefmt='github',
+    )
+
+    namespace_summary_df = df.groupby(['target_db']).size().reset_index()
+    namespace_summary_df.to_csv(
+        os.path.join(EXPORT_DIRECTORY, 'inferred_summary_by_namespace.tsv'), sep='\t', index=False,
+    )
     ns_str = tabulate(
-        df.groupby(['target_db']).size().reset_index().values,
+        namespace_summary_df.values,
         ['namespace', 'count'],
         tablefmt='github',
     )
 
+    type_summary_df = df.groupby(['target_type']).size().reset_index()
+    type_summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'inferred_summary_by_type.tsv'), sep='\t', index=False)
     type_str = tabulate(
-        df.groupby(['target_type']).size().reset_index().values,
+        type_summary_df.values,
         ['type', 'count'],
         tablefmt='github',
     )
@@ -241,6 +274,8 @@ def write_export():
     with open(os.path.join(EXPORT_DIRECTORY, 'README.md'), 'w') as file:
         print('# Export Summary\n', file=file)
         print(f'Exported {len(df.index)} relations on {time.asctime()}\n', file=file)
+        print('\n## Summary by Modulation\n', file=file)
+        print(modulation_str, file=file)
         print('\n## Summary by Type\n', file=file)
         print(type_str, file=file)
         print('\n## Summary by Namespace\n', file=file)
