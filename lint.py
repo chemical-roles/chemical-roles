@@ -50,13 +50,20 @@ def mappings():
     idx = (df['target_db'] == 'mesh')
     mesh_errors = get_single_mappings(df, idx)
     if mesh_errors:
-        click.secho('Some terms only mapped to MeSH', fg='red', bold=True)
+        click.secho('Some roles only mapped to MeSH', fg='red', bold=True)
         _p(mesh_errors)
+
+    idx = (df['type'] == 'molecular function')
+    mf_errors = get_single_mappings(df, idx)
+    if mf_errors:
+        click.secho('Some roles only mapped to molecular function', fg='red', bold=True)
+        _p(mf_errors)
 
     if any([
         protein_pr_errors,
         go_complex_errors,
-        mesh_errors
+        mesh_errors,
+        mf_errors,
     ]):
         sys.exit(1)
 
@@ -64,7 +71,7 @@ def mappings():
 def _p(errors):
     m = max(len(k) for _, _, k in errors)
     for (k_db, k_id, k), vs in errors.items():
-        click.echo(f'{k_db}:{k_id} ! {k:{m}} mapped to {", ".join(vs)}')
+        click.echo(f'{k_db}:{k_id} ! {k:{m}} for role{"" if len(vs) == 1 else "s"} {", ".join(vs)}')
 
 
 @main.command()

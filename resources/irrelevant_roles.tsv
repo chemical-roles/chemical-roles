@@ -1,0 +1,56 @@
+database	identifier	name
+chebi	CHEBI:50188	provitamin
+chebi	CHEBI:76219	fluorogen
+chebi	CHEBI:136367	α-D-GalN-(1→4)-[α-DD-Hep-(1→2)]-α-D-GalA-yl group
+chebi	CHEBI:25212	metabolite
+chebi	CHEBI:53000	epitope
+chebi	CHEBI:64345	MALDI matrix material
+chebi	CHEBI:51237	Grignard reagent
+chebi	CHEBI:82933	gut flora metabolite
+chebi	CHEBI:78433	refrigerant
+chebi	CHEBI:86264	rat metabolite
+chebi	131604	Mycoplasma genitalium metabolite
+chebi	78004	food bulking agent
+chebi	77966	food stabiliser
+chebi	77971	raising agent
+chebi	77970	food thickening agent		?	?	?	?
+chebi	76973	Streptococcus pneumoniae metabolite		?	?	?	?
+chebi	83399	marine xenobiotic metabolite		?	?	?	?
+chebi	76946	fungal metabolite		?	?	?	?
+chebi	78675	fundamental metabolite		?	?	?	?
+chebi	25212	metabolite		?	?	?	?
+chebi	76206	xenobiotic metabolite		?	?	?	?
+chebi	76507	marine metabolite		?	?	?	?
+chebi	83146	Daphnia tenebrosa metabolite		?	?	?	?
+chebi	76956	Aspergillus metabolite		?	?	?	?
+chebi	78803	nematode metabolite		?	?	?	?
+chebi	75787	prokaryotic metabolite		?	?	?	?
+chebi	76968	fungal xenobiotic metabolite		?	?	?	?
+chebi	78804	Caenorhabditis elegans metabolite		?	?	?	?
+chebi	51268	drying control chemical additive		?	?	?	?
+chebi	35211	radioactive label		?	?	?	?
+chebi	85046	skin lightening agent		?	?	?	?
+chebi	37336	radioactive imaging agent		?	?	?	?
+chebi	77962	food antioxidant		?	?	?	?
+chebi	27780	detergent		?	?	?	?
+chebi	76969	bacterial metabolite		?	?	?	?
+chebi	77974	food packaging gas		?	?	?	?
+chebi	64577	flour treatment agent		?	?	?	?
+chebi	52271	squaraine dye		?	?	?	?
+chebi	78433	refrigerant		?	?	?	?
+chebi	75763	eukaryotic metabolite		?	?	?	?
+chebi	78361	lichen metabolite		?	?	?	?
+chebi	48357	aprotic solvent		?	?	?	?
+chebi	64049	food acidity regulator		?	?	?	?
+chebi	83039	crustacean metabolite		?	?	?	?
+chebi	51121	fluorescent dye		?	?	?	?
+chebi	50266	prodrug		?	?	?	?
+chebi	CHEBI:86264	rat metabolite		?	?	?	?
+chebi	CHEBI:77746	human metabolite		?	?	?	?
+chebi	CHEBI:51087	protecting group		?	?	?	?
+chebi	CHEBI:46787	solvent		?	?	?	?
+chebi	CHEBI:83057	Daphnia metabolite		?	?	?	?
+chebi	CHEBI:75767	animal metabolite		?	?	?	?
+
+# shouldn't be a role
+chebi	26083	phosphorus containing antibiotics		?	?	?	?

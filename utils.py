@@ -24,11 +24,18 @@ XREFS_COLUMNS = [
     'target_type', 'target_db', 'target_id', 'target_name',
 ]
 
+IRRELEVANT_ROLES_PATH = os.path.join(RESOURCES_DIRECTORY, 'irrelevant_roles.tsv')
+IRRELEVANT_ROLES_COLUMNS = ['database', 'identifier', 'name']
+
 
 def get_xrefs_df() -> pd.DataFrame:
     """Get xrefs.tsv."""
-    logger.info('reading xrefs from %s', XREFS_PATH)
     return pd.read_csv(XREFS_PATH, sep='\t', comment='#', dtype=str)
+
+
+def get_irrelevant_roles_df() -> pd.DataFrame:
+    """Get irrelevant roles."""
+    return pd.read_csv(IRRELEVANT_ROLES_PATH, sep='\t', dtype=str)
 
 
 def sort_xrefs_df() -> None:
