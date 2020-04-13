@@ -16,6 +16,7 @@ from protmapper.api import hgnc_id_to_up, hgnc_name_to_id
 from pyobo import get_id_name_mapping
 from pyobo.sources.chebi import get_chebi_role_to_children
 from pyobo.sources.expasy import get_obo as get_expasy_obo
+from pyobo.struct.typedef import has_member
 from tabulate import tabulate
 
 from utils import EXPORT_DIRECTORY, XREFS_COLUMNS, get_xrefs_df
@@ -47,12 +48,12 @@ def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[str]]]:
                 (term.prefix, term.identifier, term.identifier),
                 (parent_term.prefix, parent_term.identifier, parent_term.identifier),
             )
-        for xref in term.xrefs:
-            if xref.prefix in {'uniprot', 'prosite'}:
-                _graph.add_edge(
-                    (xref.prefix, xref.identifier, xref.name),
-                    (term.prefix, term.identifier, term.identifier),
-                )
+
+        for member in term.get_relationships(has_member):
+            _graph.add_edge(
+                (member.prefix, member.identifier, member.name),
+                (term.prefix, term.identifier, term.identifier),
+            )
 
     rv = {
         identifier: list(nx.ancestors(_graph, (db, identifier, name)))
