@@ -1,4 +1,5 @@
 source_db	source_id	source_name	modulation	type	target_db	target_id	target_name
+chebi	CHEBI:133016	5-hydroxytryptamine 2A receptor inverse agonist	inverse agonist	protein	hgnc	5293	HTR2A
 chebi	CHEBI:142184	5-hydroxytryptamine 2B receptor agonist	agonist	protein	hgnc	5294	HTR2B
 chebi	CHEBI:64102	AMPA receptor agonist	agonist	protein family	fplx	GRIA	GRIA
 chebi	CHEBI:64102	AMPA receptor agonist	agonist	molecular function	go	GO:0004971	AMPA glutamate receptor activity
@@ -700,7 +701,7 @@ chebi	CHEBI:59282	kappa-opioid receptor agonist	agonist	protein family	mesh	D017
 chebi	CHEBI:49159	leukotriene antagonist	antagonist	chemical	chebi	CHEBI:25029	leukotriene
 chebi	CHEBI:50916	lipid kinase inhibitor	inhibitor	molecular function	go	GO:0001727	lipid kinase activity
 chebi	CHEBI:86029	liver X receptor agonist	agonist	protein family	fplx	LXR	LXR
-chebi	CHEBI:90846	liver X receptor inverse agonist	inverse_agonist	protein family	fplx	LXR	LXR
+chebi	CHEBI:90846	liver X receptor inverse agonist	inverse agonist	protein family	fplx	LXR	LXR
 chebi	CHEBI:131509	lysine-specific histone demethylase 1A inhibitor	inhibitor	protein	hgnc	29079	KDM1A
 chebi	CHEBI:139584	lysophosphatidic acid receptor 3 agonist	agonist	protein	hgnc	14298	LPAR3
 chebi	CHEBI:91193	lysophosphatidic acid receptor antagonist	antagonist	protein family	mesh	D049368	Receptors, Lysophosphatidic Acid
@@ -805,7 +806,7 @@ chebi	CHEBI:139503	vitamin D receptor agonist	agonist	protein	hgnc	12679	VDR
 chebi	CHEBI:55347	vitamin K antagonist	antagonist	chemical	chebi	CHEBI:28384	vitamin K
 mesh	D000067956	Adenylyl Cyclase Inhibitors	inhibitor	protein family	fplx	ADCY	ADCY
 mesh	D000067956	Adenylyl Cyclase Inhibitors	inhibitor	protein family	hgnc.genefamily	53	Adenylate cyclases
-mesh	D000322	Adrenergic Agonists	agonists	protein family	hgnc.genefamily	169	Adrenoceptors
+mesh	D000322	Adrenergic Agonists	agonist	protein family	hgnc.genefamily	169	Adrenoceptors
 mesh	D000316	Adrenergic alpha-Agonists	agonist	protein family	fplx	ADRA	ADRA
 mesh	D000317	Adrenergic alpha-Antagonists	antagonist	protein family	fplx	ADRA	ADRA
 mesh	D000318	Adrenergic beta-Agonists	agonist	protein family	fplx	ADRB	ADRB

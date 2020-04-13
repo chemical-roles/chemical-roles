@@ -1,6 +1,6 @@
 # Export Summary
 
-Exported 423099 relations on Mon Apr 13 17:28:21 2020
+Exported 9662 relations on Mon Apr 13 17:54:34 2020
 
 
 ## Summary by Type
@@ -12,7 +12,7 @@ Exported 423099 relations on Mon Apr 13 17:28:21 2020
 | molecular function |     244 |
 | organism           |    1173 |
 | phenotype          |     485 |
-| protein            |  415388 |
+| protein            |    1951 |
 | protein complex    |     116 |
 | protein family     |    4244 |
 
@@ -25,7 +25,7 @@ Exported 423099 relations on Mon Apr 13 17:28:21 2020
 | efo             |     331 |
 | fplx            |     173 |
 | go              |    1615 |
-| hgnc            |     919 |
+| hgnc            |     921 |
 | hgnc.genefamily |      19 |
 | hp              |     161 |
 | interpro        |       1 |
@@ -33,8 +33,7 @@ Exported 423099 relations on Mon Apr 13 17:28:21 2020
 | ncbitaxon       |    1173 |
 | ncit            |      37 |
 | pr              |     141 |
-| prosite         |    1893 |
-| uniprot         |  412462 |
+| uniprot         |     916 |
 
 ## Relation Summary
 
@@ -44,7 +43,7 @@ Exported 423099 relations on Mon Apr 13 17:28:21 2020
 | chebi       | activator       | biological process | go              |     254 |
 | chebi       | activator       | biological process | ncit            |      37 |
 | chebi       | activator       | protein            | hgnc            |      83 |
-| chebi       | activator       | protein            | uniprot         |     234 |
+| chebi       | activator       | protein            | uniprot         |      73 |
 | chebi       | activator       | protein complex    | fplx            |       6 |
 | chebi       | activator       | protein family     | fplx            |       7 |
 | chebi       | agonist         | chemical           | chebi           |       3 |
@@ -74,8 +73,7 @@ Exported 423099 relations on Mon Apr 13 17:28:21 2020
 | chebi       | inhibitor       | protein            | hgnc            |     102 |
 | chebi       | inhibitor       | protein            | mesh            |       1 |
 | chebi       | inhibitor       | protein            | pr              |      10 |
-| chebi       | inhibitor       | protein            | prosite         |    1893 |
-| chebi       | inhibitor       | protein            | uniprot         |  411494 |
+| chebi       | inhibitor       | protein            | uniprot         |     107 |
 | chebi       | inhibitor       | protein complex    | fplx            |      42 |
 | chebi       | inhibitor       | protein complex    | go              |      65 |
 | chebi       | inhibitor       | protein complex    | mesh            |       1 |
@@ -83,8 +81,8 @@ Exported 423099 relations on Mon Apr 13 17:28:21 2020
 | chebi       | inhibitor       | protein family     | fplx            |      30 |
 | chebi       | inhibitor       | protein family     | mesh            |       4 |
 | chebi       | inhibitor       | protein family     | pr              |      28 |
-| chebi       | inverse_agonist | protein            | hgnc            |       2 |
-| chebi       | inverse_agonist | protein            | uniprot         |       2 |
-| chebi       | inverse_agonist | protein family     | fplx            |       1 |
+| chebi       | inverse agonist | protein            | hgnc            |       4 |
+| chebi       | inverse agonist | protein            | uniprot         |       4 |
+| chebi       | inverse agonist | protein family     | fplx            |       1 |
 | chebi       | modulator       | biological process | go              |      22 |
 | chebi       | modulator       | molecular function | go              |      19 |

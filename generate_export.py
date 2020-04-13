@@ -166,7 +166,44 @@ def get_uniprot_id_names(hgnc_id: str) -> Iterable[Tuple[str, str]]:
         yield _uniprot_id, uniprot_client.get_mnemonic(_uniprot_id)
 
 
-def main():
+def rewrite_repo_readme():
+    _df = get_xrefs_df()
+
+    text = f'There are {len(_df.index)} curated roles as of export on {time.asctime()}\n\n'
+    text += tabulate(_df.groupby('modulation').size().reset_index().values, ['Modulation', 'Count'], tablefmt='rst')
+    text += '\n\n'
+    text += tabulate(_df.groupby('type').size().reset_index().values, ['Target Entity Type', 'Count'], tablefmt='rst')
+    text += '\n\n'
+    text += tabulate(_df.groupby('target_db').size().reset_index().values, ['Target Database', 'Count'], tablefmt='rst')
+    text += '\n'
+
+    path = os.path.join(HERE, 'README.rst')
+    with open(path) as file:
+        readme = [line.rstrip() for line in file]
+
+    for i, line in enumerate(readme):
+        if line == 'Summary':
+            start = i + 2
+            break
+    else:
+        raise ValueError('could not fine summary block')
+
+    for i, line in enumerate(readme):
+        if line == 'Repository Structure':
+            end = i
+            break
+    else:
+        raise ValueError('could not find end block')
+
+    with open(path, 'w') as file:
+        for line in readme[:start]:
+            print(line, file=file)
+        print(text, file=file)
+        for line in readme[end:]:
+            print(line, file=file)
+
+
+def write_export():
     """Generate export TSVs.
 
     1. Full TSV at ``export/relations.tsv``
@@ -210,6 +247,12 @@ def main():
         print(ns_str, file=file)
         print('\n## Relation Summary\n', file=file)
         print(summary_df_str, file=file)
+
+
+def main():
+    """Rewrite readme and generate new export."""
+    rewrite_repo_readme()
+    write_export()
 
 
 if __name__ == '__main__':
