@@ -15,7 +15,7 @@ from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up, hgnc_name_to_id
 from pyobo import get_id_name_mapping
 from pyobo.sources.chebi import get_chebi_role_to_children
-from pyobo.sources.expasy import get_obo as get_expasy_obo
+from pyobo.sources.expasy import get_ec2go, get_obo as get_expasy_obo
 from pyobo.struct.typedef import has_member
 from tabulate import tabulate
 
@@ -81,6 +81,8 @@ def get_relations_df() -> pd.DataFrame:
 
     logger.info('getting enzyme classes')
     expasy_graph, ec_code_to_children = get_expasy_closure()
+    logger.info('getting ec2go')
+    ec2go = get_ec2go()
 
     logger.info('inferring over target hierarchies')
     x = defaultdict(list)
@@ -117,6 +119,11 @@ def get_relations_df() -> pd.DataFrame:
                     modulation, target_type, sub_target_db, sub_target_id, sub_target_name,
                 ))
 
+            for go_id, go_name in ec2go.get(target_id, []):
+                x[source_db, source_id].append((
+                    modulation, 'molecular function', 'go', go_id, go_name,
+                ))
+
         else:
             x[source_db, source_id].append((modulation, target_type, target_db, target_id, target_name))
 
@@ -127,6 +134,7 @@ def get_relations_df() -> pd.DataFrame:
     db_to_id_mapping = {
         'chebi': get_id_name_mapping('chebi'),
     }
+    #: A set of databases to remove the prefix from
     remove_prefix = {'chebi'}
 
     rows = []
@@ -170,17 +178,21 @@ def rewrite_repo_readme():
     df = get_xrefs_df()
 
     summary_df = df.groupby(['source_db', 'modulation', 'type', 'target_db']).size().reset_index()
+    summary_df.columns = ['Source Database', 'Modulation', 'Target Type', 'Target Database', 'Count']
     summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'curated_summary.tsv'), sep='\t', index=False)
 
     modulation_summary_df = df.groupby('modulation').size().reset_index()
+    modulation_summary_df.columns = ['Modulation', 'Count']
     modulation_summary_df.to_csv(
         os.path.join(EXPORT_DIRECTORY, 'curated_summary_by_modulation.tsv'), sep='\t', index=False,
     )
     type_summary_df = df.groupby('type').size().reset_index()
+    type_summary_df.columns = ['Target Type', 'Count']
     type_summary_df.to_csv(
         os.path.join(EXPORT_DIRECTORY, 'curated_summary_by_type.tsv'), sep='\t', index=False,
     )
     namespace_summary_df = df.groupby('target_db').size().reset_index()
+    namespace_summary_df.columns = ['Target Database', 'Count']
     namespace_summary_df.to_csv(
         os.path.join(EXPORT_DIRECTORY, 'curated_summary_by_namespace.tsv'), sep='\t', index=False,
     )
@@ -236,6 +248,7 @@ def write_export():
     df[slim_columns].sort_values(slim_columns).to_csv(RELATIONS_SLIM_OUTPUT_PATH, sep='\t', index=False)
 
     summary_df = df.groupby(['source_db', 'modulation', 'target_type', 'target_db']).size().reset_index()
+    summary_df.columns = ['Source Database', 'Modulation', 'Target Type', 'Target Database', 'Count']
     summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'inferred_summary.tsv'), sep='\t', index=False)
     summary_df_str = tabulate(
         summary_df.values,
@@ -244,6 +257,7 @@ def write_export():
     )
 
     modulation_summary_df = df.groupby(['modulation']).size().reset_index()
+    modulation_summary_df.columns = ['Modulation', 'Count']
     modulation_summary_df.to_csv(
         os.path.join(EXPORT_DIRECTORY, 'inferred_summary_by_modulation.tsv'), sep='\t', index=False,
     )
@@ -254,6 +268,7 @@ def write_export():
     )
 
     namespace_summary_df = df.groupby(['target_db']).size().reset_index()
+    namespace_summary_df.columns = ['Target Database', 'Count']
     namespace_summary_df.to_csv(
         os.path.join(EXPORT_DIRECTORY, 'inferred_summary_by_namespace.tsv'), sep='\t', index=False,
     )
@@ -264,6 +279,7 @@ def write_export():
     )
 
     type_summary_df = df.groupby(['target_type']).size().reset_index()
+    type_summary_df.columns = ['Target Type', 'Count']
     type_summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'inferred_summary_by_type.tsv'), sep='\t', index=False)
     type_str = tabulate(
         type_summary_df.values,

@@ -1,4 +1,4 @@
-source_db	modulation	type	target_db	0
+Source Database	Modulation	Target Type	Target Database	Count
 chebi	activator	biological process	efo	1
 chebi	activator	biological process	go	4
 chebi	activator	biological process	ncit	1

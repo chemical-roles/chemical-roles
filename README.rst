@@ -9,7 +9,7 @@ See also: https://github.com/ebi-chebi/ChEBI/issues/3429
 
 Summary
 -------
-There are 828 curated roles as of export on Mon Apr 13 20:04:00 2020
+There are 828 curated roles as of export on Mon Apr 13 20:16:14 2020
 
 ===============  =======
 Modulation         Count

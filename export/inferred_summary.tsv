@@ -1,7 +1,8 @@
-source_db	modulation	target_type	target_db	0
+Source Database	Modulation	Target Type	Target Database	Count
 chebi	activator	biological process	efo	6
 chebi	activator	biological process	go	254
 chebi	activator	biological process	ncit	37
+chebi	activator	molecular function	go	2
 chebi	activator	protein	hgnc	83
 chebi	activator	protein	uniprot	234
 chebi	activator	protein complex	fplx	6
@@ -26,7 +27,7 @@ chebi	antagonist	protein family	interpro	1
 chebi	antagonist	protein family	mesh	16
 chebi	inhibitor	biological process	efo	1
 chebi	inhibitor	biological process	go	1028
-chebi	inhibitor	molecular function	go	116
+chebi	inhibitor	molecular function	go	1983
 chebi	inhibitor	organism	ncbitaxon	1173
 chebi	inhibitor	phenotype	efo	324
 chebi	inhibitor	phenotype	hp	161

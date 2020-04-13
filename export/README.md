@@ -1,16 +1,16 @@
 # Export Summary
 
-Exported 423103 relations on Mon Apr 13 20:04:16 2020
+Exported 424972 relations on Mon Apr 13 20:16:34 2020
 
 
 ## Summary by Modulation
 
 | modulation      |   count |
 |-----------------|---------|
-| activator       |     627 |
+| activator       |     629 |
 | agonist         |     789 |
 | antagonist      |    1155 |
-| inhibitor       |  420482 |
+| inhibitor       |  422349 |
 | inverse agonist |       9 |
 | modulator       |      41 |
 
@@ -20,7 +20,7 @@ Exported 423103 relations on Mon Apr 13 20:04:16 2020
 |--------------------|---------|
 | biological process |    1348 |
 | chemical           |     101 |
-| molecular function |     244 |
+| molecular function |    2113 |
 | organism           |    1173 |
 | phenotype          |     485 |
 | protein            |  415392 |
@@ -35,7 +35,7 @@ Exported 423103 relations on Mon Apr 13 20:04:16 2020
 | ec-code         |    4009 |
 | efo             |     331 |
 | fplx            |     173 |
-| go              |    1615 |
+| go              |    3484 |
 | hgnc            |     921 |
 | hgnc.genefamily |      19 |
 | hp              |     161 |
@@ -54,6 +54,7 @@ Exported 423103 relations on Mon Apr 13 20:04:16 2020
 | chebi       | activator       | biological process | efo             |       6 |
 | chebi       | activator       | biological process | go              |     254 |
 | chebi       | activator       | biological process | ncit            |      37 |
+| chebi       | activator       | molecular function | go              |       2 |
 | chebi       | activator       | protein            | hgnc            |      83 |
 | chebi       | activator       | protein            | uniprot         |     234 |
 | chebi       | activator       | protein complex    | fplx            |       6 |
@@ -78,7 +79,7 @@ Exported 423103 relations on Mon Apr 13 20:04:16 2020
 | chebi       | antagonist      | protein family     | mesh            |      16 |
 | chebi       | inhibitor       | biological process | efo             |       1 |
 | chebi       | inhibitor       | biological process | go              |    1028 |
-| chebi       | inhibitor       | molecular function | go              |     116 |
+| chebi       | inhibitor       | molecular function | go              |    1983 |
 | chebi       | inhibitor       | organism           | ncbitaxon       |    1173 |
 | chebi       | inhibitor       | phenotype          | efo             |     324 |
 | chebi       | inhibitor       | phenotype          | hp              |     161 |
