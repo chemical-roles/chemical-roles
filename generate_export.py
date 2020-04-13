@@ -9,8 +9,10 @@ import time
 from collections import defaultdict
 from typing import Iterable, List, Mapping, Tuple
 
+import matplotlib.pyplot as plt
 import networkx as nx
 import pandas as pd
+import seaborn as sns
 from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up, hgnc_name_to_id
 from pyobo import get_id_name_mapping
@@ -197,6 +199,15 @@ def rewrite_repo_readme():
         os.path.join(EXPORT_DIRECTORY, 'curated_summary_by_namespace.tsv'), sep='\t', index=False,
     )
 
+    logger.info('Plotting modulation and target type summary')
+    fig, (lax, rax) = plt.subplots(nrows=1, ncols=2, figsize=(12, 5))
+    g = sns.barplot(y="Modulation", x='Count', data=modulation_summary_df, ax=lax)
+    g.set_xscale("log")
+    g = sns.barplot(y="Target Type", x='Count', data=type_summary_df, ax=rax)
+    g.set_xscale("log")
+    plt.tight_layout()
+    plt.savefig(os.path.join(EXPORT_DIRECTORY, 'curated_summary.png'), dpi=300)
+
     text = f'There are {len(df.index)} curated roles as of export on {time.asctime()}\n\n'
     text += tabulate(modulation_summary_df.values, ['Modulation', 'Count'], tablefmt='rst')
     text += '\n\n'
@@ -286,6 +297,15 @@ def write_export():
         ['type', 'count'],
         tablefmt='github',
     )
+
+    logger.info('Plotting modulation and target type summary')
+    fig, (lax, rax) = plt.subplots(nrows=1, ncols=2, figsize=(12, 5))
+    g = sns.barplot(y="Modulation", x='Count', data=modulation_summary_df, ax=lax)
+    g.set_xscale("log")
+    g = sns.barplot(y="Target Type", x='Count', data=type_summary_df, ax=rax)
+    g.set_xscale("log")
+    plt.tight_layout()
+    plt.savefig(os.path.join(EXPORT_DIRECTORY, 'inferred_summary.png'), dpi=300)
 
     with open(os.path.join(EXPORT_DIRECTORY, 'README.md'), 'w') as file:
         print('# Export Summary\n', file=file)
