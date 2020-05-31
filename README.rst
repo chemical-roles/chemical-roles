@@ -58,8 +58,11 @@ Contributing
    4. target_id
    5. target_name
 
-4. Run ``tox -e lint`` to make sure you didn't make a mess
-5. Make a PR back to https://github.com/cthoyt/chemical-relations.git
+4. If you find rows that should be blacklisted in MeSH, add them to the blacklist in ``curate_mesh_relations.py``. If
+   You find irrelevant rows while curating ChEBI, add them to ``resoures/irrelevant_roles.tsv``. This will be
+   reorganized to be more consistent for MeSH soon.
+5. Run ``tox -e lint`` to make sure you didn't make a mess
+6. Make a PR back to https://github.com/cthoyt/chemical-relations.git
 
 Data Sources
 ------------
