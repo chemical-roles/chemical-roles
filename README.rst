@@ -7,6 +7,76 @@ but there are no explicit links in ChEBI to support this.
 
 See also: https://github.com/ebi-chebi/ChEBI/issues/3429
 
+License
+-------
+- Code in this repository is under the MIT License.
+- Data in this repository is under CC0.
+
+Repository Structure
+--------------------
+- ``resources/``: Manually curated resources
+
+  - `resources/xrefs.tsv <https://github.com/cthoyt/chebi-relations/blob/master/resources/xrefs.tsv>`_:
+    Structured annotations of ChEBI entries describing the relationship to an external vocabulary. For example,
+    the term CETP inhibitor (CHEBI:49205) describes the ``inhibition`` relationship to CETP (hgnc:1869).
+  - `resources/reclassification.tsv <https://github.com/cthoyt/chebi-relations/blob/master/resources/reclassification.tsv>`_:
+    Suggestions on which entities inherit from the wrong type of ChEBI inhibitor role.
+- ``export/``: Final results exported by combining the ChEBI OBO information
+  with the manually curated resources in ``resources/``
+
+  - `export/relations.tsv <https://github.com/cthoyt/chebi-relations/blob/master/export/relations.tsv>`_:
+    A combination of the manually curated resources and reasoning (TODO) over FamPlex, InterPro, GO, HGNC
+    Gene Familes, and ExPASy to generate new relationships between instances of the roles curated here.
+- ``curate_chebi_relations.py``: The python script that suggests new curation using `Gilda <https://github.com/indralab/gilda>`_
+  and generates the derived resources in ``export/``
+
+Contributing
+------------
+1. Fork the repository and clone it with:
+
+.. code-block:: sh
+
+    git clone https://github.com/<your github username>/chemical-relations.git
+    cd chemical-relations
+    pip install -r requirements.txt
+
+2. Run either ``python curate_chebi_relations.py`` or ``python curate_mesh_relations.py`` to get a list of
+   possible curatable rows. For example:
+
+.. code-block::
+
+   mesh	D064449	Sequestering Agents	agent	?	?	?	?	?
+   mesh	D015842	Serine Proteinase Inhibitors	inhibitor	?	?	?	?	?
+   mesh	D058825	Serotonin 5-HT1 Receptor Agonists	agonist	?	?	?	?	?
+   mesh	D058829	Serotonin 5-HT1 Receptor Antagonists	antagonist	?	?	?	?	?
+
+3. Copy/paste the rows you want to curate into the end of ``resources/xrefs.tsv``. Fill out the last 5
+   columns, which are:
+   1. modulation (the relationship)
+   2. type (the type of the target)
+   3. target_db
+   4. target_id
+   5. target_name
+
+4. Run ``tox -e lint`` to make sure you didn't make a mess
+5. Make a PR back to https://github.com/cthoyt/chemical-relations.git
+
+Data Sources
+------------
+Automatically Retrieved Data Sources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ChEBI (https://www.ebi.ac.uk/chebi)
+- HUGO Gene Nomenclature Committee at the European Bioinformatics Institute. See https://www.genenames.org/ for more information
+- UniProt (https://www.uniprot.org)
+- FamPlex (https://github.com/sorgerlab/famplex)
+- ExPASy (https://www.expasy.org/)
+
+Manually Referenced Data Sources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Gene Ontology (http://geneontology.org)
+- EFO (https://www.ebi.ac.uk/efo)
+- NCIT (https://ncit.nci.nih.gov)
+
 Summary
 -------
 There are 828 curated roles as of export on Mon Apr 13 20:29:56 2020
@@ -53,24 +123,6 @@ ncit                     1
 pr                      15
 uniprot                  2
 =================  =======
-
-Repository Structure
---------------------
-- ``resources/``: Manually curated resources
-
-  - `resources/xrefs.tsv <https://github.com/cthoyt/chebi-relations/blob/master/resources/xrefs.tsv>`_:
-    Structured annotations of ChEBI entries describing the relationship to an external vocabulary. For example,
-    the term CETP inhibitor (CHEBI:49205) describes the ``inhibition`` relationship to CETP (hgnc:1869).
-  - `resources/reclassification.tsv <https://github.com/cthoyt/chebi-relations/blob/master/resources/reclassification.tsv>`_:
-    Suggestions on which entities inherit from the wrong type of ChEBI inhibitor role.
-- ``export/``: Final results exported by combining the ChEBI OBO information
-  with the manually curated resources in ``resources/``
-
-  - `export/relations.tsv <https://github.com/cthoyt/chebi-relations/blob/master/export/relations.tsv>`_:
-    A combination of the manually curated resources and reasoning (TODO) over FamPlex, InterPro, GO, HGNC
-    Gene Familes, and ExPASy to generate new relationships between instances of the roles curated here.
-- ``curate_chebi_relations.py``: The python script that suggests new curation using `Gilda <https://github.com/indralab/gilda>`_
-  and generates the derived resources in ``export/``
 
 Axioms
 ------
@@ -136,24 +188,3 @@ that has activity ``A``:
 - P isA protein
 - P hasActivity A
 - X er P
-
-License
--------
-- Code in this repository is under the MIT License.
-- Data in this repository is under CC0.
-
-Data Sources
-------------
-Automatically Retrieved Data Sources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- ChEBI (https://www.ebi.ac.uk/chebi)
-- HUGO Gene Nomenclature Committee at the European Bioinformatics Institute. See https://www.genenames.org/ for more information
-- UniProt (https://www.uniprot.org)
-- FamPlex (https://github.com/sorgerlab/famplex)
-- ExPASy (https://www.expasy.org/)
-
-Manually Referenced Data Sources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- Gene Ontology (http://geneontology.org)
-- EFO (https://www.ebi.ac.uk/efo)
-- NCIT (https://ncit.nci.nih.gov)
