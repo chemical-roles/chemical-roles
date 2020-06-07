@@ -15,8 +15,8 @@ from pyobo.cli_utils import verbose_option
 from pyobo.sources.expasy import get_ec2go
 
 from utils import (
-    RESOURCES_DIRECTORY, SUFFIXES, XREFS_COLUMNS, get_irrelevant_roles_df, get_xrefs_df, post_gilda,
-    sort_xrefs_df, get_blacklist_roles_df
+    RESOURCES_DIRECTORY, SUFFIXES, XREFS_COLUMNS, get_blacklist_roles_df, get_irrelevant_roles_df, get_xrefs_df,
+    post_gilda, sort_xrefs_df,
 )
 
 logger = logging.getLogger(__name__)
