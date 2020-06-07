@@ -27,6 +27,25 @@ XREFS_COLUMNS = [
 IRRELEVANT_ROLES_PATH = os.path.join(RESOURCES_DIRECTORY, 'irrelevant_roles.tsv')
 IRRELEVANT_ROLES_COLUMNS = ['database', 'identifier', 'name']
 
+BLACKLIST_ROLES_PATH = os.path.join(RESOURCES_DIRECTORY, 'blacklist.tsv')
+BLACKLIST_ROLES_COLUMNS = ['database', 'identifier', 'name']
+
+SUFFIXES = [
+    'inhibitor',
+    'deactivator',
+    'activator',
+    'antagonist',
+    'agonist',
+    'modulator',
+    'suppressor',
+    'drug',
+    'agent',
+]
+SUFFIXES.extend([
+    f'{suffix}s'
+    for suffix in SUFFIXES
+])
+
 
 def get_xrefs_df() -> pd.DataFrame:
     """Get xrefs.tsv."""
@@ -35,7 +54,12 @@ def get_xrefs_df() -> pd.DataFrame:
 
 def get_irrelevant_roles_df() -> pd.DataFrame:
     """Get irrelevant roles."""
-    return pd.read_csv(IRRELEVANT_ROLES_PATH, sep='\t', dtype=str)
+    return pd.read_csv(IRRELEVANT_ROLES_PATH, sep='\t', dtype=str, comment='#', skip_blank_lines=True)
+
+
+def get_blacklist_roles_df() -> pd.DataFrame:
+    """Get roles blacklisted (should not be curated)."""
+    return pd.read_csv(BLACKLIST_ROLES_PATH, sep='\t', dtype=str)
 
 
 def sort_xrefs_df() -> None:

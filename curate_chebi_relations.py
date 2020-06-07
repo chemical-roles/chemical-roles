@@ -11,9 +11,13 @@ from typing import Iterable, Optional, Tuple
 import click
 import pandas as pd
 import pyobo
+from pyobo.cli_utils import verbose_option
 from pyobo.sources.expasy import get_ec2go
 
-from utils import RESOURCES_DIRECTORY, XREFS_COLUMNS, get_irrelevant_roles_df, get_xrefs_df, post_gilda, sort_xrefs_df
+from utils import (
+    RESOURCES_DIRECTORY, SUFFIXES, XREFS_COLUMNS, get_irrelevant_roles_df, get_xrefs_df, post_gilda,
+    sort_xrefs_df, get_blacklist_roles_df
+)
 
 logger = logging.getLogger(__name__)
 
@@ -28,25 +32,27 @@ AGONIST_CHEBI_ID = '48705'
 INVERSE_AGONIST_CHEBI_ID = '90847'
 INHIBITOR_CHEBI_ID = '35222'
 ANTAGONIST_CHEBI_ID = '48706'
-BLACKLIST = [
-    '48001',  # protein synthesis inhibitor
-    '64106',  # protein kinase agonist
-]
 
 chebi_obo = pyobo.get('chebi')
 chebi_id_to_name = pyobo.get_id_name_mapping('chebi')
 
 XREFS_DF = get_xrefs_df()
+
 CURATED_ROLE_CHEBI_IDS = {
     source_id[len('CHEBI:'):]
     for source_db, source_id in XREFS_DF[['source_db', 'source_id']].values
     if source_db == 'chebi'
 }
+logger.info('%d pre-curated ChEBI role identifiers', len(CURATED_ROLE_CHEBI_IDS))
+
 IRRELEVANT_ROLE_CHEBI_IDS = set(itt.chain.from_iterable(
-    chebi_obo.descendants(chebi_id[len('CHEBI'):])
+    pyobo.get_descendants('chebi', chebi_id)
     for chebi_id in get_irrelevant_roles_df().identifier
-    if chebi_id[len('CHEBI'):] in chebi_obo.hierarchy
 ))
+logger.info('%d irrelevant ChEBI role identifiers', len(IRRELEVANT_ROLE_CHEBI_IDS))
+
+BLACKLIST_CHEBI_IDS = set(get_blacklist_roles_df().identifier)
+logger.info('%d blacklisted ChEBI role identifiers', len(BLACKLIST_CHEBI_IDS))
 
 
 def _get_inhibitors_reclassification() -> pd.DataFrame:
@@ -128,7 +134,7 @@ def suggest_pathway_inhibitor_curation() -> None:
 
     print(f'Children of {PATHWAY_INHIBITOR_CHEBI_ID} ({chebi_id_to_name[PATHWAY_INHIBITOR_CHEBI_ID]})')
     for chebi_id in chebi_obo.descendants(PATHWAY_INHIBITOR_CHEBI_ID):
-        if any(chebi_id in group for group in (CURATED_ROLE_CHEBI_IDS, reclassify_chebi_ids, BLACKLIST)):
+        if any(chebi_id in group for group in (CURATED_ROLE_CHEBI_IDS, reclassify_chebi_ids, BLACKLIST_CHEBI_IDS)):
             continue  # we already curated this!
         name = chebi_id_to_name[chebi_id]
         if name.endswith('inhibitor') and not name.startswith('EC '):
@@ -169,11 +175,12 @@ def suggest_activator_curation() -> None:
     _single_suggest(BIOCHEMICAL_ROLE_CHEBI_ID, 'activator')
 
 
-def suggest_all_roles() -> None:
+def suggest_all_roles(show_ungrounded: bool = False) -> None:
     """Suggest all roles."""
     chebi_ids = chebi_obo.descendants(BIOLOGICAL_ROLE_ID) | chebi_obo.descendants(APPLICATION_ROLE_ID)
-    for t in _iter_gilda(chebi_ids, show_missing=True, suffix=''):
-        print(*t, sep='\t')
+
+    for row in _iter_gilda(chebi_ids, show_missing=show_ungrounded):
+        print(*row, sep='\t')
 
 
 def _single_suggest(chebi_id: str, suffix, file=None, show_missing: bool = False) -> None:
@@ -210,34 +217,47 @@ def _iter_gilda(
     suffix: Optional[str] = None,
 ) -> Iterable[Tuple]:
     for chebi_id in chebi_ids:
+        if chebi_id.startswith('CHEBI:'):
+            chebi_id = chebi_id[len('CHEBI:'):]
         if chebi_id in CURATED_ROLE_CHEBI_IDS or chebi_id in IRRELEVANT_ROLE_CHEBI_IDS:
             continue  # already curated, skip
         name = chebi_id_to_name[chebi_id]
-        _seach = name if suffix is None else name[:-len(suffix)].rstrip()
-        results = post_gilda(_seach).json()
-        if results:
-            for result in results:
-                term = result["term"]
-                yield (
-                    'chebi', f'CHEBI:{chebi_id}', name,
-                    suffix,
-                    term['db'].lower(), term['id'], term['entry_name'],
-                )
-        elif show_missing:
-            yield 'chebi', chebi_id, name, suffix, '?', '?', '?', '?'
+
+        if suffix is not None:
+            search_text = name[:-len(suffix)].rstrip()
+            yield from _yield_gilda(chebi_id, name, suffix, search_text, show_missing)
+        else:
+            for _suffix in SUFFIXES:
+                if name.endswith(_suffix):
+                    search_text = name[:-len(_suffix)].rstrip()
+                    yield from _yield_gilda(chebi_id, name, _suffix, search_text, show_missing)
+                    break
+
+
+def _yield_gilda(chebi_id, name, suffix, search_text, show_missing):
+    results = post_gilda(search_text).json()
+    if results:
+        for result in results:
+            term = result["term"]
+            term_db = term['db'].lower()
+            term_id = term['id']
+            if term_db == 'chebi' and term_id == f'CHEBI:{chebi_id}':
+                continue
+            yield (
+                'chebi', f'CHEBI:{chebi_id}', name,
+                suffix or '?',
+                term_db, term_id, term['entry_name'],
+            )
+    elif show_missing:
+        yield 'chebi', chebi_id, name, suffix or '?', '?', '?', '?', '?'
 
 
 @click.command()
-@click.option('-v', '--verbose', is_flag=True)
-def main(verbose: bool) -> None:
+@verbose_option
+@click.option('--show-ungrounded', is_flag=True)
+def main(show_ungrounded: bool) -> None:
     """Run the ChEBI curation pipeline."""
-    level = logging.DEBUG if verbose else logging.INFO
-    logger.setLevel(level)
-    logging.basicConfig(level=level)
-
-    # Sort the curated xrefs file
     sort_xrefs_df()
-
     # suggest_activator_curation()
     # suggest_pathway_inhibitor_curation()
     # suggest_inhibitor_curation()
@@ -245,7 +265,7 @@ def main(verbose: bool) -> None:
     # suggest_antagonist_curation()
     # suggest_inverse_agonist_curation()
     # propose_enzyme_modulators()
-    suggest_all_roles()
+    suggest_all_roles(show_ungrounded=show_ungrounded)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@
 import click
 import pyobo
 
-from utils import get_xrefs_df
+from utils import SUFFIXES, get_xrefs_df
 
 BLACKLIST = {
     'D004791',  # Enzyme
@@ -25,22 +25,6 @@ BLACKLIST = {
     'D016153',  # Genes, Suppressor
     'D019155',  # Veterinary Drugs
 }
-
-SUFFIXES = [
-    'inhibitor',
-    'activator',
-    'agonist',
-    'antagonist',
-    'modulator',
-    'suppressor',
-    'deactivator',
-    'drug',
-    'agent',
-]
-SUFFIXES.extend([
-    f'{suffix}s'
-    for suffix in SUFFIXES
-])
 
 
 @click.command()
