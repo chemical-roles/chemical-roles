@@ -65,7 +65,7 @@ def mappings():
         mesh_errors,
         mf_errors,
     ]):
-        sys.exit(1)
+        click.secho('The job is not yet done...', fg='red')
 
 
 def _p(errors):
