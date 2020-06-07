@@ -202,10 +202,19 @@ def rewrite_repo_readme():
 
     logger.info('Plotting modulation and target type summary')
     fig, (lax, rax) = plt.subplots(nrows=1, ncols=2, figsize=(12, 5))
+
+    modulation_summary_df['Modulation'] = modulation_summary_df['Modulation'].map(str.title)
     g = sns.barplot(y="Modulation", x='Count', data=modulation_summary_df, ax=lax)
     g.set_xscale("log")
+    lax.set_title('Modulation')
+    lax.set_ylabel('')
+
+    type_summary_df['Target Type'] = type_summary_df['Target Type'].map(str.title)
     g = sns.barplot(y="Target Type", x='Count', data=type_summary_df, ax=rax)
     g.set_xscale("log")
+    rax.set_title('Target Type')
+    rax.set_ylabel('')
+
     plt.tight_layout()
     plt.savefig(os.path.join(EXPORT_DIRECTORY, 'curated_summary.png'), dpi=300)
 
@@ -301,10 +310,19 @@ def write_export():
 
     logger.info('Plotting modulation and target type summary')
     fig, (lax, rax) = plt.subplots(nrows=1, ncols=2, figsize=(12, 5))
+
+    modulation_summary_df['Modulation'] = modulation_summary_df['Modulation'].map(str.title)
     g = sns.barplot(y="Modulation", x='Count', data=modulation_summary_df, ax=lax)
     g.set_xscale("log")
+    lax.set_title('Modulation')
+    lax.set_ylabel('')
+
+    type_summary_df['Target Type'] = type_summary_df['Target Type'].map(str.title)
     g = sns.barplot(y="Target Type", x='Count', data=type_summary_df, ax=rax)
     g.set_xscale("log")
+    rax.set_title('Target Type')
+    rax.set_ylabel('')
+
     plt.tight_layout()
     plt.savefig(os.path.join(EXPORT_DIRECTORY, 'inferred_summary.png'), dpi=300)
 
