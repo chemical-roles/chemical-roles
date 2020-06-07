@@ -12,14 +12,17 @@ from typing import Iterable, List, Mapping, Tuple
 import matplotlib.pyplot as plt
 import networkx as nx
 import pandas as pd
+import pybel
 import seaborn as sns
 from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up, hgnc_name_to_id
+from pybel import BELGraph, dsl
 from pyobo import get_id_name_mapping
 from pyobo.sources.chebi import get_chebi_role_to_children
 from pyobo.sources.expasy import get_ec2go, get_obo as get_expasy_obo
 from pyobo.struct.typedef import has_member
 from tabulate import tabulate
+from tqdm import tqdm
 
 from utils import EXPORT_DIRECTORY, HERE, XREFS_COLUMNS, get_xrefs_df
 
@@ -337,6 +340,51 @@ def write_export():
         print(ns_str, file=file)
         print('\n## Relation Summary\n', file=file)
         print(summary_df_str, file=file)
+
+    write_bel_export(df)
+
+
+_type_map = {
+    'biological process': dsl.BiologicalProcess,
+    'chemical': dsl.Abundance,
+    'organism': dsl.Population,
+    'phenotype': dsl.Pathology,
+    'protein': dsl.Protein,
+    'protein family': dsl.Protein,
+    'protein complex': dsl.NamedComplexAbundance,
+}
+
+_adders = {
+    'activator': BELGraph.add_activates,
+    'agonist': BELGraph.add_activates,
+    'antagonist': BELGraph.add_inhibits,
+    'inhibitor': BELGraph.add_inhibits,
+    'inverse agonist': BELGraph.add_activates,
+    'modulator': BELGraph.add_regulates,
+}
+
+
+def write_bel_export(df: pd.DataFrame):
+    """Write BEL export."""
+    graph = BELGraph(name='Chemical Roles')
+    it = tqdm(df.dropna().values, total=len(df.index), desc='mapping to BEL', unit_scale=True)
+    for source_db, source_id, source_name, modulation, target_type, target_db, target_id, target_name in it:
+        if target_type == 'molecular function':
+            continue
+        source = pybel.dsl.Abundance(
+            namespace=source_db,
+            identifier=source_id,
+            name=source_name,
+        )
+        target = _type_map[target_type](
+            namespace=target_db,
+            identifier=target_id,
+            name=target_name,
+        )
+        adder = _adders[modulation]
+        adder(graph, source, target, citation='', evidence='')
+
+    pybel.dump(graph, os.path.join(EXPORT_DIRECTORY, 'export.bel.nodelink.json.gz'), indent=2)
 
 
 def main():
