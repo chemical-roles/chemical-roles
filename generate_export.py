@@ -229,7 +229,7 @@ def rewrite_repo_readme():
         raise ValueError('could not find summary block')
 
     for i, line in enumerate(readme):
-        if line == 'Repository Structure':
+        if line == 'Axioms':
             end = i
             break
     else:
