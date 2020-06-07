@@ -59,7 +59,7 @@ def main():
     }
 
     for i, (identifier, (name, suffix)) in enumerate(sorted(terms.items(), key=lambda t: t[1][0]), start=1):
-        print('mesh', identifier, name, suffix, '?', '?', '?', '?', '?', sep='\t')
+        print('mesh', identifier, name, suffix, '?', '?', '?', '?', sep='\t')
 
 
 if __name__ == '__main__':
