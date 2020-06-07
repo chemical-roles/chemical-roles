@@ -32,7 +32,7 @@ chebi	inhibitor	organism	ncbitaxon	1173
 chebi	inhibitor	phenotype	efo	324
 chebi	inhibitor	phenotype	hp	161
 chebi	inhibitor	protein	hgnc	102
-chebi	inhibitor	protein	mesh	1
+chebi	inhibitor	protein	mesh	25
 chebi	inhibitor	protein	pr	10
 chebi	inhibitor	protein	prosite	1893
 chebi	inhibitor	protein	uniprot	411494
@@ -40,11 +40,15 @@ chebi	inhibitor	protein complex	fplx	42
 chebi	inhibitor	protein complex	go	65
 chebi	inhibitor	protein complex	mesh	1
 chebi	inhibitor	protein family	ec-code	4009
-chebi	inhibitor	protein family	fplx	30
-chebi	inhibitor	protein family	mesh	4
+chebi	inhibitor	protein family	fplx	46
+chebi	inhibitor	protein family	mesh	12
 chebi	inhibitor	protein family	pr	28
 chebi	inverse agonist	protein	hgnc	4
 chebi	inverse agonist	protein	uniprot	4
 chebi	inverse agonist	protein family	fplx	1
 chebi	modulator	biological process	go	22
 chebi	modulator	molecular function	go	19
+chebi	modulator	protein	hgnc	3
+chebi	modulator	protein	uniprot	3
+chebi	modulator	protein complex	fplx	3
+chebi	modulator	protein family	fplx	1

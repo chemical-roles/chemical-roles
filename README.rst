@@ -83,30 +83,30 @@ Manually Referenced Data Sources
 
 Summary
 -------
-There are 829 curated roles as of export on Sun Jun  7 13:37:55 2020
+There are 836 curated roles as of export on Sun Jun  7 15:48:38 2020
 
 ===============  =======
 Modulation         Count
 ===============  =======
-activator             15
-agonist               87
-antagonist            94
-inhibitor            625
-inverse agonist        2
-modulator              6
+Activator             15
+Agonist               87
+Antagonist            94
+Inhibitor            629
+Inverse Agonist        2
+Modulator              9
 ===============  =======
 
 ====================  =======
 Target Entity Type      Count
 ====================  =======
-biological process         42
-chemical                   14
-molecular function         39
-organism                    9
-phenotype                  15
-protein                   124
-protein complex            14
-protein family            572
+Biological Process         42
+Chemical                   14
+Molecular Function         39
+Organism                    9
+Phenotype                  15
+Protein                   126
+Protein Complex            15
+Protein Family            576
 ====================  =======
 
 =================  =======
@@ -115,13 +115,13 @@ Target Database      Count
 chebi                   13
 ec-code                499
 efo                     11
-fplx                    39
+fplx                    43
 go                      88
-hgnc                   109
+hgnc                   110
 hgnc.genefamily          9
 hp                       6
 interpro                 1
-mesh                    27
+mesh                    29
 ncbitaxon                9
 ncit                     1
 pr                      15

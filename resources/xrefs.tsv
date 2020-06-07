@@ -530,6 +530,7 @@ chebi	CHEBI:64176	H3-receptor antagonist	antagonist	protein	pr	PR:000001564	hist
 chebi	CHEBI:64176	H3-receptor antagonist	antagonist	protein	hgnc	5184	HRH2
 chebi	CHEBI:64155	H4-receptor agonist	agonist	protein	pr	PR:000001565	H4 histamine receptor
 chebi	CHEBI:64155	H4-receptor agonist	agonist	protein	hgnc	17383	HRH4
+chebi	CHEBI:35660	HIV protease inhibitor	inhibitor	protein	mesh	D016333	HIV Protease
 chebi	CHEBI:67268	HIV-1 integrase inhibitor	inhibitor	molecular function	go	GO:0008907	integrase activity
 chebi	CHEBI:140921	Hedgehog signaling pathway inhibitor	inhibitor	biological process	go	GO:0007224	smoothened signaling pathway
 chebi	CHEBI:78606	Hsp70 inducer	activator	protein family	fplx	HSPA	HSPA
@@ -543,6 +544,7 @@ chebi	CHEBI:136580	LRH-1 antagonist	antagonist	protein	hgnc	7984	NR5A2
 chebi	CHEBI:72298	MTP inhibitor	inhibitor	protein	hgnc	7467	MTTP
 chebi	CHEBI:73240	NF-kappaB inhibitor	inhibitor	protein complex	fplx	NFkappaB	NFkappaB
 chebi	CHEBI:64571	NMDA receptor agonist	agonist	molecular function	go	GO:0004972	NMDA glutamate receptor activity
+chebi	CHEBI:70781	PPAR modulator	modulator	protein family	fplx	PPAR	PPAR
 chebi	CHEBI:70782	PPARalpha agonist	agonist	protein	hgnc	9232	PPARA
 chebi	CHEBI:71554	PPARgamma agonist	agonist	protein	hgnc	9236	PPARG
 chebi	CHEBI:131789	RUNX1 inhibitor	inhibitor	protein	hgnc	10471	RUNX1
@@ -673,6 +675,7 @@ chebi	CHEBI:63457	fibroblast growth factor receptor antagonist	antagonist	protei
 chebi	CHEBI:145807	forkhead box protein O1 inhibitor	inhibitor	protein	mesh	D000071161	Forkhead Box Protein O1
 chebi	CHEBI:145807	forkhead box protein O1 inhibitor	inhibitor	protein	hgnc	3819	FOXO1
 chebi	CHEBI:131495	formyl peptide receptor agonist	agonist	protein family	mesh	D044042	Receptors, Formyl Peptide
+chebi	CHEBI:48668	gamma-secretase modulator	modulator	protein complex	fplx	Gamma_secretase	Gamma_secretase
 chebi	CHEBI:67195	gap junctional intercellular communication inhibitor	inhibitor	molecular function	go	GO:0005243	gap junction channel activity
 chebi	CHEBI:50902	genotoxin	activator	biological process	ncit	C16507	DNA Damage
 chebi	CHEBI:140922	glioma-associated oncogene inhibitor	inhibitor	protein	hgnc	4317	GLI1
@@ -754,6 +757,7 @@ chebi	CHEBI:49023	prostaglandin antagonist	antagonist	chemical	chebi	CHEBI:26333
 chebi	CHEBI:66900	prostaglandin receptor agonist	agonist	protein family	mesh	D011982	Receptors, Prostaglandin
 chebi	CHEBI:66900	prostaglandin receptor agonist	agonist	molecular function	go	GO:0004955	prostaglandin receptor activity
 chebi	CHEBI:138887	prostaglandin receptor antagonist	antagonist	protein family	mesh	D011982	Receptors, Prostaglandin
+chebi	CHEBI:37670	protease inhibitor	inhibitor	protein family	fplx	Protease	Protease
 chebi	CHEBI:83313	protease-activated receptor-1 antagonist	antagonist	protein	hgnc	3537	F2R
 chebi	CHEBI:52726	proteasome inhibitor	inhibitor	protein complex	go	GO:0000502	proteasome complex
 chebi	CHEBI:78547	protein kinase A agonist	agonist	protein family	fplx	PKA	PKA
@@ -777,9 +781,11 @@ chebi	CHEBI:90714	retinoic acid receptor antagonist	antagonist	protein family	me
 chebi	CHEBI:90742	retinoic acid receptor beta agonist	agonist	protein	hgnc	9865	RARB
 chebi	CHEBI:88336	retinoic acid receptor gamma agonist	agonist	protein	hgnc	9866	RARG
 chebi	CHEBI:90744	retinoic acid receptor gamma antagonist	antagonist	protein	hgnc	9866	RARG
+chebi	CHEBI:90708	retinoic acid receptor modulator	modulator	protein family	fplx	RAR	RAR
 chebi	CHEBI:63794	retinoid X receptor agonist	agonist	protein family	fplx	RXR	RXR
 chebi	CHEBI:63794	retinoid X receptor agonist	agonist	molecular function	go	GO:0046965	retinoid X receptor binding
 chebi	CHEBI:140701	secreted frizzled-related protein 1 inhibitor	inhibitor	protein	hgnc	10776	SFRP1
+chebi	CHEBI:64926	serine protease inhibitor	inhibitor	protein family	mesh	D057057	Serine Proteases
 chebi	CHEBI:48353	serine proteinase inhibitor	inhibitor	protein family	mesh	D057057	Serine Proteases
 chebi	CHEBI:50949	serotonin uptake inhibitor	inhibitor	biological process	go	GO:0051610	serotonin uptake
 chebi	CHEBI:62915	sialyltransferase inhibitor	inhibitor	molecular function	go	GO:0008373	sialyltransferase activity

@@ -30,25 +30,27 @@ chebi	inhibitor	organism	ncbitaxon	9
 chebi	inhibitor	phenotype	efo	9
 chebi	inhibitor	phenotype	hp	6
 chebi	inhibitor	protein	hgnc	19
-chebi	inhibitor	protein	mesh	1
+chebi	inhibitor	protein	mesh	2
 chebi	inhibitor	protein	pr	2
 chebi	inhibitor	protein	uniprot	2
 chebi	inhibitor	protein complex	fplx	2
 chebi	inhibitor	protein complex	go	9
 chebi	inhibitor	protein complex	mesh	1
 chebi	inhibitor	protein family	ec-code	497
-chebi	inhibitor	protein family	fplx	2
-chebi	inhibitor	protein family	mesh	2
+chebi	inhibitor	protein family	fplx	3
+chebi	inhibitor	protein family	mesh	3
 chebi	inhibitor	protein family	pr	4
 chebi	inverse agonist	protein	hgnc	1
 chebi	inverse agonist	protein family	fplx	1
 chebi	modulator	biological process	go	1
 chebi	modulator	molecular function	go	5
+chebi	modulator	protein complex	fplx	1
+chebi	modulator	protein family	fplx	2
 mesh	agonist	protein family	fplx	2
 mesh	agonist	protein family	hgnc.genefamily	1
 mesh	antagonist	protein	hgnc	2
 mesh	antagonist	protein family	fplx	3
 mesh	antagonist	protein family	hgnc.genefamily	1
-mesh	inhibitor	protein	hgnc	9
+mesh	inhibitor	protein	hgnc	10
 mesh	inhibitor	protein family	fplx	2
 mesh	inhibitor	protein family	hgnc.genefamily	4
