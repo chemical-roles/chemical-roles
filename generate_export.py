@@ -177,6 +177,7 @@ def get_uniprot_id_names(hgnc_id: str) -> Iterable[Tuple[str, str]]:
 
 
 def rewrite_repo_readme():
+    """Rewrite the summary of curated content in the repository's readme, automatically."""
     df = get_xrefs_df()
 
     summary_df = df.groupby(['source_db', 'modulation', 'type', 'target_db']).size().reset_index()
@@ -225,7 +226,7 @@ def rewrite_repo_readme():
             start = i + 2
             break
     else:
-        raise ValueError('could not fine summary block')
+        raise ValueError('could not find summary block')
 
     for i, line in enumerate(readme):
         if line == 'Repository Structure':
