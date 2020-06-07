@@ -1,5 +1,5 @@
-Chemical Relations
-==================
+Chemical Relations |zenodo|
+===========================
 This repository is meant to house links between ChEBI terms describing various
 types of inhibitors and their targets in other vocabularies. For example,
 there are several enzyme inhibitors that refer to ExPASy enzyme class codes,
@@ -191,3 +191,6 @@ that has activity ``A``:
 - P isA protein
 - P hasActivity A
 - X er P
+
+.. |zenodo| image:: https://zenodo.org/badge/199155107.svg
+   :target: https://zenodo.org/badge/latestdoi/199155107
