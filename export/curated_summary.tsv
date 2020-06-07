@@ -49,6 +49,6 @@ mesh	agonist	protein family	hgnc.genefamily	1
 mesh	antagonist	protein	hgnc	2
 mesh	antagonist	protein family	fplx	3
 mesh	antagonist	protein family	hgnc.genefamily	1
-mesh	inhibitor	protein	hgnc	8
+mesh	inhibitor	protein	hgnc	9
 mesh	inhibitor	protein family	fplx	2
 mesh	inhibitor	protein family	hgnc.genefamily	4

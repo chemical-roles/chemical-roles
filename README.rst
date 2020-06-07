@@ -82,7 +82,7 @@ Manually Referenced Data Sources
 
 Summary
 -------
-There are 828 curated roles as of export on Mon Apr 13 20:29:56 2020
+There are 829 curated roles as of export on Sun Jun  7 13:37:55 2020
 
 ===============  =======
 Modulation         Count
@@ -90,7 +90,7 @@ Modulation         Count
 activator             15
 agonist               87
 antagonist            94
-inhibitor            624
+inhibitor            625
 inverse agonist        2
 modulator              6
 ===============  =======
@@ -103,7 +103,7 @@ chemical                   14
 molecular function         39
 organism                    9
 phenotype                  15
-protein                   123
+protein                   124
 protein complex            14
 protein family            572
 ====================  =======
@@ -116,7 +116,7 @@ ec-code                499
 efo                     11
 fplx                    39
 go                      88
-hgnc                   108
+hgnc                   109
 hgnc.genefamily          9
 hp                       6
 interpro                 1
