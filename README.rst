@@ -40,7 +40,7 @@ Contributing
     cd chemical-relations
     pip install -r requirements.txt
 
-2. Run either ``python curate_chebi_relations.py`` or ``python curate_mesh_relations.py`` to get a list of
+2. Run either ``python curate_chebi_relations.py`` or ``tox -e mesh`` to get a list of
    possible curatable rows. For example:
 
 .. code-block::
