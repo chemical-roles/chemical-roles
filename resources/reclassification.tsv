@@ -1,13 +1,13 @@
 original_type	suggested_type	chebi_id	chebi_name
-pathway	complex	CHEBI:38497	respiratory-chain inhibitor
-pathway	complex	CHEBI:23529	cytochrome-b6f complex inhibitor
-pathway	complex	CHEBI:38499	mitochondrial cytochrome-bc1 complex inhibitor
-pathway	complex	CHEBI:141153	quinone outside inhibitor
-pathway	complex	CHEBI:38499	mitochondrial cytochrome-bc1 complex inhibitor
-pathway	family	CHEBI:20854	ATP synthase inhibitor
-pathway	family	CHEBI:79386	glycerophosphoinositol synthesis inhibitor
-pathway	family	CHEBI:38498	mitochondrial NADH:ubiquinone reductase inhibitor
-none	pathway	CHEBI:88230	autophagy inhibitor
-none	pathway	CHEBI:68494	apoptosis inhibitor
-none	pathway	CHEBI:78031	Wnt signalling inhibitor
-none	pathway	CHEBI:63173	T-cell proliferation inhibitor
+pathway	complex	38497	respiratory-chain inhibitor
+pathway	complex	23529	cytochrome-b6f complex inhibitor
+pathway	complex	38499	mitochondrial cytochrome-bc1 complex inhibitor
+pathway	complex	141153	quinone outside inhibitor
+pathway	complex	38499	mitochondrial cytochrome-bc1 complex inhibitor
+pathway	family	20854	ATP synthase inhibitor
+pathway	family	79386	glycerophosphoinositol synthesis inhibitor
+pathway	family	38498	mitochondrial NADH:ubiquinone reductase inhibitor
+none	pathway	88230	autophagy inhibitor
+none	pathway	68494	apoptosis inhibitor
+none	pathway	78031	Wnt signalling inhibitor
+none	pathway	63173	T-cell proliferation inhibitor

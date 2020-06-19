@@ -27,7 +27,7 @@ chebi	antagonist	protein family	interpro	1
 chebi	antagonist	protein family	mesh	16
 chebi	inhibitor	biological process	efo	1
 chebi	inhibitor	biological process	go	1028
-chebi	inhibitor	molecular function	go	1983
+chebi	inhibitor	molecular function	go	1979
 chebi	inhibitor	organism	ncbitaxon	1173
 chebi	inhibitor	phenotype	efo	324
 chebi	inhibitor	phenotype	hp	161

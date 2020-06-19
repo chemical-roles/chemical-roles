@@ -66,7 +66,7 @@ def main():
         chemical_results = (
             (
                 int(result['chebi_id']['value']),
-                f"CHEBI:{result['chebi_id']['value']}",
+                result['chebi_id']['value'],
                 result['chemical']['value'].split('/')[-1],
             )
             for result in chemical_results["results"]["bindings"]

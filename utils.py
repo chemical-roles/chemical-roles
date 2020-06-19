@@ -79,6 +79,28 @@ def post_gilda(text: str, url: str = GILDA_URL) -> requests.Response:
     return requests.post(f'{url}/ground', json={'text': text})
 
 
+def yield_gilda(source_db, identifier, name, suffix, search_text, show_missing):
+    """Yield results from gilda."""
+    results = post_gilda(search_text).json()
+    if results:
+        for result in results:
+            term = result["term"]
+            term_db = term['db'].lower()
+            term_id = term['id']
+            if term_id.lower().startswith(f'{term_db}:'):
+                term_id = term_id[len(f'{term_db}:'):]
+
+            if term_db == source_db and term_id == identifier:
+                continue
+            yield (
+                source_db, identifier, name,
+                suffix or '?',
+                '?', term_db, term_id, term['entry_name'],
+            )
+    elif show_missing:
+        yield source_db, identifier, name, suffix or '?', '?', '?', '?', '?'
+
+
 def get_single_mappings(df: pd.DataFrame, idx) -> Mapping[str, Set[str]]:
     """Get ChEBI identifiers that are only mapped to one thing based on slicing the dataframe on the given index."""
     errors = defaultdict(set)

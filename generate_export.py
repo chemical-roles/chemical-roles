@@ -13,11 +13,11 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import pandas as pd
 import pybel
+import pyobo
 import seaborn as sns
 from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up, hgnc_name_to_id
 from pybel import BELGraph, dsl
-from pyobo import get_id_name_mapping
 from pyobo.sources.chebi import get_chebi_role_to_children
 from pyobo.sources.expasy import get_ec2go, get_obo as get_expasy_obo
 from pyobo.struct.typedef import has_member
@@ -136,17 +136,9 @@ def get_relations_df() -> pd.DataFrame:
     db_to_role_to_chemical_curies = {
         'chebi': get_chebi_role_to_children(),
     }
-    db_to_id_mapping = {
-        'chebi': get_id_name_mapping('chebi'),
-    }
-    #: A set of databases to remove the prefix from
-    remove_prefix = {'chebi'}
 
     rows = []
     for (role_db, role_id), entries in x.items():
-        if role_db in remove_prefix and role_id.lower().startswith(f'{role_db}:'.lower()):
-            role_id = role_id[len(f'{role_db}:'):]
-
         # TODO map role_db, role_id to set of sub_role_db, sub_role_id
         sub_role_curies = {(role_db, role_id)}
 
@@ -160,7 +152,7 @@ def get_relations_df() -> pd.DataFrame:
                 continue
             for chemical_db, chemical_id in chemical_curies:
                 rows.append((
-                    chemical_db, chemical_id, db_to_id_mapping[chemical_db][chemical_id],
+                    chemical_db, chemical_id, pyobo.get_name(chemical_db, chemical_id),
                     modulation, target_type, target_db, target_id, target_name,
                 ))
     return pd.DataFrame(rows, columns=XREFS_COLUMNS)

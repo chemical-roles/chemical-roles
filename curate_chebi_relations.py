@@ -6,17 +6,18 @@ import itertools as itt
 import json
 import logging
 import os
-from typing import Iterable, Optional, Tuple
+from typing import Iterable, Optional, TextIO, Tuple
 
 import click
 import pandas as pd
 import pyobo
 from pyobo.cli_utils import verbose_option
 from pyobo.sources.expasy import get_ec2go
+from tqdm import tqdm
 
 from utils import (
     RESOURCES_DIRECTORY, SUFFIXES, XREFS_COLUMNS, get_blacklist_roles_df, get_irrelevant_roles_df, get_xrefs_df,
-    post_gilda, sort_xrefs_df,
+    post_gilda, sort_xrefs_df, yield_gilda
 )
 
 logger = logging.getLogger(__name__)
@@ -39,7 +40,7 @@ chebi_id_to_name = pyobo.get_id_name_mapping('chebi')
 XREFS_DF = get_xrefs_df()
 
 CURATED_ROLE_CHEBI_IDS = {
-    source_id[len('CHEBI:'):]
+    source_id
     for source_db, source_id in XREFS_DF[['source_db', 'source_id']].values
     if source_db == 'chebi'
 }
@@ -138,7 +139,7 @@ def suggest_pathway_inhibitor_curation() -> None:
             continue  # we already curated this!
         name = chebi_id_to_name[chebi_id]
         if name.endswith('inhibitor') and not name.startswith('EC '):
-            print('chebi', f'CHEBI:{chebi_id}', name, 'inhibitor', '?', '?', '?', '?', sep='\t')
+            print('chebi', chebi_id, name, 'inhibitor', '?', '?', '?', '?', sep='\t')
             results = post_gilda(name[:-len(' inhibitor')]).json()
             if results:
                 print(json.dumps(results, indent=2))
@@ -175,12 +176,14 @@ def suggest_activator_curation() -> None:
     _single_suggest(BIOCHEMICAL_ROLE_CHEBI_ID, 'activator')
 
 
-def suggest_all_roles(show_ungrounded: bool = False) -> None:
+def suggest_all_roles(show_ungrounded: bool = False, file: Optional[TextIO] = None) -> None:
     """Suggest all roles."""
+    logger.info('Getting descendants of chebi:%s and chebi:%s', BIOLOGICAL_ROLE_ID, APPLICATION_ROLE_ID)
     chebi_ids = chebi_obo.descendants(BIOLOGICAL_ROLE_ID) | chebi_obo.descendants(APPLICATION_ROLE_ID)
 
+    print(*XREFS_DF.columns, sep='\t', file=file)
     for row in _iter_gilda(chebi_ids, show_missing=show_ungrounded):
-        print(*row, sep='\t')
+        print(*row, sep='\t', file=file)
 
 
 def _single_suggest(chebi_id: str, suffix, file=None, show_missing: bool = False) -> None:
@@ -215,47 +218,32 @@ def _iter_gilda(
     chebi_ids: Iterable[str],
     show_missing: bool,
     suffix: Optional[str] = None,
+    use_tqdm: bool = True,
 ) -> Iterable[Tuple]:
-    for chebi_id in chebi_ids:
-        if chebi_id.startswith('CHEBI:'):
-            chebi_id = chebi_id[len('CHEBI:'):]
+    it = chebi_ids
+    if use_tqdm:
+        it = tqdm(it, desc='making ChEBI curation sheet')
+    for chebi_id in it:
         if chebi_id in CURATED_ROLE_CHEBI_IDS or chebi_id in IRRELEVANT_ROLE_CHEBI_IDS:
             continue  # already curated, skip
         name = chebi_id_to_name[chebi_id]
 
         if suffix is not None:
             search_text = name[:-len(suffix)].rstrip()
-            yield from _yield_gilda(chebi_id, name, suffix, search_text, show_missing)
+            yield from yield_gilda('chebi', chebi_id, name, suffix, search_text, show_missing)
         else:
             for _suffix in SUFFIXES:
                 if name.endswith(_suffix):
                     search_text = name[:-len(_suffix)].rstrip()
-                    yield from _yield_gilda(chebi_id, name, _suffix, search_text, show_missing)
+                    yield from yield_gilda('chebi', chebi_id, name, _suffix, search_text, show_missing)
                     break
-
-
-def _yield_gilda(chebi_id, name, suffix, search_text, show_missing):
-    results = post_gilda(search_text).json()
-    if results:
-        for result in results:
-            term = result["term"]
-            term_db = term['db'].lower()
-            term_id = term['id']
-            if term_db == 'chebi' and term_id == f'CHEBI:{chebi_id}':
-                continue
-            yield (
-                'chebi', f'CHEBI:{chebi_id}', name,
-                suffix or '?',
-                term_db, term_id, term['entry_name'],
-            )
-    elif show_missing:
-        yield 'chebi', chebi_id, name, suffix or '?', '?', '?', '?', '?'
 
 
 @click.command()
 @verbose_option
 @click.option('--show-ungrounded', is_flag=True)
-def main(show_ungrounded: bool) -> None:
+@click.option('--output', type=click.File('w'), default=os.path.join(RESOURCES_DIRECTORY, 'uncurated_chebi.tsv'))
+def main(show_ungrounded: bool, output: Optional[TextIO]) -> None:
     """Run the ChEBI curation pipeline."""
     sort_xrefs_df()
     # suggest_activator_curation()
@@ -265,7 +253,7 @@ def main(show_ungrounded: bool) -> None:
     # suggest_antagonist_curation()
     # suggest_inverse_agonist_curation()
     # propose_enzyme_modulators()
-    suggest_all_roles(show_ungrounded=show_ungrounded)
+    suggest_all_roles(show_ungrounded=show_ungrounded or output is not None, file=output)
 
 
 if __name__ == '__main__':

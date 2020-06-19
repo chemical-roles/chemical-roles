@@ -1,6 +1,6 @@
 # Export Summary
 
-Exported 425030 relations on Sun Jun  7 16:29:26 2020
+Exported 425026 relations on Fri Jun 19 23:42:49 2020
 
 
 ## Summary by Modulation
@@ -10,7 +10,7 @@ Exported 425030 relations on Sun Jun  7 16:29:26 2020
 | activator       |     629 |
 | agonist         |     789 |
 | antagonist      |    1155 |
-| inhibitor       |  422397 |
+| inhibitor       |  422393 |
 | inverse agonist |       9 |
 | modulator       |      51 |
 
@@ -20,7 +20,7 @@ Exported 425030 relations on Sun Jun  7 16:29:26 2020
 |--------------------|---------|
 | biological process |    1348 |
 | chemical           |     101 |
-| molecular function |    2113 |
+| molecular function |    2109 |
 | organism           |    1173 |
 | phenotype          |     485 |
 | protein            |  415422 |
@@ -35,7 +35,7 @@ Exported 425030 relations on Sun Jun  7 16:29:26 2020
 | ec-code         |    4009 |
 | efo             |     331 |
 | fplx            |     193 |
-| go              |    3484 |
+| go              |    3480 |
 | hgnc            |     924 |
 | hgnc.genefamily |      19 |
 | hp              |     161 |
@@ -79,7 +79,7 @@ Exported 425030 relations on Sun Jun  7 16:29:26 2020
 | chebi       | antagonist      | protein family     | mesh            |      16 |
 | chebi       | inhibitor       | biological process | efo             |       1 |
 | chebi       | inhibitor       | biological process | go              |    1028 |
-| chebi       | inhibitor       | molecular function | go              |    1983 |
+| chebi       | inhibitor       | molecular function | go              |    1979 |
 | chebi       | inhibitor       | organism           | ncbitaxon       |    1173 |
 | chebi       | inhibitor       | phenotype          | efo             |     324 |
 | chebi       | inhibitor       | phenotype          | hp              |     161 |

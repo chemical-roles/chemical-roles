@@ -2,10 +2,15 @@
 
 """A script to help curate MeSH relations and infer new ones."""
 
-import click
-import pyobo
+import os
+from typing import Optional, TextIO
 
-from utils import SUFFIXES, get_xrefs_df
+import click
+from tqdm import tqdm
+
+import pyobo
+from pyobo.cli_utils import verbose_option
+from utils import RESOURCES_DIRECTORY, SUFFIXES, get_xrefs_df, yield_gilda
 
 BLACKLIST = {
     'D004791',  # Enzyme
@@ -28,22 +33,28 @@ BLACKLIST = {
 
 
 @click.command()
-def main():
+@verbose_option
+@click.option('--show-ungrounded', is_flag=True)
+@click.option('--output', type=click.File('w'), default=os.path.join(RESOURCES_DIRECTORY, 'uncurated_mesh.tsv'))
+def main(show_ungrounded: bool, output: Optional[TextIO]):
     """Run the MeSH curation pipeline."""
     xrefs_df = get_xrefs_df()
     mesh_xrefs_df = xrefs_df[xrefs_df['source_db'] == 'mesh']
     curated_mesh_ids = set(mesh_xrefs_df['source_id'])
 
     terms = {
-        identifier: (name, suffix.strip('s'))
+        identifier: (name, name[:-len(suffix)], suffix.strip('s'))
         for identifier, name in pyobo.get_id_name_mapping('mesh').items()
         if identifier not in curated_mesh_ids and identifier not in BLACKLIST
         for suffix in SUFFIXES
         if name.lower().endswith(suffix)
     }
 
-    for i, (identifier, (name, suffix)) in enumerate(sorted(terms.items(), key=lambda t: t[1][0]), start=1):
-        print('mesh', identifier, name, suffix, '?', '?', '?', '?', sep='\t')
+    it = sorted(terms.items(), key=lambda t: t[1][0])
+    it = tqdm(it, desc='making MeSH curation sheet')
+    for i, (identifier, (name, search_text, suffix)) in enumerate(it, start=1):
+        for row in yield_gilda('mesh', identifier, name, suffix, search_text, show_ungrounded or output is not None):
+            print(*row, sep='\t', file=output)
 
 
 if __name__ == '__main__':
