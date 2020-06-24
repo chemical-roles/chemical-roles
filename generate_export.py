@@ -43,6 +43,8 @@ DB_TO_TYPE = {
     'prosite': 'protein',
 }
 
+sns.set(font_scale=1.3, style='whitegrid')
+
 
 def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[str]]]:
     """Get the ExPASy closure map."""
@@ -68,7 +70,7 @@ def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[str]]]:
     return _graph, rv
 
 
-def get_relations_df() -> pd.DataFrame:
+def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
     """Assemble the relations dataframe."""
     xrefs_df = get_xrefs_df()
 
@@ -89,9 +91,13 @@ def get_relations_df() -> pd.DataFrame:
     logger.info('getting ec2go')
     ec2go = get_ec2go()
 
-    logger.info('inferring over target hierarchies')
     x = defaultdict(list)
-    for source_db, source_id, _, modulation, target_type, target_db, target_id, target_name in xrefs_df.values:
+    it = tqdm(
+        xrefs_df.values,
+        total=len(xrefs_df.index),
+        desc='inferring over target hierarchies',
+    )
+    for source_db, source_id, _, modulation, target_type, target_db, target_id, target_name in it:
         if source_db != 'chebi':
             continue
 
@@ -138,9 +144,14 @@ def get_relations_df() -> pd.DataFrame:
     }
 
     rows = []
-    for (role_db, role_id), entries in x.items():
-        # TODO map role_db, role_id to set of sub_role_db, sub_role_id
+    for (role_db, role_id), entries in tqdm(x.items(), desc='inferring over role hierarchies'):
         sub_role_curies = {(role_db, role_id)}
+
+        if role_db == 'chebi' and use_sub_roles:
+            sub_role_curies |= {
+                pyobo.normalize_curie(c)
+                for c in pyobo.get_subhierarchy(role_db, role_id)
+            }
 
         for modulation, target_type, target_db, target_id, target_name in entries:
             chemical_curies = set(itt.chain.from_iterable(
@@ -201,13 +212,19 @@ def rewrite_repo_readme():
     modulation_summary_df['Modulation'] = modulation_summary_df['Modulation'].map(str.title)
     g = sns.barplot(y="Modulation", x='Count', data=modulation_summary_df, ax=lax)
     g.set_xscale("log")
-    lax.set_title('Modulation')
+    lax.set_title(
+        f'Modulation ({len(df.index)} in {len(modulation_summary_df.index)} relations)',
+        fontdict={'fontweight': 'bold'},
+    )
     lax.set_ylabel('')
 
     type_summary_df['Target Type'] = type_summary_df['Target Type'].map(str.title)
     g = sns.barplot(y="Target Type", x='Count', data=type_summary_df, ax=rax)
     g.set_xscale("log")
-    rax.set_title('Target Type')
+    rax.set_title(
+        f'Target Type ({len(df.index)} in {len(type_summary_df.index)} types)',
+        fontdict={'fontweight': 'bold'},
+    )
     rax.set_ylabel('')
 
     plt.tight_layout()
@@ -254,15 +271,18 @@ def write_export():
     2. Slim TSV at ``export/relations_slim.tsv``, appropriate for machine learning
     """
     df = get_relations_df().drop_duplicates()
+    logger.info('got relations df with %s rows', len(df.index))
 
     columns = [
         'modulation', 'target_type', 'source_db', 'source_id', 'source_name', 'target_db', 'target_id', 'target_name',
     ]
     df[columns].sort_values(columns).to_csv(RELATIONS_OUTPUT_PATH, sep='\t', index=False)
 
+    logger.info('outputting slim df to %s', RELATIONS_SLIM_OUTPUT_PATH)
     slim_columns = ['source_db', 'source_id', 'modulation', 'target_db', 'target_id']
     df[slim_columns].sort_values(slim_columns).to_csv(RELATIONS_SLIM_OUTPUT_PATH, sep='\t', index=False)
 
+    logger.info('making summary df')
     summary_df = df.groupby(['source_db', 'modulation', 'target_type', 'target_db']).size().reset_index()
     summary_df.columns = ['Source Database', 'Modulation', 'Target Type', 'Target Database', 'Count']
     summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'inferred_summary.tsv'), sep='\t', index=False)
@@ -272,6 +292,7 @@ def write_export():
         tablefmt='github',
     )
 
+    logger.info('making modulation summary df')
     modulation_summary_df = df.groupby(['modulation']).size().reset_index()
     modulation_summary_df.columns = ['Modulation', 'Count']
     modulation_summary_df.to_csv(
@@ -283,6 +304,7 @@ def write_export():
         tablefmt='github',
     )
 
+    logger.info('making namespace summary df')
     namespace_summary_df = df.groupby(['target_db']).size().reset_index()
     namespace_summary_df.columns = ['Target Database', 'Count']
     namespace_summary_df.to_csv(
@@ -294,6 +316,7 @@ def write_export():
         tablefmt='github',
     )
 
+    logger.info('making type summary df')
     type_summary_df = df.groupby(['target_type']).size().reset_index()
     type_summary_df.columns = ['Target Type', 'Count']
     type_summary_df.to_csv(os.path.join(EXPORT_DIRECTORY, 'inferred_summary_by_type.tsv'), sep='\t', index=False)
@@ -309,13 +332,19 @@ def write_export():
     modulation_summary_df['Modulation'] = modulation_summary_df['Modulation'].map(str.title)
     g = sns.barplot(y="Modulation", x='Count', data=modulation_summary_df, ax=lax)
     g.set_xscale("log")
-    lax.set_title('Modulation')
+    lax.set_title(
+        f'Modulation ({len(df.index)} in {len(modulation_summary_df.index)} relations)',
+        fontdict={'fontweight': 'bold'},
+    )
     lax.set_ylabel('')
 
     type_summary_df['Target Type'] = type_summary_df['Target Type'].map(str.title)
     g = sns.barplot(y="Target Type", x='Count', data=type_summary_df, ax=rax)
     g.set_xscale("log")
-    rax.set_title('Target Type')
+    rax.set_title(
+        f'Target Type ({len(df.index)} in {len(type_summary_df.index)} types)',
+        fontdict={'fontweight': 'bold'},
+    )
     rax.set_ylabel('')
 
     plt.tight_layout()
