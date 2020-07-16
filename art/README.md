@@ -15,7 +15,7 @@ The text is set in Trattatello Regular with manual kerning and adjustments.
 
 The CRoG logos are provided in several formats and sizes:
 
-- `CRoG-logotype.svg`, an SVG of the logo with the text stored as a `<text>
+- `CRoG-logotype.svg`, an SVG of the logo with the text stored as a `<text>`
   element
 - `CRoG-logotype-paths.svg`, an SVG of the logo with the text converted to
   paths, allowing the logo to be displayed on systems wich don't have the
