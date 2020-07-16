@@ -1,3 +1,6 @@
+.. image:: art/CRoG-logotype-1024.png
+    :alt: CRoG Logotype
+
 Chemical Relations |zenodo|
 ===========================
 This repository is meant to house links between ChEBI terms describing various
