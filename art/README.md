@@ -9,7 +9,7 @@ representation of a graph and the text "CRoG," which stands for "Chemical ROles
 Graph." The use of the frog's foot takes inspiration from the pronunciation of
 "CRoG" sounding like something a frog might say.
 
-The text is set in Trattatello Regular with manul kerning and adjustments.
+The text is set in Trattatello Regular with manual kerning and adjustments.
 
 ## Files
 
