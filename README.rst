@@ -196,5 +196,9 @@ that has activity ``A``:
 - P hasActivity A
 - X er P
 
+.. image:: art/CRoG-king-100.png
+    :alt: Keep Calm and CRoG On
+    :align: center
+
 .. |zenodo| image:: https://zenodo.org/badge/199155107.svg
    :target: https://zenodo.org/badge/latestdoi/199155107
