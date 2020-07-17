@@ -11,6 +11,9 @@ Graph." The use of the frog's foot takes inspiration from the pronunciation of
 
 The text is set in Trattatello Regular with manual kerning and adjustments.
 
+The alternative "CRoG King" logo includes the same elements as the main logo
+superimposed on the icon of a frog wearing a crown.
+
 ## Files
 
 The CRoG logos are provided in several formats and sizes:
@@ -23,6 +26,9 @@ The CRoG logos are provided in several formats and sizes:
 - `CRoG-square.svg`, an SVG of the logo without the text
 - `CRoG-{logotype, square}-{100, 1024}.png`, rasterized versions of the logotype
   and logo at two sizes
+
+There are similar versions for the CRoG king logo, in both a vertical and
+horizontal format.
 
 ## Creating Graphics
 
@@ -42,3 +48,7 @@ by [Delapouite](http://delapouite.com/), used under
 
 The logos are licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
 by [Scott Colby](https://github.com/scolby33).
+
+<p align="center">
+    <img src="CRoG-king-100.png" alt="The CRoG King">
+</p>
