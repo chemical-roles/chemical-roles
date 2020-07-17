@@ -42,11 +42,19 @@ optipng -o2 -nb *.png && advdef -z -4 *.png
 
 ## License
 
-The CRoG logos are derivatives of "[Frog foot icon](https://game-icons.net/1x1/delapouite/frog-foot.html)"
+The CRoG logos are derivatives of
+"[Frog foot icon](https://game-icons.net/1x1/delapouite/frog-foot.html)"
 by [Delapouite](http://delapouite.com/), used under
 [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
 
-The logos are licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+The CRoG King logos are derivatives of the "Frog foot icon" by Delapouite as
+above, as well as
+"[Frog prince icon](https://game-icons.net/1x1/delapouite/frog-prince.html)"
+also by Delapouite, used under
+[CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+
+The logos are licensed under
+[CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
 by [Scott Colby](https://github.com/scolby33).
 
 <p align="center">
