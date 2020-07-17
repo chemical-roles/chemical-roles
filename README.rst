@@ -197,6 +197,7 @@ that has activity ``A``:
 - X er P
 
 .. raw:: html
+
    <p align="center">
     <img src="art/CRoG-king-100.png" alt="Keep Calm and CRoG On">
    </p>
