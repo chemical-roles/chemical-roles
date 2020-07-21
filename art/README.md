@@ -33,7 +33,20 @@ horizontal format.
 ## Creating Graphics
 
 The CRoG logos were created as vector graphics in Inkscape and rasterized to PNG
-with Inkscape as well. The PNG versions were then [optimized](https://blog.codinghorror.com/zopfli-optimization-literally-free-bandwidth/)
+with Inkscape as well. The rasterized `*-square` versions were made actually
+square by adding transparent padding with this ImageMagick command
+([reference](https://imagemagick.org/Usage/thumbnails/#pad)):
+
+```sh
+for f in *square*.png
+do
+    magick "$f" -virtual-pixel none \
+        -set option:distort:viewport "%[fx:max(w, h)]x%[fx:max(w, h)]-%[fx:max((h-w)/2, 0)]-%[fx:max((w-h)/2, 0)]" \
+        -filter point -distort ScaleRotateTranslate 0 +repage "$f"
+done
+```
+
+The PNG versions were then [optimized](https://blog.codinghorror.com/zopfli-optimization-literally-free-bandwidth/)
 using `optipng` and `advdef`:
 
 ```sh
