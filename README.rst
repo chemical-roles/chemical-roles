@@ -15,6 +15,12 @@ License
 - Code in this repository is under the MIT License.
 - Data in this repository is under CC0.
 
+Citation
+--------
+`Extension of Roles in the ChEBI Ontology <https://doi.org/10.26434/chemrxiv.12591221>`_.
+Hoyt, C. T., Mungall, C., Vasilevsky, N., Domingo-Fernández, D., Healy, M., and Colluru, V. (2020).
+*chemRxiv*, 12591221.
+
 Repository Structure
 --------------------
 - ``resources/``: Manually curated resources
