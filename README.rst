@@ -43,8 +43,8 @@ Contributing
     cd chemical-relations
     pip install -r requirements.txt
 
-2. Run either ``python -e chebi`` to curate ChEBI terms that Gilda was able to look up,
-   ``python -e chebi-ungrounded`` to curate all ChEBI terms, or ``tox -e mesh`` to curate MeSH.
+2. Run either ``tox -e chebi`` to curate ChEBI terms that Gilda was able to look up,
+   ``tox -e chebi-ungrounded`` to curate all ChEBI terms, or ``tox -e mesh`` to curate MeSH.
    For example, the output ``tox -e mesh`` will include something like:
 
 .. code-block::
