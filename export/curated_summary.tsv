@@ -4,7 +4,7 @@ chebi	activator	biological process	go	4
 chebi	activator	biological process	ncit	1
 chebi	activator	protein	hgnc	2
 chebi	activator	protein complex	fplx	1
-chebi	activator	protein family	ec-code	2
+chebi	activator	protein family	eccode	2
 chebi	activator	protein family	fplx	4
 chebi	agonist	chemical	chebi	2
 chebi	agonist	molecular function	go	15
@@ -36,7 +36,7 @@ chebi	inhibitor	protein	uniprot	2
 chebi	inhibitor	protein complex	fplx	2
 chebi	inhibitor	protein complex	go	9
 chebi	inhibitor	protein complex	mesh	1
-chebi	inhibitor	protein family	ec-code	497
+chebi	inhibitor	protein family	eccode	497
 chebi	inhibitor	protein family	fplx	3
 chebi	inhibitor	protein family	mesh	3
 chebi	inhibitor	protein family	pr	4

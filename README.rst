@@ -92,7 +92,7 @@ Manually Referenced Data Sources
 
 Summary
 -------
-There are 836 curated roles as of export on Wed Jun 24 14:50:39 2020
+There are 836 curated roles as of export on Mon Feb  8 01:13:55 2021
 
 ===============  =======
 Modulation         Count
@@ -122,7 +122,7 @@ Protein Family            576
 Target Database      Count
 =================  =======
 chebi                   13
-ec-code                499
+eccode                 499
 efo                     11
 fplx                    43
 go                      88

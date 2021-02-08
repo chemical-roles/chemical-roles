@@ -5,7 +5,7 @@
 import logging
 import os
 from collections import defaultdict
-from typing import Mapping, Set
+from typing import Iterable, Mapping, Set, Tuple
 
 import pandas as pd
 import requests
@@ -79,7 +79,17 @@ def post_gilda(text: str, url: str = GILDA_URL) -> requests.Response:
     return requests.post(f'{url}/ground', json={'text': text})
 
 
-def yield_gilda(source_db, identifier, name, suffix, search_text, show_missing):
+GildaTuple = Tuple[str, str, str, str, str, str, str, str]
+
+
+def yield_gilda(
+    source_db: str,
+    identifier: str,
+    name: str,
+    suffix: str,
+    search_text: str,
+    show_missing: bool,
+) -> Iterable[GildaTuple]:
     """Yield results from gilda."""
     results = post_gilda(search_text).json()
     if results:

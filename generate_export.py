@@ -18,8 +18,8 @@ import seaborn as sns
 from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up, hgnc_name_to_id
 from pybel import BELGraph, dsl
+from pyobo.sources import expasy
 from pyobo.sources.chebi import get_chebi_role_to_children
-from pyobo.sources.expasy import get_ec2go, get_obo as get_expasy_obo
 from pyobo.struct.typedef import has_member
 from tabulate import tabulate
 from tqdm import tqdm
@@ -35,8 +35,6 @@ FAMPLEX_RELATIONS_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/mas
 FAMPLEX_EQUIVALENCES_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/equivalences.csv'
 FAMPLEX_HGNC_SYMBOL_MAP_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/export/hgnc_symbol_map.csv'
 
-EXPASY_OBO = get_expasy_obo()
-
 DB_TO_TYPE = {
     'ec-code': 'protein family',
     'uniprot': 'protein',
@@ -49,7 +47,8 @@ sns.set(font_scale=1.3, style='whitegrid')
 def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[str]]]:
     """Get the ExPASy closure map."""
     _graph = nx.DiGraph()
-    for term in EXPASY_OBO:
+    expasy_obo = expasy.get_obo()
+    for term in expasy_obo:
         for parent_term in term.parents:
             _graph.add_edge(
                 (term.prefix, term.identifier, term.identifier),
@@ -65,7 +64,7 @@ def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[str]]]:
     rv = {
         identifier: list(nx.ancestors(_graph, (db, identifier, name)))
         for db, identifier, name in _graph
-        if db == EXPASY_OBO.ontology
+        if db == expasy_obo.ontology
     }
     return _graph, rv
 
@@ -89,7 +88,7 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
     logger.info('getting enzyme classes')
     expasy_graph, ec_code_to_children = get_expasy_closure()
     logger.info('getting ec2go')
-    ec2go = get_ec2go()
+    ec2go = expasy.get_ec2go()
 
     x = defaultdict(list)
     it = tqdm(
@@ -229,6 +228,7 @@ def rewrite_repo_readme():
 
     plt.tight_layout()
     plt.savefig(os.path.join(EXPORT_DIRECTORY, 'curated_summary.png'), dpi=300)
+    plt.savefig(os.path.join(EXPORT_DIRECTORY, 'curated_summary.svg'))
 
     text = f'There are {len(df.index)} curated roles as of export on {time.asctime()}\n\n'
     text += tabulate(modulation_summary_df.values, ['Modulation', 'Count'], tablefmt='rst')
@@ -349,6 +349,7 @@ def write_export():
 
     plt.tight_layout()
     plt.savefig(os.path.join(EXPORT_DIRECTORY, 'inferred_summary.png'), dpi=300)
+    plt.savefig(os.path.join(EXPORT_DIRECTORY, 'inferred_summary.svg'))
 
     with open(os.path.join(EXPORT_DIRECTORY, 'README.md'), 'w') as file:
         print('# Export Summary\n', file=file)
