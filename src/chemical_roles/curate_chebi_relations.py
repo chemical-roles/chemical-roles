@@ -14,11 +14,11 @@ from more_click import verbose_option
 from pyobo.sources.expasy import get_ec2go
 from tqdm import tqdm
 
-from .resources import RECLASSIFICATION_PATH, UNCURATED_CHEBI_PATH
-from .utils import (
-    GildaTuple, SUFFIXES, XREFS_COLUMNS, get_blacklist_roles_df, get_irrelevant_roles_df,
-    get_xrefs_df, post_gilda, sort_xrefs_df, yield_gilda,
+from .resources import (
+    RECLASSIFICATION_PATH, UNCURATED_CHEBI_PATH, get_blacklist_roles_df, get_irrelevant_roles_df,
+    get_xrefs_df,
 )
+from .utils import GildaTuple, SUFFIXES, XREFS_COLUMNS, post_gilda, sort_xrefs_df, yield_gilda
 
 logger = logging.getLogger(__name__)
 

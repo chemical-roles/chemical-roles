@@ -9,8 +9,8 @@ import pyobo
 from more_click import verbose_option
 from tqdm import tqdm
 
-from .resources import UNCURATED_MESH_PATH
-from .utils import SUFFIXES, get_xrefs_df, yield_gilda
+from .resources import UNCURATED_MESH_PATH, get_xrefs_df
+from .utils import SUFFIXES, yield_gilda
 
 BLACKLIST = {
     'D004791',  # Enzyme

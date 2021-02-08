@@ -3,21 +3,15 @@
 """Chemical relation curation utilities."""
 
 import logging
-import os
 from collections import defaultdict
 from typing import Iterable, Mapping, Set, Tuple
 
 import pandas as pd
 import requests
 
-from .resources import BLACKLIST_ROLES_PATH, IRRELEVANT_ROLES_PATH, XREFS_PATH
+from .resources import XREFS_PATH, get_xrefs_df
 
 logger = logging.getLogger(__name__)
-
-HERE = os.path.abspath(os.path.dirname(__file__))
-EXPORT_DIRECTORY = os.path.join(HERE, 'export')
-
-#: Path to xrefs.tsv
 
 XREFS_COLUMNS = [
     'source_db', 'source_id', 'source_name',
@@ -44,21 +38,6 @@ SUFFIXES.extend([
     f'{suffix}s'
     for suffix in SUFFIXES
 ])
-
-
-def get_xrefs_df() -> pd.DataFrame:
-    """Get xrefs.tsv."""
-    return pd.read_csv(XREFS_PATH, sep='\t', comment='#', dtype=str)
-
-
-def get_irrelevant_roles_df() -> pd.DataFrame:
-    """Get irrelevant roles."""
-    return pd.read_csv(IRRELEVANT_ROLES_PATH, sep='\t', dtype=str, comment='#', skip_blank_lines=True)
-
-
-def get_blacklist_roles_df() -> pd.DataFrame:
-    """Get roles blacklisted (should not be curated)."""
-    return pd.read_csv(BLACKLIST_ROLES_PATH, sep='\t', dtype=str)
 
 
 def sort_xrefs_df() -> None:
