@@ -10,24 +10,23 @@ from typing import Iterable, Mapping, Set, Tuple
 import pandas as pd
 import requests
 
+from .resources import BLACKLIST_ROLES_PATH, IRRELEVANT_ROLES_PATH, XREFS_PATH
+
 logger = logging.getLogger(__name__)
 
 HERE = os.path.abspath(os.path.dirname(__file__))
-RESOURCES_DIRECTORY = os.path.join(HERE, 'resources')
 EXPORT_DIRECTORY = os.path.join(HERE, 'export')
 
 #: Path to xrefs.tsv
-XREFS_PATH = os.path.join(RESOURCES_DIRECTORY, 'xrefs.tsv')
+
 XREFS_COLUMNS = [
     'source_db', 'source_id', 'source_name',
     'modulation',
     'target_type', 'target_db', 'target_id', 'target_name',
 ]
 
-IRRELEVANT_ROLES_PATH = os.path.join(RESOURCES_DIRECTORY, 'irrelevant_roles.tsv')
 IRRELEVANT_ROLES_COLUMNS = ['database', 'identifier', 'name']
 
-BLACKLIST_ROLES_PATH = os.path.join(RESOURCES_DIRECTORY, 'blacklist.tsv')
 BLACKLIST_ROLES_COLUMNS = ['database', 'identifier', 'name']
 
 SUFFIXES = [

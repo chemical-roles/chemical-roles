@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+"""Get wikidata mappings."""
+
 # pip install sparqlwrapper
 # https://rdflib.github.io/sparqlwrapper/
 
@@ -10,7 +14,7 @@ WHERE {
 ?gene wdt:P354 ?hgnc_id ;
       wdt:P353 ?hgnc_symbol ;
       wdt:P688 ?protein .
-?protein wdt:P352 ?uniprot_id .   
+?protein wdt:P352 ?uniprot_id .
 }
 ORDER BY ?hgnc_id
 """
@@ -23,7 +27,7 @@ ORDER BY ?chebi_id
 """
 
 
-def get_results(endpoint_url, query):
+def _get_results(endpoint_url, query):
     sparql = SPARQLWrapper(endpoint_url)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -31,6 +35,7 @@ def get_results(endpoint_url, query):
 
 
 def main():
+    """Get wikidata mappings."""
     with open('resources/wd_proteins.tsv', 'w') as file:
         print(
             'hgnc_id',
@@ -41,7 +46,7 @@ def main():
             sep='\t',
             file=file,
         )
-        protein_results = get_results(WIKIDATA_ENDPOINT_URL, protein_query)
+        protein_results = _get_results(WIKIDATA_ENDPOINT_URL, protein_query)
         protein_results = (
             (
                 int(result['hgnc_id']['value']),
@@ -62,7 +67,7 @@ def main():
             sep='\t',
             file=file,
         )
-        chemical_results = get_results(WIKIDATA_ENDPOINT_URL, chemical_query)
+        chemical_results = _get_results(WIKIDATA_ENDPOINT_URL, chemical_query)
         chemical_results = (
             (
                 int(result['chebi_id']['value']),

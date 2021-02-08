@@ -1,0 +1,1123 @@
+source_db	source_id	source_name	modulation	type	target_db	target_id	target_name
+chebi	134182	platelet-activating factor receptor antagonist	antagonist	?	hgnc	9582	PTAFR
+chebi	134182	platelet-activating factor receptor antagonist	antagonist	?	mesh	C039351	platelet activating factor receptor
+chebi	131699	EC 2.7.7.7 (DNA-directed DNA polymerase) inhibitor	inhibitor	?	?	?	?
+chebi	62434	EC 2.7.10.1 (receptor protein-tyrosine kinase) inhibitor	inhibitor	?	?	?	?
+chebi	76789	EC 2.4.1.* (hexosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	59499	EC 3.4.13.* (dipeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	75381	EC 1.11.1.* (peroxidases) inhibitor	inhibitor	?	?	?	?
+chebi	35222	inhibitor	inhibitor	?	?	?	?
+chebi	138931	glutamine antagonist	antagonist	?	chebi	28300	glutamine
+chebi	138931	glutamine antagonist	antagonist	?	chebi	18050	L-glutamine
+chebi	50926	angiogenesis modulating agent	agent	?	?	?	?
+chebi	76790	EC 2.4.2.* (pentosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	77106	EC 1.10.2.2 (quinol--cytochrome-c reductase) inhibitor	inhibitor	?	?	?	?
+chebi	85051	EC 1.13.11.24 (quercetin 2,3-dioxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	36413	anabolic agent	agent	?	?	?	?
+chebi	50671	antithyroid drug	drug	?	?	?	?
+chebi	85185	hepatitis C virus nonstructural protein 5A inhibitor	inhibitor	?	?	?	?
+chebi	76795	EC 3.4.22.36 (caspase-1) inhibitor	inhibitor	?	?	?	?
+chebi	82823	EC 3.4.22.54 (calpain-3) inhibitor	inhibitor	?	?	?	?
+chebi	77118	EC 3.5.5.1 (nitrilase) inhibitor	inhibitor	?	?	?	?
+chebi	82665	EC 2.7.11.22 (cyclin-dependent kinase) inhibitor	inhibitor	?	?	?	?
+chebi	76710	EC 4.* (lyase) inhibitor	inhibitor	?	?	?	?
+chebi	64933	melanin synthesis inhibitor	inhibitor	?	go	0042438	melanin biosynthetic process
+chebi	86385	EC 5.3.3.5 (cholestenol Delta-isomerase) inhibitor	inhibitor	?	?	?	?
+chebi	82756	EC 6.1.1.12 (aspartate--tRNA ligase) inhibitor	inhibitor	?	?	?	?
+chebi	70770	Aurora kinase inhibitor	inhibitor	?	?	?	?
+chebi	50750	EC 5.99.1.3 [DNA topoisomerase (ATP-hydrolysing)] inhibitor	inhibitor	?	?	?	?
+chebi	142782	TRPV channel modulator	modulator	?	?	?	?
+chebi	50912	cardiotoxic agent	agent	?	?	?	?
+chebi	76660	EC 2.2.* (aldehyde or ketone transferase) inhibitor	inhibitor	?	?	?	?
+chebi	142185	5-hydroxytryptamine 2C receptor agonist	agonist	?	?	?	?
+chebi	74352	quinol oxidation site inhibitor	inhibitor	?	?	?	?
+chebi	70709	progesterone receptor agonist	agonist	?	hgnc	8910	PGR
+chebi	70709	progesterone receptor agonist	agonist	?	mesh	D011980	Receptors, Progesterone
+chebi	67232	EC 3.2.1.10 (oligo-1,6-glucosidase) inhibitor	inhibitor	?	?	?	?
+chebi	85180	nonnucleoside hepatitis C virus polymerase inhibitor	inhibitor	?	?	?	?
+chebi	63332	EC 3.1.3.1 (alkaline phosphatase) inhibitor	inhibitor	?	?	?	?
+chebi	63962	Hsp90 inhibitor	inhibitor	?	fplx	HSP90	HSP90
+chebi	63962	Hsp90 inhibitor	inhibitor	?	hgnc	5253	HSP90AA1
+chebi	78006	food colour retention agent	agent	?	?	?	?
+chebi	85540	thromboxane A2 antagonist	antagonist	?	chebi	15627	thromboxane A2
+chebi	85540	thromboxane A2 antagonist	antagonist	?	chebi	57445	thromboxane A2(1-)
+chebi	53756	HIV-1 reverse transcriptase inhibitor	inhibitor	?	mesh	C514824	reverse transcriptase, Human immunodeficiency virus 1
+chebi	65001	EC 3.1.1.3 (triacylglycerol lipase) inhibitor	inhibitor	?	?	?	?
+chebi	78926	survivin dimerisation modulator	modulator	?	?	?	?
+chebi	48873	cholinergic antagonist	antagonist	?	?	?	?
+chebi	133022	B-cell lymphoma 2 inhibitor	inhibitor	?	?	?	?
+chebi	75416	EC 6.1.1.* (ligases forming aminoacyl tRNA and related compounds) inhibitor	inhibitor	?	?	?	?
+chebi	59229	GnRH antagonist	antagonist	?	mesh	D007987	Gonadotropin-Releasing Hormone
+chebi	59229	GnRH antagonist	antagonist	?	hgnc	4419	GNRH1
+chebi	75414	platelet-activating factor receptor agonist	agonist	?	hgnc	9582	PTAFR
+chebi	75414	platelet-activating factor receptor agonist	agonist	?	mesh	C039351	platelet activating factor receptor
+chebi	76775	EC 3.1.3.* (phosphoric monoester hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	50857	anti-allergic agent	agent	?	?	?	?
+chebi	85094	EC 2.7.11.11 (cAMP-dependent protein kinase) inhibitor	inhibitor	?	?	?	?
+chebi	35942	neurotransmitter agent	agent	?	chebi	25512	neurotransmitter
+chebi	77703	EC 4.3.1.3 (histidine ammonia-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	149497	spin trapping reagent	agent	?	?	?	?
+chebi	90113	EC 1.1.1.170 [3beta-hydroxysteroid-4alpha-carboxylate 3-dehydrogenase (decarboxylating)] inhibitor	inhibitor	?	?	?	?
+chebi	132772	EC 3.6.5.5 (dynamin GTPase) inhibitor	inhibitor	?	?	?	?
+chebi	90190	EC 2.1.1.37 [DNA (cytosine-5-)-methyltransferase] inhibitor	inhibitor	?	?	?	?
+chebi	136537	EC 2.4.2.8 (hypoxanthine phosphoribosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	83319	EC 1.3.1.70 (Delta(14)-sterol reductase) inhibitor	inhibitor	?	?	?	?
+chebi	61774	inositol phosphorylceramide synthase inhibitor	inhibitor	?	?	?	?
+chebi	63958	cellulose synthesis inhibitor	inhibitor	?	go	0030244	cellulose biosynthetic process
+chebi	63173	T-cell proliferation inhibitor	inhibitor	?	go	0042098	T cell proliferation
+chebi	85384	GABA reuptake inhibitor	inhibitor	?	go	0051936	gamma-aminobutyric acid reuptake
+chebi	50741	retinoic acid receptor alpha/beta agonist	agonist	?	?	?	?
+chebi	20569	EC 2.5.1.19 (3-phosphoshikimate 1-carboxyvinyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	143828	EC 1.14.14.154 (sterol 14alpha-demethylase) inhibitor	inhibitor	?	?	?	?
+chebi	140482	neurokinin-3 receptor antagonist	antagonist	?	hgnc	11528	TACR3
+chebi	55351	substance P receptor antagonist	antagonist	?	hgnc	11526	TACR1
+chebi	76788	EC 3.4.14.* (dipeptidyl- and tripeptidyl-peptidases) inhibitor	inhibitor	?	?	?	?
+chebi	139556	EC 4.1.1.17 (ornithine decarboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	133891	salt-inducible kinase 2 inhibitor	inhibitor	?	hgnc	21680	SIK2
+chebi	52303	sterol methyltransferase inhibitor	inhibitor	?	?	?	?
+chebi	131492	Wnt signalling activator	activator	?	?	?	?
+chebi	64588	glycine transporter 1 inhibitor	inhibitor	?	?	?	?
+chebi	90709	nuclear receptor modulator	modulator	?	?	?	?
+chebi	138956	EC 6.3.5.4 [asparagine synthase (glutamine-hydrolysing)] inhibitor	inhibitor	?	?	?	?
+chebi	77484	EC 1.1.1.25 (shikimate dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	61115	EC 3.5.1.98 (histone deacetylase) inhibitor	inhibitor	?	?	?	?
+chebi	85011	EC 2.6.1.16 (glutamine--fructose-6-phosphate transaminase (isomerizing)) inhibitor	inhibitor	?	?	?	?
+chebi	63146	insulin release inhibitor	inhibitor	?	?	?	?
+chebi	76871	EC 2.1.1.* (methyltransferases) inhibitor	inhibitor	?	?	?	?
+chebi	76881	EC 2.7.1.* (phosphotransferases with an alcohol group as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	76834	EC 2.5.* (non-methyl-alkyl or aryl transferase) inhibitor	inhibitor	?	?	?	?
+chebi	53121	adenosine A2A receptor antagonist	antagonist	?	hgnc	263	ADORA2A
+chebi	76876	EC 2.2.1.* (transketolase/transaldolase) inhibitor	inhibitor	?	?	?	?
+chebi	50916	lipid kinase inhibitor	inhibitor	?	?	?	?
+chebi	50781	EC 1.3.1.22 [3-oxo-5alpha-steroid 4-dehydrogenase (NADP(+))] inhibitor	inhibitor	?	?	?	?
+chebi	38147	cardiotonic drug	drug	?	?	?	?
+chebi	49205	CETP inhibitor	inhibitor	?	hgnc	1869	CETP
+chebi	49205	CETP inhibitor	inhibitor	?	efo	0009133	cholesteryl ester transfer protein measurement
+chebi	76729	EC 1.3.* (oxidoreductase acting on donor CH-CH group) inhibitor	inhibitor	?	?	?	?
+chebi	38503	EC 1.6.5.3 [NADH:ubiquinone reductase (H(+)-translocating)] inhibitor	inhibitor	?	?	?	?
+chebi	66956	antidyskinesia agent	agent	?	?	?	?
+chebi	137514	TRPA1 channel agonist	agonist	?	mesh	D000074025	TRPA1 Cation Channel
+chebi	73192	EC 1.3.3.4 (protoporphyrinogen oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	76898	EC 1.14.14.1 (unspecific monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	76725	EC 1.* (oxidoreductase) inhibitor	inhibitor	?	?	?	?
+chebi	139512	EC 1.3.1.9 [enoyl-[acyl-carrier-protein] reductase (NADH)] inhibitor	inhibitor	?	?	?	?
+chebi	64957	EC 3.4.21.39 (chymase) inhibitor	inhibitor	?	?	?	?
+chebi	71196	glucagon-like peptide-1 receptor agonist	agonist	?	hgnc	4324	GLP1R
+chebi	91092	EC 2.7.11.26 (tau-protein kinase) inhibitor	inhibitor	?	?	?	?
+chebi	35617	flavouring agent	agent	?	?	?	?
+chebi	77023	EC 2.3.3.1 [citrate (Si)-synthase] inhibitor	inhibitor	?	?	?	?
+chebi	35820	antiprotozoal drug	drug	?	?	?	?
+chebi	71942	EC 3.1.4.35 (3',5'-cyclic-GMP phosphodiesterase) inhibitor	inhibitor	?	?	?	?
+chebi	76714	EC 4.4.* (C-S lyase) inhibitor	inhibitor	?	?	?	?
+chebi	50790	EC 1.14.14.14 (aromatase) inhibitor	inhibitor	?	?	?	?
+chebi	78366	EC 2.7.1.1 (hexokinase) inhibitor	inhibitor	?	?	?	?
+chebi	71232	adenosine receptor antagonist	antagonist	?	mesh	D018047	Receptors, Purinergic P1
+chebi	50444	adenosine phosphodiesterase inhibitor	inhibitor	?	?	?	?
+chebi	130181	calmodulin antagonist	antagonist	?	fplx	CALM	CALM
+chebi	133895	EC 2.5.1.46 (deoxyhypusine synthase) inhibitor	inhibitor	?	?	?	?
+chebi	77881	EC 4.3.1.15 (diaminopropionate ammonia-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	38234	DNA polymerase inhibitor	inhibitor	?	?	?	?
+chebi	50267	protective agent	agent	?	?	?	?
+chebi	64697	acyl-CoA:cholesterol acyltransferase 2 inhibitor	inhibitor	?	?	?	?
+chebi	132717	bleaching agent	agent	?	?	?	?
+chebi	35941	serotonergic agonist	agonist	?	?	?	?
+chebi	61950	microtubule-stabilising agent	agent	?	?	?	?
+chebi	50382	EC 2.4.1.80 (ceramide glucosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	50925	EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor	inhibitor	?	?	?	?
+chebi	139044	thromboxane A2 agonist	agonist	?	chebi	15627	thromboxane A2
+chebi	139044	thromboxane A2 agonist	agonist	?	chebi	57445	thromboxane A2(1-)
+chebi	91025	erythropoietin inhibitor	inhibitor	?	hgnc	3415	EPO
+chebi	91025	erythropoietin inhibitor	inhibitor	?	chebi	81579	Erythropoietin
+chebi	38502	cytochrome-bc1 complex inhibitor	inhibitor	?	fplx	ETC_complex_III	ETC_complex_III
+chebi	38502	cytochrome-bc1 complex inhibitor	inhibitor	?	go	0008121	ubiquinol-cytochrome-c reductase activity
+chebi	38502	cytochrome-bc1 complex inhibitor	inhibitor	?	go	0045275	respiratory chain complex III
+chebi	78031	Wnt signalling inhibitor	inhibitor	?	?	?	?
+chebi	77970	food thickening agent	agent	?	?	?	?
+chebi	145437	uncoupling protein inhibitor	inhibitor	?	?	?	?
+chebi	24941	juvenile hormone antagonists	antagonists	?	chebi	24943	juvenile hormone
+chebi	64924	hepatitis C protease inhibitor	inhibitor	?	?	?	?
+chebi	149639	EC 3.4.21.36 (pancreatic elastase) inhibitor	inhibitor	?	?	?	?
+chebi	50269	EC 1.1.1.1 (alcohol dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	76830	EC 5.99.1.* (miscellaneous isomerase) inhibitor	inhibitor	?	?	?	?
+chebi	70728	actin polymerisation inhibitor	inhibitor	?	?	?	?
+chebi	73966	nitric oxide synthase activator	activator	?	mesh	D019001	Nitric Oxide Synthase
+chebi	38500	EC 1.9.3.1 (cytochrome c oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	50177	dermatologic drug	drug	?	?	?	?
+chebi	142783	TRP channel modulator	modulator	?	?	?	?
+chebi	66894	erythropeotin receptor agonist	agonist	?	?	?	?
+chebi	76735	EC 1.8.* (oxidoreductase acting on sulfur group of donors) inhibitor	inhibitor	?	?	?	?
+chebi	73311	adenosine receptor agonist	agonist	?	mesh	D018047	Receptors, Purinergic P1
+chebi	66900	prostaglandin receptor agonist	agonist	?	mesh	D011982	Receptors, Prostaglandin
+chebi	138090	ATPase motor cytoplasmic dynein inhibitor	inhibitor	?	?	?	?
+chebi	76823	EC 6.3.1.* (acid-ammonia/amine ligase) inhibitor	inhibitor	?	?	?	?
+chebi	78377	EC 1.3.1.8 [acyl-CoA dehydrogenase (NADP(+))] inhibitor	inhibitor	?	?	?	?
+chebi	75968	EC 6.3.2.19 (ubiquitin--protein ligase) inhibitor	inhibitor	?	?	?	?
+chebi	90714	retinoic acid receptor antagonist	antagonist	?	fplx	RAR	RAR
+chebi	84036	EC 3.4.24.24 (gelatinase A) inhibitor	inhibitor	?	?	?	?
+chebi	136580	LRH-1 antagonist	antagonist	?	hgnc	7984	NR5A2
+chebi	136580	LRH-1 antagonist	antagonist	?	hgnc	8536	P2RX5
+chebi	143001	GABAB receptor agonist	agonist	?	mesh	D018080	Receptors, GABA-B
+chebi	76744	EC 1.17.* (oxidoreductase acting on CH or CH2) inhibitor	inhibitor	?	?	?	?
+chebi	76812	EC 2.7.11.* (protein-serine/threonine kinase) inhibitor	inhibitor	?	?	?	?
+chebi	101086	EC 5.4.99.7 (lanosterol synthase) inhibitor	inhibitor	?	?	?	?
+chebi	140922	glioma-associated oncogene inhibitor	inhibitor	?	hgnc	4317	GLI1
+chebi	76748	EC 1.21.* (oxidoreductase acting on X-H and Y-H to form an X-Y bond) inhibitor	inhibitor	?	?	?	?
+chebi	64054	delta-opioid receptor agonist	agonist	?	mesh	D017465	Receptors, Opioid, delta
+chebi	131495	formyl peptide receptor agonist	agonist	?	mesh	D044042	Receptors, Formyl Peptide
+chebi	59105	EC 6.3.2.* (acid--D-amino-acid ligase) inhibitor	inhibitor	?	?	?	?
+chebi	76663	EC 2.5.1.* (non-methyl-alkyl or aryl transferase) inhibitor	inhibitor	?	?	?	?
+chebi	134084	EC 1.15.1.1 (superoxide dismutase) inhibitor	inhibitor	?	?	?	?
+chebi	50792	estrogen receptor antagonist	antagonist	?	hgnc	3467	ESR1
+chebi	78003	food bleaching agent	agent	?	?	?	?
+chebi	76902	EC 1.14.11.* (oxidoreductase acting on paired donors, 2-oxoglutarate as one donor, incorporating 1 atom each of oxygen into both donors) inhibitor	inhibitor	?	?	?	?
+chebi	50696	EC 2.4.1.129 (peptidoglycan glycosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	50502	EC 2.5.1.15 (dihydropteroate synthase) inhibitor	inhibitor	?	?	?	?
+chebi	72571	pro-angiogenic agent	agent	?	?	?	?
+chebi	141153	quinone outside inhibitor	inhibitor	?	?	?	?
+chebi	53559	topoisomerase IV inhibitor	inhibitor	?	mesh	D027101	DNA Topoisomerase IV
+chebi	78547	protein kinase A agonist	agonist	?	fplx	PKA	PKA
+chebi	138924	EC 6.3.4.* (other carbon--nitrogen ligases) inhibitor	inhibitor	?	?	?	?
+chebi	64763	EC 3.1.4.11 (phosphoinositide phospholipase C) inhibitor	inhibitor	?	?	?	?
+chebi	37961	H2-receptor antagonist	antagonist	?	?	?	?
+chebi	73352	protein-sequencing agent	agent	?	?	?	?
+chebi	38070	anti-arrhythmia drug	drug	?	?	?	?
+chebi	83741	phospholipid biosynthesis inhibitor	inhibitor	?	go	0008654	phospholipid biosynthetic process
+chebi	138925	EC 6.3.4.2 [CTP synthase (glutamine hydrolyzing)] inhibitor	inhibitor	?	?	?	?
+chebi	64946	anti-HIV agent	agent	?	?	?	?
+chebi	68494	apoptosis inhibitor	inhibitor	?	go	0006915	apoptotic process
+chebi	77255	EC 3.4.24.83 (anthrax lethal factor endopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	137114	bromodomain-containing protein 4 inhibitor	inhibitor	?	hgnc	13575	BRD4
+chebi	85618	EC 2.5.1.31 \{ditrans,polycis-undecaprenyl-diphosphate synthase [(2E,6E)-farnesyl-diphosphate specific]\} inhibitor	inhibitor	?	?	?	?
+chebi	64154	H3-receptor agonist	agonist	?	?	?	?
+chebi	64033	EC 3.5.1.99 (fatty acid amide hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	70821	cathepsin L (EC 3.4.22.15) inhibitor	inhibitor	?	?	?	?
+chebi	59282	kappa-opioid receptor agonist	agonist	?	mesh	D017473	Receptors, Opioid, kappa
+chebi	76746	EC 1.19.* (oxidoreductase acting on reduced flavodoxin as donor) inhibitor	inhibitor	?	?	?	?
+chebi	60598	opioid agent	agent	?	?	?	?
+chebi	76870	EC 1.9.3.* (oxidoreductase acting on donor heme group, oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	77964	anticaking agent	agent	?	?	?	?
+chebi	142481	EC 1.14.15.3 (alkane 1-monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	76747	EC 1.20.* (oxidoreductase acting on P or As in donors) inhibitor	inhibitor	?	?	?	?
+chebi	76863	EC 1.5.1.* (oxidoreductase acting on donor CH-NH group, NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	102248	EC 1.14.11.29 (hypoxia-inducible factor-proline dioxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	132771	EC 3.6.5.* (hydrolases acting on GTP; involved in cellular and subcellular movement) inhibitor	inhibitor	?	?	?	?
+chebi	77402	EC 1.8.1.12 (trypanothione-disulfide reductase) inhibitor	inhibitor	?	?	?	?
+chebi	139503	vitamin D receptor agonist	agonist	?	hgnc	12679	VDR
+chebi	50141	bronchoconstrictor agent	agent	?	?	?	?
+chebi	71300	EC 2.* (transferase) inhibitor	inhibitor	?	?	?	?
+chebi	74914	microarray analysis reagent	agent	?	?	?	?
+chebi	76796	EC 3.4.22.* (cysteine endopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	66908	SMO receptor antagonist	antagonist	?	?	?	?
+chebi	61026	bile therapy drug	drug	?	?	?	?
+chebi	50266	prodrug	drug	?	chebi	32866	L-prolino group
+chebi	50266	prodrug	drug	?	chebi	50342	L-proline residue
+chebi	50266	prodrug	drug	?	chebi	32865	L-prolyl group
+chebi	76595	nephroprotective agent	agent	?	?	?	?
+chebi	132992	radiosensitizing agent	agent	?	?	?	?
+chebi	137079	eukaryotic initiation factor 4F inhibitor	inhibitor	?	mesh	D039562	Eukaryotic Initiation Factor-4F
+chebi	65259	GABA antagonist	antagonist	?	chebi	16865	gamma-aminobutyric acid
+chebi	131611	teichoic acid biosynthesis inhibitor	inhibitor	?	go	0019350	teichoic acid biosynthetic process
+chebi	139180	nicotinic acid adenine dinucleotide phosphate receptor antagonist	antagonist	?	?	?	?
+chebi	35608	EC 3.1.3.48 (protein-tyrosine-phosphatase) inhibitor	inhibitor	?	?	?	?
+chebi	76809	EC 3.5.4.* (non-peptide cyclic amidine C-N hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	63510	EC 3.6.3.9 (Na(+)/K(+)-transporting ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	84802	EC 2.7.1.151 (inositol-polyphosphate multikinase) inhibitor	inhibitor	?	?	?	?
+chebi	76906	EC 4.1.1.* (carboxy-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	84264	EC 3.5.1.19 (nicotinamidase) inhibitor	inhibitor	?	?	?	?
+chebi	67126	colorimetric reagent	agent	?	?	?	?
+chebi	76879	EC 2.6.1.* (transaminase) inhibitor	inhibitor	?	?	?	?
+chebi	64237	EC 2.7.8.15 (UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosaminephosphotransferase) inhibitor	inhibitor	?	?	?	?
+chebi	51166	Wittig reagent	agent	?	?	?	?
+chebi	76808	EC 3.5.2.* (non-peptide cyclic amide C-N hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	138921	EC 6.3.5.5 [carbamoyl-phosphate synthase (glutamine-hydrolysing)] inhibitor	inhibitor	?	?	?	?
+chebi	60601	delta-opioid agent	agent	?	?	?	?
+chebi	75603	EC 6.* (ligase) inhibitor	inhibitor	?	?	?	?
+chebi	36047	antibacterial drug	drug	?	?	?	?
+chebi	76696	EC 5.5.* (intramolecular lyase) inhibitor	inhibitor	?	?	?	?
+chebi	64915	antiplasmodial drug	drug	?	?	?	?
+chebi	136984	EC 4.4.1.14 (1-aminocyclopropane-1-carboxylate synthase) inhibitor	inhibitor	?	?	?	?
+chebi	75600	EC 6.3.* (C-N bond-forming ligase) inhibitor	inhibitor	?	?	?	?
+chebi	48550	EC 1.1.1.21 (aldehyde reductase) inhibitor	inhibitor	?	?	?	?
+chebi	38499	mitochondrial cytochrome-bc1 complex inhibitor	inhibitor	?	go	0005750	mitochondrial respiratory chain complex III
+chebi	76697	EC 5.99.* (other isomerases) inhibitor	inhibitor	?	?	?	?
+chebi	76824	EC 6.4.1.* (carboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	50905	teratogenic agent	agent	?	?	?	?
+chebi	76850	EC 1.17.3.* (oxidoreductase acting on CH or CH2 with oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	76752	EC 1.23.* (oxidoreductase acting on C-O-C group as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	83316	EC 1.14.13.72 (methylsterol monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	78381	EC 5.1.2.* (racemases acting on hydroxy acids and derivatives) inhibitor	inhibitor	?	?	?	?
+chebi	64919	EC 2.3.1.20 (diacylglycerol O-acyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	90961	ERK dimerisation inhibitor	inhibitor	?	?	?	?
+chebi	76741	EC 1.14.* (oxidoreductase acting on paired donors, with incorporation or reduction of molecular oxygen) inhibitor	inhibitor	?	?	?	?
+chebi	74234	EC 1.1.1.153 [sepiapterin reductase (L-erythro-7,8-dihydrobiopterin forming)] inhibitor	inhibitor	?	?	?	?
+chebi	35471	psychotropic drug	drug	?	?	?	?
+chebi	63932	EC 1.14.16.2 (tyrosine 3-monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	65065	EC 2.1.1.72 [site-specific DNA-methyltransferase (adenine-specific)] inhibitor	inhibitor	?	?	?	?
+chebi	48422	angiogenesis inhibitor	inhibitor	?	go	0001525	angiogenesis
+chebi	55347	vitamin K antagonist	antagonist	?	chebi	28384	vitamin K
+chebi	70727	topoisomerase inhibitor	inhibitor	?	fplx	TOP	TOP
+chebi	77953	EC 6.1.1.4 (leucine--tRNA ligase) inhibitor	inhibitor	?	?	?	?
+chebi	76730	EC 1.4.* (oxidoreductase acting on donor CH-NH2 group) inhibitor	inhibitor	?	?	?	?
+chebi	76829	EC 5.4.3.* (intramolecular transferase transferring amino groups) inhibitor	inhibitor	?	?	?	?
+chebi	51374	GABA agent	agent	?	chebi	16865	gamma-aminobutyric acid
+chebi	67195	gap junctional intercellular communication inhibitor	inhibitor	?	?	?	?
+chebi	144987	sphingosine-1-phosphate receptor antagonist	antagonist	?	mesh	D000081025	Sphingosine-1-Phosphate Receptors
+chebi	52629	EC 3.1.26.13 (retroviral ribonuclease H) inhibitor	inhibitor	?	?	?	?
+chebi	50445	EC 3.5.4.4 (adenosine deaminase) inhibitor	inhibitor	?	?	?	?
+chebi	64176	H3-receptor antagonist	antagonist	?	?	?	?
+chebi	136558	EC 1.11.1.7 (peroxidase) inhibitor	inhibitor	?	?	?	?
+chebi	59844	antihyperplasia drug	drug	?	?	?	?
+chebi	76779	EC 3.4.21.26 (prolyl oligopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	67199	AP-1 antagonist	antagonist	?	fplx	AP1	AP1
+chebi	67199	AP-1 antagonist	antagonist	?	hgnc	3796	FOS
+chebi	67199	AP-1 antagonist	antagonist	?	hgnc	3797	FOSB
+chebi	67199	AP-1 antagonist	antagonist	?	hgnc	6204	JUN
+chebi	67199	AP-1 antagonist	antagonist	?	hgnc	6206	JUND
+chebi	67199	AP-1 antagonist	antagonist	?	chebi	62519	(2S,3S,5R,10R,12S,14S,15R,16R)-2-amino-12,16-dimethylicosane-3,5,10,14,15-pentol
+chebi	76757	EC 1.99.* (other oxidoreductases using O2 as oxidant) inhibitor	inhibitor	?	?	?	?
+chebi	76797	EC 2.5.1.18 (glutathione transferase) inhibitor	inhibitor	?	?	?	?
+chebi	87588	Smad3 inhibitor	inhibitor	?	hgnc	6769	SMAD3
+chebi	72716	EC 2.3.2.13 (protein-glutamine gamma-glutamyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	68553	guanylate cyclase 2C agonist	agonist	?	hgnc	4688	GUCY2C
+chebi	90318	EC 6.4.1.1 (pyruvate carboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	76883	EC 3.11.1.* (hydrolases acting on C-P bonds of phosphono-acetaldehyde, -acetate, or -pyruvate) inhibitor	inhibitor	?	?	?	?
+chebi	76734	EC 1.7.* (oxidoreductase acting on other nitrogenous compounds as donors) inhibitor	inhibitor	?	?	?	?
+chebi	64964	EC 1.13.11.34 (arachidonate 5-lipoxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	84801	EC 2.7.1.127 (inositol-trisphosphate 3-kinase) inhibitor	inhibitor	?	?	?	?
+chebi	77706	EC 3.4.19.3 (pyroglutamyl-peptidase I) inhibitor	inhibitor	?	?	?	?
+chebi	88295	G-protein-coupled receptor antagonist	antagonist	?	?	?	?
+chebi	50514	vasoconstrictor agent	agent	?	?	?	?
+chebi	50739	estrogen receptor modulator	modulator	?	hgnc	3467	ESR1
+chebi	76767	EC 3.8.* (hydrolases acting on halide bonds) inhibitor	inhibitor	?	?	?	?
+chebi	140489	tropomyosin-related kinase B receptor agonist	agonist	?	?	?	?
+chebi	37334	diagnostic imaging agent	agent	?	mesh	D003952	Diagnostic Imaging
+chebi	71476	EC 2.3.1.85 (fatty acid synthase) inhibitor	inhibitor	?	?	?	?
+chebi	76395	EC 2.3.1.48 (histone acetyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	35526	hypoglycemic agent	agent	?	?	?	?
+chebi	84804	EC 2.7.4.6 (nucleoside-diphosphate kinase) inhibitor	inhibitor	?	?	?	?
+chebi	50241	cholinesterase reactivator	activator	?	?	?	?
+chebi	82891	glucocorticoid receptor antagonist	antagonist	?	hgnc	7978	NR3C1
+chebi	85048	EC 1.10.3.* (oxidoreductase acting on diphenols and related substances as donors with oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	73240	NF-kappaB inhibitor	inhibitor	?	fplx	NFkappaB	NFkappaB
+chebi	73240	NF-kappaB inhibitor	inhibitor	?	hgnc	7794	NFKB1
+chebi	68563	P2Y12 receptor antagonist	antagonist	?	?	?	?
+chebi	76891	EC 3.4.11.14 (cytosol alanyl aminopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	76693	EC 5.2.* (cis-trans-isomerase) inhibitor	inhibitor	?	?	?	?
+chebi	50242	enzyme reactivator	activator	?	?	?	?
+chebi	50788	EC 1.1.1.210 [3beta(or 20alpha)-hydroxysteroid dehydrogenase] inhibitor	inhibitor	?	?	?	?
+chebi	33282	antibacterial agent	agent	?	?	?	?
+chebi	144998	sphingosine-1-phosphate receptor 1 antagonist	antagonist	?	hgnc	3165	S1PR1
+chebi	76750	EC 1.22.* (oxidoreductase acting on halogen in donors) inhibitor	inhibitor	?	?	?	?
+chebi	83156	EC 6.2.1.* (acid-thiol ligase) inhibitor	inhibitor	?	?	?	?
+chebi	62609	EC 3.11.1.3 (phosphonopyruvate hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	77113	EC 2.7.11.10 (IkappaB kinase) inhibitor	inhibitor	?	?	?	?
+chebi	76753	EC 1.97.* (other oxidoreductase) inhibitor	inhibitor	?	?	?	?
+chebi	91079	purinergic receptor P2 antagonist	antagonist	?	?	?	?
+chebi	50683	EC 1.5.1.3 (dihydrofolate reductase) inhibitor	inhibitor	?	?	?	?
+chebi	38496	electron-transport chain inhibitor	inhibitor	?	go	0022900	electron transport chain
+chebi	138920	EC 6.3.5.* (carbon-nitrogen ligases with glutamine as amido-N-donor) inhibitor	inhibitor	?	?	?	?
+chebi	67114	ryanodine receptor agonist	agonist	?	mesh	D019837	Ryanodine Receptor Calcium Release Channel
+chebi	49200	EC 3.6.3.10 (H(+)/K(+)-exchanging ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	66987	radiation protective agent	agent	?	?	?	?
+chebi	37930	phenothiazine antipsychotic drug	drug	?	?	?	?
+chebi	143002	EC 2.1.3.* (carboxy- and carbamoyltransferases) inhibitor	inhibitor	?	?	?	?
+chebi	50630	cyclooxygenase 1 inhibitor	inhibitor	?	hgnc	9604	PTGS1
+chebi	139153	EC 2.4.1.255 (protein O-GlcNAc transferase) inhibitor	inhibitor	?	?	?	?
+chebi	84297	EC 3.4.21.64 (peptidase K) inhibitor	inhibitor	?	?	?	?
+chebi	73182	plant activator	activator	?	mesh	D010944	Plants
+chebi	63114	sphingosine-1-phosphate receptor agonist	agonist	?	mesh	D000081025	Sphingosine-1-Phosphate Receptors
+chebi	77705	EC 3.4.19.* (omega-peptidase) inhibitor	inhibitor	?	?	?	?
+chebi	88286	EC 2.7.12.2 (mitogen-activated protein kinase kinase) inhibitor	inhibitor	?	?	?	?
+chebi	83762	EC 3.2.1.28 (alpha,alpha-trehalase) inhibitor	inhibitor	?	?	?	?
+chebi	147289	EC 3.4.17.23 (angiotensin-converting enzyme 2) inhibitor	inhibitor	?	?	?	?
+chebi	74925	EC 3.4.23.46 (memapsin 2) inhibitor	inhibitor	?	?	?	?
+chebi	23018	EC 4.2.1.1 (carbonic anhydrase) inhibitor	inhibitor	?	?	?	?
+chebi	74213	EC 1.17.4.1 (ribonucleoside-diphosphate reductase) inhibitor	inhibitor	?	?	?	?
+chebi	73263	cyclooxygenase 3 inhibitor	inhibitor	?	?	?	?
+chebi	52425	EC 3.2.1.18 (exo-alpha-sialidase) inhibitor	inhibitor	?	?	?	?
+chebi	90878	EC 2.4.2.4 (thymidine phosphorylase) inhibitor	inhibitor	?	?	?	?
+chebi	51372	neuromuscular agent	agent	?	?	?	?
+chebi	83034	EC 4.1.2.27 (sphinganine-1-phosphate aldolase) inhibitor	inhibitor	?	?	?	?
+chebi	36335	trypanocidal drug	drug	?	?	?	?
+chebi	77324	UDP-glucuronosyltransferase activator	activator	?	mesh	D014453	Glucuronosyltransferase
+chebi	76817	EC 2.7.10.* (protein-tyrosine kinase) inhibitor	inhibitor	?	?	?	?
+chebi	76920	EC 1.1.3.9 (galactose oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	50914	EC 2.7.1.137 (phosphatidylinositol 3-kinase) inhibitor	inhibitor	?	?	?	?
+chebi	77731	p53 activator	activator	?	hgnc	11998	TP53
+chebi	77731	p53 activator	activator	?	hgnc	23084	HCP5P3
+chebi	143003	EC 2.1.3.3 (ornithine carbamoyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	50276	EC 5.99.1.2 (DNA topoisomerase) inhibitor	inhibitor	?	?	?	?
+chebi	76798	EC 1.14.15.4 (steroid 11beta-monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	77088	EC 1.4.7.* (oxidoreductase acting on donor CH-NH2 group, Fe-S protein as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	64922	EC 3.4.21.37 (leukocyte elastase) inhibitor	inhibitor	?	?	?	?
+chebi	83760	EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor	inhibitor	?	?	?	?
+chebi	136859	pro-agent	agent	?	chebi	32865	L-prolyl group
+chebi	136859	pro-agent	agent	?	chebi	32866	L-prolino group
+chebi	136859	pro-agent	agent	?	chebi	50342	L-proline residue
+chebi	79046	melatonin receptor agonist	agonist	?	mesh	D044094	Receptors, Melatonin
+chebi	76847	EC 1.14.16.* (oxidoreductase acting on paired donors, reduced pteridine as one donor, incorporating 1 atom of oxygen) inhibitor	inhibitor	?	?	?	?
+chebi	131734	EC 2.7.11.20 (elongation factor 2 kinase) inhibitor	inhibitor	?	?	?	?
+chebi	60643	NMDA receptor antagonist	antagonist	?	go	0004972	NMDA glutamate receptor activity
+chebi	64912	antimycobacterial drug	drug	?	?	?	?
+chebi	63963	metabotropic glutamate receptor antagonist	antagonist	?	fplx	GRM	GRM
+chebi	76882	EC 2.4.99.* (glycosyltransferases transferring other glycosyl groups) inhibitor	inhibitor	?	?	?	?
+chebi	77750	ATP/ADP translocase inhibitor	inhibitor	?	?	?	?
+chebi	156211	MAIT cell agonist	agonist	?	mesh	D000072336	Mucosal-Associated Invariant T Cells
+chebi	70725	adenosine A3 receptor antagonist	antagonist	?	hgnc	268	ADORA3
+chebi	86383	EC 5.3.3.* (intramolecular oxidase transposing C=C bonds) inhibitor	inhibitor	?	?	?	?
+chebi	76822	EC 3.2.1.31 (beta-glucuronidase) inhibitor	inhibitor	?	?	?	?
+chebi	22180	EC 2.2.1.6 (acetolactate synthase) inhibitor	inhibitor	?	?	?	?
+chebi	59283	delta-opioid receptor antagonist	antagonist	?	mesh	D017465	Receptors, Opioid, delta
+chebi	76764	EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitor	inhibitor	?	?	?	?
+chebi	91202	TGFbeta receptor antagonist	antagonist	?	fplx	TGFBR	TGFBR
+chebi	83157	EC 6.2.1.3 (long-chain-fatty-acid--CoA ligase) inhibitor	inhibitor	?	?	?	?
+chebi	149553	anticoronaviral agent	agent	?	?	?	?
+chebi	79092	EC 1.11.2.* (oxidoreductase with H2O2 as acceptor, incorporating 1 O atom into product) inhibitor	inhibitor	?	?	?	?
+chebi	38807	calcium channel agonist	agonist	?	fplx	Calcium_channels	Calcium_channels
+chebi	38807	calcium channel agonist	agonist	?	mesh	D015220	Calcium Channels
+chebi	142480	EC 1.14.14.94 (leukotriene-B4 20-monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	64416	EC 1.3.1.43 (arogenate dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	50390	EC 1.6.5.2 [NAD(P)H dehydrogenase (quinone)] inhibitor	inhibitor	?	?	?	?
+chebi	75605	EC 6.5.* (phosphoric ester bond-forming ligase) inhibitor	inhibitor	?	?	?	?
+chebi	73193	gibberellin biosynthesis inhibitor	inhibitor	?	go	0009686	gibberellin biosynthetic process
+chebi	68481	mTOR inhibitor	inhibitor	?	hgnc	3942	MTOR
+chebi	156527	EC 2.4.1.109 (dolichyl-phosphate-mannose-protein mannosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	76893	EC 3.4.14.2 (dipeptidyl-peptidase II) inhibitor	inhibitor	?	?	?	?
+chebi	77318	pregnane X receptor agonist	agonist	?	hgnc	7968	NR1I2
+chebi	52726	proteasome inhibitor	inhibitor	?	fplx	Proteasome	Proteasome
+chebi	52726	proteasome inhibitor	inhibitor	?	go	0000502	proteasome complex
+chebi	85052	EC 1.4.3.3 (D-amino-acid oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	138938	EC 4.1.1.39 (ribulose-bisphosphate carboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	77119	EC 1.1.1.189 (prostaglandin-E2 9-reductase) inhibitor	inhibitor	?	?	?	?
+chebi	68612	EC 3.4.14.5 (dipeptidyl-peptidase IV) inhibitor	inhibitor	?	?	?	?
+chebi	91085	collagen cross-linking inhibitor	inhibitor	?	?	?	?
+chebi	90845	prostacyclin receptor agonist	agonist	?	hgnc	9602	PTGIR
+chebi	60688	EC 4.2.1.20 (tryptophan synthase) inhibitor	inhibitor	?	?	?	?
+chebi	91189	VEGF activator	activator	?	fplx	VEGF	VEGF
+chebi	91189	VEGF activator	activator	?	mesh	D042461	Vascular Endothelial Growth Factor A
+chebi	91189	VEGF activator	activator	?	efo	0003276	vascular endothelial growth factor
+chebi	91189	VEGF activator	activator	?	hgnc	12680	VEGFA
+chebi	48560	dopaminergic agent	agent	?	?	?	?
+chebi	76853	EC 1.2.3.* (oxidoreductase acting on donor aldehyde/oxo group with oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	131561	hyaluronic acid synthesis inhibitor	inhibitor	?	?	?	?
+chebi	73319	adenosine A3 receptor agonist	agonist	?	hgnc	268	ADORA3
+chebi	64920	EC 6.5.1.1 [DNA ligase (ATP)] inhibitor	inhibitor	?	?	?	?
+chebi	146246	CB2 receptor agonist	agonist	?	mesh	D043885	Receptor, Cannabinoid, CB2
+chebi	50927	angiogenesis inducing agent	agent	?	?	?	?
+chebi	138927	EC 6.3.5.3 (phosphoribosylformylglycinamidine synthase) inhibitor	inhibitor	?	?	?	?
+chebi	53353	GHB receptor agonist	agonist	?	?	?	?
+chebi	64577	flour treatment agent	agent	?	?	?	?
+chebi	76785	EC 3.1.26.* (endoribonucleases producing 5'-phosphomonoesters) inhibitor	inhibitor	?	?	?	?
+chebi	72773	carotogenesis inhibitor	inhibitor	?	?	?	?
+chebi	76836	EC 1.1.3.* (oxidoreductase acting on donor CH-OH group, oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	38623	EC 1.4.3.4 (monoamine oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	79386	glycerophosphoinositol synthesis inhibitor	inhibitor	?	?	?	?
+chebi	63533	gonadotropin releasing hormone agonist	agonist	?	mesh	D007987	Gonadotropin-Releasing Hormone
+chebi	76837	EC 1.13.11.* (oxidoreductase acting on single donors and incorporating 2 O atoms) inhibitor	inhibitor	?	?	?	?
+chebi	73196	EC 4.4.1.11 (methionine gamma-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	35522	beta-adrenergic agonist	agonist	?	?	?	?
+chebi	73136	EC 1.1.1.184 [carbonyl reductase (NADPH)] inhibitor	inhibitor	?	?	?	?
+chebi	51452	endothelin A receptor antagonist	antagonist	?	hgnc	3179	EDNRA
+chebi	78678	EC 4.6.1.2 (guanylate cyclase) inhibitor	inhibitor	?	?	?	?
+chebi	77110	EC 1.21.3.3 (reticuline oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	145438	C-X-C chemokine receptor type 4 antagonist	antagonist	?	hgnc	2561	CXCR4
+chebi	142781	EC 2.5.1.117 (homogentisate solanesyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	82974	EC 3.4.24.71 (endothelin-converting enzyme 1) inhibitor	inhibitor	?	?	?	?
+chebi	137123	EC 2.7.11.30 (receptor protein serine/threonine kinase) inhibitor	inhibitor	?	?	?	?
+chebi	79093	EC 1.11.2.2 (myeloperoxidase) inhibitor	inhibitor	?	?	?	?
+chebi	50568	EC 3.1.4.17 (3',5'-cyclic-nucleotide phosphodiesterase) inhibitor	inhibitor	?	?	?	?
+chebi	131770	EC 3.6.3.49 (channel-conductance-controlling ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	35846	renal agent	agent	?	?	?	?
+chebi	33893	reagent	agent	?	chebi	49882	rhenium atom
+chebi	62871	EC 4.3.1.24 (phenylalanine ammonia-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	86029	liver X receptor agonist	agonist	?	fplx	LXR	LXR
+chebi	86029	liver X receptor agonist	agonist	?	mesh	D000071518	Liver X Receptors
+chebi	79091	EC 2.7.11.24 (mitogen-activated protein kinase) inhibitor	inhibitor	?	?	?	?
+chebi	76713	EC 4.3.* (C-N lyase) inhibitor	inhibitor	?	?	?	?
+chebi	35441	antiinfective agent	agent	?	?	?	?
+chebi	63720	EC 2.1.1.45 (thymidylate synthase) inhibitor	inhibitor	?	?	?	?
+chebi	51065	dopamine agonist	agonist	?	chebi	18243	dopamine
+chebi	51065	dopamine agonist	agonist	?	chebi	59905	dopaminium(1+)
+chebi	62887	tankyrase inhibitor	inhibitor	?	hgnc	11941	TNKS
+chebi	75599	EC 6.3.2.2 (glutamate--cysteine ligase) inhibitor	inhibitor	?	?	?	?
+chebi	131509	lysine-specific histone demethylase 1A inhibitor	inhibitor	?	hgnc	29079	KDM1A
+chebi	60649	glucagon receptor antagonist	antagonist	?	hgnc	4192	GCGR
+chebi	60649	glucagon receptor antagonist	antagonist	?	mesh	D018027	Receptors, Glucagon
+chebi	76706	EC 6.1.* (C-O bond-forming ligase) inhibitor	inhibitor	?	?	?	?
+chebi	76733	EC 1.6.* (oxidoreductase acting on NADH or NADPH) inhibitor	inhibitor	?	?	?	?
+chebi	77745	EC 3.4.24.18 (meprin A) inhibitor	inhibitor	?	?	?	?
+chebi	77090	EC 4.3.1.10 (serine-sulfate ammonia-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	37886	adrenergic agonist	agonist	?	?	?	?
+chebi	76998	aryl hydrocarbon receptor antagonist	antagonist	?	hgnc	348	AHR
+chebi	62913	EC 2.4.2.30 (NAD(+) ADP-ribosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	35474	anxiolytic drug	drug	?	?	?	?
+chebi	50949	serotonin uptake inhibitor	inhibitor	?	go	0051610	serotonin uptake
+chebi	76782	EC 3.4.15.* (peptidyl-dipeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	76742	EC 1.15.* (oxidoreductase acting on superoxide as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	59647	EC 2.3.1.50 (serine C-palmitoyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	144981	EC 3.6.5.2 (small monomeric GTPase) inhibitor	inhibitor	?	?	?	?
+chebi	78623	bone morphogenetic protein receptor antagonist	antagonist	?	?	?	?
+chebi	76843	EC 1.14.15.* (oxidoreductase acting on paired donors, with reduced Fe-S protein as one donor, incorporating 1 O atom) inhibitor	inhibitor	?	?	?	?
+chebi	71173	H1-receptor agonist	agonist	?	?	?	?
+chebi	73267	oxidative phosphorylation inhibitor	inhibitor	?	go	0006119	oxidative phosphorylation
+chebi	72854	EC 1.13.11.52 (indoleamine 2,3-dioxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	101090	EC 5.4.99.* (intramolecular transferase transferring other groups) inhibitor	inhibitor	?	?	?	?
+chebi	37670	protease inhibitor	inhibitor	?	fplx	Protease	Protease
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	13915	ERVK-6
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	31828	ERVK-7
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	32302	ERVK-8
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	39004	ERVK-10
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	39005	ERVK-9
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	39025	ERVK-18
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	39026	ERVK-19
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	39035	ERVK-21
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	39038	ERVK-24
+chebi	37670	protease inhibitor	inhibitor	?	hgnc	39039	ERVK-25
+chebi	37670	protease inhibitor	inhibitor	?	up	P63121	HERVK_113
+chebi	37670	protease inhibitor	inhibitor	?	up	P63124	HERV-K104
+chebi	70868	antileishmanial agent	agent	?	?	?	?
+chebi	38325	muscarinic agonist	agonist	?	?	?	?
+chebi	83313	protease-activated receptor-1 antagonist	antagonist	?	mesh	D044463	Receptor, PAR-1
+chebi	132972	farnesoid X receptor agonist	agonist	?	?	?	?
+chebi	90375	Sir1 inhibitor	inhibitor	?	?	?	?
+chebi	59727	vasopressin receptor agonist	agonist	?	mesh	D017483	Receptors, Vasopressin
+chebi	50664	matrix metalloproteinase inhibitor	inhibitor	?	?	?	?
+chebi	74570	EC 2.3.2.2 (gamma-glutamyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	90365	EC 4.6.1.1 (adenylate cyclase) inhibitor	inhibitor	?	?	?	?
+chebi	145982	5-hydroxytryptamine 2A receptor agonist	agonist	?	?	?	?
+chebi	85049	EC 1.10.3.1 (catechol oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	132518	EC 3.2.1.23 (beta-galactosidase) inhibitor	inhibitor	?	?	?	?
+chebi	134545	EC 1.8.1.4 (dihydrolipoyl dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	37962	adrenergic agent	agent	?	?	?	?
+chebi	50646	bone density conservation agent	agent	?	?	?	?
+chebi	75604	EC 6.4.* (C-C bond-forming ligase) inhibitor	inhibitor	?	?	?	?
+chebi	62873	odorant receptor agonist	agonist	?	fplx	OR	OR
+chebi	37955	H1-receptor antagonist	antagonist	?	?	?	?
+chebi	76531	odorant receptor antagonist	antagonist	?	fplx	OR	OR
+chebi	156203	topoisomerase II inhibitor	inhibitor	?	fplx	TOP2	TOP2
+chebi	76877	EC 2.3.2.* (aminoacyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	60603	kappa-opioid agent	agent	?	?	?	?
+chebi	38808	calcium channel modulator	modulator	?	fplx	Calcium_channels	Calcium_channels
+chebi	38808	calcium channel modulator	modulator	?	mesh	D015220	Calcium Channels
+chebi	88336	retinoic acid receptor gamma agonist	agonist	?	hgnc	9866	RARG
+chebi	88336	retinoic acid receptor gamma agonist	agonist	?	mesh	C082926	retinoic acid receptor gamma
+chebi	137626	EC 1.1.1.146 (11beta-hydroxysteroid dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	145253	hyaluronan synthesis inhibitor	inhibitor	?	go	0030213	hyaluronan biosynthetic process
+chebi	35634	EC 1.17.3.2 (xanthine oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	77758	EC 3.1.4.53 (3',5'-cyclic-AMP phosphodiesterase) inhibitor	inhibitor	?	?	?	?
+chebi	139084	cis-Golgi ArfGEF GBF inhibitor	inhibitor	?	?	?	?
+chebi	50510	potassium channel modulator	modulator	?	fplx	KCN	KCN
+chebi	50510	potassium channel modulator	modulator	?	mesh	D015221	Potassium Channels
+chebi	88230	autophagy inhibitor	inhibitor	?	go	0006914	autophagy
+chebi	76857	EC 1.3.1.* (oxidoreductase acting on donor CH-CH group, NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	140535	TRPV1 agonist	agonist	?	hgnc	12716	TRPV1
+chebi	77495	bradykinin receptor agonist	agonist	?	fplx	BDKR	BDKR
+chebi	76668	EC 2.7.* (P-containing group transferase) inhibitor	inhibitor	?	?	?	?
+chebi	62530	EC 2.3.1.24 (sphingosine N-acyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	90780	AKT1 kinase inhibitor	inhibitor	?	?	?	?
+chebi	59107	EC 3.4.24.* (metalloendopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	73273	sodium-glucose transport protein subtype 2 inhibitor	inhibitor	?	?	?	?
+chebi	74520	EC 1.1.1.44 (NADP(+)-dependent decarboxylating phosphogluconate dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	90199	c-Met tyrosine kinase inhibitor	inhibitor	?	?	?	?
+chebi	49324	female contraceptive drug	drug	?	?	?	?
+chebi	142738	tau aggregation inhibitor	inhibitor	?	?	?	?
+chebi	76712	EC 4.2.* (C-O lyase) inhibitor	inhibitor	?	?	?	?
+chebi	76878	EC 2.3.1.* (acyltransferase transferring other than amino-acyl group) inhibitor	inhibitor	?	?	?	?
+chebi	48540	beta-adrenergic drug	drug	?	?	?	?
+chebi	91142	EC 1.1.5.* (oxidoreductase acting on donor CH-OH group, quinone or similar compound as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	60798	excitatory amino acid antagonist	antagonist	?	mesh	D018846	Excitatory Amino Acids
+chebi	90846	liver X receptor inverse agonist	agonist	?	?	?	?
+chebi	76867	EC 1.6.3.* (oxidoreductase acting on NADH or NADPH with oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	38462	EC 3.1.1.7 (acetylcholinesterase) inhibitor	inhibitor	?	?	?	?
+chebi	74949	EC 3.1.27.3 (ribonuclease T1) inhibitor	inhibitor	?	?	?	?
+chebi	131809	SMO receptor agonist	agonist	?	?	?	?
+chebi	88355	alpha-secretase activator	activator	?	?	?	?
+chebi	64106	protein kinase agonist	agonist	?	mesh	D011494	Protein Kinases
+chebi	76895	EC 3.6.3.* (acid anhydride hydrolase catalysing transmembrane movement of substances) inhibitor	inhibitor	?	?	?	?
+chebi	78379	EC 2.5.1.7 (UDP-N-acetylglucosamine 1-carboxyvinyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	62868	hepatoprotective agent	agent	?	?	?	?
+chebi	60606	opioid receptor agonist	agonist	?	mesh	D011957	Receptors, Opioid
+chebi	64370	glutamate transporter activator	activator	?	?	?	?
+chebi	74440	epidermal growth factor receptor antagonist	antagonist	?	hgnc	3236	EGFR
+chebi	77109	EC 1.21.3.* (oxidoreductase acting on X-H and Y-H to form an X-Y bond, with oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	76840	EC 1.14.99.* (miscellaneous oxidoreductase acting on paired donors, with incorporation or reduction of molecular oxygen) inhibitor	inhibitor	?	?	?	?
+chebi	23888	drug	drug	?	?	?	?
+chebi	63090	EC 2.4.2.1 (purine-nucleoside phosphorylase) inhibitor	inhibitor	?	?	?	?
+chebi	64949	anti-HIV-2 agent	agent	?	?	?	?
+chebi	84803	EC 2.7.4.* (phosphotransferases with a phosphate group as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	67189	EC 3.4.24.3 (microbial collagenase) inhibitor	inhibitor	?	?	?	?
+chebi	73310	adenosine A2A receptor agonist	agonist	?	hgnc	263	ADORA2A
+chebi	50176	keratolytic drug	drug	?	?	?	?
+chebi	36051	antisyphilitic drug	drug	?	?	?	?
+chebi	72771	breast cancer resistance protein inhibitor	inhibitor	?	hgnc	74	ABCG2
+chebi	68509	glutathione depleting agent	agent	?	?	?	?
+chebi	48561	dopaminergic antagonist	antagonist	?	?	?	?
+chebi	78384	EC 5.1.3.2 (UDP-glucose 4-epimerase) inhibitor	inhibitor	?	?	?	?
+chebi	51577	partial prostacyclin agonist	agonist	?	?	?	?
+chebi	38632	membrane transport modulator	modulator	?	go	0055085	transmembrane transport
+chebi	76759	EC 3.* (hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	138208	carotenoid biosynthesis inhibitor	inhibitor	?	go	0016117	carotenoid biosynthetic process
+chebi	141001	kisspeptin receptor agonist	agonist	?	?	?	?
+chebi	86430	EC 1.14.13.78 (ent-kaurene oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	48675	antifibrinolytic drug	drug	?	?	?	?
+chebi	75495	EC 6.1.1.11 (serine--tRNA ligase) inhibitor	inhibitor	?	?	?	?
+chebi	76695	EC 5.4.* (intramolecular transferase) inhibitor	inhibitor	?	?	?	?
+chebi	64570	EC 2.1.2.1 (glycine hydroxymethyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	144099	EC 2.6.1.2 (alanine transaminase) inhibitor	inhibitor	?	?	?	?
+chebi	68557	bradykinin receptor antagonist	antagonist	?	fplx	BDKR	BDKR
+chebi	60599	mu-opioid agent	agent	?	?	?	?
+chebi	144895	C5a receptor antagonist	antagonist	?	?	?	?
+chebi	76818	EC 2.7.3.* (phosphotransferases with a nitrogenous group as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	77326	androstane receptor agonist	agonist	?	?	?	?
+chebi	63674	EC 2.6.1.19 (4-aminobutyrate--2-oxoglutarate transaminase) inhibitor	inhibitor	?	?	?	?
+chebi	64955	EC 3.2.1.166 (heparanase) inhibitor	inhibitor	?	?	?	?
+chebi	35473	tranquilizing drug	drug	?	?	?	?
+chebi	78928	EC 3.6.1.3 (adenosinetriphosphatase) inhibitor	inhibitor	?	?	?	?
+chebi	91139	elastin-laminin receptor agonist	agonist	?	?	?	?
+chebi	35841	uricosuric drug	drug	?	?	?	?
+chebi	77105	EC 1.10.2.* (oxidoreductase acting on diphenols and related substances as donors with a cytochrome as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	85012	thrombopoietin receptor agonist	agonist	?	hgnc	7217	MPL
+chebi	78691	EC 2.3.1.97 (glycylpeptide N-tetradecanoyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	76760	EC 3.1.* (ester hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	76860	EC 1.3.3.* (oxidoreductase acting on donor CH-CH group, oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	77024	EC 3.1.3.41 (4-nitrophenylphosphatase) inhibitor	inhibitor	?	?	?	?
+chebi	37733	EC 3.1.1.8 (cholinesterase) inhibitor	inhibitor	?	?	?	?
+chebi	76740	EC 1.13.* [oxidoreductase acting on single donors with incorporation of molecular oxygen (oxygenases)] inhibitor	inhibitor	?	?	?	?
+chebi	76718	EC 4.99.* (miscellaneous lyase) inhibitor	inhibitor	?	?	?	?
+chebi	138014	EC 3.4.22.56 (caspase-3) inhibitor	inhibitor	?	?	?	?
+chebi	76681	EC 2.10.* (Mo- or W-containing group transferase) inhibitor	inhibitor	?	?	?	?
+chebi	73214	EC 3.6.3.14 (H(+)-transporting two-sector ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	47868	photosensitizing agent	agent	?	?	?	?
+chebi	76827	EC 6.5.1.* (DNA/RNA repair enzymes) inhibitor	inhibitor	?	?	?	?
+chebi	61016	angiotensin receptor antagonist	antagonist	?	?	?	?
+chebi	136651	S100 calcium-binding protein B inhibitor	inhibitor	?	hgnc	10500	S100B
+chebi	35842	antirheumatic drug	drug	?	?	?	?
+chebi	76815	EC 2.7.7.* (nucleotidyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	50469	EC 3.1.1.4 (phospholipase A2) inhibitor	inhibitor	?	?	?	?
+chebi	67079	anti-inflammatory agent	agent	?	?	?	?
+chebi	23924	enzyme inhibitor	inhibitor	?	?	?	?
+chebi	36053	acaricide drug	drug	?	chebi	22153	acaricide
+chebi	67137	NMR shift reagent	agent	?	?	?	?
+chebi	84012	EC 4.2.1.94 (scytalone dehydratase) inhibitor	inhibitor	?	?	?	?
+chebi	79392	EC 6.1.1.2 (tryptophan--tRNA ligase) inhibitor	inhibitor	?	?	?	?
+chebi	61951	microtubule-destabilising agent	agent	?	?	?	?
+chebi	65023	anti-asthmatic agent	agent	?	?	?	?
+chebi	63562	glucocorticoid receptor agonist	agonist	?	hgnc	7978	NR3C1
+chebi	76858	EC 1.3.98.* (oxidoreductase acting on donor CH-CH group, with other, known, acceptors) inhibitor	inhibitor	?	?	?	?
+chebi	91214	macrophage migration inhibitory factor inhibitor	inhibitor	?	hgnc	7097	MIF
+chebi	5924	EC 3.4.21.* (serine endopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	76769	EC 3.10.* (hydrolases acting on S-N bonds) inhibitor	inhibitor	?	?	?	?
+chebi	83757	EC 2.4.1.231 [alpha,alpha-trehalose phosphorylase (configuration-retaining)] inhibitor	inhibitor	?	?	?	?
+chebi	37416	EC 2.7.7.6 (RNA polymerase) inhibitor	inhibitor	?	?	?	?
+chebi	51039	dopamine uptake inhibitor	inhibitor	?	go	0090494	dopamine uptake
+chebi	138952	EC 2.4.2.14 (amidophosphoribosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	38497	respiratory-chain inhibitor	inhibitor	?	go	0070469	respirasome
+chebi	133878	neuropeptide Y receptor antagonist	antagonist	?	fplx	NPYR	NPYR
+chebi	67072	cannabinoid receptor agonist	agonist	?	mesh	D043882	Receptors, Cannabinoid
+chebi	78016	food gelling agent	agent	?	?	?	?
+chebi	78444	EC 3.1.1.1 (carboxylesterase) inhibitor	inhibitor	?	?	?	?
+chebi	35476	antipsychotic agent	agent	?	?	?	?
+chebi	77654	EC 1.1.1.267 (1-deoxy-D-xylulose-5-phosphate reductoisomerase) inhibitor	inhibitor	?	?	?	?
+chebi	37699	protein kinase inhibitor	inhibitor	?	mesh	D011494	Protein Kinases
+chebi	64670	EC 1.8.1.9 (thioredoxin reductase) inhibitor	inhibitor	?	?	?	?
+chebi	77972	food glazing agent	agent	?	?	?	?
+chebi	38637	tyrosine kinase inhibitor	inhibitor	?	mesh	D011505	Protein-Tyrosine Kinases
+chebi	90744	retinoic acid receptor gamma antagonist	antagonist	?	hgnc	9866	RARG
+chebi	90744	retinoic acid receptor gamma antagonist	antagonist	?	mesh	C082926	retinoic acid receptor gamma
+chebi	77884	EC 1.14.13.70 (sterol 14alpha-demethylase) inhibitor	inhibitor	?	?	?	?
+chebi	140701	secreted frizzled-related protein 1 inhibitor	inhibitor	?	hgnc	10776	SFRP1
+chebi	77965	food anticaking agent	agent	?	?	?	?
+chebi	70998	G-protein-coupled receptor agonist	agonist	?	?	?	?
+chebi	63330	sodium-dependent Pi-transporter inhibitor	inhibitor	?	?	?	?
+chebi	77783	EC 1.14.13.67 (quinine 3-monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	78622	EC 2.7.11.31 \{[hydroxymethylglutaryl-CoA reductase (NADPH)] kinase\} inhibitor	inhibitor	?	?	?	?
+chebi	67231	EC 3.2.1.48 (sucrose alpha-glucosidase) inhibitor	inhibitor	?	?	?	?
+chebi	37336	radioactive imaging agent	agent	?	?	?	?
+chebi	140061	TRPV4 agonist	agonist	?	hgnc	18083	TRPV4
+chebi	133811	EC 2.4.1.17 (glucuronosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	144997	sphingosine-1-phosphate receptor 3 antagonist	antagonist	?	hgnc	3167	S1PR3
+chebi	37956	histamine antagonist	antagonist	?	chebi	18295	histamine
+chebi	37956	histamine antagonist	antagonist	?	chebi	58432	histaminium
+chebi	59321	EC 4.1.1.28 (aromatic-L-amino-acid decarboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	73413	cannabinoid receptor antagonist	antagonist	?	mesh	D043882	Receptors, Cannabinoid
+chebi	65057	adenosine A1 receptor agonist	agonist	?	hgnc	262	ADORA1
+chebi	60258	EC 3.4.* (hydrolases acting on peptide bond) inhibitor	inhibitor	?	?	?	?
+chebi	134083	hypoxia-inducible factor pathway activator	activator	?	?	?	?
+chebi	139155	melanin-concentrating hormone receptor antagonist	antagonist	?	mesh	C092274	melanin-concentrating hormone receptor
+chebi	73189	brassinosteroid biosynthesis inhibitor	inhibitor	?	go	0016132	brassinosteroid biosynthetic process
+chebi	83317	sterol biosynthesis inhibitor	inhibitor	?	go	0016126	sterol biosynthetic process
+chebi	51267	swelling agent	agent	?	?	?	?
+chebi	70817	EC 1.2.1.12 [glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)] inhibitor	inhibitor	?	?	?	?
+chebi	76861	EC 1.4.3.* (oxidoreductase acting on donor CH-NH2 group, oxygen as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	76852	EC 1.2.1.* (oxidoreductase acting on donor aldehyde/oxo group with NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	39456	antiglaucoma drug	drug	?	?	?	?
+chebi	85046	skin lightening agent	agent	?	?	?	?
+chebi	49167	anti-asthmatic drug	drug	?	?	?	?
+chebi	37335	MRI contrast agent	agent	?	?	?	?
+chebi	76770	EC 3.11.* (hydrolases acting on C-P bonds) inhibitor	inhibitor	?	?	?	?
+chebi	131359	adenosine A2B receptor agonist	agonist	?	hgnc	264	ADORA2B
+chebi	71031	orphan drug	drug	?	mesh	D054540	Child, Orphaned
+chebi	71168	HIV-1 maturation inhibitor	inhibitor	?	?	?	?
+chebi	50183	P450 inhibitor	inhibitor	?	?	?	?
+chebi	75190	EC 5.4.3.2 (lysine 2,3-aminomutase) inhibitor	inhibitor	?	?	?	?
+chebi	73334	thyroid hormone agonist	agonist	?	chebi	60311	thyroid hormone
+chebi	63936	alpha1B-adrenoceptor antagonist	antagonist	?	hgnc	278	ADRA1B
+chebi	90691	EC 5.3.1.1 (triose-phosphate isomerase) inhibitor	inhibitor	?	?	?	?
+chebi	51451	endothelin receptor antagonist	antagonist	?	fplx	EDNR	EDNR
+chebi	51451	endothelin receptor antagonist	antagonist	?	mesh	D017466	Receptors, Endothelin
+chebi	60186	EC 3.6.3.8 (Ca(2+)-transporting ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	36044	antiviral drug	drug	?	chebi	22587	antiviral agent
+chebi	64926	serine protease inhibitor	inhibitor	?	mesh	D057057	Serine Proteases
+chebi	73181	EC 1.11.1.11 (L-ascorbate peroxidase) inhibitor	inhibitor	?	?	?	?
+chebi	140921	Hedgehog signaling pathway inhibitor	inhibitor	?	go	0007224	smoothened signaling pathway
+chebi	138168	neuropeptide Y2 receptor agonist	agonist	?	mesh	C095889	neuropeptide Y2 receptor
+chebi	63156	EC 1.1.3.13 (alcohol oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	139339	EC 1.14.17.1 (dopamine beta-monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	78927	EC 3.6.1.* (hydrolases acting on acid anhydrides in P-containing anhydrides) inhibitor	inhibitor	?	?	?	?
+chebi	59997	EC 1.14.18.1 (tyrosinase) inhibitor	inhibitor	?	?	?	?
+chebi	77103	EC 1.3.5.2 [dihydroorotate dehydrogenase (quinone)] inhibitor	inhibitor	?	?	?	?
+chebi	90847	inverse agonist	agonist	?	?	?	?
+chebi	85113	EC 2.7.11.12 (cGMP-dependent protein kinase) inhibitor	inhibitor	?	?	?	?
+chebi	76977	corticotropin-releasing factor receptor antagonist	antagonist	?	?	?	?
+chebi	148436	nitrification inhibitor	inhibitor	?	mesh	D058465	Nitrification
+chebi	76828	EC 5.1.1.* (racemases acting on amino acids and derivatives) inhibitor	inhibitor	?	?	?	?
+chebi	64155	H4-receptor agonist	agonist	?	?	?	?
+chebi	23891	ecdysone antagonists	antagonists	?	chebi	16688	ecdysone
+chebi	77020	EC 1.10.99.2 [ribosyldihydronicotinamide dehydrogenase (quinone)] inhibitor	inhibitor	?	?	?	?
+chebi	76845	EC 1.14.18.* (oxidoreductase acting on paired donors, miscellaneous compound as one donor, incorporating 1 atom of oxygen) inhibitor	inhibitor	?	?	?	?
+chebi	26089	photosystem-II inhibitor	inhibitor	?	go	0009523	photosystem II
+chebi	60605	opioid receptor antagonist	antagonist	?	mesh	D011957	Receptors, Opioid
+chebi	59897	EC 2.7.7.49 (RNA-directed DNA polymerase) inhibitor	inhibitor	?	?	?	?
+chebi	78760	EC 2.7.1.91 (sphingosine kinase) inhibitor	inhibitor	?	?	?	?
+chebi	50684	cross-linking reagent	agent	?	?	?	?
+chebi	38317	EC 1.13.11.27 (4-hydroxyphenylpyruvate dioxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	64018	protein kinase C agonist	agonist	?	fplx	PKC	PKC
+chebi	55350	neurokinin-1 receptor antagonist	antagonist	?	hgnc	11526	TACR1
+chebi	77102	EC 1.3.5.* (oxidoreductase acting on CH-CH of donor with a quinone or related compound as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	133190	fatty acid oxidation inhibitor	inhibitor	?	go	0019395	fatty acid oxidation
+chebi	82973	EC 3.4.24.11 (neprilysin) inhibitor	inhibitor	?	?	?	?
+chebi	76771	EC 3.12.* (hydrolases acting on S-S bonds) inhibitor	inhibitor	?	?	?	?
+chebi	64996	EC 1.13.11.33 (arachidonate 15-lipoxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	75380	EC 1.11.1.6 (catalase) inhibitor	inhibitor	?	?	?	?
+chebi	67198	retinoic acid receptor agonist	agonist	?	fplx	RAR	RAR
+chebi	77161	Toll-like receptor 2 agonist	agonist	?	hgnc	11848	TLR2
+chebi	65232	EC 3.4.21.5 (thrombin) inhibitor	inhibitor	?	?	?	?
+chebi	82821	EC 3.4.22.53 (calpain-2) inhibitor	inhibitor	?	?	?	?
+chebi	150006	SERCA activator	activator	?	fplx	SERCA	SERCA
+chebi	139055	PERK inhibitor	inhibitor	?	hgnc	3255	EIF2AK3
+chebi	139055	PERK inhibitor	inhibitor	?	chebi	17300	tetrachloroethene
+chebi	156297	EC 3.4.21.75 (furin)inhibitor	inhibitor	?	?	?	?
+chebi	72298	MTP inhibitor	inhibitor	?	hgnc	7467	MTTP
+chebi	145515	GABAA receptor antagonist	antagonist	?	fplx	GABR	GABR
+chebi	145515	GABAA receptor antagonist	antagonist	?	mesh	D011963	Receptors, GABA-A
+chebi	64943	EC 3.4.21.1 (chymotrypsin) inhibitor	inhibitor	?	?	?	?
+chebi	138381	RhoC inhibitor	inhibitor	?	hgnc	669	RHOC
+chebi	64152	cysteine protease inhibitor	inhibitor	?	mesh	D057056	Cysteine Proteases
+chebi	75298	histamine releasing agent	agent	?	?	?	?
+chebi	35640	adrenergic uptake inhibitor	inhibitor	?	?	?	?
+chebi	50903	carcinogenic agent	agent	?	?	?	?
+chebi	134109	EC 3.5.1.108 (UDP-3-O-acyl-N-acetylglucosamine deacetylase) inhibitor	inhibitor	?	?	?	?
+chebi	85050	EC 1.10.3.2 (laccase) inhibitor	inhibitor	?	?	?	?
+chebi	35660	HIV protease inhibitor	inhibitor	?	mesh	D016333	HIV Protease
+chebi	75174	EC 2.5.1.21 (squalene synthase) inhibitor	inhibitor	?	?	?	?
+chebi	63794	retinoid X receptor agonist	agonist	?	fplx	RXR	RXR
+chebi	37153	EC 3.1.3.16 (phosphoprotein phosphatase) inhibitor	inhibitor	?	?	?	?
+chebi	62915	sialyltransferase inhibitor	inhibitor	?	?	?	?
+chebi	50685	antitrichomonal drug	drug	?	?	?	?
+chebi	73191	abscisic acid receptor agonist	agonist	?	?	?	?
+chebi	66981	ophthalmology drug	drug	?	mesh	D009885	Ophthalmology
+chebi	37957	histaminergic drug	drug	?	?	?	?
+chebi	83296	orexin receptor antagonist	antagonist	?	?	?	?
+chebi	64371	neurotransmitter transporter modulator	modulator	?	?	?	?
+chebi	140982	neuropeptide FF receptor antagonist	antagonist	?	fplx	NPFFR	NPFFR
+chebi	140982	neuropeptide FF receptor antagonist	antagonist	?	mesh	C083929	neuropeptide FF receptor
+chebi	77941	EC 3.5.1.4 (amidase) inhibitor	inhibitor	?	?	?	?
+chebi	76862	EC 1.4.4.* (oxidoreductase acting on donor CH-NH2 group, a disulfide as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	77108	EC 1.1.1.141 [15-hydroxyprostaglandin dehydrogenase (NAD(+))] inhibitor	inhibitor	?	?	?	?
+chebi	60646	chiral reagent	agent	?	?	?	?
+chebi	78248	vitamin B1 antagonist	antagonist	?	chebi	33283	thiamine(1+) chloride
+chebi	78248	vitamin B1 antagonist	antagonist	?	chebi	18385	thiamine(1+)
+chebi	39000	sodium channel modulator	modulator	?	fplx	Sodium_channels	Sodium_channels
+chebi	39000	sodium channel modulator	modulator	?	mesh	D015222	Sodium Channels
+chebi	142790	EC 3.3.2.10 (soluble epoxide hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	23100	chitin synthesis inhibitor	inhibitor	?	go	0006031	chitin biosynthetic process
+chebi	90708	retinoic acid receptor modulator	modulator	?	fplx	RAR	RAR
+chebi	67230	EC 3.2.1.45 (glucosylceramidase) inhibitor	inhibitor	?	?	?	?
+chebi	48539	alpha-adrenergic drug	drug	?	?	?	?
+chebi	59517	DNA synthesis inhibitor	inhibitor	?	go	0071897	DNA biosynthetic process
+chebi	72774	EC 1.3.99.29 [phytoene desaturase (zeta-carotene-forming)] inhibitor	inhibitor	?	?	?	?
+chebi	133016	5-hydroxytryptamine 2A receptor inverse agonist	agonist	?	?	?	?
+chebi	133106	chemical hybridisation agent	agent	?	?	?	?
+chebi	131787	dopamine receptor D2 antagonist	antagonist	?	hgnc	3023	DRD2
+chebi	37337	ultrasound contrast agent	agent	?	?	?	?
+chebi	131961	EC 1.13.11.11 (tryptophan 2,3-dioxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	87786	signal transducer and activator of transcription 5 protein inhibitor	inhibitor	?	?	?	?
+chebi	139338	EC 1.14.17.* (oxidoreductase acting on paired donors, with incorporation or reduction of molecular oxygen and with reduced ascorbate as one donor, and incorporation of one atom of oxygen) inhibitor	inhibitor	?	?	?	?
+chebi	76762	EC 3.3.* (ether hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	77747	EC 3.6.3.1 (phospholipid-translocating ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	76731	EC 1.5.* (oxidoreductase acting on donor CH-NH group) inhibitor	inhibitor	?	?	?	?
+chebi	76692	EC 5.1.* (racemase/epimerase) inhibitor	inhibitor	?	?	?	?
+chebi	90710	receptor modulator	modulator	?	go	0038023	signaling receptor activity
+chebi	35472	anti-inflammatory drug	drug	?	?	?	?
+chebi	137431	antihypotensive agent	agent	?	?	?	?
+chebi	132608	TRPM4 channel inhibitor	inhibitor	?	?	?	?
+chebi	144455	EC 3.1.1.64 (retinoid isomerohydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	65239	EC 3.2.1.114 (mannosyl-oligosaccharide 1,3-1,6-alpha-mannosidase) inhibitor	inhibitor	?	?	?	?
+chebi	83035	EC 4.1.2.* (aldehyde-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	71033	carbamylphosphate synthetase I activator	activator	?	go	0004087	carbamoyl-phosphate synthase (ammonia) activity
+chebi	35664	EC 1.1.1.34/EC 1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitor	inhibitor	?	?	?	?
+chebi	76711	EC 4.1.* (C-C lyase) inhibitor	inhibitor	?	?	?	?
+chebi	83734	sterol demethylation inhibitor	inhibitor	?	?	?	?
+chebi	48001	protein synthesis inhibitor	inhibitor	?	go	0006412	translation
+chebi	48878	nicotinic antagonist	antagonist	?	?	?	?
+chebi	79050	EC 3.4.22.52 (calpain-1) inhibitor	inhibitor	?	?	?	?
+chebi	51060	hormone agonist	agonist	?	chebi	24621	hormone
+chebi	73361	methionine aminopeptidase 2 inhibitor	inhibitor	?	mesh	C106541	methionine aminopeptidase 2
+chebi	73361	methionine aminopeptidase 2 inhibitor	inhibitor	?	hgnc	16672	METAP2
+chebi	38456	ecdysone agonist	agonist	?	chebi	16688	ecdysone
+chebi	76874	EC 2.1.2.* (hydroxymethyl-, formyl- and related transferases) inhibitor	inhibitor	?	?	?	?
+chebi	76838	EC 1.14.14.* (oxidoreductase acting on paired donors, incorporating of 1 atom of oxygen, with reduced flavin or flavoprotein as one donor) inhibitor	inhibitor	?	?	?	?
+chebi	90689	EC 5.3.1.* (intramolecular oxidoreductase interconverting aldoses and ketoses) inhibitor	inhibitor	?	?	?	?
+chebi	76708	EC 6.6.* (N-metal bond-forming ligase) inhibitor	inhibitor	?	?	?	?
+chebi	68844	phosphodiesterase IV inhibitor	inhibitor	?	fplx	PDE4	PDE4
+chebi	50427	platelet aggregation inhibitor	inhibitor	?	go	0070527	platelet aggregation
+chebi	145807	forkhead box protein O1 inhibitor	inhibitor	?	hgnc	3819	FOXO1
+chebi	75429	EC 1.4.4.2 [glycine dehydrogenase (aminomethyl-transferring)] inhibitor	inhibitor	?	?	?	?
+chebi	63157	EC 4.2.1.22 (cystathionine beta-synthase) inhibitor	inhibitor	?	?	?	?
+chebi	67268	HIV-1 integrase inhibitor	inhibitor	?	mesh	C514801	p31 integrase protein, Human immunodeficiency virus 1
+chebi	76617	EC 2.7.10.2 (non-specific protein-tyrosine kinase) inhibitor	inhibitor	?	?	?	?
+chebi	51061	hormone receptor modulator	modulator	?	?	?	?
+chebi	37890	alpha-adrenergic antagonist	antagonist	?	?	?	?
+chebi	138977	quorum sensing inhibitor	inhibitor	?	go	0009372	quorum sensing
+chebi	68640	EC 1.14.99.9 (steroid 17alpha-monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	65207	vascular endothelial growth factor receptor antagonist	antagonist	?	mesh	D040262	Receptors, Vascular Endothelial Growth Factor
+chebi	77973	antifoaming agent	agent	?	?	?	?
+chebi	72311	glucagon-like peptide-2 receptor agonist	agonist	?	hgnc	4325	GLP2R
+chebi	35475	non-steroidal anti-inflammatory drug	drug	?	?	?	?
+chebi	83612	hepatic steatosis inducing agent	agent	?	?	?	?
+chebi	85424	glycine transporter 2 inhibitor	inhibitor	?	?	?	?
+chebi	64105	protein kinase G agonist	agonist	?	fplx	PRKG	PRKG
+chebi	76938	EC 3.6.4.* (hydrolases acting on ATP; involved in cellular and subcellular movement) inhibitor	inhibitor	?	?	?	?
+chebi	64102	AMPA receptor agonist	agonist	?	fplx	GRIA	GRIA
+chebi	64102	AMPA receptor agonist	agonist	?	go	0032281	AMPA glutamate receptor complex
+chebi	73360	EC 3.4.11.18 (methionyl aminopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	77307	cardioprotective agent	agent	?	?	?	?
+chebi	50909	nephrotoxic agent	agent	?	?	?	?
+chebi	77971	raising agent	agent	?	?	?	?
+chebi	64953	anti-HSV-1 agent	agent	?	?	?	?
+chebi	140378	EC 1.1.1.37 (malate dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	78024	EC 4.1.1.50 (adenosylmethionine decarboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	77960	food firming agent	agent	?	?	?	?
+chebi	145947	antiatherosclerotic agent	agent	?	?	?	?
+chebi	63158	EC 2.3.1.21 (carnitine O-palmitoyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	64133	EC 2.5.1.58 (protein farnesyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	48876	muscarinic antagonist	antagonist	?	?	?	?
+chebi	64932	cathepsin B inhibitor	inhibitor	?	hgnc	2527	CTSB
+chebi	64932	cathepsin B inhibitor	inhibitor	?	mesh	D002401	Cathepsin B
+chebi	64589	glycine receptor agonist	agonist	?	mesh	D018009	Receptors, Glycine
+chebi	76655	EC 2.1.* (C1-transferase) inhibitor	inhibitor	?	?	?	?
+chebi	36050	antitreponemal drug	drug	?	?	?	?
+chebi	138416	angiotensin receptor agonist	agonist	?	?	?	?
+chebi	76022	soluble guanylate cyclase activator	activator	?	fplx	SGC	SGC
+chebi	76661	EC 2.3.* (acyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	76707	EC 6.2.* (C-S bond-forming ligase) inhibitor	inhibitor	?	?	?	?
+chebi	61908	EC 1.14.13.39 (nitric oxide synthase) inhibitor	inhibitor	?	?	?	?
+chebi	35444	antinematodal drug	drug	?	?	?	?
+chebi	76939	EC 3.6.4.10 (non-chaperonin molecular chaperone ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	50103	excitatory amino acid agonist	agonist	?	mesh	D018846	Excitatory Amino Acids
+chebi	85425	glycine transporter inhibitor	inhibitor	?	mesh	D050487	Glycine Plasma Membrane Transport Proteins
+chebi	91081	purinergic receptor P2X antagonist	antagonist	?	?	?	?
+chebi	76737	EC 1.10.* (oxidoreductase acting on diphenols and related substances as donors) inhibitor	inhibitor	?	?	?	?
+chebi	64411	EC 2.5.1.29 (geranylgeranyl diphosphate synthase) inhibitor	inhibitor	?	?	?	?
+chebi	70722	EC 6.4.1.2 (acetyl-CoA carboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	24319	EC 6.3.1.2 (glutamate--ammonia ligase) inhibitor	inhibitor	?	?	?	?
+chebi	61966	metabotropic glutamate receptor agonist	agonist	?	fplx	GRM	GRM
+chebi	59739	electrophilic reagent	agent	?	?	?	?
+chebi	75358	curing agent	agent	?	?	?	?
+chebi	76665	EC 2.6.* (nitrogenous group transferase) inhibitor	inhibitor	?	?	?	?
+chebi	59745	chromatographic reagent	agent	?	?	?	?
+chebi	49159	leukotriene antagonist	antagonist	?	chebi	25029	leukotriene
+chebi	76848	EC 1.17.4.* (oxidoreductase acting on CH or CH2 with a disulfide as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	23529	cytochrome-b6f complex inhibitor	inhibitor	?	go	0009512	cytochrome b6f complex
+chebi	71551	EC 3.5.1.23 (ceramidase) inhibitor	inhibitor	?	?	?	?
+chebi	35457	EC 3.4.15.1 (peptidyl-dipeptidase A) inhibitor	inhibitor	?	?	?	?
+chebi	60280	EC 3.5.1.2 (glutaminase) inhibitor	inhibitor	?	?	?	?
+chebi	38323	cholinergic drug	drug	?	?	?	?
+chebi	47958	nicotinic acetylcholine receptor agonist	agonist	?	fplx	CHRN	CHRN
+chebi	76791	EC 3.1.27.* (endoribonucleases producing other than 5'-phosphomonoesters) inhibitor	inhibitor	?	?	?	?
+chebi	144064	EC 1.14.15.6 cholesterol monooxygenase (side-chain-cleaving) inhibitor	inhibitor	?	?	?	?
+chebi	70822	EC 3.4.22.2 (papain) inhibitor	inhibitor	?	?	?	?
+chebi	48406	EC 2.1.1.6 (catechol O-methyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	35487	EC 1.2.1.3 [aldehyde dehydrogenase (NAD(+))] inhibitor	inhibitor	?	?	?	?
+chebi	76807	EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	65056	EC 3.1.3.11 (fructose-bisphosphatase) inhibitor	inhibitor	?	?	?	?
+chebi	64947	anti-HIV-1 agent	agent	?	?	?	?
+chebi	166909	neuropilin receptor antagonist	antagonist	?	?	?	?
+chebi	90713	retinoic acid receptor alpha antagonist	antagonist	?	hgnc	9864	RARA
+chebi	90713	retinoic acid receptor alpha antagonist	antagonist	?	mesh	D000072482	Retinoic Acid Receptor alpha
+chebi	73618	spectrophotometric reagent	agent	?	?	?	?
+chebi	77022	EC 2.3.3.* (acyltransferase converting acyl to alkyl group on transfer) inhibitor	inhibitor	?	?	?	?
+chebi	50855	antiatherogenic agent	agent	?	?	?	?
+chebi	48706	antagonist	antagonist	?	?	?	?
+chebi	53659	EC 1.4.3.22 (diamine oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	73416	CB1 receptor antagonist	antagonist	?	mesh	D043884	Receptor, Cannabinoid, CB1
+chebi	83799	nonstructural protein 5A inhibitor	inhibitor	?	chebi	81643	Non-structural protein 5A
+chebi	88285	EC 2.7.12.* [dual-specificity kinases (those acting on Ser/Thr and Tyr residues)] inhibitor	inhibitor	?	?	?	?
+chebi	76677	EC 2.9.* (Se-containing group transferase) inhibitor	inhibitor	?	?	?	?
+chebi	87183	STAT3 inhibitor	inhibitor	?	hgnc	11364	STAT3
+chebi	65053	EC 4.1.1.19 (arginine decarboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	35442	antiparasitic agent	agent	?	?	?	?
+chebi	86010	EC 1.4.1.3 \{glutamate dehydrogenase [NAD(P)(+)]\} inhibitor	inhibitor	?	?	?	?
+chebi	35497	androgen antagonist	antagonist	?	chebi	50113	androgen
+chebi	63923	sclerotherapy agent	agent	?	mesh	D015911	Sclerotherapy
+chebi	63726	neuroprotective agent	agent	?	?	?	?
+chebi	72483	vesicular glutamate transport inhibitor	inhibitor	?	?	?	?
+chebi	37887	adrenergic antagonist	antagonist	?	?	?	?
+chebi	49020	hormone antagonist	antagonist	?	chebi	24621	hormone
+chebi	35625	EC 3.5.2.6 (beta-lactamase) inhibitor	inhibitor	?	?	?	?
+chebi	50248	hematologic agent	agent	?	?	?	?
+chebi	62089	EC 1.4.7.1 [glutamate synthase (ferredoxin)] inhibitor	inhibitor	?	?	?	?
+chebi	64951	anti-HBV agent	agent	?	?	?	?
+chebi	76726	EC 1.1.* (oxidoreductase acting on donor CH-OH group) inhibitor	inhibitor	?	?	?	?
+chebi	76831	EC 4.4.1.* (C-S lyase) inhibitor	inhibitor	?	?	?	?
+chebi	76832	EC 4.3.1.* (ammonia-lyase) inhibitor	inhibitor	?	?	?	?
+chebi	76766	EC 3.7.* (hydrolases acting on C-C bonds) inhibitor	inhibitor	?	?	?	?
+chebi	64571	NMDA receptor agonist	agonist	?	go	0004972	NMDA glutamate receptor activity
+chebi	70781	PPAR modulator	modulator	?	fplx	PPAR	PPAR
+chebi	70781	PPAR modulator	modulator	?	hgnc	9232	PPARA
+chebi	138887	prostaglandin receptor antagonist	antagonist	?	mesh	D011982	Receptors, Prostaglandin
+chebi	68543	pyrimidine synthesis inhibitor	inhibitor	?	?	?	?
+chebi	78383	EC 5.1.99.* (racemases acting on other compounds) inhibitor	inhibitor	?	?	?	?
+chebi	131844	EC 1.14.11.1 (gamma-butyrobetaine dioxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	83609	steatosis inducing agent	agent	?	?	?	?
+chebi	71014	AMPA receptor antagonist	antagonist	?	fplx	GRIA	GRIA
+chebi	71014	AMPA receptor antagonist	antagonist	?	go	0032281	AMPA glutamate receptor complex
+chebi	70774	capsaicin receptor antagonist	antagonist	?	hgnc	12716	TRPV1
+chebi	76907	EC 4.2.1.* (hydro-lyases) inhibitor	inhibitor	?	?	?	?
+chebi	138928	EC 6.3.5.2 [GMP synthase (glutamine-hydrolysing)] inhibitor	inhibitor	?	?	?	?
+chebi	50827	antiparathyroid drug	drug	?	?	?	?
+chebi	33295	diagnostic agent	agent	?	?	?	?
+chebi	76811	EC 3.1.4.12 (sphingomyelin phosphodiesterase) inhibitor	inhibitor	?	?	?	?
+chebi	90767	eukaryotic translation elongation factor 1alpha 1 inhibitor	inhibitor	?	?	?	?
+chebi	52424	EC 3.2.1.* (glycosidase) inhibitor	inhibitor	?	?	?	?
+chebi	36043	antimicrobial drug	drug	?	chebi	33281	antimicrobial agent
+chebi	35684	antiplatyhelmintic drug	drug	?	?	?	?
+chebi	76768	EC 3.9.* (hydrolases acting on P-N bonds) inhibitor	inhibitor	?	?	?	?
+chebi	167165	kappa-opioid receptor antagonist	antagonist	?	mesh	D017473	Receptors, Opioid, kappa
+chebi	78004	food bulking agent	agent	?	?	?	?
+chebi	26087	photosynthetic electron-transport chain inhibitor	inhibitor	?	go	0009767	photosynthetic electron transport chain
+chebi	53142	P2Y2 receptor agonist	agonist	?	?	?	?
+chebi	83072	EC 1.3.5.1 [succinate dehydrogenase (quinone)] inhibitor	inhibitor	?	?	?	?
+chebi	73668	peptide coupling reagent	agent	?	?	?	?
+chebi	35554	cardiovascular drug	drug	?	?	?	?
+chebi	67239	EC 3.2.1.20 (alpha-glucosidase) inhibitor	inhibitor	?	?	?	?
+chebi	55322	mu-opioid receptor agonist	agonist	?	hgnc	8156	OPRM1
+chebi	35569	alpha-adrenergic agonist	agonist	?	?	?	?
+chebi	78681	tropomyosin-related kinase B receptor antagonist	antagonist	?	?	?	?
+chebi	78756	EC 2.5.1.6 (methionine adenosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	78548	adenylate cyclase agonist	agonist	?	fplx	ADCY	ADCY
+chebi	50643	EC 2.5.1.1 (dimethylallyltranstransferase) inhibitor	inhibitor	?	?	?	?
+chebi	50505	sweetening agent	agent	?	?	?	?
+chebi	48279	serotonergic antagonist	antagonist	?	?	?	?
+chebi	50184	ion transport inhibitor	inhibitor	?	go	0006811	ion transport
+chebi	138390	EC 1.1.1.159 (7alpha-hydroxysteroid dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	59680	vasopressin receptor antagonist	antagonist	?	mesh	D017483	Receptors, Vasopressin
+chebi	145814	EC 1.2.1.12 (aspartate-semialdehyde dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	76715	EC 4.5.* (C-halide lyase) inhibitor	inhibitor	?	?	?	?
+chebi	147290	EC 3.4.17* (metallocarboxypeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	76772	EC 3.13.* (hydrolases acting on C-S bonds) inhibitor	inhibitor	?	?	?	?
+chebi	37700	EC 2.7.11.13 (protein kinase C) inhibitor	inhibitor	?	?	?	?
+chebi	166822	EC 3.4.23.15 (renin) inhibitor	inhibitor	?	?	?	?
+chebi	62608	EC 4.2.1.3 (aconitate hydratase) inhibitor	inhibitor	?	?	?	?
+chebi	77115	EC 2.1.1.122 [(S)-tetrahydroprotoberberine N-methyltransferase] inhibitor	inhibitor	?	?	?	?
+chebi	74518	anti-obesity agent	agent	?	?	?	?
+chebi	35678	histamine agonist	agonist	?	chebi	18295	histamine
+chebi	35678	histamine agonist	agonist	?	chebi	58432	histaminium
+chebi	76676	EC 2.8.* (S-containing group transferase) inhibitor	inhibitor	?	?	?	?
+chebi	76727	EC 1.2.* (oxidoreductase acting on donor aldehyde/oxo group) inhibitor	inhibitor	?	?	?	?
+chebi	77117	EC 3.5.5.* (hydrolase acting on C-N bonds in nitriles) inhibitor	inhibitor	?	?	?	?
+chebi	76773	EC 3.1.1.* (carboxylic ester hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	86966	EC 3.4.21.92 (endopeptidase Clp) inhibitor	inhibitor	?	?	?	?
+chebi	145410	EC 1.1.1.42 (isocitrate dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	78728	EC 1.3.1.72 (Delta(24)-sterol reductase) inhibitor	inhibitor	?	?	?	?
+chebi	76761	EC 3.2.* (glycosylase) inhibitor	inhibitor	?	?	?	?
+chebi	145425	EC 2.7.11.21 (polo kinase) inhibitor	inhibitor	?	?	?	?
+chebi	63721	EC 2.1.2.2 (phosphoribosylglycinamide formyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	75596	EC 5.* (isomerase) inhibitor	inhibitor	?	?	?	?
+chebi	71178	EC 2.1.1.4 (acetylserotonin O-methyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	78372	EC 3.1.1.5 (lysophospholipase) inhibitor	inhibitor	?	?	?	?
+chebi	73354	EC 2.7.3.2 (creatine kinase) inhibitor	inhibitor	?	?	?	?
+chebi	35856	lipoxygenase inhibitor	inhibitor	?	mesh	D008084	Lipoxygenase
+chebi	77019	EC 1.10.99.* (oxidoreductases acting on diphenols and related substances as donors, other acceptors) inhibitor	inhibitor	?	?	?	?
+chebi	50837	estrogen antagonist	antagonist	?	chebi	50114	estrogen
+chebi	50837	estrogen antagonist	antagonist	?	mesh	D004967	Estrogens
+chebi	139584	lysophosphatidic acid receptor 3 agonist	agonist	?	hgnc	14298	LPAR3
+chebi	65254	LRH-1 agonist	agonist	?	hgnc	7984	NR5A2
+chebi	65254	LRH-1 agonist	agonist	?	hgnc	8536	P2RX5
+chebi	63457	fibroblast growth factor receptor antagonist	antagonist	?	mesh	D017468	Receptors, Fibroblast Growth Factor
+chebi	50908	hepatotoxic agent	agent	?	?	?	?
+chebi	50513	mydriatic agent	agent	?	?	?	?
+chebi	76940	EC 3.4.21.4 (trypsin) inhibitor	inhibitor	?	?	?	?
+chebi	75835	anti-anaemic agent	agent	?	?	?	?
+chebi	35470	central nervous system drug	drug	?	mesh	D002490	Central Nervous System
+chebi	76916	hyperglycemic agent	agent	?	?	?	?
+chebi	78382	EC 5.1.3.* (racemases acting on carbohydrates and derivatives) inhibitor	inhibitor	?	?	?	?
+chebi	77781	EC 1.14.13.181 (13-deoxydaunorubicin hydroxylase) inhibitor	inhibitor	?	?	?	?
+chebi	85053	EC 2.7.11.31 \{[hydroxymethylglutaryl-CoA reductase (NADPH)] kinase\} activator	activator	?	?	?	?
+chebi	77425	EC 1.1.1.188 (prostaglandin-F synthase) inhibitor	inhibitor	?	?	?	?
+chebi	71554	PPARgamma agonist	agonist	?	hgnc	9236	PPARG
+chebi	63957	adenosine A1 receptor antagonist	antagonist	?	hgnc	262	ADORA1
+chebi	146223	ryanodine receptor antagonist	antagonist	?	mesh	D019837	Ryanodine Receptor Calcium Release Channel
+chebi	25355	mitochondrial respiratory-chain inhibitor	inhibitor	?	go	0005746	mitochondrial respirasome
+chebi	90285	EC 4.1.1.23 (orotidine-5'-phosphate decarboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	50268	GABA modulator	modulator	?	chebi	16865	gamma-aminobutyric acid
+chebi	76816	EC 2.7.8.* (transferases for other substituted phosphate groups) inhibitor	inhibitor	?	?	?	?
+chebi	76787	EC 3.4.11.* (aminopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	75598	EC 6.3.2.4 (D-alanine--D-alanine ligase) inhibitor	inhibitor	?	?	?	?
+chebi	60901	EC 2.5.1.9 (riboflavin synthase) inhibitor	inhibitor	?	?	?	?
+chebi	77089	EC 2.5.1.49 (O-acetylhomoserine aminocarboxypropyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	139074	LIM kinase inhibitor	inhibitor	?	mesh	D054461	Lim Kinases
+chebi	76841	EC 1.14.13.* (oxidoreductase acting on paired donors, incorporating 1 atom of oxygen, with NADH or NADPH as one donor) inhibitor	inhibitor	?	?	?	?
+chebi	35530	beta-adrenergic antagonist	antagonist	?	?	?	?
+chebi	50137	mu-opioid receptor antagonist	antagonist	?	hgnc	8156	OPRM1
+chebi	138953	EC 6.3.5.1 [NAD(+) synthase (glutamine-hydrolysing)] inhibitor	inhibitor	?	?	?	?
+chebi	78380	EC 3.5.4.1 (cytosine deaminase) inhibitor	inhibitor	?	?	?	?
+chebi	144387	EC 2.7.1.105 (6-phosphofructo-2-kinase) inhibitor	inhibitor	?	?	?	?
+chebi	49110	peripheral nervous system drug	drug	?	mesh	D017933	Peripheral Nervous System
+chebi	50629	cyclooxygenase 2 inhibitor	inhibitor	?	hgnc	9605	PTGS2
+chebi	59740	nucleophilic reagent	agent	?	?	?	?
+chebi	48278	serotonergic drug	drug	?	?	?	?
+chebi	110725	EC 2.1.1.8 (histamine N-methyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	35477	antimanic drug	drug	?	?	?	?
+chebi	86501	EC 1.14.13.97 (taurochenodeoxycholate 6alpha-hydroxylase) inhibitor	inhibitor	?	?	?	?
+chebi	63951	estrogen receptor agonist	agonist	?	hgnc	3467	ESR1
+chebi	76885	EC 3.4.23.* (aspartic endopeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	72768	aryl hydrocarbon receptor agonist	agonist	?	hgnc	348	AHR
+chebi	50423	EC 1.6.3.1. [NAD(P)H oxidase (H2O2-forming)] inhibitor	inhibitor	?	?	?	?
+chebi	90921	EC 1.8.5.4 (sulfide:quinone reductase) inhibitor	inhibitor	?	?	?	?
+chebi	131795	dopamine receptor D1 agonist	agonist	?	hgnc	3020	DRD1
+chebi	73296	cholecystokinin antagonist	antagonist	?	hgnc	1569	CCK
+chebi	141000	neuropeptide FF receptor agonist	agonist	?	fplx	NPFFR	NPFFR
+chebi	141000	neuropeptide FF receptor agonist	agonist	?	mesh	C083929	neuropeptide FF receptor
+chebi	71027	progesterone receptor modulator	modulator	?	hgnc	8910	PGR
+chebi	71027	progesterone receptor modulator	modulator	?	mesh	D011980	Receptors, Progesterone
+chebi	142184	5-hydroxytryptamine 2B receptor agonist	agonist	?	mesh	D044403	Receptor, Serotonin, 5-HT2B
+chebi	75282	ergosterol biosynthesis inhibitor	inhibitor	?	go	0006696	ergosterol biosynthetic process
+chebi	59683	antipruritic drug	drug	?	?	?	?
+chebi	79088	EC 3.4.24.35 (gelatinase B) inhibitor	inhibitor	?	?	?	?
+chebi	64406	EC 3.4.22.38 (cathepsin K) inhibitor	inhibitor	?	?	?	?
+chebi	131794	EC 2.7.11.17 (Ca(2+)/calmodulin-dependent protein kinase) inhibitor	inhibitor	?	?	?	?
+chebi	51237	Grignard reagent	agent	?	?	?	?
+chebi	50846	immunomodulator	modulator	?	?	?	?
+chebi	62872	EC 1.2.3.1 (aldehyde oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	139109	IP3 receptor agonist	agonist	?	chebi	131186	IP3 receptor antagonist
+chebi	50433	platelet glycoprotein-IIb/IIIa receptor antagonist	antagonist	?	?	?	?
+chebi	59886	HIV fusion inhibitor	inhibitor	?	?	?	?
+chebi	77194	EC 2.7.1.33 (pantothenate kinase) inhibitor	inhibitor	?	?	?	?
+chebi	20854	ATP synthase inhibitor	inhibitor	?	fplx	ATP_synthase	ATP_synthase
+chebi	91141	EC 1.1.5.3 (glycerol-3-phosphate dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	38999	GABA-gated chloride channel antagonist	antagonist	?	?	?	?
+chebi	77496	bradykinin receptor B2 agonist	agonist	?	hgnc	1030	BDKRB2
+chebi	131790	melatonin receptor antagonist	antagonist	?	mesh	D044094	Receptors, Melatonin
+chebi	143909	EC 2.7.1.40 (pyruvate kinase) inhibitor	inhibitor	?	?	?	?
+chebi	59285	EC 1.14.13.132 (squalene monooxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	50627	EC 3.2.1.1 (alpha-amylase) inhibitor	inhibitor	?	?	?	?
+chebi	76866	EC 1.6.5.* (oxidoreductase acting on NADH or NADPH with a quinone or similar as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	59672	EC 2.4.1.16 (chitin synthase) inhibitor	inhibitor	?	?	?	?
+chebi	133024	lymphocyte function-associated antigen-1 antagonist	antagonist	?	mesh	D016169	Lymphocyte Function-Associated Antigen-1
+chebi	78763	EC 2.7.11.18 (myosin-light-chain kinase) inhibitor	inhibitor	?	?	?	?
+chebi	90374	histone acetyltransferase activator	activator	?	mesh	D051548	Histone Acetyltransferases
+chebi	76926	EC 3.4.13.19 (membrane dipeptidase) inhibitor	inhibitor	?	?	?	?
+chebi	50689	reproductive control drug	drug	?	?	?	?
+chebi	48705	agonist	agonist	?	?	?	?
+chebi	48407	antiparkinson drug	drug	?	?	?	?
+chebi	70782	PPARalpha agonist	agonist	?	hgnc	9232	PPARA
+chebi	137566	EC 2.5.1.48 (cystathionine gamma-synthase) inhibitor	inhibitor	?	?	?	?
+chebi	51373	GABA agonist	agonist	?	chebi	16865	gamma-aminobutyric acid
+chebi	75595	EC 5.1.1.1 (alanine racemase) inhibitor	inhibitor	?	?	?	?
+chebi	71181	Sir2 inhibitor	inhibitor	?	go	0017136	NAD-dependent histone deacetylase activity
+chebi	76755	EC 1.98.* (enzymes using H2 as reductant) inhibitor	inhibitor	?	?	?	?
+chebi	82824	calpain inhibitor	inhibitor	?	fplx	CAPN	CAPN
+chebi	78009	Wiskott-Aldrich syndrome protein inhibitor	inhibitor	?	hgnc	12731	WAS
+chebi	144097	EC 1.4.3.2 (L-amino-acid oxidase) inhibitor	inhibitor	?	?	?	?
+chebi	35544	EC 1.14.99.1 (prostaglandin-endoperoxide synthase) inhibitor	inhibitor	?	?	?	?
+chebi	59864	depigmentation drug	drug	?	?	?	?
+chebi	76869	EC 1.8.1.* (oxidoreductase acting on sulfur group of donors, NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	91193	lysophosphatidic acid receptor antagonist	antagonist	?	mesh	D049368	Receptors, Lysophosphatidic Acid
+chebi	75047	B-Raf inhibitor	inhibitor	?	hgnc	1097	BRAF
+chebi	50185	fatty acid synthesis inhibitor	inhibitor	?	go	0006633	fatty acid biosynthetic process
+chebi	76738	EC 1.11.* (oxidoreductase acting on peroxide as donors) inhibitor	inhibitor	?	?	?	?
+chebi	50218	EC 3.1.4.* (phosphoric diester hydrolase) inhibitor	inhibitor	?	?	?	?
+chebi	53784	antispasmodic drug	drug	?	?	?	?
+chebi	90742	retinoic acid receptor beta agonist	agonist	?	hgnc	9865	RARB
+chebi	90742	retinoic acid receptor beta agonist	agonist	?	mesh	C082925	retinoic acid receptor beta
+chebi	49201	anti-ulcer drug	drug	?	?	?	?
+chebi	76662	EC 2.4.* (glycosyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	49323	contraceptive drug	drug	?	?	?	?
+chebi	22333	alkylating agent	agent	?	?	?	?
+chebi	86009	EC 1.4.1.* (oxidoreductase acting on donor CH-NH2 group; NAD(+) or NADP(+) as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	26088	photosystem-I inhibitor	inhibitor	?	go	0009522	photosystem I
+chebi	86327	antifungal drug	drug	?	chebi	35718	antifungal agent
+chebi	138380	RhoA inhibitor	inhibitor	?	hgnc	667	RHOA
+chebi	73417	CB2 receptor antagonist	antagonist	?	mesh	D043885	Receptor, Cannabinoid, CB2
+chebi	64954	anti-HSV-2 agent	agent	?	?	?	?
+chebi	76716	EC 4.6.* (P-O lyase) inhibitor	inhibitor	?	?	?	?
+chebi	65064	EC 2.1.1.79 (cyclopropane-fatty-acyl-phospholipid synthase) inhibitor	inhibitor	?	?	?	?
+chebi	77111	EC 2.1.1.116 [3'-hydroxy-N-methyl-(S)-coclaurine 4'-O-methyltransferase] inhibitor	inhibitor	?	?	?	?
+chebi	78058	food antifoaming agent	agent	?	?	?	?
+chebi	68542	EC 1.3.98.1 [dihydroorotate oxidase (fumarate)] inhibitor	inhibitor	?	?	?	?
+chebi	137401	capsaicin receptor agonist	agonist	?	hgnc	12716	TRPV1
+chebi	38324	cholinergic agonist	agonist	?	?	?	?
+chebi	149711	chemokine receptor 2 antagonist	antagonist	?	?	?	?
+chebi	76932	pathway inhibitor	inhibitor	?	chebi	34922	picloram
+chebi	50864	insulin-sensitizing drug	drug	?	?	?	?
+chebi	48668	gamma-secretase modulator	modulator	?	fplx	Gamma_secretase	Gamma_secretase
+chebi	76835	EC 1.1.1.* (oxidoreductase acting on donor CH-OH group, NAD(+) or NADP(+) acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	84800	EC 2.4.1.1 (glycogen phosphorylase) inhibitor	inhibitor	?	?	?	?
+chebi	77748	EC 3.6.3.44 (xenobiotic-transporting ATPase) inhibitor	inhibitor	?	?	?	?
+chebi	38498	mitochondrial NADH:ubiquinone reductase inhibitor	inhibitor	?	?	?	?
+chebi	131789	RUNX1 inhibitor	inhibitor	?	hgnc	10471	RUNX1
+chebi	134108	lipopolysaccharide biosynthesis inhibitor	inhibitor	?	go	0009103	lipopolysaccharide biosynthetic process
+chebi	50844	aldosterone antagonist	antagonist	?	chebi	27584	aldosterone
+chebi	50844	aldosterone antagonist	antagonist	?	chebi	30834	aldosterone hemiacetal
+chebi	102368	EC 2.6.1.40 [(R)-3-amino-2-methylpropionate--pyruvate transaminase] inhibitor	inhibitor	?	?	?	?
+chebi	64995	EC 1.13.11.31 (arachidonate 12-lipoxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	76717	EC 4.7.* (C-P lyase) inhibitor	inhibitor	?	?	?	?
+chebi	64952	anti-HSV agent	agent	?	?	?	?
+chebi	77763	EC 1.2.1.88 (L-glutamate gamma-semialdehyde dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	76694	EC 5.3.* (intramolecular oxidoreductase) inhibitor	inhibitor	?	?	?	?
+chebi	64696	EC 2.3.1.26 (sterol O-acyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	64338	K-ATP channel agonist	agonist	?	?	?	?
+chebi	60832	tubulin modulator	modulator	?	fplx	Tubulin	Tubulin
+chebi	50635	EC 3.5.1.5 (urease) inhibitor	inhibitor	?	?	?	?
+chebi	90172	c-Jun N-terminal kinase inhibitor	inhibitor	?	fplx	JNK	JNK
+chebi	53746	EC 1.1.1.205 (IMP dehydrogenase) inhibitor	inhibitor	?	?	?	?
+chebi	131791	HIV-1 Tat inhibitor	inhibitor	?	?	?	?
+chebi	48353	serine proteinase inhibitor	inhibitor	?	mesh	D057057	Serine Proteases
+chebi	49023	prostaglandin antagonist	antagonist	?	chebi	26333	prostaglandin
+chebi	142581	EC 4.1.1.15 (glutamate decarboxylase) inhibitor	inhibitor	?	?	?	?
+chebi	48676	fibrin modulating drug	drug	?	?	?	?
+chebi	76743	EC 1.16.* (oxidoreductase oxidising metal ions) inhibitor	inhibitor	?	?	?	?
+chebi	90920	EC 1.8.5.* (oxidoreductase acting on sulfur group donors, quinone or similar as acceptor) inhibitor	inhibitor	?	?	?	?
+chebi	73216	EC 3.6.* (hydrolases acting on acid anhydrides) inhibitor	inhibitor	?	?	?	?
+chebi	67267	EC 2.5.1.59 (protein geranylgeranyltransferase type I) inhibitor	inhibitor	?	?	?	?
+chebi	132365	EC 1.14.11.2 (procollagen-proline dioxygenase) inhibitor	inhibitor	?	?	?	?
+chebi	63673	chemokine receptor 5 antagonist	antagonist	?	?	?	?
+chebi	78007	foaming agent	agent	?	?	?	?
+chebi	147285	EC 3.4.22.69 (SARS coronavirus main proteinase) inhibitor	inhibitor	?	?	?	?
+chebi	76739	EC 1.12.* (oxidoreductase acting on hydrogen as donors) inhibitor	inhibitor	?	?	?	?
+chebi	35705	immunosuppressive agent	agent	?	?	?	?
+chebi	38809	ryanodine receptor modulator	modulator	?	mesh	D019837	Ryanodine Receptor Calcium Release Channel
+chebi	75252	insulin-like growth factor receptor 1 antagonist	antagonist	?	?	?	?
+chebi	71951	EC 3.5.1.88 (peptide deformylase) inhibitor	inhibitor	?	?	?	?
+chebi	68581	EC 3.4.21.6 (coagulation factor Xa) inhibitor	inhibitor	?	?	?	?
+chebi	55324	gastrointestinal drug	drug	?	?	?	?
+chebi	76745	EC 1.18.* (oxidoreductase acting on Fe-S proteins as donors) inhibitor	inhibitor	?	?	?	?
+chebi	84799	EC 2.3.1.5 (arylamine N-acetyltransferase) inhibitor	inhibitor	?	?	?	?
+chebi	76859	EC 1.3.99.* (oxidoreductase acting on donor CH-CH group, with other acceptors) inhibitor	inhibitor	?	?	?	?
+chebi	70724	cell dedifferentiation agent	agent	?	go	0043697	cell dedifferentiation
+chebi	73730	PPARbeta/delta agonist	agonist	?	?	?	?
+chebi	76736	EC 1.9.* (oxidoreductase acting on donor heme group) inhibitor	inhibitor	?	?	?	?
+chebi	91016	GABAA receptor agonist	agonist	?	fplx	GABR	GABR
+chebi	91016	GABAA receptor agonist	agonist	?	mesh	D011963	Receptors, GABA-A
+chebi	62754	glycine receptor antagonist	antagonist	?	mesh	D018009	Receptors, Glycine

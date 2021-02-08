@@ -24,7 +24,7 @@ from pyobo.struct.typedef import has_member
 from tabulate import tabulate
 from tqdm import tqdm
 
-from utils import EXPORT_DIRECTORY, HERE, XREFS_COLUMNS, get_xrefs_df
+from .utils import EXPORT_DIRECTORY, HERE, XREFS_COLUMNS, get_xrefs_df
 
 logger = logging.getLogger(__name__)
 

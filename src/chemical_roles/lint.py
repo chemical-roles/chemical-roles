@@ -8,7 +8,8 @@ import bioregistry
 import click
 from more_click import verbose_option
 
-from utils import XREFS_PATH, get_single_mappings, get_xrefs_df, sort_xrefs_df
+from .resources import XREFS_PATH
+from .utils import get_single_mappings, get_xrefs_df, sort_xrefs_df
 
 
 @click.group()

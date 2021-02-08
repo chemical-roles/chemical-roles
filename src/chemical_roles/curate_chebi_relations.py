@@ -2,27 +2,25 @@
 
 """A script to help curate ChEBI relations and infer new ones."""
 
+import itertools as itt
 import json
 import logging
-import os
 from typing import Iterable, Optional, TextIO
 
 import click
-import itertools as itt
 import pandas as pd
+import pyobo
 from more_click import verbose_option
+from pyobo.sources.expasy import get_ec2go
 from tqdm import tqdm
 
-import pyobo
-from pyobo.sources.expasy import get_ec2go
-from utils import (
-    GildaTuple, RESOURCES_DIRECTORY, SUFFIXES, XREFS_COLUMNS, get_blacklist_roles_df, get_irrelevant_roles_df,
+from .resources import RECLASSIFICATION_PATH, UNCURATED_CHEBI_PATH
+from .utils import (
+    GildaTuple, SUFFIXES, XREFS_COLUMNS, get_blacklist_roles_df, get_irrelevant_roles_df,
     get_xrefs_df, post_gilda, sort_xrefs_df, yield_gilda,
 )
 
 logger = logging.getLogger(__name__)
-
-RECLASSIFICATION_PATH = os.path.join(RESOURCES_DIRECTORY, 'reclassification.tsv')
 
 BIOLOGICAL_ROLE_ID = '24432'
 APPLICATION_ROLE_ID = '33232'
@@ -42,7 +40,6 @@ CURATED_ROLE_CHEBI_IDS = {
     if source_db == 'chebi'
 }
 logger.info('%d pre-curated ChEBI role identifiers', len(CURATED_ROLE_CHEBI_IDS))
-
 
 
 def _get_ids(curies: Iterable[str]) -> Iterable[str]:
@@ -183,6 +180,7 @@ def suggest_activator_curation() -> None:
     """Suggest activators for curation."""
     _single_suggest(BIOCHEMICAL_ROLE_CHEBI_ID, 'activator')
 
+
 def suggest_all_roles(show_ungrounded: bool = False, file: Optional[TextIO] = None) -> None:
     """Suggest all roles."""
     logger.info('Getting descendants of chebi:%s and chebi:%s', BIOLOGICAL_ROLE_ID, APPLICATION_ROLE_ID)
@@ -211,7 +209,7 @@ def _suggest_xrefs_curation(
     *,
     suffix: str,
     chebi_ids: Iterable[str],
-    show_missing: bool = False
+    show_missing: bool = False,
 ) -> Iterable[GildaTuple]:
     """Suggest curation.
 
@@ -256,7 +254,7 @@ def _iter_gilda(
 @click.command()
 @verbose_option
 @click.option('--show-ungrounded', is_flag=True)
-@click.option('--output', type=click.File('w'), default=os.path.join(RESOURCES_DIRECTORY, 'uncurated_chebi.tsv'))
+@click.option('--output', type=click.File('w'), default=UNCURATED_CHEBI_PATH)
 def main(show_ungrounded: bool, output: Optional[TextIO]) -> None:
     """Run the ChEBI curation pipeline."""
     sort_xrefs_df()
