@@ -6,10 +6,10 @@ import os
 from typing import Optional, TextIO
 
 import click
+import pyobo
+from more_click import verbose_option
 from tqdm import tqdm
 
-import pyobo
-from pyobo.cli_utils import verbose_option
 from utils import RESOURCES_DIRECTORY, SUFFIXES, get_xrefs_df, yield_gilda
 
 BLACKLIST = {
