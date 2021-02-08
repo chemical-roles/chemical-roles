@@ -2,10 +2,11 @@
 
 """Scripts to maintain the integrity of the curated data."""
 
-import logging
 import sys
 
+import bioregistry
 import click
+from more_click import verbose_option
 
 from utils import XREFS_PATH, get_single_mappings, get_xrefs_df, sort_xrefs_df
 
@@ -31,6 +32,7 @@ def tabs():
 
 
 @main.command()
+@verbose_option
 def mappings():
     """Find single mapped entries."""
     df = get_xrefs_df()
@@ -80,6 +82,27 @@ def sort():
     sort_xrefs_df()
 
 
+@main.command()
+def validate():
+    """Validate identifiers."""
+    df = get_xrefs_df()
+    for i, (prefix, identifier) in df[['source_db', 'source_id']].iterrows():
+        norm_prefix = bioregistry.normalize_prefix(prefix)
+        if prefix != norm_prefix:
+            raise ValueError(f'invalid source prefix: {prefix} should be {norm_prefix}')
+        if not bioregistry.validate(prefix, identifier):
+            raise ValueError(
+                f'[line {i}] Invalid source curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}',
+            )
+    for i, (prefix, identifier) in df[['target_db', 'target_id']].iterrows():
+        norm_prefix = bioregistry.normalize_prefix(prefix)
+        if prefix != norm_prefix:
+            raise ValueError(f'invalid target prefix: {prefix} should be {norm_prefix}')
+        if not bioregistry.validate(prefix, identifier):
+            raise ValueError(
+                f'[line {i}] Invalid target curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}',
+            )
+
+
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO)
     main()
