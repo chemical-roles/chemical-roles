@@ -160,9 +160,8 @@ def get_uniprot_id_names(hgnc_id: str) -> Iterable[Tuple[str, str]]:
     try:
         r = hgnc_id_to_up[str(hgnc_id)]
     except KeyError:
-        _k, _v = list(hgnc_id_to_up.items())[0]
-        print(f'could not find {hgnc_id} ({type(hgnc_id)} in dict. Example: {_k} ({type(_k)}), {_v} ({type(_v)})')
-        raise
+        tqdm.write(f'could not find HGNC:{hgnc_id}')
+        return
 
     for _uniprot_id in r.split(', '):
         yield _uniprot_id, uniprot_client.get_mnemonic(_uniprot_id)
