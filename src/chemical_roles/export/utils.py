@@ -17,8 +17,8 @@ from pyobo.sources.chebi import get_chebi_role_to_children
 from pyobo.struct import has_member
 from tqdm import tqdm
 
-from ..resources import get_xrefs_df
-from ..utils import XREFS_COLUMNS
+from chemical_roles.resources import get_xrefs_df
+from chemical_roles.utils import XREFS_COLUMNS
 
 logger = logging.getLogger(__name__)
 
@@ -27,22 +27,13 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
     """Assemble the relations dataframe."""
     xrefs_df = get_xrefs_df()
 
-    logger.info('loading famplex mapping')
-    famplex_id_to_members = defaultdict(list)
-    famplex_relations_df = pd.read_csv(FAMPLEX_RELATIONS_URL)
-    for source_id, source_name, rel, target_db, target_name in famplex_relations_df.values:
-        if source_id.lower() == 'hgnc' and rel == 'isa' and target_db.lower() == 'fplx':
-            try:
-                hgnc_id = hgnc_name_to_id[source_name]
-            except KeyError:
-                logger.warning(f'Could not find {source_name} for fplx:{target_name}')
-                continue
-            famplex_id_to_members[target_name].append((hgnc_id, source_name))
+    famplex_id_to_members = _get_famplex()
 
     logger.info('getting enzyme classes')
     expasy_graph, ec_code_to_children = get_expasy_closure()
     logger.info('getting ec2go')
     ec2go = expasy.get_ec2go()
+    logger.info('ec2go has %d elements', len(ec2go))
 
     x = defaultdict(list)
     it = tqdm(
@@ -50,9 +41,14 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
         total=len(xrefs_df.index),
         desc='inferring over target hierarchies',
     )
+    non_chebi_counter = 0
     for source_db, source_id, _, modulation, target_type, target_db, target_id, target_name in it:
         if source_db != 'chebi':
+            non_chebi_counter += 1
             continue
+
+        if source_id.startswith(f'{source_db.upper()}:'):
+            source_id = source_id[len(source_db) + 1:]
 
         if target_db == 'hgnc':
             # Append original
@@ -70,7 +66,7 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
                 for uniprot_id, uniprot_name in get_uniprot_id_names(hgnc_id):
                     x[source_db, source_id].append((modulation, 'protein', 'uniprot', uniprot_id, uniprot_name))
 
-        elif target_db == 'ec-code':
+        elif target_db == 'eccode':
             children_ec_codes = ec_code_to_children.get(target_id)
             if children_ec_codes is None:
                 # this is the case for about 15 entries
@@ -91,6 +87,9 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
         else:
             x[source_db, source_id].append((modulation, target_type, target_db, target_id, target_name))
 
+    logger.info('x mapping: %d/%d', len(x), sum(map(len, x.values())))
+    logger.info('skipped %d non-chebi source terms', non_chebi_counter)
+
     logger.info('inferring over role hiearchies')
     db_to_role_to_chemical_curies = {
         'chebi': get_chebi_role_to_children(),
@@ -106,28 +105,48 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
                 for c in pyobo.get_subhierarchy(role_db, role_id)
             }
 
+        chemical_curies = set(itt.chain.from_iterable(
+            db_to_role_to_chemical_curies[sub_role_db].get(sub_role_id, [])
+            for sub_role_db, sub_role_id in sub_role_curies
+        ))
+        if not chemical_curies:
+            tqdm.write(f'no inference for {role_db}:{role_id}')
+            continue
+
         for modulation, target_type, target_db, target_id, target_name in entries:
-            chemical_curies = set(itt.chain.from_iterable(
-                db_to_role_to_chemical_curies[sub_role_db].get(sub_role_id, [])
-                for sub_role_db, sub_role_id in sub_role_curies
-            ))
-            if not chemical_curies:
-                logger.debug('no inference for %s:%s', role_db, role_id)
-                continue
             for chemical_db, chemical_id in chemical_curies:
                 rows.append((
                     chemical_db, chemical_id, pyobo.get_name(chemical_db, chemical_id),
                     modulation, target_type, target_db, target_id, target_name,
                 ))
+
+    logger.info('inferred df has %d rows', len(rows))
     return pd.DataFrame(rows, columns=XREFS_COLUMNS)
 
 
 FAMPLEX_RELATIONS_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv'
 DB_TO_TYPE = {
-    'ec-code': 'protein family',
+    'eccode': 'protein family',
     'uniprot': 'protein',
     'prosite': 'protein',
 }
+
+
+def _get_famplex():
+    logger.info('loading famplex mapping')
+    famplex_id_to_members = defaultdict(list)
+    famplex_relations_df = pd.read_csv(FAMPLEX_RELATIONS_URL)
+    for source_id, source_name, rel, target_db, target_name in famplex_relations_df.values:
+        if source_id.lower() == 'hgnc' and rel == 'isa' and target_db.lower() == 'fplx':
+            try:
+                hgnc_id = hgnc_name_to_id[source_name]
+            except KeyError:
+                logger.warning(f'Could not find {source_name} for fplx:{target_name}')
+                continue
+            famplex_id_to_members[target_name].append((hgnc_id, source_name))
+
+    logger.info('famplex mapping has %d elements', len(famplex_id_to_members))
+    return famplex_id_to_members
 
 
 def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[str]]]:

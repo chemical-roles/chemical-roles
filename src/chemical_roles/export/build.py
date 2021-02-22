@@ -6,45 +6,42 @@ import logging
 import os
 import time
 
-import click
 import matplotlib.pyplot as plt
 import seaborn as sns
 from tabulate import tabulate
 
-from .utils import get_relations_df
-from ..constants import HERE, RELATIONS_OUTPUT_PATH, RELATIONS_SLIM_OUTPUT_PATH
-from ..resources import get_xrefs_df
+from chemical_roles.constants import DATA, DOCS, IMG, RELATIONS_OUTPUT_PATH, RELATIONS_SLIM_OUTPUT_PATH, ROOT
+from chemical_roles.export.utils import get_relations_df
+from chemical_roles.resources import get_xrefs_df
 
 logger = logging.getLogger(__name__)
 
 FAMPLEX_EQUIVALENCES_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/equivalences.csv'
 FAMPLEX_HGNC_SYMBOL_MAP_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/export/hgnc_symbol_map.csv'
 
-sns.set(font_scale=1.3, style='whitegrid')
 
-
-def rewrite_repo_readme(directory: str):
+def rewrite_repo_readme():
     """Rewrite the summary of curated content in the repository's readme, automatically."""
     df = get_xrefs_df()
 
     summary_df = df.groupby(['source_db', 'modulation', 'type', 'target_db']).size().reset_index()
     summary_df.columns = ['Source Database', 'Modulation', 'Target Type', 'Target Database', 'Count']
-    summary_df.to_csv(os.path.join(directory, 'curated_summary.tsv'), sep='\t', index=False)
+    summary_df.to_csv(os.path.join(DATA, 'curated_summary.tsv'), sep='\t', index=False)
 
     modulation_summary_df = df.groupby('modulation').size().reset_index()
     modulation_summary_df.columns = ['Modulation', 'Count']
     modulation_summary_df.to_csv(
-        os.path.join(directory, 'curated_summary_by_modulation.tsv'), sep='\t', index=False,
+        os.path.join(DATA, 'curated_summary_by_modulation.tsv'), sep='\t', index=False,
     )
     type_summary_df = df.groupby('type').size().reset_index()
     type_summary_df.columns = ['Target Type', 'Count']
     type_summary_df.to_csv(
-        os.path.join(directory, 'curated_summary_by_type.tsv'), sep='\t', index=False,
+        os.path.join(DATA, 'curated_summary_by_type.tsv'), sep='\t', index=False,
     )
     namespace_summary_df = df.groupby('target_db').size().reset_index()
     namespace_summary_df.columns = ['Target Database', 'Count']
     namespace_summary_df.to_csv(
-        os.path.join(directory, 'curated_summary_by_namespace.tsv'), sep='\t', index=False,
+        os.path.join(DATA, 'curated_summary_by_namespace.tsv'), sep='\t', index=False,
     )
 
     logger.info('Plotting modulation and target type summary')
@@ -69,8 +66,8 @@ def rewrite_repo_readme(directory: str):
     rax.set_ylabel('')
 
     plt.tight_layout()
-    plt.savefig(os.path.join(directory, 'curated_summary.png'), dpi=300)
-    plt.savefig(os.path.join(directory, 'curated_summary.svg'))
+    plt.savefig(os.path.join(IMG, 'curated_summary.png'), dpi=300)
+    plt.savefig(os.path.join(IMG, 'curated_summary.svg'))
 
     text = f'There are {len(df.index)} curated roles as of export on {time.asctime()}\n\n'
     text += tabulate(modulation_summary_df.values, ['Modulation', 'Count'], tablefmt='rst')
@@ -80,7 +77,7 @@ def rewrite_repo_readme(directory: str):
     text += tabulate(namespace_summary_df.values, ['Target Database', 'Count'], tablefmt='rst')
     text += '\n'
 
-    readme_path = os.path.join(HERE, 'README.rst')
+    readme_path = os.path.join(ROOT, 'README.rst')
     with open(readme_path) as file:
         readme = [line.rstrip() for line in file]
 
@@ -106,7 +103,7 @@ def rewrite_repo_readme(directory: str):
             print(line, file=file)
 
 
-def write_export(directory: str):
+def write_export():
     """Generate export TSVs.
 
     1. Full TSV at ``export/relations.tsv``
@@ -127,7 +124,7 @@ def write_export(directory: str):
     logger.info('making summary df')
     summary_df = df.groupby(['source_db', 'modulation', 'target_type', 'target_db']).size().reset_index()
     summary_df.columns = ['Source Database', 'Modulation', 'Target Type', 'Target Database', 'Count']
-    summary_df.to_csv(os.path.join(directory, 'inferred_summary.tsv'), sep='\t', index=False)
+    summary_df.to_csv(os.path.join(DATA, 'inferred_summary.tsv'), sep='\t', index=False)
     summary_df_str = tabulate(
         summary_df.values,
         ['source_db', 'relation', 'target_type', 'target_db', 'count'],
@@ -138,7 +135,7 @@ def write_export(directory: str):
     modulation_summary_df = df.groupby(['modulation']).size().reset_index()
     modulation_summary_df.columns = ['Modulation', 'Count']
     modulation_summary_df.to_csv(
-        os.path.join(directory, 'inferred_summary_by_modulation.tsv'), sep='\t', index=False,
+        os.path.join(DATA, 'inferred_summary_by_modulation.tsv'), sep='\t', index=False,
     )
     modulation_str = tabulate(
         modulation_summary_df.values,
@@ -150,7 +147,7 @@ def write_export(directory: str):
     namespace_summary_df = df.groupby(['target_db']).size().reset_index()
     namespace_summary_df.columns = ['Target Database', 'Count']
     namespace_summary_df.to_csv(
-        os.path.join(directory, 'inferred_summary_by_namespace.tsv'), sep='\t', index=False,
+        os.path.join(DATA, 'inferred_summary_by_namespace.tsv'), sep='\t', index=False,
     )
     ns_str = tabulate(
         namespace_summary_df.values,
@@ -161,7 +158,7 @@ def write_export(directory: str):
     logger.info('making type summary df')
     type_summary_df = df.groupby(['target_type']).size().reset_index()
     type_summary_df.columns = ['Target Type', 'Count']
-    type_summary_df.to_csv(os.path.join(directory, 'inferred_summary_by_type.tsv'), sep='\t', index=False)
+    type_summary_df.to_csv(os.path.join(DATA, 'inferred_summary_by_type.tsv'), sep='\t', index=False)
     type_str = tabulate(
         type_summary_df.values,
         ['type', 'count'],
@@ -190,10 +187,10 @@ def write_export(directory: str):
     rax.set_ylabel('')
 
     plt.tight_layout()
-    plt.savefig(os.path.join(directory, 'inferred_summary.png'), dpi=300)
-    plt.savefig(os.path.join(directory, 'inferred_summary.svg'))
+    plt.savefig(os.path.join(IMG, 'inferred_summary.png'), dpi=300)
+    plt.savefig(os.path.join(IMG, 'inferred_summary.svg'))
 
-    with open(os.path.join(directory, 'README.md'), 'w') as file:
+    with open(os.path.join(DOCS, 'index.md'), 'w') as file:
         print('# Export Summary\n', file=file)
         print(f'Exported {len(df.index)} relations on {time.asctime()}\n', file=file)
         print('\n## Summary by Modulation\n', file=file)
@@ -204,15 +201,3 @@ def write_export(directory: str):
         print(ns_str, file=file)
         print('\n## Relation Summary\n', file=file)
         print(summary_df_str, file=file)
-
-
-@click.command()
-@click.argument('directory')
-def main(directory: str):
-    """Rewrite readme and generate new export."""
-    rewrite_repo_readme(directory)
-    write_export(directory)
-
-
-if __name__ == '__main__':
-    main()
