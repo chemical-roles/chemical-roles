@@ -5,7 +5,8 @@
 import itertools as itt
 import json
 import logging
-from typing import Iterable, Optional, TextIO
+from functools import lru_cache
+from typing import Iterable, Optional, Set, TextIO
 
 import click
 import pandas as pd
@@ -14,11 +15,11 @@ from more_click import verbose_option
 from pyobo.sources.expasy import get_ec2go
 from tqdm import tqdm
 
-from .resources import (
+from ..resources import (
     RECLASSIFICATION_PATH, UNCURATED_CHEBI_PATH, get_blacklist_roles_df, get_irrelevant_roles_df,
     get_xrefs_df,
 )
-from .utils import GildaTuple, SUFFIXES, XREFS_COLUMNS, post_gilda, sort_xrefs_df, yield_gilda
+from ..utils import GildaTuple, SUFFIXES, XREFS_COLUMNS, post_gilda, sort_xrefs_df, yield_gilda
 
 logger = logging.getLogger(__name__)
 
@@ -32,14 +33,18 @@ INVERSE_AGONIST_CHEBI_ID = '90847'
 INHIBITOR_CHEBI_ID = '35222'
 ANTAGONIST_CHEBI_ID = '48706'
 
-XREFS_DF = get_xrefs_df()
 
-CURATED_ROLE_CHEBI_IDS = {
-    source_id
-    for source_db, source_id in XREFS_DF[['source_db', 'source_id']].values
-    if source_db == 'chebi'
-}
-logger.info('%d pre-curated ChEBI role identifiers', len(CURATED_ROLE_CHEBI_IDS))
+@lru_cache(maxsize=1)
+def get_curated_role_chebi_ids() -> Set[str]:
+    """Get the curated role chebi id set."""
+    xrefs_df = get_xrefs_df()
+    rv = {
+        source_id
+        for source_db, source_id in xrefs_df[['source_db', 'source_id']].values
+        if source_db == 'chebi'
+    }
+    logger.info('%d pre-curated ChEBI role identifiers', len(rv))
+    return rv
 
 
 def _get_ids(curies: Iterable[str]) -> Iterable[str]:
@@ -47,14 +52,21 @@ def _get_ids(curies: Iterable[str]) -> Iterable[str]:
         yield pyobo.normalize_curie(curie)[1]
 
 
-IRRELEVANT_ROLE_CHEBI_IDS = set(itt.chain.from_iterable(
-    _get_ids(pyobo.get_descendants('chebi', chebi_id))
-    for chebi_id in get_irrelevant_roles_df().identifier
-))
-logger.info('%d irrelevant ChEBI role identifiers', len(IRRELEVANT_ROLE_CHEBI_IDS))
+@lru_cache(maxsize=1)
+def _get_irrelevant_role_chebi_ids() -> Set[str]:
+    rv = set(itt.chain.from_iterable(
+        _get_ids(pyobo.get_descendants('chebi', chebi_id))
+        for chebi_id in get_irrelevant_roles_df().identifier
+    ))
+    logger.info('%d irrelevant ChEBI role identifiers', len(rv))
+    return rv
 
-BLACKLIST_CHEBI_IDS = set(get_blacklist_roles_df().identifier)
-logger.info('%d blacklisted ChEBI role identifiers', len(BLACKLIST_CHEBI_IDS))
+
+@lru_cache(maxsize=1)
+def _get_blacklist_chebi_ids() -> Set[str]:
+    rv = set(get_blacklist_roles_df().identifier)
+    logger.info('%d blacklisted ChEBI role identifiers', len(rv))
+    return rv
 
 
 def _get_inhibitors_reclassification() -> pd.DataFrame:
@@ -136,7 +148,10 @@ def suggest_pathway_inhibitor_curation() -> None:
 
     print(f'Children of {PATHWAY_INHIBITOR_CHEBI_ID} ({pyobo.get_name("chebi", PATHWAY_INHIBITOR_CHEBI_ID)})')
     for chebi_id in _get_ids(pyobo.get_descendants('chebi', PATHWAY_INHIBITOR_CHEBI_ID)):
-        if any(chebi_id in group for group in (CURATED_ROLE_CHEBI_IDS, reclassify_chebi_ids, BLACKLIST_CHEBI_IDS)):
+        if any(
+            chebi_id in group
+            for group in (get_curated_role_chebi_ids(), reclassify_chebi_ids, _get_blacklist_chebi_ids())
+        ):
             continue  # we already curated this!
         name = pyobo.get_name('chebi', chebi_id)
         if name is None:
@@ -189,7 +204,7 @@ def suggest_all_roles(show_ungrounded: bool = False, file: Optional[TextIO] = No
         | pyobo.get_descendants('chebi', APPLICATION_ROLE_ID)
     )
     chebi_ids = _get_ids(chebi_curies)
-    print(*XREFS_DF.columns, sep='\t', file=file)
+    print(*get_xrefs_df().columns, sep='\t', file=file)
     for row in _iter_gilda(chebi_ids, show_missing=show_ungrounded):
         print(*row, sep='\t', file=file)
 
@@ -229,10 +244,8 @@ def _iter_gilda(
     suffix: Optional[str] = None,
     use_tqdm: bool = True,
 ) -> Iterable[GildaTuple]:
-    if use_tqdm:
-        chebi_ids = tqdm(chebi_ids, desc='making ChEBI curation sheet')
-    for chebi_id in chebi_ids:
-        if chebi_id in CURATED_ROLE_CHEBI_IDS or chebi_id in IRRELEVANT_ROLE_CHEBI_IDS:
+    for chebi_id in tqdm(list(chebi_ids), desc='making ChEBI curation sheet'):
+        if chebi_id in get_curated_role_chebi_ids() or chebi_id in _get_irrelevant_role_chebi_ids():
             continue  # already curated, skip
         name = pyobo.get_name('chebi', chebi_id)
         if name is None:
@@ -251,11 +264,11 @@ def _iter_gilda(
                     break
 
 
-@click.command()
+@click.command(name='chebi')
 @verbose_option
 @click.option('--show-ungrounded', is_flag=True)
 @click.option('--output', type=click.File('w'), default=UNCURATED_CHEBI_PATH)
-def main(show_ungrounded: bool, output: Optional[TextIO]) -> None:
+def curate_chebi(show_ungrounded: bool, output: Optional[TextIO]) -> None:
     """Run the ChEBI curation pipeline."""
     sort_xrefs_df()
     # suggest_activator_curation()
@@ -269,4 +282,4 @@ def main(show_ungrounded: bool, output: Optional[TextIO]) -> None:
 
 
 if __name__ == '__main__':
-    main()
+    curate_chebi()

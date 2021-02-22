@@ -2,7 +2,6 @@
 
 """Export to BEL."""
 
-import click
 import pybel
 from pybel import BELGraph, dsl
 from tqdm import tqdm
@@ -53,15 +52,3 @@ def get_bel() -> BELGraph:
         adder = _adders[modulation]
         adder(graph, source, target, citation='', evidence='')
     return graph
-
-
-@click.command()
-@click.argument('path')
-def bel(path):
-    """Write BEL export."""
-    graph = get_bel()
-    pybel.dump(graph, path)
-
-
-if __name__ == '__main__':
-    bel()

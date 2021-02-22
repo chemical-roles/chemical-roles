@@ -13,11 +13,11 @@ from .utils import get_single_mappings, sort_xrefs_df
 
 
 @click.group()
-def main():
+def lint():
     """Run linters."""
 
 
-@main.command()
+@lint.command()
 def tabs():
     """Find entries missing tabs."""
     errors = set()
@@ -32,7 +32,7 @@ def tabs():
         sys.exit(1)
 
 
-@main.command()
+@lint.command()
 @verbose_option
 def mappings():
     """Find single mapped entries."""
@@ -77,13 +77,13 @@ def _p(errors):
         click.echo(f'{k_db}:{k_id} ! {k:{m}} for role{"" if len(vs) == 1 else "s"} {", ".join(vs)}')
 
 
-@main.command()
+@lint.command()
 def sort():
     """Sort the entries."""
     sort_xrefs_df()
 
 
-@main.command()
+@lint.command()
 def validate():
     """Validate identifiers."""
     df = get_xrefs_df()
@@ -106,4 +106,4 @@ def validate():
 
 
 if __name__ == '__main__':
-    main()
+    lint()

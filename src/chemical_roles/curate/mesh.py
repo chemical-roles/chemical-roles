@@ -9,10 +9,10 @@ import pyobo
 from more_click import verbose_option
 from tqdm import tqdm
 
-from .resources import UNCURATED_MESH_PATH, get_xrefs_df
-from .utils import SUFFIXES, yield_gilda
+from ..resources import UNCURATED_MESH_PATH, get_xrefs_df
+from ..utils import SUFFIXES, yield_gilda
 
-BLACKLIST = {
+MESH_BLACKLIST = {
     'D004791',  # Enzyme
     'D000074389',  # Therapeutic Index, Drug
     'D000075203',  # Contraindications, Drug
@@ -32,11 +32,11 @@ BLACKLIST = {
 }
 
 
-@click.command()
+@click.command(name='mesh')
 @verbose_option
 @click.option('--show-ungrounded', is_flag=True)
 @click.option('--output', type=click.File('w'), default=UNCURATED_MESH_PATH)
-def main(show_ungrounded: bool, output: Optional[TextIO]):
+def curate_mesh(show_ungrounded: bool, output: Optional[TextIO]):
     """Run the MeSH curation pipeline."""
     xrefs_df = get_xrefs_df()
     mesh_xrefs_df = xrefs_df[xrefs_df['source_db'] == 'mesh']
@@ -45,7 +45,7 @@ def main(show_ungrounded: bool, output: Optional[TextIO]):
     terms = {
         identifier: (name, name[:-len(suffix)], suffix.strip('s'))
         for identifier, name in pyobo.get_id_name_mapping('mesh').items()
-        if identifier not in curated_mesh_ids and identifier not in BLACKLIST
+        if identifier not in curated_mesh_ids and identifier not in MESH_BLACKLIST
         for suffix in SUFFIXES
         if name.lower().endswith(suffix)
     }
@@ -58,4 +58,4 @@ def main(show_ungrounded: bool, output: Optional[TextIO]):
 
 
 if __name__ == '__main__':
-    main()
+    curate_mesh()
