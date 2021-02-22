@@ -1,0 +1,56 @@
+Source Database	Modulation	Target Type	Target Database	Count
+chebi	activator	biological process	efo	1
+chebi	activator	biological process	go	4
+chebi	activator	biological process	ncit	1
+chebi	activator	protein	hgnc	2
+chebi	activator	protein complex	fplx	1
+chebi	activator	protein family	eccode	2
+chebi	activator	protein family	fplx	4
+chebi	agonist	chemical	chebi	2
+chebi	agonist	molecular function	go	15
+chebi	agonist	protein	hgnc	39
+chebi	agonist	protein	pr	5
+chebi	agonist	protein complex	go	1
+chebi	agonist	protein family	fplx	11
+chebi	agonist	protein family	mesh	11
+chebi	antagonist	chemical	chebi	11
+chebi	antagonist	chemical	mesh	1
+chebi	antagonist	molecular function	go	9
+chebi	antagonist	protein	hgnc	37
+chebi	antagonist	protein	mesh	1
+chebi	antagonist	protein	pr	4
+chebi	antagonist	protein family	fplx	11
+chebi	antagonist	protein family	hgnc.genefamily	3
+chebi	antagonist	protein family	interpro	1
+chebi	antagonist	protein family	mesh	10
+chebi	inhibitor	biological process	efo	1
+chebi	inhibitor	biological process	go	34
+chebi	inhibitor	molecular function	go	10
+chebi	inhibitor	organism	ncbitaxon	9
+chebi	inhibitor	phenotype	efo	9
+chebi	inhibitor	phenotype	hp	6
+chebi	inhibitor	protein	hgnc	19
+chebi	inhibitor	protein	mesh	2
+chebi	inhibitor	protein	pr	2
+chebi	inhibitor	protein	uniprot	2
+chebi	inhibitor	protein complex	fplx	2
+chebi	inhibitor	protein complex	go	9
+chebi	inhibitor	protein complex	mesh	1
+chebi	inhibitor	protein family	eccode	497
+chebi	inhibitor	protein family	fplx	3
+chebi	inhibitor	protein family	mesh	3
+chebi	inhibitor	protein family	pr	4
+chebi	inverse agonist	protein	hgnc	1
+chebi	inverse agonist	protein family	fplx	1
+chebi	modulator	biological process	go	1
+chebi	modulator	molecular function	go	5
+chebi	modulator	protein complex	fplx	1
+chebi	modulator	protein family	fplx	2
+mesh	agonist	protein family	fplx	2
+mesh	agonist	protein family	hgnc.genefamily	1
+mesh	antagonist	protein	hgnc	2
+mesh	antagonist	protein family	fplx	3
+mesh	antagonist	protein family	hgnc.genefamily	1
+mesh	inhibitor	protein	hgnc	10
+mesh	inhibitor	protein family	fplx	2
+mesh	inhibitor	protein family	hgnc.genefamily	4

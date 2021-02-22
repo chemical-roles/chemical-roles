@@ -92,7 +92,7 @@ Manually Referenced Data Sources
 
 Summary
 -------
-There are 836 curated roles as of export on Mon Feb  8 01:13:55 2021
+There are 836 curated roles as of export on Mon Feb 22 18:24:03 2021
 
 ===============  =======
 Modulation         Count
