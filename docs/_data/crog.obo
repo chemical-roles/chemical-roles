@@ -1,0 +1,6339 @@
+format-version: 1.2
+date: 22:02:2021 19:34
+ontology: crog
+
+[Term]
+id: CHEBI:10002
+name: visnagin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:100147
+name: nalidixic acid
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:100241
+name: ciprofloxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:100246
+name: norfloxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:10037
+name: wedelolactone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:10043
+name: wogonin
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:10112
+name: zileuton
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:10124
+name: zolmitriptan
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:10357
+name: (-)-beta-caryophyllene
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:10429
+name: beta-lapachone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:111517
+name: dimethylmalonic acid
+relationship: RO:0002212 GO:0006633
+
+[Term]
+id: CHEBI:113532
+name: thymoquinone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:114954
+name: sodium ferulate
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:115197
+name: sodium gallate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:116225
+name: nomifensine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:116509
+name: diuron
+relationship: RO:0002212 GO:0005746
+relationship: RO:0002212 GO:0009523
+
+[Term]
+id: CHEBI:125562
+name: 4-(dimethylamino)-N-[7-(hydroxyamino)-7-oxoheptyl]benzamide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:125610
+name: N-acetyltyramine
+relationship: RO:0002212 GO:0009372
+
+[Term]
+id: CHEBI:126237
+name: enprofylline
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:127780
+name: phosphonoformic acid
+relationship: RO:0002212 GO:0044341
+
+[Term]
+id: CHEBI:130910
+name: (Z)-3-(4-iodophenyl)-2-mercaptoacrylic acid
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:131174
+name: navitoclax
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:131194
+name: 3,3',5,5'-tetraiodothyroacetic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:131196
+name: OSU-03012
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:131358
+name: BAY 60-6583
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:131716
+name: garenoxacin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:131721
+name: sulfamazone
+relationship: RO:0002212 GO:0001660
+
+[Term]
+id: CHEBI:131838
+name: swertisin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:131914
+name: violacein
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:131968
+name: tyrphostin B42
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:131999
+name: topramezone
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:132079
+name: resolvin D1(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132082
+name: entinostat
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132096
+name: sodium methoxyacetate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132098
+name: methoxyacetic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132121
+name: 2-glyceryl 14,15-epoxy-(5Z,8Z,11Z)-icosatrienoate
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:132255
+name: N-arachidonoylserotonin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132267
+name: triptonide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132273
+name: tembotrione
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:132314
+name: demethylzeylasteral
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132336
+name: triptriolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132340
+name: triptohypol C
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132364
+name: ethyl 3,4-dihydroxybenzoate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132402
+name: angelitriol
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:132471
+name: (+)-schisandrin B
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132624
+name: columbianadin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132648
+name: galgravin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:132657
+name: piperlactam S
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132714
+name: ethyl trans-caffeate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132719
+name: bianfugenine
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:132768
+name: angelol-J
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:132791
+name: beta-benzoyloxypaeoniflorin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:132797
+name: 8-oxoresolvin D1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132801
+name: 18(S)-HEPE
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132815
+name: 6'-O-acetylpaeoniflorin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132830
+name: delta-elemene
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132853
+name: acteoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132868
+name: cyclomorusin A
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:132893
+name: fangchinoline
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:132898
+name: isorhamnetin 3-O-robinobioside
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:132925
+name: SH-11037
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:132974
+name: C646
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:133021
+name: venetoclax
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:133023
+name: lifitegrast
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:133152
+name: 2-bromohexadecanoic acid
+relationship: RO:0002212 GO:0019395
+
+[Term]
+id: CHEBI:133170
+name: quininib
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:133234
+name: quininib hydrochloride
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:133237
+name: indaziflam
+relationship: RO:0002212 GO:0030244
+
+[Term]
+id: CHEBI:133238
+name: N-[(1R,2S)-2,6-dimethyindan-1-yl]-6-[(1R)-1-fluoroethyl]-1,3,5-triazine-2,4-diamine
+relationship: RO:0002212 GO:0030244
+
+[Term]
+id: CHEBI:133239
+name: N-[(1R,2S)-2,6-dimethyindan-1-yl]-6-[(1S)-1-fluoroethyl]-1,3,5-triazine-2,4-diamine
+relationship: RO:0002212 GO:0030244
+
+[Term]
+id: CHEBI:133246
+name: tetramethylpyrazine
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:133247
+name: N-tert-butyl(3,5,6-trimethylpyrazin-2-yl)methanimine N-oxide
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:133397
+name: Ki11502
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:133813
+name: asperenone
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:133842
+name: toluquinol
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:133876
+name: S-acetylglutathione
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:134190
+name: capsiate
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:134301
+name: salvianolic acid B
+relationship: RO:0002212 GO:0006914
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:134355
+name: auraptene
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:134602
+name: MI-63
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:134606
+name: toyocamycin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:134677
+name: crisaborole
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:135538
+name: propyphenazone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:135595
+name: fendosal
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:135633
+name: beraprost
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:135745
+name: prednisolone succinate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:135752
+name: tafenoquine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:135864
+name: methylprednisolone suleptanate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:136271
+name: bicyclopyrone
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:136553
+name: epicatechin 3-O-(3'-O-methylgallate)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:136666
+name: eupatorin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:137011
+name: resolvin T1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137018
+name: resolvin T2
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137019
+name: resolvin T3
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137020
+name: resolvin T4
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137034
+name: (18S)-resolvin E2
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137038
+name: (18S)-resolvin E1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137045
+name: Z-Val-Ala-Asp(OMe)-CH2F
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:137081
+name: CORM 3
+relationship: RO:0002212 GO:0005746
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137113
+name: JQ1
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:137236
+name: ilomastat
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137349
+name: (4Z,7Z,10Z,12E,14S,16Z,19Z)-14,22-dihydroxydocosahexaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137350
+name: (4Z,7Z,10Z,12E,14R,16Z,19Z)-14,22-dihydroxydocosahexaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:137354
+name: (4Z,7Z,10Z,12E,14S,16Z,19Z,21R)-dihydroxydocosahexaenoic acid
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:137374
+name: aclonifen
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:138013
+name: Z-DEVD-FMK
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:138110
+name: 16(S)-HETE
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138179
+name: aspirin-triggered resolvin D1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138186
+name: p-Glu-Arg-Pro-Arg-Leu-Ser-His-Lys-Gly-Pro-Met-Pro-Phe
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:138192
+name: beflubutamid
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:138236
+name: oridonin
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:138248
+name: (13R,14S)-dihydroxy-(4Z,7Z,9E,11E,16Z,19Z)-docosahexaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138249
+name: (7R,14S)-dihydroxy-(4Z,8E,10E,12Z,16Z,19Z)-docosahexaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138308
+name: kahweol
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:138435
+name: bis(7)-tacrine
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:138477
+name: resolvin E3
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138488
+name: alsterpaullone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:138511
+name: piericidin A
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:138542
+name: (18R)-resolvin E3
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138614
+name: aspirin-triggered resolvin D2
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138615
+name: aspirin-triggered resolvin D3
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138616
+name: aspirin-triggered resolvin D4
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138617
+name: aspirin-triggered resolvin D5
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138618
+name: aspirin-triggered resolvin D6
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138643
+name: resolvin D6
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138645
+name: resolvin D5
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138648
+name: resolvin D3
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138649
+name: resolvin D4
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138650
+name: CBL0137
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:138653
+name: (4Z,7Z,10S,11E,13Z,15E,17S,19Z)-10,17-dihydroxydocosahexaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138655
+name: protectin D1
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138736
+name: picolinafen
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:138737
+name: flurtamone
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:138861
+name: HT-2 toxin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:138889
+name: 6-diazo-5-oxo-L-norleucine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:138919
+name: meso-zeaxanthin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:138935
+name: S-nitroso-L-cysteine
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:138971
+name: drimendiol
+relationship: RO:0002212 GO:0009372
+
+[Term]
+id: CHEBI:139030
+name: hydroxysafflor yellow A
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:139162
+name: oleuropein aglycone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:139224
+name: GRI977143
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:139388
+name: 1,3,7,9-tetramethyluric acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:139608
+name: sepantronium bromide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:140202
+name: aspirin-triggered protectin D1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140238
+name: (4Z,7Z,10Z,13Z,15E,19Z)-17-oxodocosahexaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140243
+name: 22-hydroxyprotectin D1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140256
+name: (7R,14S)-dihydroxy-(8E,10E,12Z,16Z,19Z)-docosapentaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140257
+name: 13,14(S)-dihydroxy-(7Z,9E,11E,16Z,19Z)-docosapentaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140258
+name: 14(S),21-dihydroxy-(7Z,10Z,12E,16Z,19Z)-docosapentaenoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140318
+name: tefuryltrione
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:140536
+name: bromfenac sodium salt
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140715
+name: clarinoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:140850
+name: (E)-2,3,5,4'-tetrahydroxystilbene-2-O-beta-D-glucoside
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:140908
+name: GANT61
+relationship: RO:0002212 GO:0007224
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:141063
+name: rubimaillin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:141130
+name: grandiflorenic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:141200
+name: diafenthiuron-S-oxide
+relationship: RO:0002212 GO:0006119
+
+[Term]
+id: CHEBI:141389
+name: benzobicyclon hydrolysate
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:141398
+name: ethyl 2-hydroxy-5-methylpyrazolo[1,5-a]pyrimidine-6-carboxylate
+relationship: RO:0002212 GO:0008654
+
+[Term]
+id: CHEBI:141469
+name: 2-(4-tert-butylphenyl)-3-oxo-3-[2-(trifluoromethyl)phenyl]propanenitrile
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:141491
+name: N-tert-butyl-N'-(2,6-diisopropyl-4-phenoxyphenyl)methanediimine
+relationship: RO:0002212 GO:0006119
+
+[Term]
+id: CHEBI:141517
+name: tyloxapol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:141518
+name: pyrasulfotole
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:141530
+name: delanzomib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:141966
+name: (-)-voacangine
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:141969
+name: tipifarnib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:142060
+name: equisetin(1-)
+relationship: RO:0002212 GO:0009372
+
+[Term]
+id: CHEBI:142075
+name: tabernaemontanine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:142135
+name: equisetin
+relationship: RO:0002212 GO:0009372
+
+[Term]
+id: CHEBI:142290
+name: anagrelide
+relationship: RO:0002212 GO:0042730
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:142430
+name: lificiguat
+relationship: RO:0002212 GO:0070527
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:142431
+name: praliciguat
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:142435
+name: BAY 41-2272
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:142774
+name: nitryl chloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:143096
+name: 2-hydroxyoleic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:143102
+name: GI254023X
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:143107
+name: 2-acetamidophenol
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:143122
+name: THZ531
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:143126
+name: (2E)-2-benzylidene-3-(cyclohexylamino)indan-1-one
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:143128
+name: BCI-215
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:143514
+name: N-arachidonoyl-L-serine
+relationship: RO:0002213 GO:0001525
+
+[Term]
+id: CHEBI:143527
+name: (R)-lisofylline
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:143567
+name: rac-lisofylline
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:143858
+name: decane-1,2-diol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:143894
+name: triaziflam
+relationship: RO:0002212 GO:0009767
+relationship: RO:0002212 GO:0030244
+
+[Term]
+id: CHEBI:143911
+name: (-)-antofine
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:144185
+name: pannarin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:144354
+name: methyl gamma-linolenate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:144367
+name: 3PO
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:144441
+name: triacsin C
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:144671
+name: LDC4297
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:144869
+name: PMX-205
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:144949
+name: NSC 23766 trihydrochloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:144984
+name: NSC 23766
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145043
+name: solasodine(1+)
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0007283
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145049
+name: 4-(dichloroacetyl)piperazine-1-carbaldehyde
+relationship: RO:0002212 GO:0007283
+
+[Term]
+id: CHEBI:145121
+name: SKF-96365 hydrochloride
+relationship: RO:0002212 GO:0070527
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145256
+name: 6,7-dihydroxy-4-methylcoumarin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:145365
+name: crenolanib
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145371
+name: binimetinib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145372
+name: gilteritinib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145417
+name: rigosertib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145421
+name: rigosertib sodium
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145428
+name: glasdegib
+relationship: RO:0002212 GO:0007224
+
+[Term]
+id: CHEBI:145429
+name: sapacitabine
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:145435
+name: CNDAC
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:145520
+name: Fasnall
+relationship: RO:0002212 GO:0006633
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145533
+name: (R)-Fasnall
+relationship: RO:0002212 GO:0006633
+
+[Term]
+id: CHEBI:145534
+name: (S)-Fasnall
+relationship: RO:0002212 GO:0006633
+
+[Term]
+id: CHEBI:145535
+name: pevonedistat
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145536
+name: motixafortide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145537
+name: AMG-925
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145656
+name: galactoxylomannan
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145663
+name: 2-(beta-D-glucopyranosyloxy)benzoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:145705
+name: prednisolone phosphate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:145792
+name: 2-hydroxymelatonin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145800
+name: AS1842856
+relationship: RO:0002212 GO:0006914
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:145817
+name: neophytadiene
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:145828
+name: methyl 3,4,5-trihydroxybenzoate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:145829
+name: trilobatin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:146000
+name: emetine dihydrochloride hydrate
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:146138
+name: 3,3'-dimethylquercetin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:146142
+name: 3,4'-dimethylkaempferol
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:146206
+name: N-oleoyltaurine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:146243
+name: JWH-133
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:146244
+name: HU-308
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:146264
+name: noribogaine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:146781
+name: mature microcin B18 zwitterion
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:147302
+name: CGP-42112A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:147347
+name: tilorone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:147356
+name: tilorone dihydrochloride
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:147398
+name: tideglusib
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:147411
+name: TDZD-8
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:147412
+name: roducitabine
+relationship: RO:0002212 GO:0071897
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:147675
+name: 5-iodo-2'-deoxyuridine
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:149466
+name: bixlozone
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:149547
+name: (2E,4E)-deca-2,4-dienal
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:149551
+name: emetine dihydrochloride
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:149636
+name: cenicriviroc
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:149660
+name: atromentin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:149696
+name: 10058-F4
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:15365
+name: acetylsalicylic acid
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:15367
+name: all-trans-retinoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:15379
+name: dioxygen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:15413
+name: 2',4,4',6'-tetrahydroxychalcone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:15544
+name: prostaglandin E1
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:155863
+name: 2,4-dihydroxy-6-methylbenzaldehyde
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156148
+name: ascofuranone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:156204
+name: amrubicinol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156219
+name: ascochlorin
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:156228
+name: viridiflorol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:156259
+name: PD-166866
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156287
+name: CX-5461
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156293
+name: tilimycin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156320
+name: mangicol A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:156327
+name: pectolinarin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156365
+name: xenocyloin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:156377
+name: GP369
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:156408
+name: monascorubrin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:156430
+name: tabtoxinine beta-lactam
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156433
+name: bis(S-citronellalthiosemicarbazonato)nickel(II)
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156450
+name: thiolutin
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:156452
+name: aureothricin
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:156453
+name: pyoluteorin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156498
+name: rohitukine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:156510
+name: CG-1521
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:156531
+name: ficellomycin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:157175
+name: enoxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:15771
+name: loganin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:15792
+name: malonate(2-)
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:15864
+name: luteolin
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:160246
+name: aminophenazone
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:16240
+name: hydrogen peroxide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:16353
+name: sinapine
+relationship: RO:0002212 GO:0009767
+
+[Term]
+id: CHEBI:16482
+name: naphthalene
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:16586
+name: 6-aminohexanoic acid
+relationship: RO:0002212 GO:0042730
+
+[Term]
+id: CHEBI:166820
+name: EG00229
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:166834
+name: MLN-4760
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:167004
+name: fostriecin
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:167099
+name: benzo[d]isothiazol-3-one
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:16778
+name: apigenin 7-O-beta-D-glucoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:16954
+name: vitexin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:17019
+name: (R)-amygdalin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:17154
+name: nicotinamide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:171741
+name: cerulenin
+relationship: RO:0002212 GO:0006633
+
+[Term]
+id: CHEBI:17221
+name: beta-myrcene
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:17226
+name: rosmarinic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:17245
+name: carbon monoxide
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:175901
+name: gemcitabine
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:17620
+name: ferulic acid
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:17650
+name: cortisol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:17678
+name: 2'-hydroxyformononetin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:17688
+name: (S)-nicotine
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:17747
+name: bis(2-ethylhexyl) phthalate
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:17814
+name: salicin
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:18215
+name: syringetin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:18723
+name: nicotine
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:19924
+name: 3-(3,4-dichlorophenyl)-1,1-dimethylurea
+relationship: RO:0002212 GO:0009523
+
+[Term]
+id: CHEBI:204734
+name: desonide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:205919
+name: clobetasol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:22689
+name: bafilomycin A1
+relationship: RO:0002212 GO:0006914
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:23527
+name: cytochalasin B
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:2366
+name: absinthin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:2367
+name: abyssinone I
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:2375
+name: (-)-syringaresinol O,O'-bis(beta-D-glucoside)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:240107
+name: bromfenac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:2404
+name: acetosyringone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:2444
+name: actinodaphnine
+relationship: RO:0002212 GO:0070527
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:244418
+name: dehydrocostus lactone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:2469
+name: adefovir
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:2515
+name: agnuside
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0001525
+
+[Term]
+id: CHEBI:25255
+name: methyl methanesulfonate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:2540
+name: alantolactone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:25461
+name: myxothiazol
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:2631
+name: amentoflavone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:2674
+name: amodiaquine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:267413
+name: balsalazide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:2675
+name: amoxapine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:26757
+name: sterculynic acid
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:2679
+name: amphetamine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:27479
+name: 2'-hydroxydaidzein
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:2762
+name: antimycin A
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:2766
+name: aphidicolin
+relationship: RO:0002212 GO:0071897
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:27673
+name: herbacetin
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:27701
+name: oxytetracycline
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:27781
+name: myristoleic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:2781
+name: apocynin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:278547
+name: sodium azide
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:27860
+name: castanospermine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:27882
+name: (S)-colchicine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:27916
+name: 2'-hydroxychalcone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:27958
+name: cocaine
+relationship: RO:0002212 GO:0051583
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:2805
+name: arbusculin A
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:28077
+name: rifampicin
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:28106
+name: isobavachalcone
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:28177
+name: theophylline
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:28269
+name: 6-oxoprostaglandin E1
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:28353
+name: 4-hydroxycinnamaldehyde
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:28498
+name: acadesine
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:28584
+name: gossypol
+relationship: RO:0002212 GO:0007283
+
+[Term]
+id: CHEBI:28705
+name: narirutin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:2877
+name: aspartame
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:28786
+name: paraquat dichloride
+relationship: RO:0002212 GO:0009522
+
+[Term]
+id: CHEBI:28814
+name: piceatannol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:28819
+name: naringin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:28849
+name: naphthazarin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:29020
+name: neral
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:291902
+name: eptifibatide
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:2948
+name: azathioprine
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:2950
+name: azelastine
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:2951
+name: azelastine hydrochloride
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:29608
+name: isoformononetin
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:29681
+name: surfactin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:2979
+name: baicalein
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:2981
+name: baicalin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3000
+name: beauvericin
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:3001
+name: beclomethasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3002
+name: beclomethasone dipropionate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3044
+name: benzphetamine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:30660
+name: thyroxine
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:3077
+name: betamethasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:30778
+name: gallic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:30813
+name: decanoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3086
+name: betulin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3087
+name: betulinic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31064
+name: 2'-hydroxybiochanin A
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:31159
+name: aceclofenac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31162
+name: acemetacin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31174
+name: adapalene
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31175
+name: adefovir pivoxil
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:31183
+name: alclofenac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31184
+name: alclometasone dipropionate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31190
+name: alminoprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31199
+name: amcinonide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31202
+name: amfenac sodium hydrate
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31205
+name: amlexanox
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31210
+name: ampiroxicam
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31225
+name: antipyrine
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31257
+name: bendazac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31270
+name: beraprost sodium
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:31277
+name: betamethasone valerate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31317
+name: bufexamac
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31359
+name: carminomycin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:3136
+name: bixin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:31401
+name: cilostazol
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:31414
+name: clobetasol propionate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31441
+name: fluticasone propionate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31483
+name: diflorasone diacetate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31550
+name: epothilone B
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:31572
+name: ethyl linoleate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31597
+name: biphenyl-4-ylacetic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31599
+name: fenbufen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3162
+name: bowdichione
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31620
+name: flumethasone pivalate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31623
+name: fluocinolone acetonide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31625
+name: fluorometholone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31653
+name: glafenine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31690
+name: imatinib methanesulfonate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:3170
+name: brazilin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:31738
+name: jadomycin B
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:31749
+name: kebuzone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31783
+name: lornoxicam
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31784
+name: loteprednol etabonate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31786
+name: loxoprofen sodium hydrate
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:31838
+name: metiazinic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32016
+name: pirfenidone
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32019
+name: piromidic acid
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:32023
+name: plaunotol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:32044
+name: prednisolone sodium succinate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32057
+name: proglumetacin dimaleate
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3207
+name: budesonide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32135
+name: soblidotin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:32173
+name: suxibuzone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32192
+name: tenoxicam
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32221
+name: tiaprofenic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32243
+name: tolfenamic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32248
+name: tosufloxacin tosylate hydrate
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:32250
+name: tramadol hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:32269
+name: tropisetron
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32292
+name: vedaprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32293
+name: verteporfin
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:3244
+name: butrin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:32499
+name: amineptine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:3291
+name: cafestol
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:32956
+name: epoxytwinol A
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:338412
+name: (-)-anisomycin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:3387
+name: carbamazepine
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:34146
+name: 12(S)-HETE
+relationship: RO:0002213 GO:0001525
+
+[Term]
+id: CHEBI:3421
+name: carlinoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3434
+name: carpropamid
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:34360
+name: 4'-hydroxychalcone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:34380
+name: monobenzone
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:34506
+name: pinellic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:34543
+name: argipressin
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:34735
+name: edifenphos
+relationship: RO:0002212 GO:0008654
+
+[Term]
+id: CHEBI:34764
+name: flumethasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:34848
+name: mevastatin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:35020
+name: tributyrin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:35847
+name: tenidap
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:35859
+name: zomepirac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3638
+name: chloroquine
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:364453
+name: carprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3682
+name: chrysazin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:3687
+name: chrysophanol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3723
+name: citalopram
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:3724
+name: citalopram hydrobromide
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:3740
+name: cleomiscosin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:37447
+name: meso-tetrakis(N-methyl-4-pyridyl)porphine(4+)
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:3749
+name: clofazimine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3751
+name: clomazone
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:37550
+name: sphingosine 1-phosphate
+relationship: RO:0002212 GO:0042098
+
+[Term]
+id: CHEBI:3759
+name: clopidogrel sulfate
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:37941
+name: clopidogrel
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:37999
+name: dithiosalicylic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:38010
+name: apazone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:38167
+name: physcion
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:38200
+name: astilbin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:38321
+name: mesotrione
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:38545
+name: rosuvastatin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3856
+name: confertin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:38635
+name: 3-methyladenine
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:3884
+name: corilagin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3887
+name: (-)-coronaridine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:38940
+name: sunitinib
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:3907
+name: coumermycin A1
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:3908
+name: coumestrol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3929
+name: cryogenine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:39299
+name: diafenthiuron
+relationship: RO:0002212 GO:0006119
+
+[Term]
+id: CHEBI:3930
+name: cryptolepine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:3962
+name: curcumin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:39669
+name: diflunisal
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:40036
+name: amitrole
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:4033
+name: cycloxydim
+relationship: RO:0002212 GO:0006633
+
+[Term]
+id: CHEBI:40910
+name: azide anion
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:41500
+name: 4-phenylbutyric acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:41656
+name: CCT-018159
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:41774
+name: tamoxifen
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:41879
+name: dexamethasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:42017
+name: 2,4-dinitrophenol
+relationship: RO:0002212 GO:0006119
+
+[Term]
+id: CHEBI:421840
+name: O-methylsalicylic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:42471
+name: forskolin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:42567
+name: fisetin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:42638
+name: flufenamic acid
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:4302
+name: destosyl pyrazolate
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:4325
+name: dapsone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:43415
+name: dexibuprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:439329
+name: (S)-fenfluramine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:43996
+name: mitoguazone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:44185
+name: methotrexate
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:4429
+name: deoxypodophyllotoxin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:44423
+name: hydroxyurea
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:44445
+name: nimesulide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:4460
+name: devazepide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:4469
+name: (S)-amphetamine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:45081
+name: pentamidine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:45141
+name: pyroquilon
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:45302
+name: (5Z)-5-(quinoxalin-6-ylmethylidene)-1,3-thiazolidine-2,4-dione
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:45713
+name: trans-resveratrol
+relationship: RO:0002212 GO:0009372
+
+[Term]
+id: CHEBI:45716
+name: vorinostat
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:45783
+name: imatinib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:45906
+name: suramin
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:46195
+name: paracetamol
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:4629
+name: diosgenin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:4631
+name: diosmin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:4653
+name: dipyridamole
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:4659
+name: disulfiram
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:472805
+name: ouabain
+relationship: RO:0002212 GO:0006811
+
+[Term]
+id: CHEBI:4732
+name: E3040
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:47344
+name: alvocidib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:47381
+name: diclofenac
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:47564
+name: mometasone furoate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:47617
+name: 4,5,6,7-tetrachloro-2-benzofuran-1(3H)-one
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:47619
+name: piclamilast
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:47780
+name: clomipramine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:47781
+name: desipramine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:4781
+name: emetine
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:48273
+name: rizatriptan
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:48410
+name: (2S,3S,4S)-4-(hydroxymethyl)-2-methoxy-3-[(2E)-6-methylhept-2-en-2-yl]cyclohexanone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:48411
+name: (1S,2S,3S)-3-methoxy-2-[(2E)-6-methylhept-2-en-2-yl]-4-oxocyclohexanecarbaldehyde
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:48412
+name: (2S,3S,4S)-2-methoxy-3-[(2E)-6-methylhept-2-en-2-yl]-4-(trifluoroacetyl)cyclohexanone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:48413
+name: (2S,3S,4S)-4-acetyl-2-methoxy-3-[(2E)-6-methylhept-2-en-2-yl]cyclohexanone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:48414
+name: (1R,2S,3S,4S)-4-formyl-2-methoxy-3-[(2E)-6-methylhept-2-en-2-yl]cyclohexyl (2E)-3-(4-methoxyphenyl)acrylate
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:48415
+name: (2S,3S,4S)-4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropan-2-yl)-2-methoxy-3-[(2E)-6-methylhept-2-en-2-yl]cyclohexanone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:48521
+name: ximoprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:48574
+name: phenylbutazone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:48635
+name: fumagillin
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:48669
+name: tranexamic acid
+relationship: RO:0002212 GO:0042730
+
+[Term]
+id: CHEBI:4876
+name: etacrynic acid
+relationship: RO:0002212 GO:0006811
+
+[Term]
+id: CHEBI:4885
+name: ethionamide
+relationship: RO:0002212 GO:0006633
+
+[Term]
+id: CHEBI:4909
+name: etodolac
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:4911
+name: etoposide
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:4932
+name: eupatilin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:49320
+name: algestone acetonide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:49327
+name: algestone acetophenide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:49662
+name: indometacin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5000
+name: fenfluramine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:5004
+name: fenoprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5005
+name: fenoprofen calcium
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:50091
+name: S-nitrosoglutathione
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:5013
+name: fenuron
+relationship: RO:0002212 GO:0009523
+
+[Term]
+id: CHEBI:50138
+name: lonidamine
+relationship: RO:0002212 GO:0007283
+
+[Term]
+id: CHEBI:50199
+name: pefloxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:50207
+name: sophoraflavanone B
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:50693
+name: milrinone
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:50842
+name: norflurazon
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:50851
+name: hydrocortamate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:50861
+name: treprostinil
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:50885
+name: fludrocortisone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:50922
+name: eletriptan
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:50924
+name: sorafenib
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:51038
+name: minaprine
+relationship: RO:0002212 GO:0051583
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:5106
+name: flunisolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5118
+name: fluoxetine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:5119
+name: fluoxetine hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:5130
+name: flurbiprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5131
+name: flurochloridone
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:5138
+name: fluvoxamine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:5169
+name: fraxetin
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:5170
+name: fraxin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5171
+name: friedelin
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:517248
+name: bufalin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5181
+name: fucoidan
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:5186
+name: fucoxanthin
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:52010
+name: chlorphenamine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:520819
+name: flufenamate
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:520985
+name: almotriptan
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:52288
+name: 1-octadec-9-enoylglycero-3-phosphate
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:52492
+name: mancozeb
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:5298
+name: Genipin
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:529996
+name: cytochalasin D
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:5325
+name: gentisyl alcohol
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:5373
+name: (S)-glaucine
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:53776
+name: alclometasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:53781
+name: almotriptan malate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5516
+name: sodium aurothiomalate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:55345
+name: anagrelide hydrochloride
+relationship: RO:0002212 GO:0042730
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:5635
+name: helenalin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5674
+name: herbimycin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:582124
+name: myriocin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:5834
+name: hyperforin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:5855
+name: ibuprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:59026
+name: 4-aminoantipyrine
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:59033
+name: metamizole sodium
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:59059
+name: methyl isocyanate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:59124
+name: thiosalicylic acid
+relationship: RO:0002212 GO:0001660
+
+[Term]
+id: CHEBI:59164
+name: balsalazide disodium
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:59169
+name: benzphetamine hydrochloride
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:59176
+name: bromfenac sodium salt sesquihydrate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:59582
+name: clocortolone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:59583
+name: clocortolone pivalate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:59660
+name: [5-fluoro-1-(4-isopropylbenzylidene)-2-methylinden-3-yl]acetic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5971
+name: irinotecan hydrochloride (anhydrous)
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:59729
+name: fenfluramine hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:59730
+name: (S)-fenfluramine hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:59750
+name: diflorasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:5981
+name: isoalantolactone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:5989
+name: isobutrin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6047
+name: isoprothiolane
+relationship: RO:0002212 GO:0008654
+
+[Term]
+id: CHEBI:6076
+name: itraconazole
+relationship: RO:0002212 GO:0007224
+
+[Term]
+id: CHEBI:61022
+name: naproxol
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:61176
+name: eletriptan hydrobromide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6128
+name: ketoprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6129
+name: ketorolac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6146
+name: kuwanone G
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:62088
+name: metamizole
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:63145
+name: penta-O-acetyl-alpha-D-galactose
+relationship: RO:0002212 GO:0030073
+
+[Term]
+id: CHEBI:6339
+name: etoricoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:63447
+name: delta-guaiene
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:63598
+name: levofloxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:63599
+name: fludarabine phosphate
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:63612
+name: nelarabine
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:63614
+name: olsalazine sodium
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:63634
+name: valdecoxib
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6364
+name: laminarin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:63791
+name: lenalidomide
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:63892
+name: zerumbone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:63916
+name: iloprost
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:63956
+name: isoxaben
+relationship: RO:0002212 GO:0030244
+
+[Term]
+id: CHEBI:63959
+name: celastrol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:64007
+name: EET
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:6402
+name: leflunomide
+relationship: RO:0002212 GO:0006221
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:64086
+name: vanoxerine dihydrochloride
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:64089
+name: vanoxerine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:64091
+name: 1-[2-(benzhydryloxy)ethyl]-4-(3-phenylpropyl)piperazine dihydrochloride
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:64093
+name: 1-[2-(benzhydryloxy)ethyl]-4-(3-phenylpropyl)piperazine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:641
+name: N-methyl-4-phenylpyridinium
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:64144
+name: 1-[1-(1-benzothiophen-2-yl)cyclohexyl]piperidine maleate
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:64145
+name: 1-[1-(1-benzothiophen-2-yl)cyclohexyl]piperidine
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:64153
+name: tanespimycin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:64194
+name: paroxetine maleate
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:64199
+name: carmoxirole hydrochloride
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:64200
+name: carmoxirole
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:64212
+name: sulindac sulfone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:64354
+name: metolazone
+relationship: RO:0002212 GO:0006811
+
+[Term]
+id: CHEBI:64624
+name: microcin B17
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:65329
+name: LY294002
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:65373
+name: ageladine A
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:65374
+name: aglafolin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:65388
+name: Aloe C-glucosylchromone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65408
+name: andrographolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65414
+name: antrocapmphin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65448
+name: ascidiathiazone A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65449
+name: ascidiathiazone B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65457
+name: astragaloside IV
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0001525
+
+[Term]
+id: CHEBI:65465
+name: bassiatin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:65470
+name: bauhinoxepin F
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65471
+name: bauhinoxepin I
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65501
+name: bis-(4-hydroxybenzyl)ether
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:65538
+name: cadiyenol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:65585
+name: carnosic acid
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:65653
+name: conferol A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65654
+name: conferol B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65670
+name: crassumolide A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65684
+name: (-)-cubebin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65686
+name: cudratricusxanthone A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6570
+name: lupeol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65706
+name: cyclomontanin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65707
+name: cyclomontanin C
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65708
+name: cyclomontanin D
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65720
+name: cytotrienin A
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:65737
+name: demethoxycurcumin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6574
+name: lupulone
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:65786
+name: 4,4'-dihydroxybenzyl sulfone
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:65792
+name: diinsininol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65793
+name: diinsinin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65822
+name: EI-1511-3
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65823
+name: EI-1511-5
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65824
+name: EI-1625-2
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65850
+name: 7-epiclusianone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65899
+name: flavokawain B
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:65901
+name: floribundasaponin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:65978
+name: gnidilatimonoein
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:65991
+name: guttiferone F
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:66012
+name: herquline B
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66024
+name: 1beta-hydroxy arbusculin A
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66038
+name: (10E,12Z,15Z)-9-hydroxy-10,12,15-octadecatrienoic acid methyl ester
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66072
+name: indicanone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66098
+name: isotanshinone IIB
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66103
+name: jaceosidin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:66104
+name: jaspamide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:66169
+name: sapinmusaponin Q
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66170
+name: sapinmusaponin R
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66172
+name: sappanchalcone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66186
+name: talosin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66251
+name: tolypodiol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66331
+name: xanthohumol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:66359
+name: (+)-alpha-viniferin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66426
+name: myrsinoic acid A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66427
+name: myrsinoic acid B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66428
+name: myrsinoic acid C
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66429
+name: myrsinoic acid F
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6645
+name: magnoshinin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66482
+name: sigmoidin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66483
+name: sigmoidin B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66492
+name: yinyanghuo A
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66493
+name: yinyanghuo B
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66503
+name: zhankuic acid A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66532
+name: (+)-subersic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66555
+name: laurinterol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:66560
+name: lespeflorin A3
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66561
+name: lespeflorin B2
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66562
+name: lespeflorin B3
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66563
+name: lespeflorin B4
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66564
+name: lespeflorin C3
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66565
+name: lespeflorin G2
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66566
+name: lespeflorin G3
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66567
+name: lespeflorin G5
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66568
+name: lespeflorin G8
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66569
+name: lespeflorin G10
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66570
+name: lespeflorin H2
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66572
+name: leucosesterterpenone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:66573
+name: leucosesterlactone
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:66597
+name: lupulin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66609
+name: lespeflorin D1
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:66614
+name: neobavaisoflavone
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66646
+name: macabarterin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66651
+name: madecassoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66655
+name: mallotophilippen A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66656
+name: mallotophilippen B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66657
+name: mallotophilippen C
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66658
+name: mallotophilippen D
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66659
+name: (RS)-mallotophilippen E
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66665
+name: mannioside A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66682
+name: maslinic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66683
+name: epi-maslinic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66711
+name: methyl brevifolincarboxylate
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66819
+name: oleoyl danshenxinkun A
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:6682
+name: mangiferin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66820
+name: oleoyl neocryptotanshinone
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:66838
+name: 7-oxo-10alpha-cucurbitadienol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:66903
+name: vismodegib
+relationship: RO:0002212 GO:0007224
+
+[Term]
+id: CHEBI:6698
+name: (-)-matairesinol
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:67078
+name: Delta(9)-tetrahydrocannabinolic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6710
+name: meclofenamic acid
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6717
+name: mefenamic acid
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67264
+name: geranic acid
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:67280
+name: azadiradione
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67285
+name: epoxyazadiradione
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67296
+name: 7-deacetylgedunin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67311
+name: 3-deacetylsalannin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67312
+name: 17-defurano-17-oxosalannin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67357
+name: dolastatin 10
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:6736
+name: melittin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:67381
+name: pterolinus A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67382
+name: pterolinus B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67384
+name: pterolinus D
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6741
+name: meloxicam
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67493
+name: ombuin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67497
+name: gordonoside I
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67498
+name: gordonoside J
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67499
+name: gordonoside K
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67500
+name: gordonoside L
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67501
+name: gordonoside M
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67502
+name: gordonoside N
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67503
+name: gordonoside O
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67504
+name: gordonoside P
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67505
+name: 1-O-3,4-dimethoxy-5-hydroxyphenyl-(6-O-3,5-dimethoxygalloyl)-beta-D-glucopyranoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67506
+name: 1-O-3,4-dimethoxy-5-hydroxyphenyl-(6-O-vanilloyl)-beta-D-glucopyranoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67566
+name: minabeolide 1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67567
+name: minabeolide 2
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67568
+name: minabeolide 4
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67569
+name: minabeolide 5
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67570
+name: minabeolide 8
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6775
+name: mesalamine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67850
+name: cudraflavone B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67907
+name: rel-2alpha,3beta,23-trihydroxy-19-oxo-18,19-seco-12,17-dien-28-norursane
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67909
+name: rel-2alpha,3alpha,23-trihydroxy-19-oxo-18,19-seco-urs-11,13(18)-dien-28-oic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67911
+name: 2alpha,3beta-dihydroxyolean-13(18)-en-28-oic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67913
+name: 2alpha,3alpha,23-trihydroxyolean-12-en-28-oic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67915
+name: 19alpha-hydroxyasiatic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67947
+name: hederagenin 28-O-beta-D-glucopyranoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67986
+name: ginsenoside Rf
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:67987
+name: ginsenoside Rg1
+relationship: RO:0002213 GO:0001525
+
+[Term]
+id: CHEBI:67988
+name: ginsenoside Rd
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:67989
+name: ginsenoside Rb1
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:67991
+name: (20S)-ginsenoside Rg3
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:6807
+name: methadone
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:68339
+name: multifidol glucoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68384
+name: flavalin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68540
+name: teriflunomide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68558
+name: ticagrelor
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:68603
+name: betamethasone phosphate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68657
+name: zingerone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6887
+name: methylphenidate
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:6888
+name: 6alpha-methylprednisolone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68883
+name: kaempferol 3,7-di-O-alpha-L-rhamnoside
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:6889
+name: methylprednisolone acetate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68953
+name: klymollin C
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68954
+name: klymollin D
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68955
+name: klymollin E
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68956
+name: klymollin F
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68957
+name: klymollin G
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:68958
+name: klymollin H
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69019
+name: physalin F
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:6907
+name: metoxuron
+relationship: RO:0002212 GO:0009523
+
+[Term]
+id: CHEBI:69088
+name: vestitol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69098
+name: licocoumarone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:691037
+name: desoximetasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69120
+name: withaferin A
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:69196
+name: brazilein
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69245
+name: 5-(3-hydroxypropyl)-2-(2-methoxy-4-hydroxyphenyl)benzofuran
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69246
+name: (-)-larreatricin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69247
+name: meso-3,3'-didemethoxynectandrin B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69248
+name: (2S,3S)-2,3-dihydro-3-hydroxymethyl-2-(4-hydroxyphenyl)-5-(E)-propenylbenzofuran
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69249
+name: 2-(2-hydroxy-4-methoxyphenyl)-5-(3-hydroxypropyl)benzofuran
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69250
+name: 2-(2,4-dihydroxyphenyl)-5-(E)-propenylbenzofuran
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69251
+name: (+)-conocarpan
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69252
+name: 2-(4-hydroxyphenyl)-5-(E)-propenylbenzofuran
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69253
+name: rataniaphenol III
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69254
+name: rataniaphenol I
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69255
+name: rataniaphenol II
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6931
+name: midazolam
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:6932
+name: midazolam hydrochloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:69325
+name: (1R,5R,6S,7R,8S,10R)-8-hydroxy-4-oxopseudoguai-2(3),11(13)-dien-12,6-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69326
+name: (1R,5R,6S,7S,8S,10R,11S)-6-hydroxy-4-oxopseudoguai-2(3)-en-12,8-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69327
+name: (1S,5S,7R,8S,10R)-14-acetoxy-4-oxopseudoguai-11(13)-en-12,8-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69328
+name: (1S,2R,5R,6S,7S,8S,10R)-6-hydroxy-2-methoxy-4-oxopseudoguai-11(13)-en-12,8-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69329
+name: (1S,2R,5R,6S,7S,8S,10R)-6-hydroxy-2-ethoxy-4-oxopseudoguai-11(13)-en-12,8-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69330
+name: (1S,2R,5R,6S,7R,8S,10R)-6-acetoxy-2-methoxy-4-oxopseudoguai-11(13)-en-12,8-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69331
+name: (1S,2S,5R,6S,7R,8S,10R)-6-acetoxy-2-methoxy-4-oxopseudoguai-11(13)-en-12,8-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69332
+name: (1S,5R,6S,7S,8S,10R,11R)-6-hydroxy-4-oxopseudoguai-12,8-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69333
+name: 4beta,10alpha-dihydroxy-5alphaH-guai-1(2),11(13)-dien-12,8alpha-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69334
+name: 2alpha-acetoxy-4alpha,6alpha-dihydroxy-1beta,5alphaH-guai-9(10),11(13)-dien-12,8alpha-olide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69335
+name: aromaticin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69336
+name: 8-epihelenalin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69337
+name: bigelovin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:69338
+name: graveolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69339
+name: carpesiolin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69340
+name: ergolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69343
+name: burrodin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69344
+name: 8-epiinuviscolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69345
+name: inuviscolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69346
+name: inuchinenolide C
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69347
+name: 4-epiisoinuviscolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69348
+name: inuchinenolide B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69355
+name: casticin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:69363
+name: 16,23,29-trihydroxy-3-oxo-olean-12-en-28-oic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69364
+name: methyl 4,23,29-trihydroxy-3,4-seco-olean-12-en-3-oate-28-oic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69365
+name: 3beta,6beta,23-trihydroxyolean-12-en-28-oic acid 28-O-beta-D-glucopyranoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69366
+name: 3-O-[2,3-di-O-acetyl-alpha-L-arabinopyranosyl]-hederagenin 28-O-alpha-L-rhamnopyranosyl-(1->4)-beta-D-glucopyranosyl-(1->6)-beta-D-glucopyranoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69367
+name: 3-O-[3,4-di-O-acetyl-alpha-L-arabinopyranosyl]hederagenin 28-O-alpha-L-rhamnopyranosyl-(1->4)-beta-D-glucopyranosyl-(1->6)-beta-D-glucopyranoside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69369
+name: 3beta,6beta,23-trihydroxyolean-12-en-28-oic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69370
+name: kalopanaxsaponin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69371
+name: kalopanaxsaponin B
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69372
+name: kalopanaxsaponin C
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69373
+name: sieboldianoside A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69374
+name: dipsacussaponin A
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69375
+name: cauloside D
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69437
+name: orobol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:69477
+name: cannabigerol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6964
+name: molinate
+relationship: RO:0002212 GO:0007283
+
+[Term]
+id: CHEBI:69685
+name: pipercallosine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:69688
+name: pipercallosidine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:6970
+name: mometasone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:6988
+name: monotropein
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:70080
+name: 4-hydroxycordoin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:70705
+name: vilazodone hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:70707
+name: vilazodone
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:71019
+name: omacetaxine mepesuccinate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:71418
+name: triamcinolone acetonide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:71464
+name: palmitoyl ethanolamide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:71465
+name: palmitoleoyl ethanolamide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:71941
+name: tolmetin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:71978
+name: surfactin C
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:72014
+name: tolmetin sodium dihydrate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:72690
+name: pomalidomide
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:73032
+name: deracoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73038
+name: parecoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73044
+name: lumiracoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73141
+name: 9-beta-D-arabinofuranosylguanine
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:73158
+name: sirtinol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73171
+name: ancymidol
+relationship: RO:0002212 GO:0030244
+
+[Term]
+id: CHEBI:73224
+name: allyl isothiocyanate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:73237
+name: (-)-noscapine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:73261
+name: 4-(methylamino)antipyrine
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73275
+name: ospemifene
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73283
+name: CGS-21680
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73295
+name: WIN 55212-2
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:73357
+name: U69593
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:73858
+name: 1-stearoyl-sn-glycero-3-phosphocholine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:74023
+name: dioscin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:7443
+name: nabumetone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:74619
+name: aclacinomycin A
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:7476
+name: naproxen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:7477
+name: naproxen sodium
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:74810
+name: delphinidin 3-O-beta-D-sambubioside
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:74856
+name: antimony trichloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:7492
+name: nedocromil
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:7494
+name: nefazodone
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:74957
+name: 4',6,7-trihydroxyisoflavone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:74992
+name: rhamnetin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:75033
+name: peonidin chloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75092
+name: morin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:75095
+name: chrysin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:75192
+name: thallium(I) acetate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75193
+name: tetrazolium violet
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75250
+name: pipemidic acid
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:75253
+name: phenylarsine oxide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75272
+name: splitomicin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:75276
+name: ikarugamycin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75283
+name: miltefosine
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75314
+name: peonidin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75321
+name: nitrosulindac
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75408
+name: sulindac sulfide
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:7542
+name: neurotensin
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:75425
+name: guanazole
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:75431
+name: ghrelin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75630
+name: procyanidin B3
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:75633
+name: procyanidin B1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:75643
+name: procyanidin C1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:75725
+name: (R,R)-tramadol
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:75731
+name: (S,S)-tramadol
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:75733
+name: (R,R)-tramadol hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:75734
+name: (S,S)-tramadol hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:7577
+name: nisoldipine
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:75902
+name: hispidulin
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:75915
+name: amfenac
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:75922
+name: nepafenac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76114
+name: benoxaprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76117
+name: cis-ferulic acid
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:76119
+name: bumadizone
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76122
+name: bumadizone calcium hemihydrate
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76123
+name: bumadizone calcium
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76127
+name: cimicoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76128
+name: dexketoprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76130
+name: difenpiramide
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76133
+name: droxicam
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:76136
+name: firocoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76138
+name: flunixin
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76144
+name: flunixin meglumine
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76154
+name: flunoxaprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76158
+name: ibufenac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76160
+name: ibuproxam
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76162
+name: indoprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76163
+name: isoxicam
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76164
+name: lonazolac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76167
+name: lonazolac calcium
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76172
+name: loxoprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76193
+name: (E)-trans-miyabenol C
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:76198
+name: loxoprofen sodium
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76200
+name: clonixin
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:76201
+name: clonixin lysine salt
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:76204
+name: (2S)-2-(4-\{[(1R,2S)-2-hydroxycyclopentyl]methyl\}phenyl)propanoic acid
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76207
+name: mavacoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76228
+name: (S)-ketorolac
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76232
+name: sodium meclofenamate monohydrate
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76249
+name: miroprofen
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:76252
+name: mofebutazone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76254
+name: naproxcinod
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76255
+name: oxametacin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76258
+name: oxyphenbutazone
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76259
+name: oxyphenbutazone hydrate
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76263
+name: proglumetacin
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76269
+name: robenacoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76274
+name: SC560
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:76277
+name: tepoxalin
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:76324
+name: N-nitrosopiperidine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:76343
+name: 4-acetylaminofluorene
+relationship: RO:0002213 GO:0051301
+
+[Term]
+id: CHEBI:7640
+name: nortriptyline
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:76400
+name: 5-(N,N-hexamethylene)amiloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:76591
+name: (25R)-cholest-5-ene-3beta,26-diol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77145
+name: ginsenoside F2
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77146
+name: ginsenoside C-K
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:77147
+name: (20S)-ginsenoside Rh2
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77148
+name: ginsenoside Re
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:77149
+name: notoginsenoside R1
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77150
+name: ginsenoside F1
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:77249
+name: rosuvastatin calcium
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:7731
+name: ofloxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:7735
+name: olanzapine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:77423
+name: escitalopram hydrobromide
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:77428
+name: nitroflurbiprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:7747
+name: oleuropein
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77543
+name: ebselen
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77568
+name: trovafloxacin mesylate
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:77570
+name: tropisetron hydrochloride
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:77573
+name: tosufloxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:77605
+name: tosufloxacin tosylate
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:77645
+name: 2',4,4',6'-tetrahydroxychalcone(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:7770
+name: olsalazine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:77722
+name: apigenin 7-O-beta-D-glucoside(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:77742
+name: bongkrekic acid
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:77772
+name: ilicicolin H
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:77800
+name: 2'-hydroxydaidzein(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:77834
+name: lancovutide
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77879
+name: elaiophylin
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:77890
+name: 1-O-palmitoyl-2-O-(5-oxovaleryl)-sn-glycero-3-phosphocholine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77936
+name: 5-(tetradecyloxy)-2-furoic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:77980
+name: aclacinomycin A zwitterion
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78028
+name: mitoguazone hydrochloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78032
+name: mitoguazone hydrochloride hydrate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78039
+name: meso-tetrakis(N-methyl-4-pyridyl)porphine tetrakis(p-toluenesulfonate)
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:78078
+name: 12-HPEPE(1-)
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:78160
+name: bleomycin A5
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:7822
+name: oxaprozin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:78354
+name: fluorometholone acetate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:78443
+name: cis-9-nonadecenoic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78492
+name: diallyl trisulfide
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78539
+name: zofenopril
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:78540
+name: apremilast
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:78649
+name: edelfosine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78661
+name: borrelidin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78695
+name: cantharidic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78884
+name: 4-terpineol
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78887
+name: tirapazamine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:78909
+name: 12-HPEPE
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:79090
+name: SB-202190
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:79182
+name: 18-hydroxyoctadecanoic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:7936
+name: paroxetine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:79369
+name: elesclomol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:79377
+name: elesclomol-Cu(II)
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:79384
+name: BAR0329
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:7939
+name: parthenolide
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:79395
+name: willow bark extract
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:7944
+name: paroxetine hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:79736
+name: ziram
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:79737
+name: iprobenfos
+relationship: RO:0002212 GO:0008654
+
+[Term]
+id: CHEBI:80131
+name: apelin-13
+relationship: RO:0002212 GO:0006914
+
+[Term]
+id: CHEBI:8062
+name: phenethyl caffeate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:80630
+name: irinotecan
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:80729
+name: toxoflavin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:80774
+name: tauroursodeoxycholic acid
+relationship: RO:0002212 GO:0006915
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:80790
+name: afzelin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:80845
+name: liquiritin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81093
+name: kurarinol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81471
+name: 7alpha-hydroxydehydroepiandrosterone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81559
+name: resolvin E1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81560
+name: resolvin E2
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81563
+name: 18(R)-HEPE
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81564
+name: resolvin D1
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81565
+name: resolvin D2
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:81783
+name: tricyclazole
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:81798
+name: cyflumetofen
+relationship: RO:0002212 GO:0005746
+
+[Term]
+id: CHEBI:81799
+name: diclocymet
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:81800
+name: fenoxanil
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:81812
+name: benzobicyclon
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:81824
+name: diflufenican
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:81829
+name: Benzofenap
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:81830
+name: pyrazoxyfen
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:81843
+name: fluazinam
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:81942
+name: pyrazophos
+relationship: RO:0002212 GO:0008654
+
+[Term]
+id: CHEBI:82012
+name: fluometuron
+relationship: RO:0002212 GO:0009523
+
+[Term]
+id: CHEBI:82016
+name: Fluridone
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:8249
+name: piroxicam
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:82600
+name: zofenopril calcium
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:82602
+name: zofenoprilat
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:82603
+name: zofenoprilat arginine
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:82619
+name: icariside II
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:82701
+name: idelalisib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:82702
+name: vorapaxar
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:82713
+name: SB220025
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:82715
+name: PH 797804
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:82758
+name: prodigiosin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:82818
+name: Z-Val-Phe-H
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:82832
+name: (5Z,11Z,14Z)-icosatrienoic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:82866
+name: sertaconazole
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83314
+name: vorapaxar sulfate
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:83465
+name: sulcotrione
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:83656
+name: luminespib
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:83670
+name: 9-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83672
+name: 5-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83675
+name: 10-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83676
+name: 11-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83677
+name: 12-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83678
+name: 13-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83685
+name: arasertaconazole
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83687
+name: sertaconazole nitrate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83696
+name: CIGB-300
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:83700
+name: 7-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83701
+name: 8-PAHSA(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83766
+name: olaparib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:8378
+name: prednisolone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:8379
+name: prednisolone sodium phosphate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:8382
+name: prednisone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:83949
+name: N-succinimidyl N-methylcarbamate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:84035
+name: pyridoxatin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:84050
+name: trabectedin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:8427
+name: probucol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:8428
+name: procainamide
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:84425
+name: 9-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:84457
+name: 5-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:84460
+name: 10-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:84464
+name: 11-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:84468
+name: 12-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:84469
+name: 13-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:84479
+name: 7-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:84486
+name: 8-PAHSA
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:85164
+name: nintedanib
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:85170
+name: nintedanib esylate
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:85610
+name: JM335
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:85673
+name: oleocanthal
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:85928
+name: (E)-3-tosylacrylonitrile
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0070527
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:85973
+name: edoxaban
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:85974
+name: edoxaban tosylate hydrate
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:85975
+name: edoxaban tosylate
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:8600
+name: prunetin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:86325
+name: BDA-366
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:8657
+name: pyrazolynate
+relationship: RO:0002212 GO:0016117
+
+[Term]
+id: CHEBI:86991
+name: (R)-fluoxetine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:86992
+name: (S)-fluoxetine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:86996
+name: (R)-fluoxetine hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:86997
+name: (S)-fluoxetine hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:8710
+name: quillaic acid
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:87620
+name: 16beta-hydroxyestradiol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:87805
+name: ethionamide S-oxide
+relationship: RO:0002212 GO:0006633
+
+[Term]
+id: CHEBI:88217
+name: N,N,N',N'-tetrakis(2-pyridylmethyl)ethylenediamine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:88312
+name: nefopam hydrochloride
+relationship: RO:0002212 GO:0051583
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:88316
+name: nefopam
+relationship: RO:0002212 GO:0051583
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:88334
+name: CD437
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:88464
+name: 9E,11E-octadecadienoic acid
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:88493
+name: leukotriene B5
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:8887
+name: rofecoxib
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:8899
+name: rottlerin
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:89494
+name: iberin
+relationship: RO:0002212 GO:0009372
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:8988
+name: SN-38
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90039
+name: cyclo(L-His-L-Pro)
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002212 GO:0051583
+
+[Term]
+id: CHEBI:90124
+name: dibromoacetic acid
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9014
+name: salsalate
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:90304
+name: TG101209
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9050
+name: sciadopitysin
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:90528
+name: VX-745
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9053
+name: sclareol
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90620
+name: vatalanib
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:90623
+name: vatalanib succinate
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:90683
+name: talmapimod
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90692
+name: U0126.EtOH
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90693
+name: U0126
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90701
+name: potassium 2-(4-carboxylatophenyl)-4,4,5,5-tetramethylimidazoline-1-oxyl-3-oxide
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:90702
+name: carboxy-PTIO
+relationship: RO:0002212 GO:0006915
+
+[Term]
+id: CHEBI:90703
+name: gamendazole
+relationship: RO:0002212 GO:0007283
+
+[Term]
+id: CHEBI:90706
+name: Ro 41-5253
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90724
+name: AM-251
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90748
+name: O-(chloroacetylcarbamoyl)fumagillol
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:90818
+name: 18(R)-HEPE(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:90819
+name: 15(R)-HEPE(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:90820
+name: 11(R)-HEPE(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:90836
+name: cangrelor tetrasodium
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:90841
+name: cangrelor
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:90842
+name: SR9243
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90844
+name: selexipag
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:90848
+name: ACT-333679
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:90863
+name: sonidegib
+relationship: RO:0002212 GO:0007224
+
+[Term]
+id: CHEBI:90864
+name: sonidegib phosphate
+relationship: RO:0002212 GO:0007224
+
+[Term]
+id: CHEBI:90881
+name: irinotecan hydrochloride hydrate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90939
+name: ixazomib citrate
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90942
+name: ixazomib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:90998
+name: alvocidib hydrochloride
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:91000
+name: resolvin E1(1-)
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:91107
+name: SB 415286
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:91140
+name: 15(R)-HEPE
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:91184
+name: dehydrodiconiferyl alcohol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:91213
+name: 4-iodo-6-phenylpyrimidine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9123
+name: sertraline
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:9124
+name: sertraline hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:91264
+name: 11(R)-HEPE
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:91265
+name: rotundifuran
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:91266
+name: vitetrifolin D
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:91267
+name: vitexilactone
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9130
+name: sevoflurane
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:91329
+name: AZD-8055
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9137
+name: sibutramine
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:91376
+name: ZM447439
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:91399
+name: N-(5-\{[(5-tert-butyl-1,3-oxazol-2-yl)methyl]sulfanyl\}-1,3-thiazol-2-yl)piperidine-4-carboxamide
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:91407
+name: momelotinib
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:91435
+name: linifanib
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:9188
+name: solanine
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9190
+name: solasodine
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0007283
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:92369
+name: SU4312
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:9271
+name: stevioside
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:9288
+name: streptozocin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:93296
+name: N(2)-([biphenyl]-4-ylsulfonyl)-N-hydroxy-N(2)-isopropoxy-D-valinamide
+relationship: RO:0002212 GO:0042438
+
+[Term]
+id: CHEBI:9334
+name: sulfasalazine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:9352
+name: sulindac
+relationship: RO:0002212 GO:0001660
+relationship: RO:0002212 GO:0006954
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9362
+name: suprofen
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:93771
+name: ICRF-193
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9381
+name: T-2 toxin
+relationship: RO:0002212 GO:0071897
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9397
+name: tamoxifen citrate
+relationship: RO:0002212 GO:0001525
+
+[Term]
+id: CHEBI:9401
+name: taraxasterol
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:9429
+name: tectorigenin
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:943
+name: 2,6-dichlorobenzonitrile
+relationship: RO:0002212 GO:0030244
+
+[Term]
+id: CHEBI:94536
+name: N-methylparoxetine
+relationship: RO:0002212 GO:0051610
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:94563
+name: benzydamine
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:95071
+name: pracinostat
+relationship: RO:0002213 GO:0006915
+
+[Term]
+id: CHEBI:9513
+name: thalidomide
+relationship: RO:0002212 GO:0001525
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:9588
+name: ticlopidine
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:9619
+name: tolmetin sodium
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:9648
+name: tramadol
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:9654
+name: trazodone
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:9655
+name: trazodone hydrochloride
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:9667
+name: triamcinolone
+relationship: RO:0002212 GO:0006954
+
+[Term]
+id: CHEBI:9747
+name: Triptolide
+relationship: RO:0002212 GO:0007283
+
+[Term]
+id: CHEBI:9753
+name: troglitazone
+relationship: RO:0002212 GO:0070527
+
+[Term]
+id: CHEBI:9763
+name: trovafloxacin
+relationship: RO:0002212 GO:0071897
+
+[Term]
+id: CHEBI:9943
+name: venlafaxine
+relationship: RO:0002212 GO:0051583
+relationship: RO:0002212 GO:0051610
+
+[Term]
+id: CHEBI:CHEBI:133190
+name: fatty acid oxidation inhibitor
+relationship: RO:0002212 GO:GO:0019395
+
+[Term]
+id: CHEBI:CHEBI:138208
+name: carotenoid biosynthesis inhibitor
+relationship: RO:0002212 GO:GO:0016117
+
+[Term]
+id: CHEBI:CHEBI:138977
+name: quorum sensing inhibitor
+relationship: RO:0002212 GO:GO:0009372
+
+[Term]
+id: CHEBI:CHEBI:140921
+name: Hedgehog signaling pathway inhibitor
+relationship: RO:0002212 GO:GO:0007224
+
+[Term]
+id: CHEBI:CHEBI:145047
+name: antispermatogenic agent
+relationship: RO:0002212 GO:GO:0007283
+
+[Term]
+id: CHEBI:CHEBI:23100
+name: chitin synthesis inhibitor
+relationship: RO:0002212 GO:GO:0006031
+
+[Term]
+id: CHEBI:CHEBI:25355
+name: mitochondrial respiratory-chain inhibitor
+relationship: RO:0002212 GO:GO:0005746
+
+[Term]
+id: CHEBI:CHEBI:26087
+name: photosynthetic electron-transport chain inhibitor
+relationship: RO:0002212 GO:GO:0009767
+
+[Term]
+id: CHEBI:CHEBI:26088
+name: photosystem-I inhibitor
+relationship: RO:0002212 GO:GO:0009522
+
+[Term]
+id: CHEBI:CHEBI:26089
+name: photosystem-II inhibitor
+relationship: RO:0002212 GO:GO:0009523
+
+[Term]
+id: CHEBI:CHEBI:35472
+name: anti-inflammatory drug
+relationship: RO:0002212 GO:GO:0006954
+
+[Term]
+id: CHEBI:CHEBI:35475
+name: non-steroidal anti-inflammatory drug
+relationship: RO:0002212 GO:GO:0006954
+
+[Term]
+id: CHEBI:CHEBI:35493
+name: antipyretic
+relationship: RO:0002212 GO:GO:0001660
+
+[Term]
+id: CHEBI:CHEBI:38496
+name: electron-transport chain inhibitor
+relationship: RO:0002212 GO:GO:0022900
+
+[Term]
+id: CHEBI:CHEBI:48422
+name: angiogenesis inhibitor
+relationship: RO:0002212 GO:GO:0001525
+
+[Term]
+id: CHEBI:CHEBI:48675
+name: antifibrinolytic drug
+relationship: RO:0002212 GO:GO:0042730
+
+[Term]
+id: CHEBI:CHEBI:50184
+name: ion transport inhibitor
+relationship: RO:0002212 GO:GO:0006811
+
+[Term]
+id: CHEBI:CHEBI:50185
+name: fatty acid synthesis inhibitor
+relationship: RO:0002212 GO:GO:0006633
+
+[Term]
+id: CHEBI:CHEBI:50427
+name: platelet aggregation inhibitor
+relationship: RO:0002212 GO:GO:0070527
+
+[Term]
+id: CHEBI:CHEBI:50843
+name: antimineralocorticoid
+relationship: RO:0002212 GO:GO:0006705
+
+[Term]
+id: CHEBI:CHEBI:50927
+name: angiogenesis inducing agent
+relationship: RO:0002213 GO:GO:0001525
+
+[Term]
+id: CHEBI:CHEBI:50949
+name: serotonin uptake inhibitor
+relationship: RO:0002212 GO:GO:0051610
+
+[Term]
+id: CHEBI:CHEBI:51039
+name: dopamine uptake inhibitor
+relationship: RO:0002212 GO:GO:0051583
+
+[Term]
+id: CHEBI:CHEBI:52290
+name: mitogen
+relationship: RO:0002213 GO:GO:0051301
+
+[Term]
+id: CHEBI:CHEBI:59517
+name: DNA synthesis inhibitor
+relationship: RO:0002212 GO:GO:0071897
+
+[Term]
+id: CHEBI:CHEBI:63146
+name: insulin release inhibitor
+relationship: RO:0002212 GO:GO:0030073
+
+[Term]
+id: CHEBI:CHEBI:63173
+name: T-cell proliferation inhibitor
+relationship: RO:0002212 GO:GO:0042098
+
+[Term]
+id: CHEBI:CHEBI:63330
+name: sodium-dependent Pi-transporter inhibitor
+relationship: RO:0002212 GO:GO:0044341
+
+[Term]
+id: CHEBI:CHEBI:63958
+name: cellulose synthesis inhibitor
+relationship: RO:0002212 GO:GO:0030244
+
+[Term]
+id: CHEBI:CHEBI:64933
+name: melanin synthesis inhibitor
+relationship: RO:0002212 GO:GO:0042438
+
+[Term]
+id: CHEBI:CHEBI:67079
+name: anti-inflammatory agent
+relationship: RO:0002212 GO:GO:0006954
+
+[Term]
+id: CHEBI:CHEBI:68494
+name: apoptosis inhibitor
+relationship: RO:0002212 GO:GO:0006915
+
+[Term]
+id: CHEBI:CHEBI:68495
+name: apoptosis inducer
+relationship: RO:0002213 GO:GO:0006915
+
+[Term]
+id: CHEBI:CHEBI:68543
+name: pyrimidine synthesis inhibitor
+relationship: RO:0002212 GO:GO:0006221
+
+[Term]
+id: CHEBI:CHEBI:72571
+name: pro-angiogenic agent
+relationship: RO:0002213 GO:GO:0001525
+
+[Term]
+id: CHEBI:CHEBI:73267
+name: oxidative phosphorylation inhibitor
+relationship: RO:0002212 GO:GO:0006119
+
+[Term]
+id: CHEBI:CHEBI:83741
+name: phospholipid biosynthesis inhibitor
+relationship: RO:0002212 GO:GO:0008654
+
+[Term]
+id: CHEBI:CHEBI:88230
+name: autophagy inhibitor
+relationship: RO:0002212 GO:GO:0006914

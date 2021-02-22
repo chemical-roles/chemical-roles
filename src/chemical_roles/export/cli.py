@@ -2,12 +2,27 @@
 
 """CLI for Chemical Roles exporters."""
 
+import os
+
 import click
+
+from ..constants import DATA
 
 
 @click.group()
 def export():
     """Export the database."""
+
+
+@export.command(name='all')
+@click.pass_context
+def export_all(ctx):
+    ctx.invoke(summary)
+    ctx.invoke(obo)
+    ctx.invoke(bel)
+
+
+directory_option = click.option('--directory', default=DATA)
 
 
 @export.command()
@@ -21,13 +36,22 @@ def summary():
 
 
 @export.command()
-@click.argument('path')
-def bel(path):
+@directory_option
+def bel(directory):
     """Write BEL export."""
     import pybel
     from .bel import get_bel
     graph = get_bel()
-    pybel.dump(graph, path)
+    pybel.dump(graph, os.path.join(directory, 'crog.bel.nodelink.json.gz'))
+
+
+@export.command()
+@directory_option
+def obo(directory):
+    from .obo import get_obo
+    o = get_obo()
+    o.write_obo(os.path.join(directory, 'crog.obo'))
+    o.write_obonet_gz(os.path.join(directory, 'crog.obonet.json.gz'))
 
 
 if __name__ == '__main__':

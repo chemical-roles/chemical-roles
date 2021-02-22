@@ -109,7 +109,7 @@ def write_export():
     1. Full TSV at ``export/relations.tsv``
     2. Slim TSV at ``export/relations_slim.tsv``, appropriate for machine learning
     """
-    df = get_relations_df().drop_duplicates()
+    df = get_relations_df()
     logger.info('got relations df with %s rows', len(df.index))
 
     columns = [

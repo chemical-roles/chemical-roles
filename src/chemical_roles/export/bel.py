@@ -33,8 +33,8 @@ _adders = {
 
 def get_bel() -> BELGraph:
     """Get Chemical Roles as BEL."""
-    df = get_relations_df().drop_duplicates()
-    graph = BELGraph(name='Chemical Roles')
+    df = get_relations_df()
+    graph = BELGraph(name='Chemical Roles Graph')
     it = tqdm(df.dropna().values, total=len(df.index), desc='mapping to BEL', unit_scale=True)
     for source_db, source_id, source_name, modulation, target_type, target_db, target_id, target_name in it:
         if target_type == 'molecular function':
@@ -50,5 +50,9 @@ def get_bel() -> BELGraph:
             name=target_name,
         )
         adder = _adders[modulation]
-        adder(graph, source, target, citation='', evidence='')
+        adder(
+            graph, source, target,
+            citation=('doi', '10.26434/chemrxiv.12591221'),
+            evidence='Manually curated.',
+        )
     return graph

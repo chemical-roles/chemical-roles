@@ -5,6 +5,7 @@
 import itertools as itt
 import logging
 from collections import defaultdict
+from functools import lru_cache
 from typing import Iterable, List, Mapping, Tuple
 
 import networkx as nx
@@ -23,6 +24,7 @@ from chemical_roles.utils import XREFS_COLUMNS
 logger = logging.getLogger(__name__)
 
 
+@lru_cache(maxsize=1)
 def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
     """Assemble the relations dataframe."""
     xrefs_df = get_xrefs_df()
@@ -35,20 +37,23 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
     ec2go = expasy.get_ec2go()
     logger.info('ec2go has %d elements', len(ec2go))
 
+    rows = list(xrefs_df.values)
     x = defaultdict(list)
     it = tqdm(
-        xrefs_df.values,
+        rows,
         total=len(xrefs_df.index),
         desc='inferring over target hierarchies',
     )
     non_chebi_counter = 0
-    for source_db, source_id, _, modulation, target_type, target_db, target_id, target_name in it:
+    for source_db, source_id, _source_name, modulation, target_type, target_db, target_id, target_name in it:
         if source_db != 'chebi':
             non_chebi_counter += 1
             continue
 
         if source_id.startswith(f'{source_db.upper()}:'):
             source_id = source_id[len(source_db) + 1:]
+        if target_id.startswith(f'{target_db.upper()}:'):
+            target_id = target_id[len(target_db) + 1:]
 
         if target_db == 'hgnc':
             # Append original
@@ -94,9 +99,7 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
     db_to_role_to_chemical_curies = {
         'chebi': get_chebi_role_to_children(),
     }
-
-    rows = []
-    for (role_db, role_id), entries in tqdm(x.items(), desc='inferring over role hierarchies'):
+    for (role_db, role_id), entries in tqdm(sorted(x.items()), desc='inferring over role hierarchies'):
         sub_role_curies = {(role_db, role_id)}
 
         if role_db == 'chebi' and use_sub_roles:
@@ -110,7 +113,7 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
             for sub_role_db, sub_role_id in sub_role_curies
         ))
         if not chemical_curies:
-            tqdm.write(f'no inference for {role_db}:{role_id}')
+            tqdm.write(f'no inference for {role_db}:{role_id} ! {pyobo.get_name(role_db, role_id)}')
             continue
 
         for modulation, target_type, target_db, target_id, target_name in entries:
@@ -121,7 +124,10 @@ def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
                 ))
 
     logger.info('inferred df has %d rows', len(rows))
-    return pd.DataFrame(rows, columns=XREFS_COLUMNS)
+    rv = pd.DataFrame(rows, columns=XREFS_COLUMNS)
+    rv.sort_values(XREFS_COLUMNS, inplace=True)
+    rv.drop_duplicates(inplace=True)
+    return rv
 
 
 FAMPLEX_RELATIONS_URL = 'https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv'
