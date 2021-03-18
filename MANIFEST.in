@@ -1,7 +1,14 @@
 graft src
+graft docs
 prune art
 prune export
 prune chiro
+
+recursive-include docs *.gz
+recursive-include docs *.md
+recursive-include docs *.obo
+recursive-include docs *.svg
+recursive-include docs *.tsv
 
 recursive-include docs *.png
 global-exclude *.py[cod] __pycache__ *.so *.dylib .DS_Store *.gpickle
