@@ -3,5 +3,5 @@ activator			activator	P3771	RO:0012005	is small molecule activator	N/A
 agonist	chebi	48705	agonist	P3772			https://github.com/oborel/obo-relations/issues/371
 antagonist	chebi	48706	antagonist	P3773			https://github.com/oborel/obo-relations/issues/371
 inhibitor	chebi	35222	inhibitor	P3776	RO:0012006	is small molecule inhibitor	N/A
-inverse_agonist	chebi	90847	inverse agonist				https://github.com/oborel/obo-relations/issues/371, https://www.wikidata.org/wiki/Wikidata:Property_proposal/Natural_science#inverse_agonist_of
+inverse_agonist	chebi	90847	inverse agonist	P9275			https://github.com/oborel/obo-relations/issues/371, https://www.wikidata.org/wiki/Wikidata:Property_proposal/Natural_science#inverse_agonist_of
 modulator			modulator		RO:0012004	is small molecule regulator	N/A
