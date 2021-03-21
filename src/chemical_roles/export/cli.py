@@ -17,6 +17,7 @@ def export():
 @export.command(name='all')
 @click.pass_context
 def export_all(ctx):
+    """Export all."""
     ctx.invoke(summary)
     ctx.invoke(obo)
     ctx.invoke(bel)
@@ -59,6 +60,7 @@ def indra(directory):
 @export.command()
 @directory_option
 def obo(directory):
+    """Write OBO export."""
     from .obo import get_obo
     o = get_obo()
     o.write_obo(os.path.join(directory, 'crog.obo'))
