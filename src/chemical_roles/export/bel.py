@@ -22,12 +22,12 @@ _type_map = {
     'protein complex': dsl.NamedComplexAbundance,
 }
 _adders = {
-    'activator': BELGraph.add_activates,
-    'agonist': BELGraph.add_activates,
-    'antagonist': BELGraph.add_inhibits,
-    'inhibitor': BELGraph.add_inhibits,
-    'inverse agonist': BELGraph.add_activates,
-    'modulator': BELGraph.add_regulates,
+    'activator': BELGraph.add_directly_activates,
+    'agonist': BELGraph.add_directly_activates,
+    'antagonist': BELGraph.add_directly_inhibits,
+    'inhibitor': BELGraph.add_directly_inhibits,
+    'inverse agonist': BELGraph.add_directly_activates,
+    'modulator': BELGraph.add_directly_regulates,
 }
 
 
