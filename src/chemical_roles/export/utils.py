@@ -24,10 +24,12 @@ from chemical_roles.utils import XREFS_COLUMNS
 logger = logging.getLogger(__name__)
 
 
-@lru_cache(maxsize=1)
-def get_relations_df(use_sub_roles=False) -> pd.DataFrame:
+@lru_cache(maxsize=4)
+def get_relations_df(use_sub_roles: bool = False, use_inferred: bool = True) -> pd.DataFrame:
     """Assemble the relations dataframe."""
     xrefs_df = get_xrefs_df()
+    if not use_inferred:
+        return xrefs_df
 
     famplex_id_to_members = _get_famplex()
 

@@ -20,6 +20,7 @@ def export_all(ctx):
     ctx.invoke(summary)
     ctx.invoke(obo)
     ctx.invoke(bel)
+    ctx.invoke(indra)
 
 
 directory_option = click.option('--directory', default=DATA)
@@ -43,6 +44,16 @@ def bel(directory):
     from .bel import get_bel
     graph = get_bel()
     pybel.dump(graph, os.path.join(directory, 'crog.bel.nodelink.json.gz'))
+
+
+@export.command()
+@directory_option
+def indra(directory):
+    """Write INDRA export."""
+    import pybel
+    from .bel import get_bel
+    graph = get_bel(use_inferred=False)
+    pybel.to_indra_statements_json_file(graph, os.path.join(directory, 'crog.indra.json'))
 
 
 @export.command()
