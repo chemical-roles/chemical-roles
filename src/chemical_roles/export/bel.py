@@ -53,6 +53,6 @@ def get_bel(use_inferred: bool = True) -> BELGraph:
         adder(
             graph, source, target,
             citation=('doi', '10.26434/chemrxiv.12591221'),
-            evidence='Manually curated.',
+            evidence=None,
         )
     return graph

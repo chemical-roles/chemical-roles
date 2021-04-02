@@ -54,7 +54,7 @@ def indra(directory):
     import pybel
     from .bel import get_bel
     graph = get_bel(use_inferred=False)
-    pybel.to_indra_statements_json_file(graph, os.path.join(directory, 'crog.indra.json'))
+    pybel.to_indra_statements_json_file(graph, os.path.join(directory, 'crog.indra.json'), sort_keys=True)
 
 
 @export.command()
