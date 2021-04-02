@@ -53,7 +53,7 @@ def indra(directory):
     """Write INDRA export."""
     import pybel
     from .bel import get_bel
-    graph = get_bel(use_inferred=False)
+    graph = get_bel(use_inferred=False, add_evidence=False)
     pybel.to_indra_statements_json_file(graph, os.path.join(directory, 'crog.indra.json'), sort_keys=True)
 
 

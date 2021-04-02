@@ -31,11 +31,12 @@ _adders = {
 }
 
 
-def get_bel(use_inferred: bool = True) -> BELGraph:
+def get_bel(use_inferred: bool = True, add_evidence: bool = True) -> BELGraph:
     """Get Chemical Roles as BEL."""
     df = get_relations_df(use_inferred=use_inferred)
     graph = BELGraph(name='Chemical Roles Graph')
     it = tqdm(df.dropna().values, total=len(df.index), desc='mapping to BEL', unit_scale=True)
+    evidence = 'Manually curated.' if add_evidence else None
     for source_db, source_id, source_name, modulation, target_type, target_db, target_id, target_name in it:
         if target_type == 'molecular function':
             continue
@@ -53,6 +54,6 @@ def get_bel(use_inferred: bool = True) -> BELGraph:
         adder(
             graph, source, target,
             citation=('doi', '10.26434/chemrxiv.12591221'),
-            evidence=None,
+            evidence=evidence,
         )
     return graph
