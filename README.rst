@@ -30,10 +30,10 @@ Repository Structure
     the term CETP inhibitor (CHEBI:49205) describes the ``inhibition`` relationship to CETP (hgnc:1869).
   - `resources/reclassification.tsv </src/chemical_roles/resources/reclassification.tsv>`_:
     Suggestions on which entities inherit from the wrong type of ChEBI inhibitor role.
-- ``export/``: Final results exported by combining the ChEBI OBO information
+- ``docs/_data``: Final results exported by combining the ChEBI OBO information
   with the manually curated resources in ``resources/``
 
-  - `export/relations.tsv </src/chemical_roles/export/relations.tsv>`_:
+  - `relations.tsv </docs/_data/relations.tsv>`_:
     A combination of the manually curated resources and reasoning (TODO) over FamPlex, InterPro, GO, HGNC
     Gene Familes, and ExPASy to generate new relationships between instances of the roles curated here.
 - ``curate_chebi_relations.py``: The python script that suggests new curation using `Gilda <https://github.com/indralab/gilda>`_
