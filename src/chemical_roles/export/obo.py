@@ -10,24 +10,33 @@ from tqdm import tqdm
 from .utils import get_relations_df
 
 __all__ = [
-    'get_obo',
+    "get_obo",
 ]
 
 
 def get_obo() -> Obo:
     """Get Chemical Roles as OBO."""
     return Obo(
-        name='Chemical Roles Graph',
-        ontology='crog',
+        name="Chemical Roles Graph",
+        ontology="crog",
         iter_terms=iter_terms,
     )
 
 
 def iter_terms() -> Iterable[Term]:
     df = get_relations_df()
-    it = tqdm(df.dropna().values, total=len(df.index), desc='mapping to OBO', unit_scale=True)
+    it = tqdm(df.dropna().values, total=len(df.index), desc="mapping to OBO", unit_scale=True)
     ref_term = {}
-    for source_db, source_id, source_name, modulation, target_type, target_db, target_id, target_name in it:
+    for (
+        source_db,
+        source_id,
+        source_name,
+        modulation,
+        target_type,
+        target_db,
+        target_id,
+        target_name,
+    ) in it:
         source = Reference(source_db.upper(), source_id, source_name)
         term = ref_term.get(source)
         if term is None:
@@ -44,8 +53,12 @@ def iter_terms() -> Iterable[Term]:
 
 # TODO fill out rest
 _typedefs: Mapping[Tuple[str, str, str], TypeDef] = {
-    ('go', 'biological process', 'activator'): TypeDef(Reference('RO', '0002213', 'positively regulates')),
-    ('go', 'biological process', 'inhibitor'): TypeDef(Reference('RO', '0002212', 'negatively regulates')),
+    ("go", "biological process", "activator"): TypeDef(
+        Reference("RO", "0002213", "positively regulates")
+    ),
+    ("go", "biological process", "inhibitor"): TypeDef(
+        Reference("RO", "0002212", "negatively regulates")
+    ),
 }
 
 _logged = set()
@@ -58,4 +71,4 @@ def _get_typedef(target_db, target_type, modulation) -> Optional[TypeDef]:
         return rv
     if t not in _logged:
         _logged.add(t)
-        tqdm.write(f'no strategy for: {target_db} {target_type} {modulation}')
+        tqdm.write(f"no strategy for: {target_db} {target_type} {modulation}")

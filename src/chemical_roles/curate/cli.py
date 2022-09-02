@@ -16,5 +16,5 @@ def curate():
 curate.add_command(curate_chebi)
 curate.add_command(curate_mesh)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     curate()

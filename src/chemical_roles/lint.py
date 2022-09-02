@@ -24,11 +24,11 @@ def tabs():
     with open(XREFS_PATH) as file:
         for i, line in enumerate(file, start=1):
             line = line.strip()
-            if 7 != line.count('\t'):
-                print(f'line {i}: Not enough entries - {line}')
+            if 7 != line.count("\t"):
+                print(f"line {i}: Not enough entries - {line}")
                 errors.add(i)
     if errors:
-        click.secho('Document not clean.', fg='red', bold=True)
+        click.secho("Document not clean.", fg="red", bold=True)
         sys.exit(1)
 
 
@@ -38,37 +38,39 @@ def mappings():
     """Find single mapped entries."""
     df = get_xrefs_df()
 
-    idx = (df['target_db'] == 'pr') & (df['type'] == 'protein')
+    idx = (df["target_db"] == "pr") & (df["type"] == "protein")
     protein_pr_errors = get_single_mappings(df, idx)
     if protein_pr_errors:
-        click.secho('Some entries only mapped to Protein Ontology', fg='red', bold=True)
+        click.secho("Some entries only mapped to Protein Ontology", fg="red", bold=True)
         _p(protein_pr_errors)
 
-    idx = (df['target_db'] == 'go') & (df['type'] == 'protein complex')
+    idx = (df["target_db"] == "go") & (df["type"] == "protein complex")
     go_complex_errors = get_single_mappings(df, idx)
     if go_complex_errors:
-        click.secho('Some complexes only mapped to Gene Ontology', fg='red', bold=True)
+        click.secho("Some complexes only mapped to Gene Ontology", fg="red", bold=True)
         _p(go_complex_errors)
 
-    idx = (df['target_db'] == 'mesh')
+    idx = df["target_db"] == "mesh"
     mesh_errors = get_single_mappings(df, idx)
     if mesh_errors:
-        click.secho('Some roles only mapped to MeSH', fg='red', bold=True)
+        click.secho("Some roles only mapped to MeSH", fg="red", bold=True)
         _p(mesh_errors)
 
-    idx = (df['type'] == 'molecular function')
+    idx = df["type"] == "molecular function"
     mf_errors = get_single_mappings(df, idx)
     if mf_errors:
-        click.secho('Some roles only mapped to molecular function', fg='red', bold=True)
+        click.secho("Some roles only mapped to molecular function", fg="red", bold=True)
         _p(mf_errors)
 
-    if any([
-        protein_pr_errors,
-        go_complex_errors,
-        mesh_errors,
-        mf_errors,
-    ]):
-        click.secho('The job is not yet done...', fg='red')
+    if any(
+        [
+            protein_pr_errors,
+            go_complex_errors,
+            mesh_errors,
+            mf_errors,
+        ]
+    ):
+        click.secho("The job is not yet done...", fg="red")
 
 
 def _p(errors):
@@ -87,23 +89,23 @@ def sort():
 def validate():
     """Validate identifiers."""
     df = get_xrefs_df()
-    for i, (prefix, identifier) in df[['source_db', 'source_id']].iterrows():
+    for i, (prefix, identifier) in df[["source_db", "source_id"]].iterrows():
         norm_prefix = bioregistry.normalize_prefix(prefix)
         if prefix != norm_prefix:
-            raise ValueError(f'invalid source prefix: {prefix} should be {norm_prefix}')
+            raise ValueError(f"invalid source prefix: {prefix} should be {norm_prefix}")
         if not bioregistry.validate(prefix, identifier):
             raise ValueError(
-                f'[line {i}] Invalid source curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}',
+                f"[line {i}] Invalid source curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}",
             )
-    for i, (prefix, identifier) in df[['target_db', 'target_id']].iterrows():
+    for i, (prefix, identifier) in df[["target_db", "target_id"]].iterrows():
         norm_prefix = bioregistry.normalize_prefix(prefix)
         if prefix != norm_prefix:
-            raise ValueError(f'invalid target prefix: {prefix} should be {norm_prefix}')
+            raise ValueError(f"invalid target prefix: {prefix} should be {norm_prefix}")
         if not bioregistry.validate(prefix, identifier):
             raise ValueError(
-                f'[line {i}] Invalid target curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}',
+                f"[line {i}] Invalid target curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}",
             )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     lint()

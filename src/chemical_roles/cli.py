@@ -18,5 +18,5 @@ main.add_command(curate)
 main.add_command(export)
 main.add_command(lint)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

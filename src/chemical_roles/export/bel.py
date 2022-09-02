@@ -9,36 +9,45 @@ from tqdm import tqdm
 from .utils import get_relations_df
 
 __all__ = [
-    'get_bel',
+    "get_bel",
 ]
 
 _type_map = {
-    'biological process': dsl.BiologicalProcess,
-    'chemical': dsl.Abundance,
-    'organism': dsl.Population,
-    'phenotype': dsl.Pathology,
-    'protein': dsl.Protein,
-    'protein family': dsl.Protein,
-    'protein complex': dsl.NamedComplexAbundance,
+    "biological process": dsl.BiologicalProcess,
+    "chemical": dsl.Abundance,
+    "organism": dsl.Population,
+    "phenotype": dsl.Pathology,
+    "protein": dsl.Protein,
+    "protein family": dsl.Protein,
+    "protein complex": dsl.NamedComplexAbundance,
 }
 _adders = {
-    'activator': BELGraph.add_directly_activates,
-    'agonist': BELGraph.add_directly_activates,
-    'antagonist': BELGraph.add_directly_inhibits,
-    'inhibitor': BELGraph.add_directly_inhibits,
-    'inverse agonist': BELGraph.add_directly_activates,
-    'modulator': BELGraph.add_directly_regulates,
+    "activator": BELGraph.add_directly_activates,
+    "agonist": BELGraph.add_directly_activates,
+    "antagonist": BELGraph.add_directly_inhibits,
+    "inhibitor": BELGraph.add_directly_inhibits,
+    "inverse agonist": BELGraph.add_directly_activates,
+    "modulator": BELGraph.add_directly_regulates,
 }
 
 
 def get_bel(use_inferred: bool = True, add_evidence: bool = True) -> BELGraph:
     """Get Chemical Roles as BEL."""
     df = get_relations_df(use_inferred=use_inferred)
-    graph = BELGraph(name='Chemical Roles Graph')
-    it = tqdm(df.dropna().values, total=len(df.index), desc='mapping to BEL', unit_scale=True)
-    evidence = 'Manually curated.' if add_evidence else None
-    for source_db, source_id, source_name, modulation, target_type, target_db, target_id, target_name in it:
-        if target_type == 'molecular function':
+    graph = BELGraph(name="Chemical Roles Graph")
+    it = tqdm(df.dropna().values, total=len(df.index), desc="mapping to BEL", unit_scale=True)
+    evidence = "Manually curated." if add_evidence else None
+    for (
+        source_db,
+        source_id,
+        source_name,
+        modulation,
+        target_type,
+        target_db,
+        target_id,
+        target_name,
+    ) in it:
+        if target_type == "molecular function":
             continue
         source = pybel.dsl.Abundance(
             namespace=source_db,
@@ -52,8 +61,10 @@ def get_bel(use_inferred: bool = True, add_evidence: bool = True) -> BELGraph:
         )
         adder = _adders[modulation]
         adder(
-            graph, source, target,
-            citation=('doi', '10.26434/chemrxiv.12591221'),
+            graph,
+            source,
+            target,
+            citation=("doi", "10.26434/chemrxiv.12591221"),
             evidence=evidence,
         )
     return graph
