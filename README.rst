@@ -1,8 +1,8 @@
 .. image:: art/CRoG-logotype-1024.png
    :alt: CRoG Logotype
 
-Chemical Relations |build| |zenodo|
-===================================
+Chemical Roles Graph (CRoG) |build| |zenodo|
+============================================
 This repository is meant to house links between ChEBI terms describing various
 types of inhibitors and their targets in other vocabularies. For example,
 there are several enzyme inhibitors that refer to ExPASy enzyme class codes,
