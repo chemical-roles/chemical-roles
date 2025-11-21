@@ -71,14 +71,14 @@ def main() -> None:
             sep="\t",
             file=file,
         )
-        chemical_results = _get_results(WIKIDATA_ENDPOINT_URL, chemical_query)
+        chemical_results_raw = _get_results(WIKIDATA_ENDPOINT_URL, chemical_query)
         chemical_results = (
             (
                 int(result["chebi_id"]["value"]),
                 result["chebi_id"]["value"],
                 result["chemical"]["value"].split("/")[-1],
             )
-            for result in chemical_results["results"]["bindings"]
+            for result in chemical_results_raw["results"]["bindings"]
         )
         for _, chebi_id, wikidata_id in sorted(chemical_results):
             print(chebi_id, wikidata_id, sep="\t", file=file)

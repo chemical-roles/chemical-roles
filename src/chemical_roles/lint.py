@@ -96,7 +96,7 @@ def validate() -> None:
         norm_prefix = bioregistry.normalize_prefix(prefix)
         if prefix != norm_prefix:
             raise ValueError(f"invalid source prefix: {prefix} should be {norm_prefix}")
-        if not bioregistry.validate(prefix, identifier):
+        if not bioregistry.is_valid_identifier(prefix, identifier):
             raise ValueError(
                 f"[line {i}] Invalid source curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}",
             )
@@ -104,7 +104,7 @@ def validate() -> None:
         norm_prefix = bioregistry.normalize_prefix(prefix)
         if prefix != norm_prefix:
             raise ValueError(f"invalid target prefix: {prefix} should be {norm_prefix}")
-        if not bioregistry.validate(prefix, identifier):
+        if not bioregistry.is_valid_identifier(prefix, identifier):
             raise ValueError(
                 f"[line {i}] Invalid target curie: {prefix}:{identifier} for pattern {bioregistry.get_pattern(prefix)}",
             )

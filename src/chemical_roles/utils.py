@@ -98,7 +98,7 @@ def yield_gilda(
         yield source_db, identifier, name, suffix or "?", "?", "?", "?", "?"
 
 
-def get_single_mappings(df: pd.DataFrame, idx) -> Errors:
+def get_single_mappings(df: pd.DataFrame, idx: pd.Series) -> Errors:
     """Get ChEBI identifiers that are only mapped to one thing based on slicing the dataframe on the given index."""
     errors: defaultdict[tuple[str, str, str], set[str]] = defaultdict(set)
     chebi_ids = sorted(df.loc[idx, "source_id"].unique())

@@ -101,11 +101,10 @@ def get_relations_df(*, use_sub_roles: bool = False, use_inferred: bool = True) 
                 continue
 
             for sub_target_db, sub_target_id, sub_target_name in children_ec_codes:
-                target_type = DB_TO_TYPE[sub_target_db]
                 x[source_db, source_id].append(
                     (
                         modulation,
-                        target_type,
+                        DB_TO_TYPE[sub_target_db],
                         sub_target_db,
                         sub_target_id,
                         sub_target_name,
@@ -141,9 +140,7 @@ def get_relations_df(*, use_sub_roles: bool = False, use_inferred: bool = True) 
         sub_role_curies = {(role_db, role_id)}
 
         if role_db == "chebi" and use_sub_roles:
-            sub_role_curies |= {
-                bioregistry.normalize_curie(c) for c in pyobo.get_subhierarchy(role_db, role_id)
-            }
+            sub_role_curies |= {c.pair for c in pyobo.get_descendants(role_db, role_id)}
 
         chemical_curies = set(
             itt.chain.from_iterable(
@@ -178,7 +175,7 @@ def get_relations_df(*, use_sub_roles: bool = False, use_inferred: bool = True) 
 
 
 FAMPLEX_RELATIONS_URL = "https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv"
-DB_TO_TYPE = {
+DB_TO_TYPE: dict[str, str] = {
     "ec": "protein family",
     "uniprot": "protein",
     "prosite": "protein",

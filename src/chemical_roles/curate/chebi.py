@@ -8,10 +8,11 @@ import logging
 from functools import lru_cache
 from typing import Iterable, Optional, Set, TextIO
 
+import bioversions
 import click
 import pandas as pd
 import pyobo
-from curies import Reference
+from curies import Prefix, Reference
 from more_click import verbose_option
 from pyobo.sources.expasy import get_ec2go
 from tqdm import tqdm
@@ -60,11 +61,10 @@ def get_curated_role_chebi_ids() -> Set[str]:
 
 @lru_cache(maxsize=1)
 def _get_irrelevant_role_chebi_references() -> Set[Reference]:
-    references = set(
-        itt.chain.from_iterable(
-            pyobo.get_descendants("chebi", chebi_id)
-            for chebi_id in get_irrelevant_roles_df().identifier
-        )
+    references: set[Reference] = set(
+        reference
+        for chebi_id in get_irrelevant_roles_df().identifier
+        for reference in pyobo.get_descendants("chebi", chebi_id) or []
     )
     logger.info("%d irrelevant ChEBI role identifiers", len(references))
     return references
@@ -83,7 +83,7 @@ def _get_inhibitors_reclassification() -> pd.DataFrame:
 
 def propose_enzyme_modulators() -> pd.DataFrame:
     """Suggest enzyme inhibitors for curation."""
-    ec2go = get_ec2go()
+    ec2go = get_ec2go(version=bioversions.get_version("go"))
     rv = []
 
     for identifier, name in pyobo.get_id_name_mapping("chebi").items():
@@ -172,7 +172,7 @@ def suggest_pathway_inhibitor_curation() -> None:
         f"Children of {PATHWAY_INHIBITOR_CHEBI_ID} ({pyobo.get_name('chebi', PATHWAY_INHIBITOR_CHEBI_ID)})"
     )
     chebi_referenes = pyobo.get_descendants("chebi", PATHWAY_INHIBITOR_CHEBI_ID)
-    for chebi_reference in chebi_referenes:
+    for chebi_reference in chebi_referenes or []:
         if any(
             chebi_reference.identifier in group
             for group in (
@@ -182,7 +182,7 @@ def suggest_pathway_inhibitor_curation() -> None:
             )
         ):
             continue  # we already curated this!
-        name = pyobo.get_name("chebi", chebi_reference)
+        name = pyobo.get_name(chebi_reference)
         if name is None:
             logger.warning("could not find chebi:%s", chebi_reference)
             raise KeyError(chebi_reference.curie)
@@ -197,11 +197,12 @@ def suggest_pathway_inhibitor_curation() -> None:
 
 def suggest_inhibitor_curation() -> None:
     """Suggest inhibitors for curation."""
-    chebi_references: set[Reference] = (
-        pyobo.get_descendants("chebi", INHIBITOR_CHEBI_ID)
-        - pyobo.get_descendants("chebi", PATHWAY_INHIBITOR_CHEBI_ID)
-        - pyobo.get_descendants("chebi", ENZYME_INHIBITOR_CHEBI_ID)
+    inhibitors: set[Reference] = pyobo.get_descendants("chebi", INHIBITOR_CHEBI_ID) or set()
+    pathways: set[Reference] = pyobo.get_descendants("chebi", PATHWAY_INHIBITOR_CHEBI_ID) or set()
+    enzyme_inhibitors: set[Reference] = (
+        pyobo.get_descendants("chebi", ENZYME_INHIBITOR_CHEBI_ID) or set()
     )
+    chebi_references: set[Reference] = inhibitors - pathways - enzyme_inhibitors
     for t in _suggest_xrefs_curation(chebi_references=chebi_references, suffix="inhibitor"):
         print(*t, sep="\t")
 
@@ -233,18 +234,25 @@ def suggest_all_roles(show_ungrounded: bool = False, file: Optional[TextIO] = No
         BIOLOGICAL_ROLE_ID,
         APPLICATION_ROLE_ID,
     )
-    chebi_references = pyobo.get_descendants("chebi", BIOLOGICAL_ROLE_ID) | pyobo.get_descendants(
-        "chebi", APPLICATION_ROLE_ID
-    )
+    biological_roles = pyobo.get_descendants("chebi", BIOLOGICAL_ROLE_ID) or set()
+    application_roles = pyobo.get_descendants("chebi", APPLICATION_ROLE_ID) or set()
+    chebi_references = biological_roles | application_roles
     print(*get_xrefs_df().columns, sep="\t", file=file)
     for row in _iter_gilda(chebi_references=chebi_references, show_missing=show_ungrounded):
         print(*row, sep="\t", file=file)
 
 
 def _single_suggest(
-    chebi_reference: str, suffix: str, file: TextIO | None = None, show_missing: bool = False
+    chebi_reference: str | Reference,
+    suffix: str,
+    file: TextIO | None = None,
+    show_missing: bool = False,
 ) -> None:
+    if isinstance(chebi_reference, str):
+        chebi_reference = Reference(prefix=Prefix("chebi"), identifier=chebi_reference)
     descendant_references = pyobo.get_descendants(chebi_reference)
+    if not descendant_references:
+        return None
     logger.info(
         "Suggesting for %d descendants of %s ! %s",
         len(descendant_references),
@@ -270,7 +278,7 @@ def _suggest_xrefs_curation(
     chebi_references = (
         chebi_reference
         for chebi_reference in chebi_references
-        if pyobo.get_name(chebi_reference).casefold().endswith(suffix.casefold())
+        if (name := pyobo.get_name(chebi_reference)) and name.casefold().endswith(suffix.casefold())
     )
     yield from _iter_gilda(chebi_references, suffix=suffix, show_missing=show_missing)
 
