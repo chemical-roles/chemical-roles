@@ -8,9 +8,12 @@ from collections import defaultdict
 from functools import lru_cache
 from typing import Iterable, List, Mapping, Tuple
 
+import bioregistry
+import bioversions
 import networkx as nx
 import pandas as pd
 import pyobo
+from curies import Reference
 from protmapper import uniprot_client
 from protmapper.api import hgnc_id_to_up, hgnc_name_to_id
 from pyobo.sources import expasy
@@ -25,7 +28,9 @@ logger = logging.getLogger(__name__)
 
 
 @lru_cache(maxsize=4)
-def get_relations_df(use_sub_roles: bool = False, use_inferred: bool = True) -> pd.DataFrame:
+def get_relations_df(
+    *,use_sub_roles: bool = False, use_inferred: bool = True
+) -> pd.DataFrame:
     """Assemble the relations dataframe."""
     xrefs_df = get_xrefs_df()
     if not use_inferred:
@@ -36,7 +41,7 @@ def get_relations_df(use_sub_roles: bool = False, use_inferred: bool = True) -> 
     logger.info("getting enzyme classes")
     expasy_graph, ec_code_to_children = get_expasy_closure()
     logger.info("getting ec2go")
-    ec2go = expasy.get_ec2go()
+    ec2go = expasy.get_ec2go(version=bioversions.get_version("go", strict=True))
     logger.info("ec2go has %d elements", len(ec2go))
 
     rows = list(xrefs_df.values)
@@ -68,7 +73,9 @@ def get_relations_df(use_sub_roles: bool = False, use_inferred: bool = True) -> 
 
         if target_db == "hgnc":
             # Append original
-            x[source_db, source_id].append((modulation, "protein", "hgnc", target_id, target_name))
+            x[source_db, source_id].append(
+                (modulation, "protein", "hgnc", target_id, target_name)
+            )
             # Append inferred
             for uniprot_id, uniprot_name in get_uniprot_id_names(target_id):
                 x[source_db, source_id].append(
@@ -139,7 +146,8 @@ def get_relations_df(use_sub_roles: bool = False, use_inferred: bool = True) -> 
 
         if role_db == "chebi" and use_sub_roles:
             sub_role_curies |= {
-                pyobo.normalize_curie(c) for c in pyobo.get_subhierarchy(role_db, role_id)
+                bioregistry.normalize_curie(c)
+                for c in pyobo.get_subhierarchy(role_db, role_id)
             }
 
         chemical_curies = set(
@@ -149,7 +157,9 @@ def get_relations_df(use_sub_roles: bool = False, use_inferred: bool = True) -> 
             )
         )
         if not chemical_curies:
-            tqdm.write(f"no inference for {role_db}:{role_id} ! {pyobo.get_name(role_db, role_id)}")
+            tqdm.write(
+                f"no inference for {role_db}:{role_id} ! {pyobo.get_name(role_db, role_id)}"
+            )
             continue
 
         for modulation, target_type, target_db, target_id, target_name in entries:
@@ -174,19 +184,27 @@ def get_relations_df(use_sub_roles: bool = False, use_inferred: bool = True) -> 
     return rv
 
 
-FAMPLEX_RELATIONS_URL = "https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv"
+FAMPLEX_RELATIONS_URL = (
+    "https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv"
+)
 DB_TO_TYPE = {
-    "eccode": "protein family",
+    "ec": "protein family",
     "uniprot": "protein",
     "prosite": "protein",
 }
 
 
-def _get_famplex():
+def _get_famplex() -> dict[str, list[tuple[str, str]]]:
     logger.info("loading famplex mapping")
-    famplex_id_to_members = defaultdict(list)
+    famplex_id_to_members: defaultdict[str, list[tuple[str, str]]] = defaultdict(list)
     famplex_relations_df = pd.read_csv(FAMPLEX_RELATIONS_URL)
-    for source_id, source_name, rel, target_db, target_name in famplex_relations_df.values:
+    for (
+        source_id,
+        source_name,
+        rel,
+        target_db,
+        target_name,
+    ) in famplex_relations_df.values:
         if source_id.lower() == "hgnc" and rel == "isa" and target_db.lower() == "fplx":
             try:
                 hgnc_id = hgnc_name_to_id[source_name]
@@ -196,36 +214,30 @@ def _get_famplex():
             famplex_id_to_members[target_name].append((hgnc_id, source_name))
 
     logger.info("famplex mapping has %d elements", len(famplex_id_to_members))
-    return famplex_id_to_members
+    return dict(famplex_id_to_members)
 
 
-def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[str]]]:
+def get_expasy_closure() -> Tuple[nx.DiGraph, Mapping[str, List[Reference]]]:
     """Get the ExPASy closure map."""
-    _graph = nx.DiGraph()
-    expasy_obo = expasy.get_obo()
+    graph = nx.DiGraph()
+    expasy_obo = expasy.ExpasyGetter()
     for term in expasy_obo:
-        for parent_term in term.parents:
-            _graph.add_edge(
-                (term.prefix, term.identifier, term.identifier),
-                (parent_term.prefix, parent_term.identifier, parent_term.identifier),
-            )
+        for parent_reference in term.parents:
+            graph.add_edge(term.reference, parent_reference)
 
         for member in term.get_relationships(has_member):
-            _graph.add_edge(
-                (member.prefix, member.identifier, member.name),
-                (term.prefix, term.identifier, term.identifier),
-            )
+            graph.add_edge(member, term.reference)
 
     rv = {
-        identifier: list(nx.ancestors(_graph, (db, identifier, name)))
-        for db, identifier, name in _graph
-        if db == expasy_obo.ontology
+        reference.identifier: list(nx.ancestors(graph, reference))
+        for reference in graph
+        if reference.prefix == expasy_obo.ontology
     }
-    return _graph, rv
+    return graph, rv
 
 
 def get_uniprot_id_names(hgnc_id: str) -> Iterable[Tuple[str, str]]:
-    """Get all of the UniProt identifiers for a given gene."""
+    """Get all the UniProt identifiers for a given gene."""
     try:
         r = hgnc_id_to_up[str(hgnc_id)]
     except KeyError:

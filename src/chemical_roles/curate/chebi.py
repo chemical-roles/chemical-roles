@@ -100,7 +100,10 @@ def propose_enzyme_modulators() -> pd.DataFrame:
             ec_codes.append("1.22.-.-")
 
         # Not sure why this has two
-        elif name == "EC 1.1.1.34/EC 1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitor":
+        elif (
+            name
+            == "EC 1.1.1.34/EC 1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitor"
+        ):
             modulation = "inhibitor"
             ec_codes.append("1.1.1.34")
             ec_codes.append("1.1.1.88")
@@ -173,9 +176,11 @@ def suggest_pathway_inhibitor_curation() -> None:
     reclassify_chebi_ids = set(reclassify_df.chebi_id)
 
     print(
-        f'Children of {PATHWAY_INHIBITOR_CHEBI_ID} ({pyobo.get_name("chebi", PATHWAY_INHIBITOR_CHEBI_ID)})'
+        f"Children of {PATHWAY_INHIBITOR_CHEBI_ID} ({pyobo.get_name('chebi', PATHWAY_INHIBITOR_CHEBI_ID)})"
     )
-    for chebi_id in _get_ids(pyobo.get_descendants("chebi", PATHWAY_INHIBITOR_CHEBI_ID)):
+    for chebi_id in _get_ids(
+        pyobo.get_descendants("chebi", PATHWAY_INHIBITOR_CHEBI_ID)
+    ):
         if any(
             chebi_id in group
             for group in (
@@ -228,21 +233,27 @@ def suggest_activator_curation() -> None:
     _single_suggest(BIOCHEMICAL_ROLE_CHEBI_ID, "activator")
 
 
-def suggest_all_roles(show_ungrounded: bool = False, file: Optional[TextIO] = None) -> None:
+def suggest_all_roles(
+    show_ungrounded: bool = False, file: Optional[TextIO] = None
+) -> None:
     """Suggest all roles."""
     logger.info(
-        "Getting descendants of chebi:%s and chebi:%s", BIOLOGICAL_ROLE_ID, APPLICATION_ROLE_ID
+        "Getting descendants of chebi:%s and chebi:%s",
+        BIOLOGICAL_ROLE_ID,
+        APPLICATION_ROLE_ID,
     )
-    chebi_curies = pyobo.get_descendants("chebi", BIOLOGICAL_ROLE_ID) | pyobo.get_descendants(
-        "chebi", APPLICATION_ROLE_ID
-    )
+    chebi_curies = pyobo.get_descendants(
+        "chebi", BIOLOGICAL_ROLE_ID
+    ) | pyobo.get_descendants("chebi", APPLICATION_ROLE_ID)
     chebi_ids = _get_ids(chebi_curies)
     print(*get_xrefs_df().columns, sep="\t", file=file)
     for row in _iter_gilda(chebi_ids, show_missing=show_ungrounded):
         print(*row, sep="\t", file=file)
 
 
-def _single_suggest(chebi_id: str, suffix, file=None, show_missing: bool = False) -> None:
+def _single_suggest(
+    chebi_id: str, suffix: str, file: TextIO | None =None, show_missing: bool = False
+) -> None:
     descendant_curies = pyobo.get_descendants("chebi", chebi_id)
     logger.info(
         "Suggesting for %d descendants of chebi:%s ! %s",
@@ -282,7 +293,10 @@ def _iter_gilda(
     use_tqdm: bool = True,
 ) -> Iterable[GildaTuple]:
     for chebi_id in tqdm(list(chebi_ids), desc="making ChEBI curation sheet"):
-        if chebi_id in get_curated_role_chebi_ids() or chebi_id in _get_irrelevant_role_chebi_ids():
+        if (
+            chebi_id in get_curated_role_chebi_ids()
+            or chebi_id in _get_irrelevant_role_chebi_ids()
+        ):
             continue  # already curated, skip
         name = pyobo.get_name("chebi", chebi_id)
         if name is None:
@@ -292,7 +306,9 @@ def _iter_gilda(
 
         if suffix is not None:
             search_text = name[: -len(suffix)].rstrip()
-            yield from yield_gilda("chebi", chebi_id, name, suffix, search_text, show_missing)
+            yield from yield_gilda(
+                "chebi", chebi_id, name, suffix, search_text, show_missing
+            )
         else:
             for _suffix in SUFFIXES:
                 if name.endswith(_suffix):
@@ -317,7 +333,9 @@ def curate_chebi(show_ungrounded: bool, output: Optional[TextIO]) -> None:
     # suggest_antagonist_curation()
     # suggest_inverse_agonist_curation()
     # propose_enzyme_modulators()
-    suggest_all_roles(show_ungrounded=show_ungrounded or output is not None, file=output)
+    suggest_all_roles(
+        show_ungrounded=show_ungrounded or output is not None, file=output
+    )
 
 
 if __name__ == "__main__":

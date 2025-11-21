@@ -13,6 +13,8 @@ from .resources import XREFS_PATH, get_xrefs_df
 
 logger = logging.getLogger(__name__)
 
+Errors = Mapping[str, Set[str]]
+
 XREFS_COLUMNS = [
     "source_db",
     "source_id",
@@ -96,7 +98,7 @@ def yield_gilda(
         yield source_db, identifier, name, suffix or "?", "?", "?", "?", "?"
 
 
-def get_single_mappings(df: pd.DataFrame, idx) -> Mapping[str, Set[str]]:
+def get_single_mappings(df: pd.DataFrame, idx) -> Errors:
     """Get ChEBI identifiers that are only mapped to one thing based on slicing the dataframe on the given index."""
     errors = defaultdict(set)
     chebi_ids = sorted(df.loc[idx, "source_id"].unique())

@@ -54,7 +54,12 @@ def curate_mesh(show_ungrounded: bool, output: Optional[TextIO]):
     it = tqdm(it, desc="making MeSH curation sheet")
     for _, (identifier, (name, search_text, suffix)) in enumerate(it, start=1):
         for row in yield_gilda(
-            "mesh", identifier, name, suffix, search_text, show_ungrounded or output is not None
+            "mesh",
+            identifier,
+            name,
+            suffix,
+            search_text,
+            show_ungrounded or output is not None,
         ):
             print(*row, sep="\t", file=output)
 

@@ -6,6 +6,7 @@
 # https://rdflib.github.io/sparqlwrapper/
 
 from SPARQLWrapper import JSON, SPARQLWrapper
+import click
 
 WIKIDATA_ENDPOINT_URL = "https://query.wikidata.org/sparql"
 
@@ -27,14 +28,14 @@ ORDER BY ?chebi_id
 """
 
 
-def _get_results(endpoint_url, query):
+def _get_results(endpoint_url: str, query: str) -> list[dict[str, Any]]:
     sparql = SPARQLWrapper(endpoint_url)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
 
-
-def main():
+@click.command()
+def main() -> None:
     """Get wikidata mappings."""
     with open("resources/wd_proteins.tsv", "w") as file:
         print(

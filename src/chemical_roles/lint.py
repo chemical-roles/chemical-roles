@@ -9,16 +9,16 @@ import click
 from more_click import verbose_option
 
 from .resources import XREFS_PATH, get_xrefs_df
-from .utils import get_single_mappings, sort_xrefs_df
+from .utils import get_single_mappings, sort_xrefs_df, Errors
 
 
 @click.group()
-def lint():
+def lint()-> None:
     """Run linters."""
 
 
 @lint.command()
-def tabs():
+def tabs()-> None:
     """Find entries missing tabs."""
     errors = set()
     with open(XREFS_PATH) as file:
@@ -34,7 +34,7 @@ def tabs():
 
 @lint.command()
 @verbose_option
-def mappings():
+def mappings()-> None:
     """Find single mapped entries."""
     df = get_xrefs_df()
 
@@ -73,20 +73,22 @@ def mappings():
         click.secho("The job is not yet done...", fg="red")
 
 
-def _p(errors):
+def _p(errors: Errors) -> None:
     m = max(len(k) for _, _, k in errors)
     for (k_db, k_id, k), vs in errors.items():
-        click.echo(f'{k_db}:{k_id} ! {k:{m}} for role{"" if len(vs) == 1 else "s"} {", ".join(vs)}')
+        click.echo(
+            f"{k_db}:{k_id} ! {k:{m}} for role{'' if len(vs) == 1 else 's'} {', '.join(map(str, vs))}"
+        )
 
 
 @lint.command()
-def sort():
+def sort() -> None:
     """Sort the entries."""
     sort_xrefs_df()
 
 
 @lint.command()
-def validate():
+def validate()-> None:
     """Validate identifiers."""
     df = get_xrefs_df()
     for i, (prefix, identifier) in df[["source_db", "source_id"]].iterrows():

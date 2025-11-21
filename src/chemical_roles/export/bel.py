@@ -35,7 +35,9 @@ def get_bel(use_inferred: bool = True, add_evidence: bool = True) -> BELGraph:
     """Get Chemical Roles as BEL."""
     df = get_relations_df(use_inferred=use_inferred)
     graph = BELGraph(name="Chemical Roles Graph")
-    it = tqdm(df.dropna().values, total=len(df.index), desc="mapping to BEL", unit_scale=True)
+    it = tqdm(
+        df.dropna().values, total=len(df.index), desc="mapping to BEL", unit_scale=True
+    )
     evidence = "Manually curated." if add_evidence else None
     for (
         source_db,

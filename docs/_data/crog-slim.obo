@@ -1,0 +1,33 @@
+format-version: 1.4
+idspace: dcterms http://purl.org/dc/terms/ "Dublin Core Metadata Initiative Terms"
+ontology: crog
+property_value: dcterms:title "Chemical Roles Graph" xsd:string
+
+[Typedef]
+id: dcterms:contributor
+name: contributor
+is_metadata_tag: true
+
+[Typedef]
+id: RO:0002212
+name: negatively regulates
+
+[Typedef]
+id: RO:0002213
+name: positively regulates
+
+[Typedef]
+id: RO:0002448
+name: directly regulates activity of
+
+[Typedef]
+id: RO:0018027
+name: is agonist of
+
+[Typedef]
+id: RO:0018028
+name: is inverse agonist of
+
+[Typedef]
+id: RO:0018029
+name: is antagonist of

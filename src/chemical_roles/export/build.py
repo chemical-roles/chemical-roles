@@ -26,16 +26,18 @@ logger = logging.getLogger(__name__)
 FAMPLEX_EQUIVALENCES_URL = (
     "https://raw.githubusercontent.com/sorgerlab/famplex/master/equivalences.csv"
 )
-FAMPLEX_HGNC_SYMBOL_MAP_URL = (
-    "https://raw.githubusercontent.com/sorgerlab/famplex/master/export/hgnc_symbol_map.csv"
-)
+FAMPLEX_HGNC_SYMBOL_MAP_URL = "https://raw.githubusercontent.com/sorgerlab/famplex/master/export/hgnc_symbol_map.csv"
 
 
 def rewrite_repo_readme():
     """Rewrite the summary of curated content in the repository's readme, automatically."""
     df = get_xrefs_df()
 
-    summary_df = df.groupby(["source_db", "modulation", "type", "target_db"]).size().reset_index()
+    summary_df = (
+        df.groupby(["source_db", "modulation", "type", "target_db"])
+        .size()
+        .reset_index()
+    )
     summary_df.columns = [
         "Source Database",
         "Modulation",
@@ -70,7 +72,9 @@ def rewrite_repo_readme():
     logger.info("Plotting modulation and target type summary")
     fig, (lax, rax) = plt.subplots(nrows=1, ncols=2, figsize=(12, 5))
 
-    modulation_summary_df["Modulation"] = modulation_summary_df["Modulation"].map(str.title)
+    modulation_summary_df["Modulation"] = modulation_summary_df["Modulation"].map(
+        str.title
+    )
     g = sns.barplot(y="Modulation", x="Count", data=modulation_summary_df, ax=lax)
     g.set_xscale("log")
     lax.set_title(
@@ -92,12 +96,20 @@ def rewrite_repo_readme():
     plt.savefig(os.path.join(IMG, "curated_summary.png"), dpi=300)
     plt.savefig(os.path.join(IMG, "curated_summary.svg"))
 
-    text = f"There are {len(df.index)} curated roles as of export on {time.asctime()}\n\n"
-    text += tabulate(modulation_summary_df.values, ["Modulation", "Count"], tablefmt="rst")
+    text = (
+        f"There are {len(df.index)} curated roles as of export on {time.asctime()}\n\n"
+    )
+    text += tabulate(
+        modulation_summary_df.values, ["Modulation", "Count"], tablefmt="rst"
+    )
     text += "\n\n"
-    text += tabulate(type_summary_df.values, ["Target Entity Type", "Count"], tablefmt="rst")
+    text += tabulate(
+        type_summary_df.values, ["Target Entity Type", "Count"], tablefmt="rst"
+    )
     text += "\n\n"
-    text += tabulate(namespace_summary_df.values, ["Target Database", "Count"], tablefmt="rst")
+    text += tabulate(
+        namespace_summary_df.values, ["Target Database", "Count"], tablefmt="rst"
+    )
     text += "\n"
 
     readme_path = os.path.join(ROOT, "README.rst")
@@ -145,7 +157,9 @@ def write_export():
         "target_id",
         "target_name",
     ]
-    df[columns].sort_values(columns).to_csv(RELATIONS_OUTPUT_PATH, sep="\t", index=False)
+    df[columns].sort_values(columns).to_csv(
+        RELATIONS_OUTPUT_PATH, sep="\t", index=False
+    )
 
     logger.info("outputting slim df to %s", RELATIONS_SLIM_OUTPUT_PATH)
     slim_columns = ["source_db", "source_id", "modulation", "target_db", "target_id"]
@@ -155,7 +169,9 @@ def write_export():
 
     logger.info("making summary df")
     summary_df = (
-        df.groupby(["source_db", "modulation", "target_type", "target_db"]).size().reset_index()
+        df.groupby(["source_db", "modulation", "target_type", "target_db"])
+        .size()
+        .reset_index()
     )
     summary_df.columns = [
         "Source Database",
@@ -214,7 +230,9 @@ def write_export():
     logger.info("Plotting modulation and target type summary")
     fig, (lax, rax) = plt.subplots(nrows=1, ncols=2, figsize=(12, 5))
 
-    modulation_summary_df["Modulation"] = modulation_summary_df["Modulation"].map(str.title)
+    modulation_summary_df["Modulation"] = modulation_summary_df["Modulation"].map(
+        str.title
+    )
     g = sns.barplot(y="Modulation", x="Count", data=modulation_summary_df, ax=lax)
     g.set_xscale("log")
     lax.set_title(

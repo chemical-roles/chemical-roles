@@ -10,7 +10,7 @@ from .lint import lint
 
 
 @click.group()
-def main():
+def main() -> None:
     """Run the Chemical-Roles CLI."""
 
 
