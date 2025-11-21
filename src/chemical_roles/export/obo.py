@@ -24,7 +24,7 @@ __all__ = [
 ]
 
 
-KEY_TO_TYPEDEF = {
+KEY_TO_TYPEDEF: dict[str, TypeDef] = {
     "activator": positively_regulates,
     "inhibitor": negatively_regulates,
     "agonist": is_agonist_of,
@@ -46,10 +46,8 @@ def get_obo(*, use_inferred: bool, use_sub_roles: bool) -> Obo:
 
 def iter_terms(*, use_inferred: bool, use_sub_roles: bool) -> Iterable[Term]:
     df = get_relations_df(use_inferred=use_inferred, use_sub_roles=use_sub_roles)
-    it = tqdm(
-        df.dropna().values, total=len(df.index), desc="mapping to OBO", unit_scale=True
-    )
-    ref_term = {}
+    it = tqdm(df.dropna().values, total=len(df.index), desc="mapping to OBO", unit_scale=True)
+    ref_term: dict[Reference, Term] = {}
     for (
         source_db,
         source_id,
@@ -65,18 +63,12 @@ def iter_terms(*, use_inferred: bool, use_sub_roles: bool) -> Iterable[Term]:
         if term is None:
             term = ref_term[source] = Term(reference=source)
 
-        typedef = _get_typedef(
-            target_db=target_db, target_type=target_type, modulation=modulation
-        )
-        if typedef is not None:
+        predicate = _predicate_from_modulation(modulation)
+        if predicate is not None:
             term.annotate_object(
-                typedef,
-                Reference(
-                    prefix=target_db.upper(), identifier=target_id, name=target_name
-                ),
-                annotations=[
-                    Annotation(predicate=has_contributor.reference, value=CHARLIE)
-                ],
+                predicate,
+                Reference(prefix=target_db.upper(), identifier=target_id, name=target_name),
+                annotations=[Annotation(predicate=has_contributor.reference, value=CHARLIE)],
             )
 
     for term in ref_term.values():
@@ -84,14 +76,13 @@ def iter_terms(*, use_inferred: bool, use_sub_roles: bool) -> Iterable[Term]:
             yield term
 
 
-_logged = set()
+_logged: set[str] = set()
 
 
-def _get_typedef(target_db: str, target_type: str, modulation: str) -> Optional[TypeDef]:
-    t = (target_db, target_type, modulation)
+def _predicate_from_modulation(modulation: str) -> Optional[TypeDef]:
     if tt := KEY_TO_TYPEDEF.get(modulation):
         return tt
-    if t not in _logged:
-        _logged.add(t)
-        tqdm.write(f"no strategy for: {target_db} {target_type} {modulation}")
+    if modulation not in _logged:
+        _logged.add(modulation)
+        tqdm.write(f"no strategy for: {modulation}")
     return None

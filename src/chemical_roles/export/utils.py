@@ -28,9 +28,7 @@ logger = logging.getLogger(__name__)
 
 
 @lru_cache(maxsize=4)
-def get_relations_df(
-    *,use_sub_roles: bool = False, use_inferred: bool = True
-) -> pd.DataFrame:
+def get_relations_df(*, use_sub_roles: bool = False, use_inferred: bool = True) -> pd.DataFrame:
     """Assemble the relations dataframe."""
     xrefs_df = get_xrefs_df()
     if not use_inferred:
@@ -73,9 +71,7 @@ def get_relations_df(
 
         if target_db == "hgnc":
             # Append original
-            x[source_db, source_id].append(
-                (modulation, "protein", "hgnc", target_id, target_name)
-            )
+            x[source_db, source_id].append((modulation, "protein", "hgnc", target_id, target_name))
             # Append inferred
             for uniprot_id, uniprot_name in get_uniprot_id_names(target_id):
                 x[source_db, source_id].append(
@@ -146,8 +142,7 @@ def get_relations_df(
 
         if role_db == "chebi" and use_sub_roles:
             sub_role_curies |= {
-                bioregistry.normalize_curie(c)
-                for c in pyobo.get_subhierarchy(role_db, role_id)
+                bioregistry.normalize_curie(c) for c in pyobo.get_subhierarchy(role_db, role_id)
             }
 
         chemical_curies = set(
@@ -157,9 +152,7 @@ def get_relations_df(
             )
         )
         if not chemical_curies:
-            tqdm.write(
-                f"no inference for {role_db}:{role_id} ! {pyobo.get_name(role_db, role_id)}"
-            )
+            tqdm.write(f"no inference for {role_db}:{role_id} ! {pyobo.get_name(role_db, role_id)}")
             continue
 
         for modulation, target_type, target_db, target_id, target_name in entries:
@@ -184,9 +177,7 @@ def get_relations_df(
     return rv
 
 
-FAMPLEX_RELATIONS_URL = (
-    "https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv"
-)
+FAMPLEX_RELATIONS_URL = "https://raw.githubusercontent.com/sorgerlab/famplex/master/relations.csv"
 DB_TO_TYPE = {
     "ec": "protein family",
     "uniprot": "protein",

@@ -9,7 +9,7 @@ from .mesh import curate_mesh
 
 
 @click.group()
-def curate():
+def curate() -> None:
     """Run the curation CLI."""
 
 

@@ -5,8 +5,10 @@
 # pip install sparqlwrapper
 # https://rdflib.github.io/sparqlwrapper/
 
-from SPARQLWrapper import JSON, SPARQLWrapper
+from typing import Any
+
 import click
+from SPARQLWrapper import JSON, SPARQLWrapper
 
 WIKIDATA_ENDPOINT_URL = "https://query.wikidata.org/sparql"
 
@@ -28,11 +30,12 @@ ORDER BY ?chebi_id
 """
 
 
-def _get_results(endpoint_url: str, query: str) -> list[dict[str, Any]]:
+def _get_results(endpoint_url: str, query: str) -> dict[str, Any]:
     sparql = SPARQLWrapper(endpoint_url)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
+
 
 @click.command()
 def main() -> None:

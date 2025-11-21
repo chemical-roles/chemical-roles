@@ -4,7 +4,7 @@
 
 import logging
 from collections import defaultdict
-from typing import Iterable, Mapping, Set, Tuple
+from typing import Iterable, Mapping, Set, Tuple, TypeAlias
 
 import pandas as pd
 import requests
@@ -13,7 +13,7 @@ from .resources import XREFS_PATH, get_xrefs_df
 
 logger = logging.getLogger(__name__)
 
-Errors = Mapping[str, Set[str]]
+Errors: TypeAlias = Mapping[tuple[str, str, str], set[str]]
 
 XREFS_COLUMNS = [
     "source_db",
@@ -100,7 +100,7 @@ def yield_gilda(
 
 def get_single_mappings(df: pd.DataFrame, idx) -> Errors:
     """Get ChEBI identifiers that are only mapped to one thing based on slicing the dataframe on the given index."""
-    errors = defaultdict(set)
+    errors: defaultdict[tuple[str, str, str], set[str]] = defaultdict(set)
     chebi_ids = sorted(df.loc[idx, "source_id"].unique())
     for chebi_id, sdf in df[df["source_id"].isin(chebi_ids)].groupby(["source_id"]):
         if 1 == len(sdf.index):

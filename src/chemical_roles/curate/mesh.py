@@ -36,7 +36,7 @@ MESH_BLACKLIST = {
 @verbose_option
 @click.option("--show-ungrounded", is_flag=True)
 @click.option("--output", type=click.File("w"), default=UNCURATED_MESH_PATH)
-def curate_mesh(show_ungrounded: bool, output: Optional[TextIO]):
+def curate_mesh(show_ungrounded: bool, output: Optional[TextIO]) -> None:
     """Run the MeSH curation pipeline."""
     xrefs_df = get_xrefs_df()
     mesh_xrefs_df = xrefs_df[xrefs_df["source_db"] == "mesh"]

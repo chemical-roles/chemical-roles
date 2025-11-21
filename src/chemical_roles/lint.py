@@ -7,18 +7,19 @@ import sys
 import bioregistry
 import click
 from more_click import verbose_option
+from tabulate import tabulate
 
 from .resources import XREFS_PATH, get_xrefs_df
-from .utils import get_single_mappings, sort_xrefs_df, Errors
+from .utils import Errors, get_single_mappings, sort_xrefs_df
 
 
 @click.group()
-def lint()-> None:
+def lint() -> None:
     """Run linters."""
 
 
 @lint.command()
-def tabs()-> None:
+def tabs() -> None:
     """Find entries missing tabs."""
     errors = set()
     with open(XREFS_PATH) as file:
@@ -34,7 +35,7 @@ def tabs()-> None:
 
 @lint.command()
 @verbose_option
-def mappings()-> None:
+def mappings() -> None:
     """Find single mapped entries."""
     df = get_xrefs_df()
 
@@ -74,10 +75,10 @@ def mappings()-> None:
 
 
 def _p(errors: Errors) -> None:
-    m = max(len(k) for _, _, k in errors)
-    for (k_db, k_id, k), vs in errors.items():
+    max_name_length = max(len(name) for _, _, name in errors)
+    for (prefix, identifier, name), vs in errors.items():
         click.echo(
-            f"{k_db}:{k_id} ! {k:{m}} for role{'' if len(vs) == 1 else 's'} {', '.join(map(str, vs))}"
+            f"{prefix}:{identifier} ! {name:{max_name_length}} for role{'' if len(vs) == 1 else 's'} {', '.join(map(str, vs))}"
         )
 
 
@@ -88,7 +89,7 @@ def sort() -> None:
 
 
 @lint.command()
-def validate()-> None:
+def validate() -> None:
     """Validate identifiers."""
     df = get_xrefs_df()
     for i, (prefix, identifier) in df[["source_db", "source_id"]].iterrows():

@@ -3,11 +3,11 @@
 """CLI for Chemical Roles exporters."""
 
 import os
+from pathlib import Path
 
 import click
 
 from ..constants import DATA
-from pathlib import Path
 
 
 @click.group()
